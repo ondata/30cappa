@@ -28,3 +28,7 @@ mapshaper "$folder"/../dati/rawdata/Limiti01012020_g/Com01012020_g/Com01012020_g
 
 # JOIN con CSV per abitanti
 mapshaper "$folder"/../dati/tmp.shp -join "$folder"/../dati/comuni.csv keys=PRO_COM_T,PRO_COM_T field-types=PRO_COM_T:str -o "$folder"/../dati/comuni.shp
+
+# crea geojson dei comuni
+mapshaper "$folder"/../dati/comuni.shp -proj wgs84 -o format=geojson "$folder"/../dati/comuni.geojson
+
