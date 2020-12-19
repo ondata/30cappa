@@ -113,7 +113,7 @@
     }).addTo(map);
 
     const particella = $.ajax({
-      url: "https://tanto.carto.com:443/api/v2/sql?format=GeoJSON&q=select%20*%20from%20public.geocarto%20where%20public.geocarto.nome%3D%27" + myvar + "%27",
+      url: "https://aborruso.github.io/30cappa/dati/arigadicomando/" + myvar + ".geojson",
       dataType: "json",
       success: console.log("Particella caricata."),
       error(xhr) {
