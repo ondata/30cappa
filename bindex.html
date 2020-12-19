@@ -54,11 +54,11 @@
         console.log("You clicked the map at latitude: " + a.latlng.lat + " and longitude:" + a.latlng.lng);
 
         const popupContent =
-          feature.properties && feature.properties.nome
+          feature.properties && feature.properties.COMUNE
             ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
             : ""
 
-        layer.bindPopup(popupContent)
+        layer.bindPopup(feature.properties.COMUNE)
       });
 
     }
