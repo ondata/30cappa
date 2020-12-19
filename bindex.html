@@ -58,7 +58,7 @@
             ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
             : ""
 
-        layer.bindPopup(feature.properties.COMUNE)
+        layer.bindPopup('Area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b>' + feature.properties.COMUNE + '</b>')
       });
 
     }
@@ -79,7 +79,7 @@
     googleHybrid.addTo(map);
 
     const limite = $.ajax({
-      url: "https://aborruso.github.io/30cappa/dati/arigadicomando/" + myvar + ".geojson",
+      url: "https://aborruso.github.io/30cappa/dati/arigadicomando/output/" + myvar + ".geojson",
       dataType: "json",
       success: console.log("geometria caricata."),
       error(xhr) {
