@@ -8,7 +8,5 @@ tmp*
 *.qgs~
 
 # rimuovi momentaneamente cartella output di bash
-dati/arigadicomando/output/*
-!dati/arigadicomando/output/08*
 dati/arigadicomando/test/*
 
