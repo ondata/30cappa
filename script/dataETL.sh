@@ -22,4 +22,13 @@ mlr -I --csv cut -x -f Età \
 mlr -I --csv put '$PRO_COM_T=fmtnum($PRO_COM_T,"%06d")' "$folder"/../dati/comuni.csv
 
 # estrai comuni <= 5000 abitanti
-mlr -I --csv filter '$Abitanti<=5000' "$folder"/../dati/comuni.csv
+#mlr -I --csv filter '$Abitanti<=5000' "$folder"/../dati/comuni.csv
+
+### dati geografici ###
+
+# pulizia topologica di base
+mapshaper "$folder"/../dati/rawdata/Limiti01012020_g/Com01012020_g/Com01012020_g_WGS84.shp -clean gap-fill-area=0 -filter 'COD_REG==19' -o "$folder"/../dati/tmp.shp
+
+# JOIN con CSV per abitanti
+mapshaper "$folder"/../dati/tmp.shp -join "$folder"/../dati/comuni.csv keys=PRO_COM_T,PRO_COM_T field-types=PRO_COM_T:str -o "$folder"/../dati/comuni.shp
+
