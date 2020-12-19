@@ -6,3 +6,6 @@ tmp*
 
 # sottopone a versioning soltanto il file qgs
 *.qgs~
+
+# rimuovi momentaneamente cartella output di bash
+dati/arigadicomando/output/*
