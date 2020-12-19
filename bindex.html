@@ -48,6 +48,21 @@
     const myvar = getURLParameter('id');
 
 
+    function onEachFeature(feature, layer) {
+      layer.bindPopup()
+      layer.on('click', (a) => {
+        console.log("You clicked the map at latitude: " + a.latlng.lat + " and longitude:" + a.latlng.lng);
+
+        const popupContent =
+          feature.properties && feature.properties.nome
+            ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
+            : ""
+
+        layer.bindPopup(popupContent)
+      });
+
+    }
+
     const googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
       maxZoom: 20,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
@@ -99,6 +114,7 @@
       "Stradale": googleStreets,
       "Satellite": googleHybrid
     };
+
 
     L.control.layers(baseMaps).addTo(map);
 
