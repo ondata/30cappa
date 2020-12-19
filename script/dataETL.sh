@@ -20,3 +20,6 @@ mlr -I --csv cut -x -f Età \
 
 # applica zero padding ai codici comunali, da 1001 a 001001
 mlr -I --csv put '$PRO_COM_T=fmtnum($PRO_COM_T,"%06d")' "$folder"/../dati/comuni.csv
+
+# estrai comuni <= 5000 abitanti
+mlr -I --csv filter '$Abitanti<=5000' "$folder"/../dati/comuni.csv
