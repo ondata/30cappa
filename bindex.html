@@ -78,49 +78,15 @@
     });
     googleHybrid.addTo(map);
 
-    const ETRS89width = 18.99 - 5.93;
-    const startResolution = ETRS89width / 1024;
-    let grid_resolution = new Array(22);
-    for (let i = 0; i < 22; ++i) {
-      grid_resolution[i] = startResolution / Math.pow(2, i);
-    }
-    const crs_6706 = new L.Proj.CRS('EPSG:6706',
-      '+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs',
-      {
-        resolutions: grid_resolution,
-        origin: [0, 0],
-        bounds: L.bounds([5.93, 34.76], [18.99, 47.1])
-      });
-    const url = 'https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php';
-    const particelle = L.tileLayer.wms(url, {
-      layers: ['CP.CadastralParcel'],
-      crs: crs_6706,
-      format: 'image/png',
-      minZoom: 17,
-      maxZoom: 21,
-      transparent: true,
-      opacity: 0.5,
-      attribution: ' <a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/fabbricatiterreni/consultazione-cartografia-catastale/servizio-consultazione-cartografia">Agenzia Entrate</a>'
-    }).addTo(map);
-    const vestizioni = L.tileLayer.wms(url, {
-      layers: ['vestizioni'],
-      crs: crs_6706,
-      format: 'image/png',
-      minZoom: 17,
-      maxZoom: 21,
-      transparent: true,
-      opacity: 1
-    }).addTo(map);
-
-    const particella = $.ajax({
+    const limite = $.ajax({
       url: "https://aborruso.github.io/30cappa/dati/arigadicomando/" + myvar + ".geojson",
       dataType: "json",
-      success: console.log("Particella caricata."),
+      success: console.log("geometria caricata."),
       error(xhr) {
         alert(xhr.statusText)
       }
     })
-    $.when(particella).done(() => {
+    $.when(limite).done(() => {
 
       const myStyle = {
         "color": "#ff7800",
@@ -130,12 +96,12 @@
         "fillOpacity": 0
       };
 
-      const layerParticella = L.geoJSON(particella.responseJSON, {
+      const layerLimite = L.geoJSON(limite.responseJSON, {
         style: myStyle,
         onEachFeature: onEachFeature
       }).addTo(map);
 
-      map.fitBounds(layerParticella.getBounds());
+      map.fitBounds(layerLimite.getBounds());
 
     });
 
@@ -147,11 +113,6 @@
     const baseMaps = {
       "Stradale": googleStreets,
       "Satellite": googleHybrid
-    };
-
-    const overlayMaps = {
-      "Particelle": particelle,
-      "Etichette": vestizioni
     };
 
     L.control.layers(baseMaps, overlayMaps).addTo(map);
