@@ -1,1 +1,6 @@
 tmp*
+dati/rawdata/*.zip
+
+# sottopone a versioning soltanto dati comunali
+/dati/rawdata/Limiti01012020_g/*
+!/dati/rawdata/Limiti01012020_g/Com01012020_g
