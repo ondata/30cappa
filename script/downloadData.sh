@@ -4,6 +4,8 @@ set -x
 
 folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+mkdir -p "$folder"/../dati/rawdata
+
 # confini amministrativi versione generalizzata #
 
 URL_geo="https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/Limiti01012020_g.zip"
