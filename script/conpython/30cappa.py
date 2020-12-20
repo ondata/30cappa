@@ -249,11 +249,12 @@ for cod_reg in geo_comuni_popolazione.COD_REG.unique():
     codici_provincia = [21,22]
     for cod_prov in codici_provincia:
       provincia = geo_comuni_popolazione[geo_comuni_popolazione['COD_PROV'] == cod_prov]
-      confine_provinciale = pat.geometry.unary_union
+      confine_provinciale = provincia.geometry.unary_union
       gdf_confine = gpd.GeoDataFrame(
-        pd.DataFrame(data={'regione': [cod_prov]}),
+        pd.DataFrame(data={'provincia': [cod_prov]}),
         crs='EPSG:32632',
         geometry=gpd.GeoSeries(confine_provinciale))
+      piccoli_comuni = provincia[provincia.POPOLAZIONE <= 5000]
       for codice in piccoli_comuni.PRO_COM_T.unique():
         # estrazione singolo comune
         comune = piccoli_comuni[piccoli_comuni['PRO_COM_T'] == codice].reset_index()
@@ -268,5 +269,3 @@ for cod_reg in geo_comuni_popolazione.COD_REG.unique():
 finoa5mila30cappa = gpd.GeoDataFrame( pd.concat( tutti_i_comuni, ignore_index=True) )
 
 finoa5mila30cappa.to_crs(epsg=4326).to_file('finoa5mila30cappa.geojson',driver="GeoJSON")
-
-files.download("finoa5milatrentino.geojson")
