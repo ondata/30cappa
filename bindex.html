@@ -106,7 +106,7 @@
     });
 
     const limiteC = $.ajax({
-      url: "https://tanto.carto.com:443/api/v2/sql?format=GeoJSON&q=select%20*%20from%20public.comuni_4326%20where%20public.comuni_4326.istat%3D%27" + myvar + "%27"
+      url: "https://tanto.carto.com:443/api/v2/sql?format=GeoJSON&q=select%20*%20from%20public.comuni_4326%20where%20public.comuni_4326.istat%3D%27" + myvar + "%27",
       dataType: "json",
       success: console.log("geometria caricata."),
       error(xhr) {
