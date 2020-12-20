@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUserFull="Salvatore Fiandaca" projectname="" version="3.16.1-Hannover" saveUser="pigre" saveDateTime="2020-12-19T22:41:37">
+<qgis version="3.16.1-Hannover" projectname="" saveDateTime="2020-12-20T18:12:04" saveUserFull="Salvatore Fiandaca" saveUser="pigre">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -20,32 +20,23 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer patch_size="-1,-1" name="reg01012020_g_wgs84" source="dbname='D:/GitHub/30cappa/script/QGIS/30cappa.sqlite' table=&quot;reg01012020_g_wgs84&quot; (geom)" legend_exp="" expanded="0" legend_split_behavior="0" id="reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306" providerKey="spatialite" checked="Qt::Unchecked">
+    <layer-tree-layer legend_split_behavior="0" providerKey="ogr" expanded="1" id="diff_buffer_capol_5fb863fe_aeeb_4ad9_a368_cdfe25a4d952" checked="Qt::Checked" name="diff_buffer_capol" source="./30cappa.sqlite|layername=diff_buffer_capol" legend_exp="" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer patch_size="-1,-1" name="diff_buffer_capol" source="./30cappa.sqlite|layername=diff_buffer_capol" legend_exp="" expanded="1" legend_split_behavior="0" id="diff_buffer_capol_6fe79192_c50a_478c_beb6_ddeab1fa1904" providerKey="ogr" checked="Qt::Checked">
+    <layer-tree-layer legend_split_behavior="0" providerKey="ogr" expanded="1" id="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893" checked="Qt::Unchecked" name="v_capoluoghi_prov" source="./30cappa.sqlite|layername=v_capoluoghi_prov" legend_exp="" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer patch_size="-1,-1" name="v_capoluoghi_prov" source="./30cappa.sqlite|layername=v_capoluoghi_prov" legend_exp="" expanded="1" legend_split_behavior="0" id="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893" providerKey="ogr" checked="Qt::Unchecked">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer patch_size="-1,-1" name="Com01012020_g_WGS84" source="../../dati/rawdata/Limiti01012020_g/Com01012020_g/Com01012020_g_WGS84.shp" legend_exp="" expanded="1" legend_split_behavior="0" id="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736" providerKey="ogr" checked="Qt::Unchecked">
+    <layer-tree-layer legend_split_behavior="0" providerKey="ogr" expanded="1" id="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736" checked="Qt::Unchecked" name="Com01012020_g_WGS84" source="../../dati/rawdata/Limiti01012020_g/Com01012020_g/Com01012020_g_WGS84.shp" legend_exp="" patch_size="-1,-1">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer patch_size="-1,-1" name="OSM Standard" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" legend_exp="" expanded="1" legend_split_behavior="0" id="OSM_Standard_f31dd640_3077_484e_9861_386446200057" providerKey="wms" checked="Qt::Unchecked">
+    <layer-tree-layer legend_split_behavior="0" providerKey="wms" expanded="1" id="OSM_Standard_f31dd640_3077_484e_9861_386446200057" checked="Qt::Unchecked" name="OSM Standard" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" legend_exp="" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-group name="tabelle" expanded="1" checked="Qt::Unchecked">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="tabelle">
       <customproperties/>
-      <layer-tree-layer patch_size="-1,-1" name="v_comuni5k_ab" source="dbname='D:/GitHub/30cappa/script/QGIS/30cappa.sqlite' table=&quot;v_comuni5k_ab&quot;" legend_exp="" expanded="1" legend_split_behavior="0" id="v_comuni5k_ab_56498442_f85f_43a0_9f5f_45d997774601" providerKey="spatialite" checked="Qt::Checked">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer patch_size="-1,-1" name="v_perc_comuni_all" source="dbname='D:/GitHub/30cappa/script/QGIS/30cappa.sqlite' table=&quot;v_perc_comuni_all&quot;" legend_exp="" expanded="1" legend_split_behavior="0" id="v_perc_comuni_all_6e663e63_7e5f_4e22_9d41_ca94937293a9" providerKey="spatialite" checked="Qt::Checked">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer patch_size="-1,-1" name="comuni" source="../../dati/comuni.csv" legend_exp="" expanded="1" legend_split_behavior="0" id="comuni_29486eb0_157c_4478_9b1a_bb48da3e6859" providerKey="ogr" checked="Qt::Checked">
+      <layer-tree-layer legend_split_behavior="0" providerKey="ogr" expanded="1" id="comuni_29486eb0_157c_4478_9b1a_bb48da3e6859" checked="Qt::Checked" name="comuni" source="../../dati/comuni.csv" legend_exp="" patch_size="-1,-1">
         <customproperties>
           <property key="showFeatureCount" value="0"/>
         </customproperties>
@@ -53,28 +44,26 @@
     </layer-tree-group>
     <custom-order enabled="0">
       <item>Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736</item>
-      <item>reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306</item>
       <item>OSM_Standard_f31dd640_3077_484e_9861_386446200057</item>
       <item>v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893</item>
-      <item>diff_buffer_capol_6fe79192_c50a_478c_beb6_ddeab1fa1904</item>
+      <item>diff_buffer_capol_5fb863fe_aeeb_4ad9_a368_cdfe25a4d952</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings type="1" enabled="0" minScale="0" maxScale="0" tolerance="12" unit="1" self-snapping="0" intersection-snapping="0" mode="2" scaleDependencyMode="0">
+  <snapping-settings scaleDependencyMode="0" type="1" enabled="0" intersection-snapping="0" mode="2" unit="1" maxScale="0" tolerance="12" minScale="0" self-snapping="0">
     <individual-layer-settings>
-      <layer-setting type="1" enabled="0" minScale="0" units="1" maxScale="0" tolerance="12" id="diff_buffer_capol_6fe79192_c50a_478c_beb6_ddeab1fa1904"/>
-      <layer-setting type="1" enabled="0" minScale="0" units="1" maxScale="0" tolerance="12" id="reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306"/>
-      <layer-setting type="1" enabled="0" minScale="0" units="1" maxScale="0" tolerance="12" id="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736"/>
-      <layer-setting type="1" enabled="0" minScale="0" units="1" maxScale="0" tolerance="12" id="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893"/>
+      <layer-setting type="1" enabled="0" id="diff_buffer_capol_5fb863fe_aeeb_4ad9_a368_cdfe25a4d952" maxScale="0" units="1" tolerance="12" minScale="0"/>
+      <layer-setting type="1" enabled="0" id="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736" maxScale="0" units="1" tolerance="12" minScale="0"/>
+      <layer-setting type="1" enabled="0" id="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893" maxScale="0" units="1" tolerance="12" minScale="0"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>726839.26089384267106652</xmin>
-      <ymin>4036929.67355421278625727</ymin>
-      <xmax>1107616.69063567509874701</xmax>
-      <ymax>4288148.27353589795529842</ymax>
+      <xmin>726839.26089384243823588</xmin>
+      <ymin>4035881.66878035850822926</ymin>
+      <xmax>1107616.6906356776598841</xmax>
+      <ymax>4331116.46926385164260864</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -96,239 +85,786 @@
   <DataPlotly>
     <Option type="Map">
       <Option type="Map" name="dynamic_properties">
-        <Option type="QString" value="" name="name"/>
+        <Option type="QString" name="name" value=""/>
         <Option type="Map" name="properties">
           <Option type="Map" name="color">
-            <Option type="bool" value="true" name="active"/>
-            <Option type="QString" value=" to_real(&quot;perc&quot; )" name="expression"/>
+            <Option type="bool" name="active" value="true"/>
+            <Option type="QString" name="expression" value=" to_real(&quot;perc&quot; )"/>
             <Option type="Map" name="transformer">
               <Option type="Map" name="d">
                 <Option type="Map" name="colorramp">
-                  <Option type="QString" value="[source]" name="name"/>
+                  <Option type="QString" name="name" value="[source]"/>
                   <Option type="Map" name="properties">
-                    <Option type="QString" value="255,245,240,255" name="color1"/>
-                    <Option type="QString" value="103,0,13,255" name="color2"/>
-                    <Option type="QString" value="0" name="discrete"/>
-                    <Option type="QString" value="gradient" name="rampType"/>
-                    <Option type="QString" value="0.13;254,224,210,255:0.26;252,187,161,255:0.39;252,146,114,255:0.52;251,106,74,255:0.65;239,59,44,255:0.78;203,24,29,255:0.9;165,15,21,255" name="stops"/>
+                    <Option type="QString" name="color1" value="255,245,240,255"/>
+                    <Option type="QString" name="color2" value="103,0,13,255"/>
+                    <Option type="QString" name="discrete" value="0"/>
+                    <Option type="QString" name="rampType" value="gradient"/>
+                    <Option type="QString" name="stops" value="0.13;254,224,210,255:0.26;252,187,161,255:0.39;252,146,114,255:0.52;251,106,74,255:0.65;239,59,44,255:0.78;203,24,29,255:0.9;165,15,21,255"/>
                   </Option>
-                  <Option type="QString" value="gradient" name="type"/>
+                  <Option type="QString" name="type" value="gradient"/>
                 </Option>
-                <Option type="double" value="98.648649" name="maxValue"/>
-                <Option type="double" value="33.07393" name="minValue"/>
-                <Option type="QString" value="0,0,0,255" name="nullColor"/>
-                <Option type="QString" value="" name="rampName"/>
+                <Option type="double" name="maxValue" value="98.648649"/>
+                <Option type="double" name="minValue" value="33.07393"/>
+                <Option type="QString" name="nullColor" value="0,0,0,255"/>
+                <Option type="QString" name="rampName" value=""/>
               </Option>
-              <Option type="int" value="2" name="t"/>
+              <Option type="int" name="t" value="2"/>
             </Option>
-            <Option type="int" value="3" name="type"/>
+            <Option type="int" name="type" value="3"/>
           </Option>
         </Option>
-        <Option type="QString" value="collection" name="type"/>
+        <Option type="QString" name="type" value="collection"/>
       </Option>
       <Option type="Map" name="plot_layout">
-        <Option type="QString" value="" name="additional_info_expression"/>
-        <Option type="QString" value="group" name="bar_mode"/>
-        <Option type="double" value="0" name="bargaps"/>
-        <Option type="bool" value="false" name="bins_check"/>
-        <Option type="bool" value="false" name="legend"/>
-        <Option type="QString" value="v" name="legend_orientation"/>
+        <Option type="QString" name="additional_info_expression" value=""/>
+        <Option type="QString" name="bar_mode" value="group"/>
+        <Option type="double" name="bargaps" value="0"/>
+        <Option type="bool" name="bins_check" value="false"/>
+        <Option type="bool" name="legend" value="false"/>
+        <Option type="QString" name="legend_orientation" value="v"/>
         <Option type="invalid" name="legend_title"/>
         <Option type="Map" name="polar">
           <Option type="Map" name="angularaxis">
-            <Option type="QString" value="clockwise" name="direction"/>
+            <Option type="QString" name="direction" value="clockwise"/>
           </Option>
         </Option>
         <Option type="Map" name="range_slider">
-          <Option type="int" value="1" name="borderwidth"/>
-          <Option type="bool" value="false" name="visible"/>
+          <Option type="int" name="borderwidth" value="1"/>
+          <Option type="bool" name="visible" value="false"/>
         </Option>
-        <Option type="QString" value="" name="title"/>
+        <Option type="QString" name="title" value=""/>
         <Option type="invalid" name="x_inv"/>
         <Option type="invalid" name="x_max"/>
         <Option type="invalid" name="x_min"/>
-        <Option type="QString" value="den_reg" name="x_title"/>
-        <Option type="QString" value="linear" name="x_type"/>
+        <Option type="QString" name="x_title" value="den_reg"/>
+        <Option type="QString" name="x_type" value="linear"/>
         <Option type="invalid" name="xaxis"/>
         <Option type="invalid" name="y_inv"/>
         <Option type="invalid" name="y_max"/>
         <Option type="invalid" name="y_min"/>
-        <Option type="QString" value=" to_real(&quot;perc&quot; )" name="y_title"/>
-        <Option type="QString" value="linear" name="y_type"/>
-        <Option type="QString" value="" name="z_title"/>
+        <Option type="QString" name="y_title" value=" to_real(&quot;perc&quot; )"/>
+        <Option type="QString" name="y_type" value="linear"/>
+        <Option type="QString" name="z_title" value=""/>
       </Option>
       <Option type="Map" name="plot_properties">
         <Option type="invalid" name="additional_hover_text"/>
-        <Option type="int" value="10" name="bins"/>
-        <Option type="QString" value="v" name="box_orientation"/>
-        <Option type="bool" value="false" name="box_outliers"/>
-        <Option type="bool" value="false" name="box_stat"/>
-        <Option type="QString" value="Electric" name="color_scale"/>
-        <Option type="bool" value="false" name="color_scale_data_defined_in_check"/>
-        <Option type="bool" value="false" name="color_scale_data_defined_in_invert_check"/>
-        <Option type="QString" value="fill" name="cont_type"/>
-        <Option type="QString" value="Riempimento" name="contour_type_combo"/>
-        <Option type="bool" value="false" name="cumulative"/>
+        <Option type="int" name="bins" value="10"/>
+        <Option type="QString" name="box_orientation" value="v"/>
+        <Option type="bool" name="box_outliers" value="false"/>
+        <Option type="bool" name="box_stat" value="false"/>
+        <Option type="QString" name="color_scale" value="Electric"/>
+        <Option type="bool" name="color_scale_data_defined_in_check" value="false"/>
+        <Option type="bool" name="color_scale_data_defined_in_invert_check" value="false"/>
+        <Option type="QString" name="cont_type" value="fill"/>
+        <Option type="QString" name="contour_type_combo" value="Riempimento"/>
+        <Option type="bool" name="cumulative" value="false"/>
         <Option type="List" name="custom">
           <Option type="QString" value="den_reg"/>
         </Option>
-        <Option type="QString" value="auto" name="hover_label_position"/>
+        <Option type="QString" name="hover_label_position" value="auto"/>
         <Option type="invalid" name="hover_label_text"/>
-        <Option type="QString" value="all" name="hover_text"/>
-        <Option type="QString" value="#db0000" name="in_color"/>
-        <Option type="bool" value="false" name="invert_color_scale"/>
-        <Option type="QString" value="increasing" name="invert_hist"/>
-        <Option type="QString" value="Linea continua" name="line_combo"/>
-        <Option type="QString" value="solid" name="line_dash"/>
-        <Option type="QString" value="markers" name="marker"/>
-        <Option type="double" value="10" name="marker_size"/>
-        <Option type="int" value="0" name="marker_symbol"/>
-        <Option type="QString" value="Punti" name="marker_type_combo"/>
-        <Option type="double" value="1" name="marker_width"/>
-        <Option type="QString" value=" to_real(&quot;perc&quot; )" name="name"/>
-        <Option type="QString" value="" name="normalization"/>
-        <Option type="double" value="1" name="opacity"/>
-        <Option type="QString" value="#db0000" name="out_color"/>
-        <Option type="QString" value="" name="point_combo"/>
-        <Option type="bool" value="false" name="selected_features_only"/>
-        <Option type="bool" value="false" name="show_colorscale_legend"/>
-        <Option type="bool" value="true" name="show_lines"/>
-        <Option type="bool" value="true" name="show_lines_check"/>
-        <Option type="bool" value="true" name="show_mean_line"/>
-        <Option type="bool" value="true" name="violin_box"/>
-        <Option type="QString" value="both" name="violin_side"/>
-        <Option type="bool" value="false" name="visible_features_only"/>
-        <Option type="QString" value="den_reg" name="x_name"/>
-        <Option type="QString" value=" to_real(&quot;perc&quot; )" name="y_name"/>
-        <Option type="QString" value="" name="z_name"/>
+        <Option type="QString" name="hover_text" value="all"/>
+        <Option type="QString" name="in_color" value="#db0000"/>
+        <Option type="bool" name="invert_color_scale" value="false"/>
+        <Option type="QString" name="invert_hist" value="increasing"/>
+        <Option type="QString" name="line_combo" value="Linea continua"/>
+        <Option type="QString" name="line_dash" value="solid"/>
+        <Option type="QString" name="marker" value="markers"/>
+        <Option type="double" name="marker_size" value="10"/>
+        <Option type="int" name="marker_symbol" value="0"/>
+        <Option type="QString" name="marker_type_combo" value="Punti"/>
+        <Option type="double" name="marker_width" value="1"/>
+        <Option type="QString" name="name" value=" to_real(&quot;perc&quot; )"/>
+        <Option type="QString" name="normalization" value=""/>
+        <Option type="double" name="opacity" value="1"/>
+        <Option type="QString" name="out_color" value="#db0000"/>
+        <Option type="QString" name="point_combo" value=""/>
+        <Option type="bool" name="selected_features_only" value="false"/>
+        <Option type="bool" name="show_colorscale_legend" value="false"/>
+        <Option type="bool" name="show_lines" value="true"/>
+        <Option type="bool" name="show_lines_check" value="true"/>
+        <Option type="bool" name="show_mean_line" value="true"/>
+        <Option type="bool" name="violin_box" value="true"/>
+        <Option type="QString" name="violin_side" value="both"/>
+        <Option type="bool" name="visible_features_only" value="false"/>
+        <Option type="QString" name="x_name" value="den_reg"/>
+        <Option type="QString" name="y_name" value=" to_real(&quot;perc&quot; )"/>
+        <Option type="QString" name="z_name" value=""/>
       </Option>
-      <Option type="QString" value="bar" name="plot_type"/>
-      <Option type="QString" value="reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306" name="source_layer_id"/>
+      <Option type="QString" name="plot_type" value="bar"/>
+      <Option type="QString" name="source_layer_id" value="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736"/>
     </Option>
   </DataPlotly>
-  <projectModels/>
+  <projectModels>
+    <Option type="Map">
+      <Option type="Map" name="children">
+        <Option type="Map" name="native:buffer_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:buffer"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="1073.6"/>
+            <Option type="double" name="component_pos_y" value="497.4000000000001"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Buffer 5k"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="541.9720542231494"/>
+          <Option type="double" name="component_pos_y" value="402.6852971845673"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:buffer_1"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="DISSOLVE">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="bool" name="static_value" value="false"/>
+              </Option>
+            </Option>
+            <Option type="List" name="DISTANCE">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="double" name="static_value" value="30000"/>
+              </Option>
+            </Option>
+            <Option type="List" name="END_CAP_STYLE">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="int" name="static_value" value="0"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:extractbyexpression_2"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="JOIN_STYLE">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="int" name="static_value" value="0"/>
+              </Option>
+            </Option>
+            <Option type="List" name="MITER_LIMIT">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="double" name="static_value" value="2"/>
+              </Option>
+            </Option>
+            <Option type="List" name="SEGMENTS">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="int" name="static_value" value="1000"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:difference_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:difference"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="1160.8000000000002"/>
+            <Option type="double" name="component_pos_y" value="508.08529718456725"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Differenza"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="749.6000000000003"/>
+          <Option type="double" name="component_pos_y" value="492.2852971845673"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:difference_1"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:buffer_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="OVERLAY">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:extractbyattribute_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:dissolve_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:dissolve"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="540"/>
+            <Option type="double" name="component_pos_y" value="215"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Ottiene Regione (dissolve da comuni)"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="1029.7321428571427"/>
+          <Option type="double" name="component_pos_y" value="305.42142857142863"/>
+          <Option type="double" name="component_width" value="264.22142857142853"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:dissolve_1"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="FIELD">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="List" name="static_value">
+                  <Option type="QString" value=""/>
+                </Option>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:extractbyattribute_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:extractbyattribute"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="828"/>
+            <Option type="double" name="component_pos_y" value="497.4000000000001"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Capoluoghi di Provincia (estratti)"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="740.1142857142855"/>
+          <Option type="double" name="component_pos_y" value="307.12857142857155"/>
+          <Option type="double" name="component_width" value="244"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:extractbyattribute_1"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="FIELD">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value="CC_UTS"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="OPERATOR">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="int" name="static_value" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="VALUE">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value="0"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:extractbyexpression_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="320"/>
+            <Option type="double" name="component_pos_y" value="115"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Comuni regionali"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="451.2"/>
+          <Option type="double" name="component_pos_y" value="125.60000000000007"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:extractbyexpression_1"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="EXPRESSION">
+              <Option type="Map">
+                <Option type="QString" name="parameter_name" value="QualeRegioneimmettinumeroRegione19perSicilia"/>
+                <Option type="int" name="source" value="0"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="parameter_name" value="InserisciVettoreComuni"/>
+                <Option type="int" name="source" value="0"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:extractbyexpression_2">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:extractbyexpression"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="810.4000000000001"/>
+            <Option type="double" name="component_pos_y" value="332.6"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Comuni con ab 5k"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="486.91428571428594"/>
+          <Option type="double" name="component_pos_y" value="307.1500000000001"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:extractbyexpression_2"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="EXPRESSION">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value="abitanti &lt;= 5000"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:intersection_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:intersection"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="1160.8000000000002"/>
+            <Option type="double" name="component_pos_y" value="572.0852971845673"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Intersezione"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="980.2285714285716"/>
+          <Option type="double" name="component_pos_y" value="557.1352971845671"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:intersection_1"/>
+          <Option type="Map" name="outputs">
+            <Option type="Map" name="Area 30cappa">
+              <Option type="QString" name="child_id" value="native:intersection_1"/>
+              <Option type="QString" name="color" value=""/>
+              <Option type="Map" name="comment">
+                <Option type="QString" name="color" value=""/>
+                <Option type="QString" name="component_description" value=""/>
+                <Option type="double" name="component_height" value="60"/>
+                <Option type="double" name="component_pos_x" value="0"/>
+                <Option type="double" name="component_pos_y" value="0"/>
+                <Option type="double" name="component_width" value="100"/>
+                <Option type="bool" name="outputs_collapsed" value="true"/>
+                <Option type="bool" name="parameters_collapsed" value="true"/>
+              </Option>
+              <Option type="QString" name="component_description" value="Area 30cappa"/>
+              <Option type="double" name="component_height" value="30"/>
+              <Option type="double" name="component_pos_x" value="1137.0178571428576"/>
+              <Option type="double" name="component_pos_y" value="641.7781543274243"/>
+              <Option type="double" name="component_width" value="137.36428571428564"/>
+              <Option type="invalid" name="default_value"/>
+              <Option type="bool" name="mandatory" value="false"/>
+              <Option type="QString" name="name" value="Area 30cappa"/>
+              <Option type="QString" name="output_name" value="OUTPUT"/>
+              <Option type="bool" name="outputs_collapsed" value="true"/>
+              <Option type="bool" name="parameters_collapsed" value="true"/>
+            </Option>
+          </Option>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:difference_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT_FIELDS">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="List" name="static_value">
+                  <Option type="QString" value=""/>
+                </Option>
+              </Option>
+            </Option>
+            <Option type="List" name="OVERLAY">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:dissolve_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="OVERLAY_FIELDS">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="List" name="static_value">
+                  <Option type="QString" value=""/>
+                </Option>
+              </Option>
+            </Option>
+            <Option type="List" name="OVERLAY_FIELDS_PREFIX">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value=""/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="Map" name="native:joinattributestable_1">
+          <Option type="bool" name="active" value="true"/>
+          <Option name="alg_config"/>
+          <Option type="QString" name="alg_id" value="native:joinattributestable"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="660"/>
+            <Option type="double" name="component_pos_y" value="332.6"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Join tra vettore e csv"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="274.72142857142876"/>
+          <Option type="double" name="component_pos_y" value="306.50000000000006"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option name="dependencies"/>
+          <Option type="QString" name="id" value="native:joinattributestable_1"/>
+          <Option name="outputs"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="Map" name="params">
+            <Option type="List" name="DISCARD_NONMATCHING">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="bool" name="static_value" value="false"/>
+              </Option>
+            </Option>
+            <Option type="List" name="FIELD">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value="pro_com_t"/>
+              </Option>
+            </Option>
+            <Option type="List" name="FIELDS_TO_COPY">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="List" name="static_value">
+                  <Option type="QString" value=""/>
+                </Option>
+              </Option>
+            </Option>
+            <Option type="List" name="FIELD_2">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value="pro_com_t"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT">
+              <Option type="Map">
+                <Option type="QString" name="child_id" value="native:extractbyexpression_1"/>
+                <Option type="QString" name="output_name" value="OUTPUT"/>
+                <Option type="int" name="source" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="INPUT_2">
+              <Option type="Map">
+                <Option type="QString" name="parameter_name" value="InserisciCSVComuni"/>
+                <Option type="int" name="source" value="0"/>
+              </Option>
+            </Option>
+            <Option type="List" name="METHOD">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="int" name="static_value" value="1"/>
+              </Option>
+            </Option>
+            <Option type="List" name="PREFIX">
+              <Option type="Map">
+                <Option type="int" name="source" value="2"/>
+                <Option type="QString" name="static_value" value=""/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="Map" name="designerParameterValues">
+        <Option type="QString" name="InserisciCSVComuni" value="comuni_9aead744_9110_430b_8781_d2ccc7188103"/>
+        <Option type="QString" name="InserisciVettoreComuni" value="comuni_9ca1cc04_5175_4056_bcc8_7caa0a495beb"/>
+        <Option type="QString" name="QualeRegioneimmettinumeroRegione19perSicilia" value="cod_reg=20"/>
+        <Option type="bool" name="VERBOSE_LOG" value="true"/>
+        <Option type="QgsProcessingOutputLayerDefinition" name="native:difference_1:wwww">
+          <Option type="Map">
+            <Option type="Map" name="create_options">
+              <Option type="QString" name="fileEncoding" value="System"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option type="bool" name="active" value="true"/>
+              <Option type="int" name="type" value="1"/>
+              <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="QgsProcessingOutputLayerDefinition" name="native:intersection_1:fine">
+          <Option type="Map">
+            <Option type="Map" name="create_options">
+              <Option type="QString" name="fileEncoding" value="System"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option type="bool" name="active" value="true"/>
+              <Option type="int" name="type" value="1"/>
+              <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="List" name="groupBoxes">
+        <Option type="Map">
+          <Option type="QString" name="color" value=""/>
+          <Option type="QString" name="component_description" value="OUTPUT"/>
+          <Option type="double" name="component_height" value="89.63571428571416"/>
+          <Option type="double" name="component_pos_x" value="1138.1464285714287"/>
+          <Option type="double" name="component_pos_y" value="639.4392857142859"/>
+          <Option type="double" name="component_width" value="199.40714285714284"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="QString" name="uuid" value="{3b3cc019-481a-4b88-9c3d-60f11faa290d}"/>
+        </Option>
+        <Option type="Map">
+          <Option type="QString" name="color" value=""/>
+          <Option type="QString" name="component_description" value="DATI INPUT"/>
+          <Option type="double" name="component_height" value="212.79999999999998"/>
+          <Option type="double" name="component_pos_x" value="138.4000000000001"/>
+          <Option type="double" name="component_pos_y" value="123.2"/>
+          <Option type="double" name="component_width" value="262.4"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+          <Option type="QString" name="uuid" value="{a05d712b-5274-4253-addd-98490d81fc21}"/>
+        </Option>
+      </Option>
+      <Option name="help"/>
+      <Option name="modelVariables"/>
+      <Option type="QString" name="model_group" value="toto"/>
+      <Option type="QString" name="model_name" value="30cappa"/>
+      <Option type="Map" name="parameterDefinitions">
+        <Option type="Map" name="InserisciCSVComuni">
+          <Option type="List" name="data_types">
+            <Option type="int" value="5"/>
+          </Option>
+          <Option type="invalid" name="default"/>
+          <Option type="QString" name="description" value="Inserisci CSV Comuni"/>
+          <Option type="int" name="flags" value="0"/>
+          <Option type="QString" name="help" value=""/>
+          <Option name="metadata"/>
+          <Option type="QString" name="name" value="InserisciCSVComuni"/>
+          <Option type="QString" name="parameter_type" value="vector"/>
+        </Option>
+        <Option type="Map" name="InserisciVettoreComuni">
+          <Option type="List" name="data_types">
+            <Option type="int" value="2"/>
+          </Option>
+          <Option type="invalid" name="default"/>
+          <Option type="QString" name="description" value="Inserisci Vettore Comuni"/>
+          <Option type="int" name="flags" value="0"/>
+          <Option type="QString" name="help" value=""/>
+          <Option name="metadata"/>
+          <Option type="QString" name="name" value="InserisciVettoreComuni"/>
+          <Option type="QString" name="parameter_type" value="vector"/>
+        </Option>
+        <Option type="Map" name="QualeRegioneimmettinumeroRegione19perSicilia">
+          <Option type="QString" name="default" value="cod_reg=19"/>
+          <Option type="QString" name="description" value="Quale Regione? (immetti numero Regione - 19 per Sicilia)"/>
+          <Option type="int" name="flags" value="0"/>
+          <Option type="QString" name="help" value=""/>
+          <Option name="metadata"/>
+          <Option type="bool" name="multiline" value="false"/>
+          <Option type="QString" name="name" value="QualeRegioneimmettinumeroRegione19perSicilia"/>
+          <Option type="QString" name="parameter_type" value="string"/>
+        </Option>
+        <Option type="Map" name="native:intersection_1:Area 30cappa">
+          <Option type="bool" name="create_by_default" value="true"/>
+          <Option type="int" name="data_type" value="-1"/>
+          <Option type="invalid" name="default"/>
+          <Option type="QString" name="description" value="Area 30cappa"/>
+          <Option type="int" name="flags" value="0"/>
+          <Option type="QString" name="help" value=""/>
+          <Option name="metadata"/>
+          <Option type="QString" name="name" value="native:intersection_1:Area 30cappa"/>
+          <Option type="QString" name="parameter_type" value="sink"/>
+          <Option type="bool" name="supports_append" value="false"/>
+          <Option type="bool" name="supports_non_file_outputs" value="true"/>
+        </Option>
+      </Option>
+      <Option name="parameterOrder"/>
+      <Option type="Map" name="parameters">
+        <Option type="Map" name="InserisciCSVComuni">
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="540"/>
+            <Option type="double" name="component_pos_y" value="15"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="InserisciCSVComuni"/>
+          <Option type="double" name="component_height" value="30.799999999999983"/>
+          <Option type="double" name="component_pos_x" value="134.9615686274508"/>
+          <Option type="double" name="component_pos_y" value="193.20000000000005"/>
+          <Option type="double" name="component_width" value="215.5231372549019"/>
+          <Option type="QString" name="name" value="InserisciCSVComuni"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+        <Option type="Map" name="InserisciVettoreComuni">
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value="0,196,0,255"/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="320"/>
+            <Option type="double" name="component_pos_y" value="15"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="InserisciVettoreComuni"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="134.6509803921569"/>
+          <Option type="double" name="component_pos_y" value="136"/>
+          <Option type="double" name="component_width" value="214.90196078431373"/>
+          <Option type="QString" name="name" value="InserisciVettoreComuni"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+        <Option type="Map" name="QualeRegioneimmettinumeroRegione19perSicilia">
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value="0,196,0,255"/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="760"/>
+            <Option type="double" name="component_pos_y" value="15"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="QualeRegioneimmettinumeroRegione19perSicilia"/>
+          <Option type="double" name="component_height" value="55.60000000000001"/>
+          <Option type="double" name="component_pos_x" value="136.54901960784312"/>
+          <Option type="double" name="component_pos_y" value="69.60000000000001"/>
+          <Option type="double" name="component_width" value="214.90196078431373"/>
+          <Option type="QString" name="name" value="QualeRegioneimmettinumeroRegione19perSicilia"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+      </Option>
+    </Option>
+  </projectModels>
   <legend updateDrawingOrder="true">
-    <legendlayer open="false" showFeatureCount="0" name="reg01012020_g_wgs84" drawingOrder="-1" checked="Qt::Unchecked">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile layerid="reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306" isInOverview="0" visible="0"/>
+    <legendlayer showFeatureCount="0" open="true" checked="Qt::Checked" name="diff_buffer_capol" drawingOrder="-1">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" visible="1" layerid="diff_buffer_capol_5fb863fe_aeeb_4ad9_a368_cdfe25a4d952"/>
       </filegroup>
     </legendlayer>
-    <legendlayer open="true" showFeatureCount="0" name="diff_buffer_capol" drawingOrder="-1" checked="Qt::Checked">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="diff_buffer_capol_6fe79192_c50a_478c_beb6_ddeab1fa1904" isInOverview="0" visible="1"/>
+    <legendlayer showFeatureCount="0" open="true" checked="Qt::Unchecked" name="v_capoluoghi_prov" drawingOrder="-1">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" visible="0" layerid="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893"/>
       </filegroup>
     </legendlayer>
-    <legendlayer open="true" showFeatureCount="0" name="v_capoluoghi_prov" drawingOrder="-1" checked="Qt::Unchecked">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893" isInOverview="0" visible="0"/>
+    <legendlayer showFeatureCount="1" open="true" checked="Qt::Unchecked" name="Com01012020_g_WGS84" drawingOrder="-1">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" visible="0" layerid="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736"/>
       </filegroup>
     </legendlayer>
-    <legendlayer open="true" showFeatureCount="1" name="Com01012020_g_WGS84" drawingOrder="-1" checked="Qt::Unchecked">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736" isInOverview="0" visible="0"/>
+    <legendlayer showFeatureCount="0" open="true" checked="Qt::Unchecked" name="OSM Standard" drawingOrder="-1">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" visible="0" layerid="OSM_Standard_f31dd640_3077_484e_9861_386446200057"/>
       </filegroup>
     </legendlayer>
-    <legendlayer open="true" showFeatureCount="0" name="OSM Standard" drawingOrder="-1" checked="Qt::Unchecked">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="OSM_Standard_f31dd640_3077_484e_9861_386446200057" isInOverview="0" visible="0"/>
-      </filegroup>
-    </legendlayer>
-    <legendgroup open="true" name="tabelle" checked="Qt::Unchecked">
-      <legendlayer open="true" showFeatureCount="0" name="v_comuni5k_ab" drawingOrder="-1" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="v_comuni5k_ab_56498442_f85f_43a0_9f5f_45d997774601" isInOverview="0" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer open="true" showFeatureCount="0" name="v_perc_comuni_all" drawingOrder="-1" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="v_perc_comuni_all_6e663e63_7e5f_4e22_9d41_ca94937293a9" isInOverview="0" visible="0"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer open="true" showFeatureCount="0" name="comuni" drawingOrder="-1" checked="Qt::Checked">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile layerid="comuni_29486eb0_157c_4478_9b1a_bb48da3e6859" isInOverview="0" visible="0"/>
+    <legendgroup open="true" checked="Qt::Unchecked" name="tabelle">
+      <legendlayer showFeatureCount="0" open="true" checked="Qt::Checked" name="comuni" drawingOrder="-1">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" visible="0" layerid="comuni_29486eb0_157c_4478_9b1a_bb48da3e6859"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>meters</units>
-    <extent>
-      <xmin>264677.41694619785994291</xmin>
-      <ymin>3898909.72633425425738096</ymin>
-      <xmax>1365784.84787319786846638</xmax>
-      <ymax>5317216.52534475456923246</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <wkt>PROJCRS["WGS 84 / UTM zone 32N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 32N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 6°E to 12°E - by country"],BBOX[0,6,84,12]],ID["EPSG",32632]]</wkt>
-        <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
-        <srsid>3116</srsid>
-        <srid>32632</srid>
-        <authid>EPSG:32632</authid>
-        <description>WGS 84 / UTM zone 32N</description>
-        <projectionacronym>utm</projectionacronym>
-        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>meters</units>
-    <extent>
-      <xmin>264677.41694619785994291</xmin>
-      <ymin>3898909.72633425425738096</ymin>
-      <xmax>1365784.84787319786846638</xmax>
-      <ymax>5317216.52534475456923246</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <wkt>PROJCRS["WGS 84 / UTM zone 32N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 32N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 6°E to 12°E - by country"],BBOX[0,6,84,12]],ID["EPSG",32632]]</wkt>
-        <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
-        <srsid>3116</srsid>
-        <srid>32632</srid>
-        <authid>EPSG:32632</authid>
-        <description>WGS 84 / UTM zone 32N</description>
-        <projectionacronym>utm</projectionacronym>
-        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>meters</units>
-    <extent>
-      <xmin>264677.41694619785994291</xmin>
-      <ymin>3898909.72633425425738096</ymin>
-      <xmax>1365784.84787319786846638</xmax>
-      <ymax>5317216.52534475456923246</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <wkt>PROJCRS["WGS 84 / UTM zone 32N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 32N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 6°E to 12°E - by country"],BBOX[0,6,84,12]],ID["EPSG",32632]]</wkt>
-        <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
-        <srsid>3116</srsid>
-        <srid>32632</srid>
-        <authid>EPSG:32632</authid>
-        <description>WGS 84 / UTM zone 32N</description>
-        <projectionacronym>utm</projectionacronym>
-        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <main-annotation-layer type="annotation" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0">
+  <main-annotation-layer autoRefreshTime="0" type="annotation" autoRefreshEnabled="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0">
     <id>Note_3df38d32_71af_4971_a87e_ac924e4baf29</id>
     <datasource></datasource>
     <keywordList>
@@ -377,7 +913,7 @@
     <layerOpacity>1</layerOpacity>
   </main-annotation-layer>
   <projectlayers>
-    <maplayer simplifyMaxScale="1" geometry="Polygon" styleCategories="AllStyleCategories" labelsEnabled="0" type="vector" minScale="100000000" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" wkbType="MultiPolygon" refreshOnNotifyEnabled="0" simplifyAlgorithm="0" autoRefreshEnabled="0" autoRefreshTime="0" readOnly="0">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" minScale="100000000" geometry="Polygon" maxScale="0" wkbType="MultiPolygon" simplifyDrawingTol="1" simplifyAlgorithm="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" readOnly="0" simplifyDrawingHints="1" type="vector">
       <extent>
         <xmin>313279.25219999998807907</xmin>
         <ymin>3933846.21660000085830688</ymin>
@@ -436,7 +972,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial miny="0" maxx="0" minx="0" maxy="0" crs="" dimensions="2" minz="0" maxz="0"/>
+          <spatial dimensions="2" minx="0" miny="0" crs="" minz="0" maxx="0" maxy="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -447,7 +983,7 @@
       </resourceMetadata>
       <provider encoding="System">ogr</provider>
       <vectorjoins>
-        <join hasCustomPrefix="1" cascadedDelete="0" customPrefix="" editable="0" joinFieldName="PRO_COM_T" targetFieldName="PRO_COM_T" joinLayerId="comuni_29486eb0_157c_4478_9b1a_bb48da3e6859" upsertOnEdit="0" dynamicForm="0" memoryCache="1">
+        <join hasCustomPrefix="1" targetFieldName="PRO_COM_T" joinFieldName="PRO_COM_T" editable="0" memoryCache="1" customPrefix="" upsertOnEdit="0" cascadedDelete="0" joinLayerId="comuni_29486eb0_157c_4478_9b1a_bb48da3e6859" dynamicForm="0">
           <joinFieldsSubset>
             <field name="Abitanti"/>
           </joinFieldsSubset>
@@ -465,20 +1001,20 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
+      <temporal enabled="0" accumulate="0" startExpression="" durationField="" endField="" endExpression="" mode="0" durationUnit="min" startField="" fixedDuration="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="categorizedSymbol" attr=" &quot;Abitanti&quot; &lt;= 5000" symbollevels="0" enableorderby="0" forceraster="0">
+      <renderer-v2 symbollevels="0" forceraster="0" type="categorizedSymbol" enableorderby="0" attr=" &quot;Abitanti&quot; &lt;= 5000">
         <categories>
-          <category value="0" render="true" label="0" symbol="0"/>
-          <category value="1" render="true" label="1" symbol="1"/>
+          <category render="true" label="0" value="0" symbol="0"/>
+          <category render="true" label="1" value="1" symbol="1"/>
         </categories>
         <symbols>
-          <symbol type="fill" name="0" alpha="1" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+          <symbol type="fill" force_rhr="0" alpha="1" name="0" clip_to_extent="1">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="219,0,0,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -492,15 +1028,15 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" name="1" alpha="1" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+          <symbol type="fill" force_rhr="0" alpha="1" name="1" clip_to_extent="1">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="0,196,0,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -514,17 +1050,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol type="fill" name="0" alpha="1" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+          <symbol type="fill" force_rhr="0" alpha="1" name="0" clip_to_extent="1">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="164,113,88,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -538,9 +1074,9 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -550,9 +1086,7 @@
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>"COD_RIP"</value>
-        </property>
+        <property key="dualview/previewExpressions" value="&quot;COD_RIP&quot;"/>
         <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
@@ -560,13 +1094,13 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory rotationOffset="270" direction="0" scaleBasedVisibility="0" penWidth="0" diagramOrientation="Up" spacing="5" lineSizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" minimumSize="0" width="15" opacity="1" sizeType="MM" spacingUnit="MM" enabled="0" minScaleDenominator="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" barWidth="5" maxScaleDenominator="1e+08" penColor="#000000" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" showAxis="1" height="15" backgroundColor="#ffffff" penAlpha="255">
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" spacing="5" sizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" direction="0" backgroundColor="#ffffff" showAxis="1" width="15" lineSizeType="MM" spacingUnit="MM" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" enabled="0" labelPlacementMethod="XHeight" height="15" backgroundAlpha="255" penColor="#000000" penAlpha="255" opacity="1" barWidth="5" minimumSize="0" minScaleDenominator="0" penWidth="0" maxScaleDenominator="1e+08" diagramOrientation="Up">
           <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" label="" color="#000000"/>
           <axisSymbol>
-            <symbol type="line" name="" alpha="1" force_rhr="0" clip_to_extent="1">
-              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
+            <symbol type="line" force_rhr="0" alpha="1" name="" clip_to_extent="1">
+              <layer enabled="1" class="SimpleLine" locked="0" pass="0">
                 <prop k="align_dash_pattern" v="0"/>
                 <prop k="capstyle" v="square"/>
                 <prop k="customdash" v="5;2"/>
@@ -590,9 +1124,9 @@
                 <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option type="QString" value="" name="name"/>
+                    <Option type="QString" name="name" value=""/>
                     <Option name="properties"/>
-                    <Option type="QString" value="collection" name="type"/>
+                    <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -600,12 +1134,12 @@
           </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" linePlacementFlags="18" zIndex="0" dist="0" showAll="1" placement="1" priority="0">
+      <DiagramLayerSettings zIndex="0" dist="0" obstacle="0" showAll="1" placement="1" linePlacementFlags="18" priority="0">
         <properties>
           <Option type="Map">
-            <Option type="QString" value="" name="name"/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -613,9 +1147,9 @@
         <activeChecks/>
         <checkConfiguration type="Map">
           <Option type="Map" name="QgsGeometryGapCheck">
-            <Option type="double" value="0" name="allowedGapsBuffer"/>
-            <Option type="bool" value="false" name="allowedGapsEnabled"/>
-            <Option type="QString" value="" name="allowedGapsLayer"/>
+            <Option type="double" name="allowedGapsBuffer" value="0"/>
+            <Option type="bool" name="allowedGapsEnabled" value="false"/>
+            <Option type="QString" name="allowedGapsLayer" value=""/>
           </Option>
         </checkConfiguration>
       </geometryOptions>
@@ -715,85 +1249,85 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="COD_RIP" name=""/>
-        <alias index="1" field="COD_REG" name=""/>
-        <alias index="2" field="COD_PROV" name=""/>
-        <alias index="3" field="COD_CM" name=""/>
-        <alias index="4" field="COD_UTS" name=""/>
-        <alias index="5" field="PRO_COM" name=""/>
-        <alias index="6" field="PRO_COM_T" name=""/>
-        <alias index="7" field="COMUNE" name=""/>
-        <alias index="8" field="COMUNE_A" name=""/>
-        <alias index="9" field="CC_UTS" name=""/>
-        <alias index="10" field="SHAPE_AREA" name=""/>
-        <alias index="11" field="SHAPE_LEN" name=""/>
-        <alias index="12" field="Abitanti" name=""/>
+        <alias field="COD_RIP" index="0" name=""/>
+        <alias field="COD_REG" index="1" name=""/>
+        <alias field="COD_PROV" index="2" name=""/>
+        <alias field="COD_CM" index="3" name=""/>
+        <alias field="COD_UTS" index="4" name=""/>
+        <alias field="PRO_COM" index="5" name=""/>
+        <alias field="PRO_COM_T" index="6" name=""/>
+        <alias field="COMUNE" index="7" name=""/>
+        <alias field="COMUNE_A" index="8" name=""/>
+        <alias field="CC_UTS" index="9" name=""/>
+        <alias field="SHAPE_AREA" index="10" name=""/>
+        <alias field="SHAPE_LEN" index="11" name=""/>
+        <alias field="Abitanti" index="12" name=""/>
       </aliases>
       <defaults>
-        <default expression="" field="COD_RIP" applyOnUpdate="0"/>
-        <default expression="" field="COD_REG" applyOnUpdate="0"/>
-        <default expression="" field="COD_PROV" applyOnUpdate="0"/>
-        <default expression="" field="COD_CM" applyOnUpdate="0"/>
-        <default expression="" field="COD_UTS" applyOnUpdate="0"/>
-        <default expression="" field="PRO_COM" applyOnUpdate="0"/>
-        <default expression="" field="PRO_COM_T" applyOnUpdate="0"/>
-        <default expression="" field="COMUNE" applyOnUpdate="0"/>
-        <default expression="" field="COMUNE_A" applyOnUpdate="0"/>
-        <default expression="" field="CC_UTS" applyOnUpdate="0"/>
-        <default expression="" field="SHAPE_AREA" applyOnUpdate="0"/>
-        <default expression="" field="SHAPE_LEN" applyOnUpdate="0"/>
-        <default expression="" field="Abitanti" applyOnUpdate="0"/>
+        <default field="COD_RIP" applyOnUpdate="0" expression=""/>
+        <default field="COD_REG" applyOnUpdate="0" expression=""/>
+        <default field="COD_PROV" applyOnUpdate="0" expression=""/>
+        <default field="COD_CM" applyOnUpdate="0" expression=""/>
+        <default field="COD_UTS" applyOnUpdate="0" expression=""/>
+        <default field="PRO_COM" applyOnUpdate="0" expression=""/>
+        <default field="PRO_COM_T" applyOnUpdate="0" expression=""/>
+        <default field="COMUNE" applyOnUpdate="0" expression=""/>
+        <default field="COMUNE_A" applyOnUpdate="0" expression=""/>
+        <default field="CC_UTS" applyOnUpdate="0" expression=""/>
+        <default field="SHAPE_AREA" applyOnUpdate="0" expression=""/>
+        <default field="SHAPE_LEN" applyOnUpdate="0" expression=""/>
+        <default field="Abitanti" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COD_RIP" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COD_REG" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COD_PROV" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COD_CM" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COD_UTS" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="PRO_COM" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="PRO_COM_T" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COMUNE" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="COMUNE_A" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="CC_UTS" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="SHAPE_AREA" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="SHAPE_LEN" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="Abitanti" unique_strength="0"/>
+        <constraint unique_strength="0" field="COD_RIP" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="COD_REG" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="COD_PROV" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="COD_CM" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="COD_UTS" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="PRO_COM" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="PRO_COM_T" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="COMUNE" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="COMUNE_A" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="CC_UTS" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="SHAPE_AREA" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="SHAPE_LEN" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="Abitanti" notnull_strength="0" exp_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="COD_RIP"/>
-        <constraint exp="" desc="" field="COD_REG"/>
-        <constraint exp="" desc="" field="COD_PROV"/>
-        <constraint exp="" desc="" field="COD_CM"/>
-        <constraint exp="" desc="" field="COD_UTS"/>
-        <constraint exp="" desc="" field="PRO_COM"/>
-        <constraint exp="" desc="" field="PRO_COM_T"/>
-        <constraint exp="" desc="" field="COMUNE"/>
-        <constraint exp="" desc="" field="COMUNE_A"/>
-        <constraint exp="" desc="" field="CC_UTS"/>
-        <constraint exp="" desc="" field="SHAPE_AREA"/>
-        <constraint exp="" desc="" field="SHAPE_LEN"/>
-        <constraint exp="" desc="" field="Abitanti"/>
+        <constraint field="COD_RIP" desc="" exp=""/>
+        <constraint field="COD_REG" desc="" exp=""/>
+        <constraint field="COD_PROV" desc="" exp=""/>
+        <constraint field="COD_CM" desc="" exp=""/>
+        <constraint field="COD_UTS" desc="" exp=""/>
+        <constraint field="PRO_COM" desc="" exp=""/>
+        <constraint field="PRO_COM_T" desc="" exp=""/>
+        <constraint field="COMUNE" desc="" exp=""/>
+        <constraint field="COMUNE_A" desc="" exp=""/>
+        <constraint field="CC_UTS" desc="" exp=""/>
+        <constraint field="SHAPE_AREA" desc="" exp=""/>
+        <constraint field="SHAPE_LEN" desc="" exp=""/>
+        <constraint field="Abitanti" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="&quot;Abitanti&quot;" actionWidgetStyle="dropDown" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;Abitanti&quot;" sortOrder="1">
         <columns>
-          <column type="field" width="-1" name="COD_RIP" hidden="0"/>
-          <column type="field" width="-1" name="COD_REG" hidden="0"/>
-          <column type="field" width="-1" name="COD_PROV" hidden="0"/>
-          <column type="field" width="-1" name="COD_CM" hidden="0"/>
-          <column type="field" width="-1" name="COD_UTS" hidden="0"/>
-          <column type="field" width="-1" name="PRO_COM" hidden="0"/>
-          <column type="field" width="-1" name="PRO_COM_T" hidden="0"/>
-          <column type="field" width="205" name="COMUNE" hidden="0"/>
-          <column type="field" width="-1" name="COMUNE_A" hidden="0"/>
-          <column type="field" width="-1" name="CC_UTS" hidden="0"/>
-          <column type="field" width="-1" name="SHAPE_AREA" hidden="1"/>
-          <column type="field" width="-1" name="SHAPE_LEN" hidden="1"/>
-          <column type="field" width="-1" name="Abitanti" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column type="field" hidden="0" name="COD_RIP" width="-1"/>
+          <column type="field" hidden="0" name="COD_REG" width="-1"/>
+          <column type="field" hidden="0" name="COD_PROV" width="-1"/>
+          <column type="field" hidden="0" name="COD_CM" width="-1"/>
+          <column type="field" hidden="0" name="COD_UTS" width="-1"/>
+          <column type="field" hidden="0" name="PRO_COM" width="-1"/>
+          <column type="field" hidden="0" name="PRO_COM_T" width="-1"/>
+          <column type="field" hidden="0" name="COMUNE" width="205"/>
+          <column type="field" hidden="0" name="COMUNE_A" width="-1"/>
+          <column type="field" hidden="0" name="CC_UTS" width="-1"/>
+          <column type="field" hidden="1" name="SHAPE_AREA" width="-1"/>
+          <column type="field" hidden="1" name="SHAPE_LEN" width="-1"/>
+          <column type="field" hidden="0" name="Abitanti" width="-1"/>
+          <column type="actions" hidden="1" width="-1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -858,7 +1392,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>"COD_RIP"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer type="raster" refreshOnNotifyMessage="" minScale="1e+08" styleCategories="AllStyleCategories" maxScale="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0">
+    <maplayer autoRefreshTime="0" type="raster" autoRefreshEnabled="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" maxScale="0" styleCategories="AllStyleCategories" minScale="1e+08">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278925508260727</ymin>
@@ -933,9 +1467,9 @@ def my_form_open(dialog, layer, feature):
       </customproperties>
       <pipe>
         <provider>
-          <resampling zoomedOutResamplingMethod="nearestNeighbour" enabled="false" maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour"/>
+          <resampling maxOversampling="2" enabled="false" zoomedInResamplingMethod="nearestNeighbour" zoomedOutResamplingMethod="nearestNeighbour"/>
         </provider>
-        <rasterrenderer type="singlebandcolordata" opacity="1" nodataColor="" alphaBand="-1" band="1">
+        <rasterrenderer type="singlebandcolordata" alphaBand="-1" band="1" nodataColor="" opacity="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -947,13 +1481,13 @@ def my_form_open(dialog, layer, feature):
           </minMaxOrigin>
         </rasterrenderer>
         <brightnesscontrast gamma="1" contrast="0" brightness="0"/>
-        <huesaturation colorizeGreen="128" grayscaleMode="0" saturation="0" colorizeBlue="128" colorizeStrength="100" colorizeRed="255" colorizeOn="0"/>
+        <huesaturation grayscaleMode="0" colorizeGreen="128" colorizeRed="255" saturation="0" colorizeStrength="100" colorizeOn="0" colorizeBlue="128"/>
         <rasterresampler maxOversampling="2"/>
         <resamplingStage>resamplingFilter</resamplingStage>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer type="vector" geometry="No geometry" refreshOnNotifyMessage="" minScale="1e+08" styleCategories="AllStyleCategories" maxScale="0" readOnly="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" wkbType="NoGeometry" autoRefreshTime="0">
+    <maplayer autoRefreshTime="0" type="vector" readOnly="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" geometry="No geometry" refreshOnNotifyEnabled="0" hasScaleBasedVisibilityFlag="0" wkbType="NoGeometry" maxScale="0" styleCategories="AllStyleCategories" minScale="1e+08">
       <id>comuni_29486eb0_157c_4478_9b1a_bb48da3e6859</id>
       <datasource>../../dati/comuni.csv</datasource>
       <keywordList>
@@ -1012,7 +1546,7 @@ def my_form_open(dialog, layer, feature):
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
+      <temporal enabled="0" accumulate="0" startExpression="" durationField="" endField="" endExpression="" mode="0" durationUnit="min" startField="" fixedDuration="0">
         <fixedRange>
           <start></start>
           <end></end>
@@ -1044,26 +1578,26 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="PRO_COM_T" name=""/>
-        <alias index="1" field="Abitanti" name=""/>
+        <alias field="PRO_COM_T" index="0" name=""/>
+        <alias field="Abitanti" index="1" name=""/>
       </aliases>
       <defaults>
-        <default expression="" field="PRO_COM_T" applyOnUpdate="0"/>
-        <default expression="" field="Abitanti" applyOnUpdate="0"/>
+        <default field="PRO_COM_T" applyOnUpdate="0" expression=""/>
+        <default field="Abitanti" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="PRO_COM_T" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="Abitanti" unique_strength="0"/>
+        <constraint unique_strength="0" field="PRO_COM_T" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="Abitanti" notnull_strength="0" exp_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="PRO_COM_T"/>
-        <constraint exp="" desc="" field="Abitanti"/>
+        <constraint field="PRO_COM_T" desc="" exp=""/>
+        <constraint field="Abitanti" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -1085,14 +1619,14 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyMaxScale="1" geometry="Polygon" styleCategories="AllStyleCategories" labelsEnabled="0" type="vector" minScale="100000000" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" wkbType="MultiPolygon" refreshOnNotifyEnabled="0" simplifyAlgorithm="0" autoRefreshEnabled="0" autoRefreshTime="0" readOnly="0">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" minScale="100000000" geometry="Polygon" maxScale="0" wkbType="MultiPolygon" simplifyDrawingTol="1" simplifyAlgorithm="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" readOnly="0" simplifyDrawingHints="1" type="vector">
       <extent>
-        <xmin>735905.39017341006547213</xmin>
-        <ymin>4042911.06879187189042568</ymin>
-        <xmax>1098550.56135610770434141</xmax>
-        <ymax>4282166.87829823885113001</ymax>
+        <xmin>735905.3901734099490568</xmin>
+        <ymin>4042911.06879187002778053</ymin>
+        <xmax>1098550.56135611003264785</xmax>
+        <ymax>4324087.06925234012305737</ymax>
       </extent>
-      <id>diff_buffer_capol_6fe79192_c50a_478c_beb6_ddeab1fa1904</id>
+      <id>diff_buffer_capol_5fb863fe_aeeb_4ad9_a368_cdfe25a4d952</id>
       <datasource>./30cappa.sqlite|layername=diff_buffer_capol</datasource>
       <keywordList>
         <value></value>
@@ -1131,7 +1665,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -1150,18 +1684,18 @@ def my_form_open(dialog, layer, feature):
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
+      <temporal enabled="0" accumulate="0" startExpression="" durationField="" endField="" endExpression="" mode="0" durationUnit="min" startField="" fixedDuration="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
         <symbols>
-          <symbol type="fill" name="0" alpha="1" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+          <symbol type="fill" force_rhr="0" alpha="1" name="0" clip_to_extent="1">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="190,178,151,255"/>
+              <prop k="color" v="232,113,141,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -1173,9 +1707,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1227,34 +1761,34 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="rowid" name=""/>
-        <alias index="1" field="pro_com_t" name=""/>
-        <alias index="2" field="cod_reg" name=""/>
-        <alias index="3" field="comune" name=""/>
+        <alias field="rowid" index="0" name=""/>
+        <alias field="pro_com_t" index="1" name=""/>
+        <alias field="cod_reg" index="2" name=""/>
+        <alias field="comune" index="3" name=""/>
       </aliases>
       <defaults>
-        <default expression="" field="rowid" applyOnUpdate="0"/>
-        <default expression="" field="pro_com_t" applyOnUpdate="0"/>
-        <default expression="" field="cod_reg" applyOnUpdate="0"/>
-        <default expression="" field="comune" applyOnUpdate="0"/>
+        <default field="rowid" applyOnUpdate="0" expression=""/>
+        <default field="pro_com_t" applyOnUpdate="0" expression=""/>
+        <default field="cod_reg" applyOnUpdate="0" expression=""/>
+        <default field="comune" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" constraints="3" notnull_strength="1" field="rowid" unique_strength="1"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="pro_com_t" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_reg" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="comune" unique_strength="0"/>
+        <constraint unique_strength="1" field="rowid" notnull_strength="1" exp_strength="0" constraints="3"/>
+        <constraint unique_strength="0" field="pro_com_t" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="cod_reg" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="comune" notnull_strength="0" exp_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="rowid"/>
-        <constraint exp="" desc="" field="pro_com_t"/>
-        <constraint exp="" desc="" field="cod_reg"/>
-        <constraint exp="" desc="" field="comune"/>
+        <constraint field="rowid" desc="" exp=""/>
+        <constraint field="pro_com_t" desc="" exp=""/>
+        <constraint field="cod_reg" desc="" exp=""/>
+        <constraint field="comune" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -1276,645 +1810,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyMaxScale="1" geometry="Polygon" styleCategories="AllStyleCategories" labelsEnabled="1" type="vector" minScale="100000000" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" wkbType="MultiPolygon" refreshOnNotifyEnabled="0" simplifyAlgorithm="0" autoRefreshEnabled="0" autoRefreshTime="0" readOnly="0">
-      <extent>
-        <xmin>313279.25219999998807907</xmin>
-        <ymin>3933846.21660000085830688</ymin>
-        <xmax>1312016.15099999960511923</xmax>
-        <ymax>5220292.29279999993741512</ymax>
-      </extent>
-      <id>reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306</id>
-      <datasource>dbname='./30cappa.sqlite' table="reg01012020_g_wgs84" (geom)</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>reg01012020_g_wgs84</layername>
-      <srs>
-        <spatialrefsys>
-          <wkt>PROJCRS["WGS 84 / UTM zone 32N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 32N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",9,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 6°E to 12°E - by country"],BBOX[0,6,84,12]],ID["EPSG",32632]]</wkt>
-          <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
-          <srsid>3116</srsid>
-          <srid>32632</srid>
-          <authid>EPSG:32632</authid>
-          <description>WGS 84 / UTM zone 32N</description>
-          <projectionacronym>utm</projectionacronym>
-          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <resourceMetadata>
-        <identifier></identifier>
-        <parentidentifier></parentidentifier>
-        <language></language>
-        <type></type>
-        <title></title>
-        <abstract></abstract>
-        <contact>
-          <name></name>
-          <organization></organization>
-          <position></position>
-          <voice></voice>
-          <fax></fax>
-          <email></email>
-          <role></role>
-        </contact>
-        <links/>
-        <fees></fees>
-        <encoding></encoding>
-        <crs>
-          <spatialrefsys>
-            <wkt></wkt>
-            <proj4></proj4>
-            <srsid>0</srsid>
-            <srid>0</srid>
-            <authid></authid>
-            <description></description>
-            <projectionacronym></projectionacronym>
-            <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
-          </spatialrefsys>
-        </crs>
-        <extent>
-          <spatial miny="0" maxx="0" minx="0" maxy="0" crs="" dimensions="2" minz="0" maxz="0"/>
-          <temporal>
-            <period>
-              <start></start>
-              <end></end>
-            </period>
-          </temporal>
-        </extent>
-      </resourceMetadata>
-      <provider encoding="">spatialite</provider>
-      <vectorjoins>
-        <join hasCustomPrefix="1" cascadedDelete="0" customPrefix="" editable="0" joinFieldName="cod_reg" targetFieldName="cod_reg" joinLayerId="v_perc_comuni_all_6e663e63_7e5f_4e22_9d41_ca94937293a9" upsertOnEdit="0" dynamicForm="0" memoryCache="1">
-          <joinFieldsSubset>
-            <field name="nro_comuni5k"/>
-            <field name="nro_comuni"/>
-            <field name="perc"/>
-          </joinFieldsSubset>
-        </join>
-      </vectorjoins>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="predefinito">
-        <map-layer-style name="predefinito"/>
-      </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <flags>
-        <Identifiable>1</Identifiable>
-        <Removable>1</Removable>
-        <Searchable>1</Searchable>
-      </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
-        <fixedRange>
-          <start></start>
-          <end></end>
-        </fixedRange>
-      </temporal>
-      <renderer-v2 type="graduatedSymbol" attr=" to_real(&quot;perc&quot; )" symbollevels="0" enableorderby="0" forceraster="0" graduatedMethod="GraduatedColor">
-        <ranges>
-          <range upper="40.000000000000000" lower="33.073929961089490" render="true" label="33,1 - 40" symbol="0"/>
-          <range upper="50.000000000000000" lower="40.000000000000000" render="true" label="40 - 50" symbol="1"/>
-          <range upper="60.000000000000000" lower="50.000000000000000" render="true" label="50 - 60" symbol="2"/>
-          <range upper="70.000000000000000" lower="60.000000000000000" render="true" label="60 - 70" symbol="3"/>
-          <range upper="80.000000000000000" lower="70.000000000000000" render="true" label="70 - 80" symbol="4"/>
-          <range upper="90.000000000000000" lower="80.000000000000000" render="true" label="80 - 90" symbol="5"/>
-          <range upper="98.648648648648646" lower="90.000000000000000" render="true" label="90 - 98,6" symbol="6"/>
-        </ranges>
-        <symbols>
-          <symbol type="fill" name="0" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,255,255,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol type="fill" name="1" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,213,213,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol type="fill" name="2" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,170,170,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol type="fill" name="3" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,128,128,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol type="fill" name="4" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,85,85,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol type="fill" name="5" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,42,42,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-          <symbol type="fill" name="6" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,0,0,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-        </symbols>
-        <source-symbol>
-          <symbol type="fill" name="0" alpha="0.669" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="133,182,111,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
-                  <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-        </source-symbol>
-        <colorramp type="gradient" name="[source]">
-          <prop k="color1" v="255,255,255,255"/>
-          <prop k="color2" v="255,0,0,255"/>
-          <prop k="discrete" v="0"/>
-          <prop k="rampType" v="gradient"/>
-        </colorramp>
-        <classificationMethod id="Pretty">
-          <symmetricMode enabled="0" astride="0" symmetrypoint="0"/>
-          <labelFormat trimtrailingzeroes="1" format="%1 - %2" labelprecision="4"/>
-          <parameters>
-            <Option/>
-          </parameters>
-          <extraInformation/>
-        </classificationMethod>
-        <rotation/>
-        <sizescale/>
-      </renderer-v2>
-      <labeling type="simple">
-        <settings calloutType="simple">
-          <text-style fontItalic="0" textOpacity="1" fieldName="perc" useSubstitutions="0" fontKerning="1" fontWeight="50" fontStrikeout="0" namedStyle="Normale" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontLetterSpacing="0" fontUnderline="0" multilineHeight="1" textOrientation="horizontal" blendMode="0" textColor="0,0,0,255" allowHtml="0" fontFamily="MS Shell Dlg 2" fontWordSpacing="0" fontSize="10" isExpression="0" capitalization="0" previewBkgrdColor="255,255,255,255" fontSizeUnit="Point">
-            <text-buffer bufferOpacity="1" bufferSize="1" bufferSizeUnits="MM" bufferBlendMode="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="1"/>
-            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskedSymbolLayers="" maskSizeUnits="MM" maskType="0" maskSize="1.5" maskJoinStyle="128" maskEnabled="0"/>
-            <background shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeFillColor="255,255,255,255" shapeRadiiY="0" shapeRotationType="0" shapeDraw="0" shapeBorderWidth="0" shapeRadiiUnit="MM" shapeRotation="0" shapeSizeUnit="MM" shapeBlendMode="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeType="0" shapeSizeX="0" shapeOffsetY="0" shapeSizeY="0" shapeBorderColor="128,128,128,255" shapeRadiiX="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOpacity="1" shapeOffsetX="0" shapeJoinStyle="64" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="">
-              <symbol type="marker" name="markerSymbol" alpha="1" force_rhr="0" clip_to_extent="1">
-                <layer pass="0" enabled="1" locked="0" class="SimpleMarker">
-                  <prop k="angle" v="0"/>
-                  <prop k="color" v="213,180,60,255"/>
-                  <prop k="horizontal_anchor_point" v="1"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="name" v="circle"/>
-                  <prop k="offset" v="0,0"/>
-                  <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="outline_color" v="35,35,35,255"/>
-                  <prop k="outline_style" v="solid"/>
-                  <prop k="outline_width" v="0"/>
-                  <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="outline_width_unit" v="MM"/>
-                  <prop k="scale_method" v="diameter"/>
-                  <prop k="size" v="2"/>
-                  <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="size_unit" v="MM"/>
-                  <prop k="vertical_anchor_point" v="1"/>
-                  <data_defined_properties>
-                    <Option type="Map">
-                      <Option type="QString" value="" name="name"/>
-                      <Option name="properties"/>
-                      <Option type="QString" value="collection" name="type"/>
-                    </Option>
-                  </data_defined_properties>
-                </layer>
-              </symbol>
-            </background>
-            <shadow shadowRadius="1.5" shadowBlendMode="6" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowScale="100" shadowUnder="0" shadowOpacity="0.7" shadowOffsetDist="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOffsetUnit="MM"/>
-            <dd_properties>
-              <Option type="Map">
-                <Option type="QString" value="" name="name"/>
-                <Option name="properties"/>
-                <Option type="QString" value="collection" name="type"/>
-              </Option>
-            </dd_properties>
-            <substitutions/>
-          </text-style>
-          <text-format rightDirectionSymbol=">" plussign="0" decimals="1" addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" multilineAlign="3" formatNumbers="1" placeDirectionSymbol="0" reverseDirectionSymbol="0" wrapChar="" leftDirectionSymbol="&lt;" autoWrapLength="0"/>
-          <placement lineAnchorPercent="0.5" overrunDistance="0" distMapUnitScale="3x:0,0,0,0,0,0" placement="0" lineAnchorType="0" fitInPolygonOnly="0" centroidWhole="0" priority="5" quadOffset="4" dist="0" rotationAngle="0" preserveRotation="1" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" polygonPlacementFlags="2" placementFlags="10" geometryGeneratorType="PointGeometry" distUnits="MM" geometryGenerator="" geometryGeneratorEnabled="0" layerType="PolygonGeometry" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" centroidInside="0" repeatDistanceUnits="MM" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" repeatDistance="0" yOffset="0" xOffset="0"/>
-          <rendering zIndex="0" drawLabels="1" limitNumLabels="0" scaleVisibility="0" minFeatureSize="0" obstacleType="1" scaleMax="0" obstacleFactor="1" fontLimitPixelSize="0" upsidedownLabels="0" labelPerPart="0" fontMinPixelSize="3" scaleMin="0" fontMaxPixelSize="10000" displayAll="0" maxNumLabels="2000" mergeLines="0" obstacle="1"/>
-          <dd_properties>
-            <Option type="Map">
-              <Option type="QString" value="" name="name"/>
-              <Option type="Map" name="properties">
-                <Option type="Map" name="Size">
-                  <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value=" to_real(&quot;perc&quot; )" name="expression"/>
-                  <Option type="Map" name="transformer">
-                    <Option type="Map" name="d">
-                      <Option type="double" value="1" name="exponent"/>
-                      <Option type="double" value="16" name="maxOutput"/>
-                      <Option type="double" value="98.648649" name="maxValue"/>
-                      <Option type="double" value="9" name="minOutput"/>
-                      <Option type="double" value="33.07393" name="minValue"/>
-                      <Option type="double" value="0" name="nullOutput"/>
-                    </Option>
-                    <Option type="int" value="0" name="t"/>
-                  </Option>
-                  <Option type="int" value="3" name="type"/>
-                </Option>
-              </Option>
-              <Option type="QString" value="collection" name="type"/>
-            </Option>
-          </dd_properties>
-          <callout type="simple">
-            <Option type="Map">
-              <Option type="QString" value="pole_of_inaccessibility" name="anchorPoint"/>
-              <Option type="Map" name="ddProperties">
-                <Option type="QString" value="" name="name"/>
-                <Option name="properties"/>
-                <Option type="QString" value="collection" name="type"/>
-              </Option>
-              <Option type="bool" value="false" name="drawToAllParts"/>
-              <Option type="QString" value="0" name="enabled"/>
-              <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol type=&quot;line&quot; name=&quot;symbol&quot; alpha=&quot;1&quot; force_rhr=&quot;0&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
-              <Option type="double" value="0" name="minLength"/>
-              <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
-              <Option type="QString" value="MM" name="minLengthUnit"/>
-              <Option type="double" value="0" name="offsetFromAnchor"/>
-              <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale"/>
-              <Option type="QString" value="MM" name="offsetFromAnchorUnit"/>
-              <Option type="double" value="0" name="offsetFromLabel"/>
-              <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale"/>
-              <Option type="QString" value="MM" name="offsetFromLabelUnit"/>
-            </Option>
-          </callout>
-        </settings>
-      </labeling>
-      <customproperties>
-        <property key="dualview/previewExpressions" value="&quot;fid&quot;"/>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="variableNames"/>
-        <property key="variableValues"/>
-      </customproperties>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory rotationOffset="270" direction="0" scaleBasedVisibility="0" penWidth="0" diagramOrientation="Up" spacing="5" lineSizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" minimumSize="0" width="15" opacity="1" sizeType="MM" spacingUnit="MM" enabled="0" minScaleDenominator="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" barWidth="5" maxScaleDenominator="1e+08" penColor="#000000" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" showAxis="1" height="15" backgroundColor="#ffffff" penAlpha="255">
-          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" label="" color="#000000"/>
-          <axisSymbol>
-            <symbol type="line" name="" alpha="1" force_rhr="0" clip_to_extent="1">
-              <layer pass="0" enabled="1" locked="0" class="SimpleLine">
-                <prop k="align_dash_pattern" v="0"/>
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="dash_pattern_offset" v="0"/>
-                <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="dash_pattern_offset_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="35,35,35,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.26"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="ring_filter" v="0"/>
-                <prop k="tweak_dash_pattern_on_corners" v="0"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option type="QString" value="" name="name"/>
-                    <Option name="properties"/>
-                    <Option type="QString" value="collection" name="type"/>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
-        </DiagramCategory>
-      </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" linePlacementFlags="18" zIndex="0" dist="0" showAll="1" placement="1" priority="0">
-        <properties>
-          <Option type="Map">
-            <Option type="QString" value="" name="name"/>
-            <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
-          </Option>
-        </properties>
-      </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration type="Map">
-          <Option type="Map" name="QgsGeometryGapCheck">
-            <Option type="double" value="0" name="allowedGapsBuffer"/>
-            <Option type="bool" value="false" name="allowedGapsEnabled"/>
-            <Option type="QString" value="" name="allowedGapsLayer"/>
-          </Option>
-        </checkConfiguration>
-      </geometryOptions>
-      <legend type="default-vector"/>
-      <referencedLayers/>
-      <fieldConfiguration>
-        <field configurationFlags="None" name="pk">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="fid">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_rip">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_reg">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="den_reg">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="nro_comuni5k">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="nro_comuni">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="perc">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-      </fieldConfiguration>
-      <aliases>
-        <alias index="0" field="pk" name=""/>
-        <alias index="1" field="fid" name=""/>
-        <alias index="2" field="cod_rip" name=""/>
-        <alias index="3" field="cod_reg" name=""/>
-        <alias index="4" field="den_reg" name=""/>
-        <alias index="5" field="nro_comuni5k" name=""/>
-        <alias index="6" field="nro_comuni" name=""/>
-        <alias index="7" field="perc" name=""/>
-      </aliases>
-      <defaults>
-        <default expression="" field="pk" applyOnUpdate="0"/>
-        <default expression="" field="fid" applyOnUpdate="0"/>
-        <default expression="" field="cod_rip" applyOnUpdate="0"/>
-        <default expression="" field="cod_reg" applyOnUpdate="0"/>
-        <default expression="" field="den_reg" applyOnUpdate="0"/>
-        <default expression="" field="nro_comuni5k" applyOnUpdate="0"/>
-        <default expression="" field="nro_comuni" applyOnUpdate="0"/>
-        <default expression="" field="perc" applyOnUpdate="0"/>
-      </defaults>
-      <constraints>
-        <constraint exp_strength="0" constraints="3" notnull_strength="1" field="pk" unique_strength="1"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="fid" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_rip" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_reg" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="den_reg" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="nro_comuni5k" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="nro_comuni" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="perc" unique_strength="0"/>
-      </constraints>
-      <constraintExpressions>
-        <constraint exp="" desc="" field="pk"/>
-        <constraint exp="" desc="" field="fid"/>
-        <constraint exp="" desc="" field="cod_rip"/>
-        <constraint exp="" desc="" field="cod_reg"/>
-        <constraint exp="" desc="" field="den_reg"/>
-        <constraint exp="" desc="" field="nro_comuni5k"/>
-        <constraint exp="" desc="" field="nro_comuni"/>
-        <constraint exp="" desc="" field="perc"/>
-      </constraintExpressions>
-      <expressionfields/>
-      <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-      </attributeactions>
-      <attributetableconfig sortExpression="&quot;perc&quot;" actionWidgetStyle="dropDown" sortOrder="0">
-        <columns>
-          <column type="field" width="-1" name="pk" hidden="0"/>
-          <column type="field" width="-1" name="fid" hidden="0"/>
-          <column type="field" width="-1" name="cod_rip" hidden="0"/>
-          <column type="field" width="-1" name="cod_reg" hidden="0"/>
-          <column type="field" width="-1" name="den_reg" hidden="0"/>
-          <column type="field" width="-1" name="nro_comuni5k" hidden="0"/>
-          <column type="field" width="-1" name="nro_comuni" hidden="0"/>
-          <column type="field" width="-1" name="perc" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
-        </columns>
-      </attributetableconfig>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <storedexpressions/>
-      <editform tolerant="1"></editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-I moduli QGIS possono avere una funzione Python che può essere chiamata quando viene aperto un modulo.
-
-Usa questa funzione per aggiungere logica extra ai tuoi moduli.
-
-Inserisci il nome della funzione nel campo "Funzione Python di avvio".
-
-Segue un esempio:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <editable>
-        <field editable="1" name="cod_reg"/>
-        <field editable="1" name="cod_rip"/>
-        <field editable="1" name="den_reg"/>
-        <field editable="1" name="fid"/>
-        <field editable="0" name="nro_comuni"/>
-        <field editable="0" name="nro_comuni5k"/>
-        <field editable="0" name="perc"/>
-        <field editable="1" name="pk"/>
-      </editable>
-      <labelOnTop>
-        <field labelOnTop="0" name="cod_reg"/>
-        <field labelOnTop="0" name="cod_rip"/>
-        <field labelOnTop="0" name="den_reg"/>
-        <field labelOnTop="0" name="fid"/>
-        <field labelOnTop="0" name="nro_comuni"/>
-        <field labelOnTop="0" name="nro_comuni5k"/>
-        <field labelOnTop="0" name="perc"/>
-        <field labelOnTop="0" name="pk"/>
-      </labelOnTop>
-      <dataDefinedFieldProperties/>
-      <widgets/>
-      <previewExpression>"fid"</previewExpression>
-      <mapTip></mapTip>
-    </maplayer>
-    <maplayer simplifyMaxScale="1" geometry="Polygon" styleCategories="AllStyleCategories" labelsEnabled="0" type="vector" minScale="100000000" simplifyLocal="1" simplifyDrawingTol="1" maxScale="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="" wkbType="MultiPolygon" refreshOnNotifyEnabled="0" simplifyAlgorithm="0" autoRefreshEnabled="0" autoRefreshTime="0" readOnly="0">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" minScale="100000000" geometry="Polygon" maxScale="0" wkbType="MultiPolygon" simplifyDrawingTol="1" simplifyAlgorithm="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" readOnly="0" simplifyDrawingHints="1" type="vector">
       <extent>
         <xmin>363053.85269999969750643</xmin>
         <ymin>4084271.24730000086128712</ymin>
@@ -1979,16 +1875,16 @@ def my_form_open(dialog, layer, feature):
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
+      <temporal enabled="0" accumulate="0" startExpression="" durationField="" endField="" endExpression="" mode="0" durationUnit="min" startField="" fixedDuration="0">
         <fixedRange>
           <start></start>
           <end></end>
         </fixedRange>
       </temporal>
-      <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
+      <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
         <symbols>
-          <symbol type="fill" name="0" alpha="1" force_rhr="0" clip_to_extent="1">
-            <layer pass="0" enabled="1" locked="0" class="SimpleFill">
+          <symbol type="fill" force_rhr="0" alpha="1" name="0" clip_to_extent="1">
+            <layer enabled="1" class="SimpleFill" locked="0" pass="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="125,139,143,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -2002,9 +1898,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -2063,38 +1959,38 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="rowid" name=""/>
-        <alias index="1" field="pro_com_t" name=""/>
-        <alias index="2" field="cod_rip" name=""/>
-        <alias index="3" field="cod_reg" name=""/>
-        <alias index="4" field="comune" name=""/>
+        <alias field="rowid" index="0" name=""/>
+        <alias field="pro_com_t" index="1" name=""/>
+        <alias field="cod_rip" index="2" name=""/>
+        <alias field="cod_reg" index="3" name=""/>
+        <alias field="comune" index="4" name=""/>
       </aliases>
       <defaults>
-        <default expression="" field="rowid" applyOnUpdate="0"/>
-        <default expression="" field="pro_com_t" applyOnUpdate="0"/>
-        <default expression="" field="cod_rip" applyOnUpdate="0"/>
-        <default expression="" field="cod_reg" applyOnUpdate="0"/>
-        <default expression="" field="comune" applyOnUpdate="0"/>
+        <default field="rowid" applyOnUpdate="0" expression=""/>
+        <default field="pro_com_t" applyOnUpdate="0" expression=""/>
+        <default field="cod_rip" applyOnUpdate="0" expression=""/>
+        <default field="cod_reg" applyOnUpdate="0" expression=""/>
+        <default field="comune" applyOnUpdate="0" expression=""/>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" constraints="3" notnull_strength="1" field="rowid" unique_strength="1"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="pro_com_t" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_rip" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_reg" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="comune" unique_strength="0"/>
+        <constraint unique_strength="1" field="rowid" notnull_strength="1" exp_strength="0" constraints="3"/>
+        <constraint unique_strength="0" field="pro_com_t" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="cod_rip" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="cod_reg" notnull_strength="0" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" field="comune" notnull_strength="0" exp_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" desc="" field="rowid"/>
-        <constraint exp="" desc="" field="pro_com_t"/>
-        <constraint exp="" desc="" field="cod_rip"/>
-        <constraint exp="" desc="" field="cod_reg"/>
-        <constraint exp="" desc="" field="comune"/>
+        <constraint field="rowid" desc="" exp=""/>
+        <constraint field="pro_com_t" desc="" exp=""/>
+        <constraint field="cod_rip" desc="" exp=""/>
+        <constraint field="cod_reg" desc="" exp=""/>
+        <constraint field="comune" desc="" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>
@@ -2114,430 +2010,14 @@ def my_form_open(dialog, layer, feature):
       <dataDefinedFieldProperties/>
       <widgets/>
       <previewExpression></previewExpression>
-      <mapTip></mapTip>
-    </maplayer>
-    <maplayer type="vector" geometry="No geometry" refreshOnNotifyMessage="" minScale="1e+08" styleCategories="AllStyleCategories" maxScale="0" readOnly="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" wkbType="NoGeometry" autoRefreshTime="0">
-      <id>v_comuni5k_ab_56498442_f85f_43a0_9f5f_45d997774601</id>
-      <datasource>dbname='./30cappa.sqlite' table="v_comuni5k_ab"</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>v_comuni5k_ab</layername>
-      <srs>
-        <spatialrefsys>
-          <wkt></wkt>
-          <proj4></proj4>
-          <srsid>0</srsid>
-          <srid>0</srid>
-          <authid></authid>
-          <description></description>
-          <projectionacronym></projectionacronym>
-          <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <resourceMetadata>
-        <identifier></identifier>
-        <parentidentifier></parentidentifier>
-        <language></language>
-        <type></type>
-        <title></title>
-        <abstract></abstract>
-        <links/>
-        <fees></fees>
-        <encoding></encoding>
-        <crs>
-          <spatialrefsys>
-            <wkt></wkt>
-            <proj4></proj4>
-            <srsid>0</srsid>
-            <srid>0</srid>
-            <authid></authid>
-            <description></description>
-            <projectionacronym></projectionacronym>
-            <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
-          </spatialrefsys>
-        </crs>
-        <extent/>
-      </resourceMetadata>
-      <provider encoding="">spatialite</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="predefinito">
-        <map-layer-style name="predefinito"/>
-      </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <flags>
-        <Identifiable>1</Identifiable>
-        <Removable>1</Removable>
-        <Searchable>1</Searchable>
-      </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
-        <fixedRange>
-          <start></start>
-          <end></end>
-        </fixedRange>
-      </temporal>
-      <customproperties/>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks type="StringList">
-          <Option type="QString" value=""/>
-        </activeChecks>
-        <checkConfiguration/>
-      </geometryOptions>
-      <legend type="default-vector"/>
-      <referencedLayers/>
-      <fieldConfiguration>
-        <field configurationFlags="None" name="pk">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_rip">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_reg">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_prov">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_cm">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cod_uts">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="pro_com">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="pro_com_t">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="comune">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="comune_a">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="cc_uts">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="geom">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="Abitanti">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-      </fieldConfiguration>
-      <aliases>
-        <alias index="0" field="pk" name=""/>
-        <alias index="1" field="cod_rip" name=""/>
-        <alias index="2" field="cod_reg" name=""/>
-        <alias index="3" field="cod_prov" name=""/>
-        <alias index="4" field="cod_cm" name=""/>
-        <alias index="5" field="cod_uts" name=""/>
-        <alias index="6" field="pro_com" name=""/>
-        <alias index="7" field="pro_com_t" name=""/>
-        <alias index="8" field="comune" name=""/>
-        <alias index="9" field="comune_a" name=""/>
-        <alias index="10" field="cc_uts" name=""/>
-        <alias index="11" field="geom" name=""/>
-        <alias index="12" field="Abitanti" name=""/>
-      </aliases>
-      <defaults>
-        <default expression="" field="pk" applyOnUpdate="0"/>
-        <default expression="" field="cod_rip" applyOnUpdate="0"/>
-        <default expression="" field="cod_reg" applyOnUpdate="0"/>
-        <default expression="" field="cod_prov" applyOnUpdate="0"/>
-        <default expression="" field="cod_cm" applyOnUpdate="0"/>
-        <default expression="" field="cod_uts" applyOnUpdate="0"/>
-        <default expression="" field="pro_com" applyOnUpdate="0"/>
-        <default expression="" field="pro_com_t" applyOnUpdate="0"/>
-        <default expression="" field="comune" applyOnUpdate="0"/>
-        <default expression="" field="comune_a" applyOnUpdate="0"/>
-        <default expression="" field="cc_uts" applyOnUpdate="0"/>
-        <default expression="" field="geom" applyOnUpdate="0"/>
-        <default expression="" field="Abitanti" applyOnUpdate="0"/>
-      </defaults>
-      <constraints>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="pk" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_rip" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_reg" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_prov" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_cm" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_uts" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="pro_com" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="pro_com_t" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="comune" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="comune_a" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cc_uts" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="geom" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="Abitanti" unique_strength="0"/>
-      </constraints>
-      <constraintExpressions>
-        <constraint exp="" desc="" field="pk"/>
-        <constraint exp="" desc="" field="cod_rip"/>
-        <constraint exp="" desc="" field="cod_reg"/>
-        <constraint exp="" desc="" field="cod_prov"/>
-        <constraint exp="" desc="" field="cod_cm"/>
-        <constraint exp="" desc="" field="cod_uts"/>
-        <constraint exp="" desc="" field="pro_com"/>
-        <constraint exp="" desc="" field="pro_com_t"/>
-        <constraint exp="" desc="" field="comune"/>
-        <constraint exp="" desc="" field="comune_a"/>
-        <constraint exp="" desc="" field="cc_uts"/>
-        <constraint exp="" desc="" field="geom"/>
-        <constraint exp="" desc="" field="Abitanti"/>
-      </constraintExpressions>
-      <expressionfields/>
-      <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-      </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <storedexpressions/>
-      <editform tolerant="1"></editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <editable/>
-      <labelOnTop/>
-      <dataDefinedFieldProperties/>
-      <widgets/>
-      <previewExpression></previewExpression>
-      <mapTip></mapTip>
-    </maplayer>
-    <maplayer type="vector" geometry="No geometry" refreshOnNotifyMessage="" minScale="1e+08" styleCategories="AllStyleCategories" maxScale="0" readOnly="0" refreshOnNotifyEnabled="0" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" wkbType="NoGeometry" autoRefreshTime="0">
-      <id>v_perc_comuni_all_6e663e63_7e5f_4e22_9d41_ca94937293a9</id>
-      <datasource>dbname='./30cappa.sqlite' table="v_perc_comuni_all"</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>v_perc_comuni_all</layername>
-      <srs>
-        <spatialrefsys>
-          <wkt></wkt>
-          <proj4></proj4>
-          <srsid>0</srsid>
-          <srid>0</srid>
-          <authid></authid>
-          <description></description>
-          <projectionacronym></projectionacronym>
-          <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <resourceMetadata>
-        <identifier></identifier>
-        <parentidentifier></parentidentifier>
-        <language></language>
-        <type></type>
-        <title></title>
-        <abstract></abstract>
-        <links/>
-        <fees></fees>
-        <encoding></encoding>
-        <crs>
-          <spatialrefsys>
-            <wkt></wkt>
-            <proj4></proj4>
-            <srsid>0</srsid>
-            <srid>0</srid>
-            <authid></authid>
-            <description></description>
-            <projectionacronym></projectionacronym>
-            <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
-          </spatialrefsys>
-        </crs>
-        <extent/>
-      </resourceMetadata>
-      <provider encoding="">spatialite</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="predefinito">
-        <map-layer-style name="predefinito"/>
-      </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <flags>
-        <Identifiable>1</Identifiable>
-        <Removable>1</Removable>
-        <Searchable>1</Searchable>
-      </flags>
-      <temporal accumulate="0" endField="" enabled="0" durationField="" durationUnit="min" startExpression="" endExpression="" startField="" fixedDuration="0" mode="0">
-        <fixedRange>
-          <start></start>
-          <end></end>
-        </fixedRange>
-      </temporal>
-      <customproperties>
-        <property key="dualview/previewExpressions" value="&quot;cod_reg&quot;"/>
-      </customproperties>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks type="StringList">
-          <Option type="QString" value=""/>
-        </activeChecks>
-        <checkConfiguration/>
-      </geometryOptions>
-      <legend type="default-vector"/>
-      <referencedLayers/>
-      <fieldConfiguration>
-        <field configurationFlags="None" name="cod_reg">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="nro_comuni5k">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="nro_comuni">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field configurationFlags="None" name="perc">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-      </fieldConfiguration>
-      <aliases>
-        <alias index="0" field="cod_reg" name=""/>
-        <alias index="1" field="nro_comuni5k" name=""/>
-        <alias index="2" field="nro_comuni" name=""/>
-        <alias index="3" field="perc" name=""/>
-      </aliases>
-      <defaults>
-        <default expression="" field="cod_reg" applyOnUpdate="0"/>
-        <default expression="" field="nro_comuni5k" applyOnUpdate="0"/>
-        <default expression="" field="nro_comuni" applyOnUpdate="0"/>
-        <default expression="" field="perc" applyOnUpdate="0"/>
-      </defaults>
-      <constraints>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="cod_reg" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="nro_comuni5k" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="nro_comuni" unique_strength="0"/>
-        <constraint exp_strength="0" constraints="0" notnull_strength="0" field="perc" unique_strength="0"/>
-      </constraints>
-      <constraintExpressions>
-        <constraint exp="" desc="" field="cod_reg"/>
-        <constraint exp="" desc="" field="nro_comuni5k"/>
-        <constraint exp="" desc="" field="nro_comuni"/>
-        <constraint exp="" desc="" field="perc"/>
-      </constraintExpressions>
-      <expressionfields/>
-      <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-      </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
-        <columns>
-          <column type="field" width="-1" name="cod_reg" hidden="0"/>
-          <column type="field" width="-1" name="nro_comuni5k" hidden="0"/>
-          <column type="field" width="-1" name="nro_comuni" hidden="0"/>
-          <column type="field" width="-1" name="perc" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
-        </columns>
-      </attributetableconfig>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <storedexpressions/>
-      <editform tolerant="1"></editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <editable/>
-      <labelOnTop/>
-      <dataDefinedFieldProperties/>
-      <widgets/>
-      <previewExpression>"cod_reg"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
   </projectlayers>
   <layerorder>
     <layer id="Com01012020_g_WGS84_9c1b66d4_2937_40d0_aa94_57fcf32f6736"/>
-    <layer id="reg01012020_g_wgs84_e0741f44_fa8b_4158_acaf_ecec9e207306"/>
     <layer id="OSM_Standard_f31dd640_3077_484e_9861_386446200057"/>
     <layer id="v_capoluoghi_prov_b107db15_76b6_4afc_91af_b753f8d74893"/>
-    <layer id="diff_buffer_capol_6fe79192_c50a_478c_beb6_ddeab1fa1904"/>
+    <layer id="diff_buffer_capol_5fb863fe_aeeb_4ad9_a368_cdfe25a4d952"/>
   </layerorder>
   <properties>
     <CopyrightLabel>
@@ -2694,9 +2174,9 @@ def my_form_open(dialog, layer, feature):
   </properties>
   <dataDefinedServerProperties>
     <Option type="Map">
-      <Option type="QString" value="" name="name"/>
+      <Option type="QString" name="name" value=""/>
       <Option name="properties"/>
-      <Option type="QString" value="collection" name="type"/>
+      <Option type="QString" name="type" value="collection"/>
     </Option>
   </dataDefinedServerProperties>
   <visibility-presets/>
@@ -2718,18 +2198,18 @@ def my_form_open(dialog, layer, feature):
   <ProjectViewSettings UseProjectScales="0">
     <Scales/>
   </ProjectViewSettings>
-  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" timeStepUnit="h" frameRate="1"/>
+  <ProjectTimeSettings timeStepUnit="h" timeStep="1" frameRate="1" cumulativeTemporalRange="0"/>
   <ProjectDisplaySettings>
     <BearingFormat id="bearing">
       <Option type="Map">
-        <Option type="QChar" value="" name="decimal_separator"/>
-        <Option type="int" value="6" name="decimals"/>
-        <Option type="int" value="0" name="direction_format"/>
-        <Option type="int" value="0" name="rounding_type"/>
-        <Option type="bool" value="false" name="show_plus"/>
-        <Option type="bool" value="true" name="show_thousand_separator"/>
-        <Option type="bool" value="false" name="show_trailing_zeros"/>
-        <Option type="QChar" value="" name="thousand_separator"/>
+        <Option type="QChar" name="decimal_separator" value=""/>
+        <Option type="int" name="decimals" value="6"/>
+        <Option type="int" name="direction_format" value="0"/>
+        <Option type="int" name="rounding_type" value="0"/>
+        <Option type="bool" name="show_plus" value="false"/>
+        <Option type="bool" name="show_thousand_separator" value="true"/>
+        <Option type="bool" name="show_trailing_zeros" value="false"/>
+        <Option type="QChar" name="thousand_separator" value=""/>
       </Option>
     </BearingFormat>
   </ProjectDisplaySettings>

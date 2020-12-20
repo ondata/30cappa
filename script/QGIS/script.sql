@@ -30,10 +30,22 @@ VALUES ('v_capoluoghi_prov', 'geom', 'rowid', 'com01012020_g_wgs84', 'geom',1);
 
 -- clippa i capoluoghi con i buffer da 30km
 CREATE TABLE diff_buffer_capol AS
-SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMulti(ST_DIFFERENCE(b.geom , p.geom)) as geom
-FROM v_comuni5k_ab_b30k b, (SELECT ST_UNION(GEOM) AS geom FROM v_capoluoghi_prov WHERE cod_reg=19 GROUP BY cod_reg) p
-WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 1;
+SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMultiPolygon(ST_DIFFERENCE(b.geom , p.geom)) as geom
+FROM (SELECT * FROM v_comuni5k_ab_b30k WHERE cod_reg=19)b, (SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom FROM v_capoluoghi_prov WHERE cod_reg=19 ) p
+WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 1
+union
+SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMultiPolygon(b.geom) as geom
+FROM (SELECT * FROM v_comuni5k_ab_b30k WHERE cod_reg=19)b,(SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom FROM v_capoluoghi_prov WHERE cod_reg=19 ) p
+WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 0;
 SELECT RecoverGeometryColumn('diff_buffer_capol','geom',32632,'MULTIPOLYGON','XY');
+
+-- clippa i buffer comunali con la regione - da rivedere
+-- CREATE TABLE inters_buffer_reg AS
+-- SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMulti(ST_Intersection(b.geom ,p.geom)) as geom
+-- FROM diff_buffer_capol b, (SELECT cod_reg, CastToMultiPolygon(st_union(geom)) as geom FROM Com01012020_g_WGS84 WHERE cod_reg=19 group by cod_reg=19) p
+-- WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 1;
+-- SELECT RecoverGeometryColumn('inters_buffer_reg','geom',32632,'MULTIPOLYGON','XY');
+
 
 --
 -- vacuuming the output db-file
