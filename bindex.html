@@ -15,7 +15,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js"></script>
   <link rel="stylesheet" href="leaflet.measurecontrol.css" />
   <script src="js/leaflet.measurecontrol.js"></script>
-  <script type="text/javascript" src="js/tile.stamen.js"></script>
 
   <style>
     body {
@@ -96,16 +95,13 @@
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
       attribution: '<a href="https://www.google.com/maps/">Google</a>'
     });
-/*
-    const stamenTerrain = L.tileLayer('http://{s}.tile.stamen.com/terrain/{z}/{x}/{y}.png', {
-      maxZoom: 18,
+
+    const stamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+      maxZoom: 17,
       attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
     });
     stamenTerrain.addTo(map);
-*/
-    // replace "toner" here with "terrain" or "watercolor"
-    const stamenTerrain = new L.StamenTileLayer("terrain");
-    stamenTerrain.addTo(map);
+
 
     const limite = $.ajax({
       url: "https://aborruso.github.io/30cappa/dati/arigadicomando/output/" + myvar + ".geojson",
