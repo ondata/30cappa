@@ -105,6 +105,32 @@
 
     });
 
+    const limiteC = $.ajax({
+      url: "https://tanto.carto.com:443/api/v2/sql?format=GeoJSON&q=select%20*%20from%20public.comuni_4326%20where%20public.comuni_4326.istat%3D%27" + myvar + "%27"
+      dataType: "json",
+      success: console.log("geometria caricata."),
+      error(xhr) {
+        alert(xhr.statusText)
+      }
+    })
+    $.when(limiteC).done(() => {
+
+      const myStyleC = {
+        "color": "#6C819A",
+        "weight": 2,
+        "opacity": 1,
+        "fill": true,
+        "fillOpacity": 0.25
+      };
+
+      const layerLimiteC = L.geoJSON(limiteC.responseJSON, {
+        style: myStyleC
+      }).addTo(map);
+
+      map.fitBounds(layerLimiteC.getBounds());
+
+    });
+
     const osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     const osmAttrib = 'Map data &copy; OpenStreetMap contributors';
     const osm = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 8, attribution: osmAttrib });
