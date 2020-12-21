@@ -126,7 +126,9 @@
         onEachFeature: onEachFeature
       }).addTo(map);
 
-      map.fitBounds(layerLimite.getBounds());
+      if (document.location.href.indexOf('#') === -1) {
+        map.fitBounds(layerLimite.getBounds());
+      }
 
     });
 
