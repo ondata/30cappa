@@ -177,10 +177,23 @@
     const osm = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 8, attribution: osmAttrib });
     const miniMap = new L.Control.MiniMap(osm, { toggleDisplay: true }).addTo(map);
 
-    const baseMaps = {
-      "Stamen Terrain": stamenTerrain, // googleStreets,
-      "Google Maps Hybrid": googleHybrid
-    };
+
+    map.on("zoomend", function (e) {
+      console.log("Zoom level: ", map.getZoom());
+      if (map.getZoom() > 14) { //Level 14 is the treshold
+        const baseMaps = {
+          "OpenStreetMap": opens, // googleStreets,
+          "Google Maps Hybrid": googleHybrid
+        };
+      } else {
+        const baseMaps = {
+          "Stamen Terrain": stamenTerrain, // googleStreets,
+          "Google Maps Hybrid": googleHybrid
+        };
+      }
+    });
+
+
 
 
     L.control.layers(baseMaps).addTo(map);
