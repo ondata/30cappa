@@ -11,7 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css" />
   <link rel="stylesheet" href="css/leaflet.measurecontrol.css" />
   <link rel="stylesheet" href="./js/Control.MiniMap.css" />
@@ -98,7 +97,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.5.0/proj4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.js"></script>
@@ -111,33 +109,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('#table_comuni').DataTable( {
-          "autoWidth": true,
-          "ajax": "data/comuni.json",
-          "columns": [
-          { "data": "COMUNE" },
-          { "data": "PROVINCIA" },
-          { "data": "POPOLAZIONE" },
-          { "data": "SUPERFICIE (km²)" },
-          { "data": "MAPPA" },
-          ],
-          columnDefs: [
-          {
-            targets: 4,
-            render: function ( data, type, row, meta ) {
-              if(type === 'display'){
-                data = '<a href="https://ondata.github.io/30cappa/bindex.html?id=' + data + '">vedi</a>';
-              }
-
-              return data;
-            }
-          }
-          ]   
-        } );
-      } );
-    </script>
     <script src="js/mappa_comune.js"></script>
     <script>
     function goBack() {
