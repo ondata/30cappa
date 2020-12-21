@@ -106,10 +106,11 @@
     });
     //opens.addTo(map);
 
-    var topografica = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
     });
+    topografica.addTo(map);
 
     map.on("zoomend", function (e) {
       console.log("Zoom level: ", map.getZoom());
