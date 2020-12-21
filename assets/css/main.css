@@ -2055,7 +2055,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 75px;
+		width: 175px;
 	}
 
 		#header .top {
@@ -2276,7 +2276,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 300px;
+				width: 175px;
 			}
 
 		/* Footer */
