@@ -17,6 +17,8 @@ queste istruzoni possono essere commentate
 
 #!pip install requests
 
+#!pip install matplotlib
+
 #!pip install pandas
 
 #!pip install geopandas
@@ -171,15 +173,21 @@ estendere alle geometrie il valore della popolazione
 
 comuni_popolazione_tojoin = comuni_popolazione[['PRO_COM_T','POPOLAZIONE']]
 
-"""per fare la join è necessario che entrambi i campi siano dello stesso tipo ( = intero)"""
+"""per fare la join è necessario che entrambi i campi abbiano gli stessi valori.<br/> 
+il codice ISTAT dei comuni è fatto da sei cifre ed è composto dal codice provincia più un numero sequenziale dei comuni presenti.<br/>
+Per renderlo di 6 cifre si aggiungo tanti zero quanti necessari (funzione *zfill* di python)
+"""
 
-limiti_comuni["PRO_COM_T"] = pd.to_numeric(limiti_comuni["PRO_COM_T"] , downcast='integer')
+comuni_popolazione['PRO_COM_T'] = comuni_popolazione['PRO_COM_T'].apply(lambda k: str(k).zfill(6))
 
 geo_comuni_popolazione = limiti_comuni.merge(comuni_popolazione_tojoin,on='PRO_COM_T')
 
 """**inizio del calcolo**
 
 a causa del fatto che bisogna prendere in considerazione il confine regionale andiamo a fare il calcolo dei comuni per ogni regione (o provincia autonoma)
+
+La fuzione *area30Cappa* si occupa di calcolare l'area di un singolo comune a 30km dal confine
+
 """
 
 def area30Cappa(comune,regione,gdf_confine):
@@ -213,7 +221,9 @@ def area30Cappa(comune,regione,gdf_confine):
   comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','30CAPPA','geometry']]
   return(comune)
 
-#variabile per raccogliere tutti i comuni
+"""... e qui comincia il ciclo"""
+
+#variabile per raccogliere tutti i comuni utile per salvare poi il risultato in un unico file
 tutti_i_comuni = []
 for cod_reg in geo_comuni_popolazione.COD_REG.unique():
   # quando cod_reg vale 4 vuole dire che siamo davanti alla regione Trentino Alto Adige
@@ -266,6 +276,10 @@ for cod_reg in geo_comuni_popolazione.COD_REG.unique():
         comune.to_crs(epsg=4326).to_file(nome + "_a30cappa.geojson",driver="GeoJSON")
         tutti_i_comuni.append(comune)
 
+"""**creazione del layer con tutti i dati calcolati**"""
+
 finoa5mila30cappa = gpd.GeoDataFrame( pd.concat( tutti_i_comuni, ignore_index=True) )
+
+"""il file creato è un geojson dal nome finoa5mila30cappa.geojson"""
 
 finoa5mila30cappa.to_crs(epsg=4326).to_file('finoa5mila30cappa.geojson',driver="GeoJSON")
