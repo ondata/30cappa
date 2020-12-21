@@ -124,6 +124,7 @@
         onEachFeature: onEachFeature
       }).addTo(map);
 
+      // zoomma ai limiti del buffer di 30 km soltanto se è un indirizzo senza hash
       if (document.location.href.indexOf('#') === -1) {
         map.fitBounds(layerLimite.getBounds());
       }
@@ -169,7 +170,7 @@
     L.control.scale().addTo(map);
     L.Control.measureControl().addTo(map);
 
-
+    // carica hash plogin dopo il caricamento della pagina
     window.addEventListener("load", function () {
       var hash = new L.Hash(map);
     });
