@@ -114,7 +114,7 @@
 
     map.on("zoomend", function (e) {
       console.log("Zoom level: ", map.getZoom());
-      if (map.getZoom() > 14) { //Level 14 is the treshold
+      if (map.getZoom() > 13) { //Level 14 is the treshold
         var topografica = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
