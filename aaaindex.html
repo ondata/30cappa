@@ -101,19 +101,34 @@
     //stamenTerrain.addTo(map);
 
     const opens = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 17,
+      maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
     //opens.addTo(map);
 
+    var topografica = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+
     map.on("zoomend", function (e) {
       console.log("Zoom level: ", map.getZoom());
       if (map.getZoom() > 14) { //Level 14 is the treshold
-        map.removeLayer(stamenTerrain);
-        opens.addTo(map);
+        var topografica = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        });
+
+        map.removeLayer(topografica);
+        topografica.addTo(map);
       } else {
-        map.removeLayer(opens);
-        stamenTerrain.addTo(map);
+        var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+          maxZoom: 17,
+          attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+        });
+
+        map.removeLayer(topografica);
+        topografica.addTo(map);
       }
     });
 
@@ -178,26 +193,12 @@
     const miniMap = new L.Control.MiniMap(osm, { toggleDisplay: true }).addTo(map);
 
 
-    map.on("zoomend", function (e) {
-      console.log("Zoom level: ", map.getZoom());
-      if (map.getZoom() > 14) { //Level 14 is the treshold
-        const baseMaps = {
-          "OpenStreetMap": opens, // googleStreets,
-          "Google Maps Hybrid": googleHybrid
-        };
-        L.control.layers(baseMaps).addTo(map);
-      } else {
-        const baseMaps = {
-          "Stamen Terrain": stamenTerrain, // googleStreets,
-          "Google Maps Hybrid": googleHybrid
-        };
-        L.control.layers(baseMaps).addTo(map);
-      }
-    });
+    const baseMaps = {
+      "topografica": topografica, // googleStreets,
+      "Google Maps Hybrid": googleHybrid
+    };
 
-
-
-
+    L.control.layers(baseMaps).addTo(map);
     L.control.scale().addTo(map);
     L.Control.measureControl().addTo(map);
 
