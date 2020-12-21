@@ -185,18 +185,19 @@
           "OpenStreetMap": opens, // googleStreets,
           "Google Maps Hybrid": googleHybrid
         };
+        L.control.layers(baseMaps).addTo(map);
       } else {
         const baseMaps = {
           "Stamen Terrain": stamenTerrain, // googleStreets,
           "Google Maps Hybrid": googleHybrid
         };
+        L.control.layers(baseMaps).addTo(map);
       }
     });
 
 
 
 
-    L.control.layers(baseMaps).addTo(map);
     L.control.scale().addTo(map);
     L.Control.measureControl().addTo(map);
 
