@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>I 30 chilometri di spostamenti del decreto di Natale</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.5.0/proj4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.js"></script>
+  <!-- Dependency to Leaflet Draw -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js"></script>
+  <link rel="stylesheet" href="leaflet.measurecontrol.css" />
+  <script src="js/leaflet.measurecontrol.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./js/Control.MiniMap.css" />
+  <script src="./js/Control.MiniMap.js" type="text/javascript"></script>
+
+  <meta property="og:title" content="I 30 chilometri di spostamenti del decreto di Natale" />
+  <meta property="og:description"
+    content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto" />
+  <meta property="og:url" content="https://aborruso.github.io/30cappa/bindex.html?id=019049" />
+  <meta property="og:type" content="article" />
+  <meta property="article:tag" content="dati" />
+  <meta property="article:tag" content="covid" />
+  <meta property="article:tag" content="covid-19" />
+  <meta property="og:image" content="https://i.imgur.com/CxiskOb.png" />
+  <meta property="og:site_name" content="30cappa" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="I 30 chilometri di spostamenti del decreto di Natale">
+  <meta name="twitter:description"
+    content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto">
+  <meta name="twitter:image" content="https://i.imgur.com/CxiskOb.png">
+  <meta name="twitter:site" content="30cappa" />
+  <meta name="twitter:url" content="https://aborruso.github.io/30cappa/bindex.html?id=019049">
+
+</head>
+
+<body>
+  <script src='js/leaflet-hash.js'></script>
+
+  <div id='map'></div>
+  <script>
+    const map =
+      L.map('map', {
+        minZoom: 5,
+        maxZoom: 17
+      })
+        .setView([38.1089, 13.3545], 18);
+
+    function getURLParameter(name) {
+      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+    };
+
+    const myvar = getURLParameter('id');
+
+
+    function onEachFeature(feature, layer) {
+      layer.bindPopup()
+      layer.on('click', (a) => {
+        console.log("You clicked the map at latitude: " + a.latlng.lat + " and longitude:" + a.latlng.lng);
+
+        const popupContent =
+          feature.properties && feature.properties.COMUNE
+            ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
+            : ""
+
+        layer.bindPopup('Area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b>' + feature.properties.COMUNE + '</b>')
+      });
+
+    }
+
+    const googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: '<a href="https://www.google.com/maps/">Google</a>'
+    });
+
+    const stamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+    });
+    //stamenTerrain.addTo(map);
+
+    const opens = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    //opens.addTo(map);
+
+    map.on("zoomend", function (e) {
+      console.log("Zoom level: ", map.getZoom());
+      if (map.getZoom() > 14) { //Level 14 is the treshold
+        map.removeLayer(stamenTerrain);
+        opens.addTo(map);
+      } else {
+        map.removeLayer(opens);
+        stamenTerrain.addTo(map);
+      }
+    });
+
+
+    const limite = $.ajax({
+      url: "https://aborruso.github.io/30cappa/dati/arigadicomando/output/" + myvar + ".geojson",
+      dataType: "json",
+      success: console.log("geometria caricata."),
+      error(xhr) {
+        alert(xhr.statusText)
+      }
+    })
+    $.when(limite).done(() => {
+
+      const myStyle = {
+        "color": "#ff7800",
+        "weight": 1,
+        "opacity": 1,
+        "fill": true,
+        "fillOpacity": 0.25
+      };
+
+      const layerLimite = L.geoJSON(limite.responseJSON, {
+        style: myStyle,
+        onEachFeature: onEachFeature
+      }).addTo(map);
+
+      // zoomma ai limiti del buffer di 30 km soltanto se è un indirizzo senza hash
+      if (document.location.href.indexOf('#') === -1) {
+        map.fitBounds(layerLimite.getBounds());
+      }
+
+    });
+
+    const limiteC = $.ajax({
+      url: "https://tanto.carto.com:443/api/v2/sql?format=GeoJSON&q=select%20*%20from%20public.comuni_4326%20where%20public.comuni_4326.istat%3D%27" + myvar + "%27",
+      dataType: "json",
+      success: console.log("geometria caricata."),
+      error(xhr) {
+        alert(xhr.statusText)
+      }
+    })
+    $.when(limiteC).done(() => {
+
+      const myStyleC = {
+        "color": "#FF0000",
+        "weight": 2,
+        "opacity": 1,
+        "fill": false,
+        "fillOpacity": 0
+      };
+
+      const layerLimiteC = L.geoJSON(limiteC.responseJSON, {
+        style: myStyleC
+      }).addTo(map);
+
+    });
+
+    const osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const osmAttrib = 'Map data &copy; OpenStreetMap contributors';
+    const osm = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 8, attribution: osmAttrib });
+    const miniMap = new L.Control.MiniMap(osm, { toggleDisplay: true }).addTo(map);
+
+
+    map.on("zoomend", function (e) {
+      console.log("Zoom level: ", map.getZoom());
+      if (map.getZoom() > 14) { //Level 14 is the treshold
+        const baseMaps = {
+          "OpenStreetMap": opens, // googleStreets,
+          "Google Maps Hybrid": googleHybrid
+        };
+      } else {
+        const baseMaps = {
+          "Stamen Terrain": stamenTerrain, // googleStreets,
+          "Google Maps Hybrid": googleHybrid
+        };
+      }
+    });
+
+
+
+
+    L.control.layers(baseMaps).addTo(map);
+    L.control.scale().addTo(map);
+    L.Control.measureControl().addTo(map);
+
+    // carica hash plogin dopo il caricamento della pagina
+    window.addEventListener("load", function () {
+      var hash = new L.Hash(map);
+    });
+
+
+
+  </script>
+</body>
+
+</html>
