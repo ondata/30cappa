@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.5.0/proj4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.js"></script>
   <!-- Dependency to Leaflet Draw -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js"></script>
   <link rel="stylesheet" href="leaflet.measurecontrol.css" />
   <script src="js/leaflet.measurecontrol.js"></script>
@@ -35,22 +35,20 @@
 
   <meta property="og:title" content="I 30 chilometri di spostamenti del decreto di Natale" />
   <meta property="og:description"
-  content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto" />
+    content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto" />
   <meta property="og:url" content="https://aborruso.github.io/30cappa/bindex.html?id=019049" />
   <meta property="og:type" content="article" />
   <meta property="article:tag" content="dati" />
   <meta property="article:tag" content="covid" />
   <meta property="article:tag" content="covid-19" />
-  <meta property="og:image"
-  content="https://i.imgur.com/CxiskOb.png" />
+  <meta property="og:image" content="https://i.imgur.com/CxiskOb.png" />
   <meta property="og:site_name" content="30cappa" />
   <!-- twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="I 30 chilometri di spostamenti del decreto di Natale">
   <meta name="twitter:description"
-  content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto">
-  <meta name="twitter:image"
-  content="https://i.imgur.com/CxiskOb.png">
+    content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto">
+  <meta name="twitter:image" content="https://i.imgur.com/CxiskOb.png">
   <meta name="twitter:site" content="30cappa" />
   <meta name="twitter:url" content="https://aborruso.github.io/30cappa/bindex.html?id=019049">
 
@@ -62,11 +60,11 @@
   <div id='map'></div>
   <script>
     const map =
-    L.map('map', {
-      minZoom: 5,
-      maxZoom: 17
-    })
-    .setView([38.1089, 13.3545], 18);
+      L.map('map', {
+        minZoom: 5,
+        maxZoom: 17
+      })
+        .setView([38.1089, 13.3545], 18);
 
     function getURLParameter(name) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
@@ -81,9 +79,9 @@
         console.log("You clicked the map at latitude: " + a.latlng.lat + " and longitude:" + a.latlng.lng);
 
         const popupContent =
-        feature.properties && feature.properties.COMUNE
-        ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
-        : ""
+          feature.properties && feature.properties.COMUNE
+            ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
+            : ""
 
         layer.bindPopup('Area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b>' + feature.properties.COMUNE + '</b>')
       });
@@ -126,9 +124,7 @@
         onEachFeature: onEachFeature
       }).addTo(map);
 
-      if (document.location.href.indexOf('#') === -1) {
-        map.fitBounds(layerLimite.getBounds());
-      }
+      map.fitBounds(layerLimite.getBounds());
 
     });
 
@@ -170,8 +166,11 @@
     L.control.layers(baseMaps).addTo(map);
     L.control.scale().addTo(map);
     L.Control.measureControl().addTo(map);
-    var hash = new L.Hash(map);
 
+
+    window.addEventListener("load", function () {
+      var hash = new L.Hash(map);
+    });
 
 
   </script>
