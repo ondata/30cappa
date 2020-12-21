@@ -15,6 +15,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js"></script>
   <link rel="stylesheet" href="css/leaflet.measurecontrol.css" />
   <script src="js/leaflet.measurecontrol.js"></script>
+  <!-- easy button -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
   <style>
     body {
@@ -65,6 +68,17 @@
         maxZoom: 17
       })
         .setView([38.1089, 13.3545], 18);
+
+    var map = L.map('map', { zoomControl: false, scrollWheelZoom: false }).setView([0, 0], 1);
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    var newDocLocation = "http://danielmontague.com/projects/easyButton.js/v2/examples/";
+
+    L.easyButton('fa-gift', function () {
+      window.location.href = newDocLocation;
+      window.setTimeout(function () {
+        $('#link').removeClass('hidden');
+      }, 2000);
+    }).addTo(map);
 
     function getURLParameter(name) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
