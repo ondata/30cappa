@@ -83,7 +83,7 @@
             ? `<a href="https://www.google.com/maps?daddr=${a.latlng.lat},${a.latlng.lng}&t=k" target="_blank">Come arrivare</a>`
             : ""
 
-        layer.bindPopup('Area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b>' + feature.properties.COMUNE + '</b>')
+        layer.bindPopup('Area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b>' + feature.properties.COMUNE + '</b> (<a href="https://www.gazzettaufficiale.it/eli/id/2020/12/18/20G00196/s" target="_blank">decreto legge 172</a>')
       });
 
     }
