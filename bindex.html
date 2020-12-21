@@ -98,7 +98,38 @@
       maxZoom: 17,
       attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
     });
-    stamenTerrain.addTo(map);
+    //stamenTerrain.addTo(map);
+
+    const opens = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    //opens.addTo(map);
+
+    var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: 'Layer topografici <a target="_blank" href="https://stamen.com/">Stamen Design</a> e &copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    topografica.addTo(map);
+
+    map.on("zoomend", function (e) {
+      console.log("Zoom level: ", map.getZoom());
+      if (map.getZoom() > 13) { //Level 13 is the treshold
+        var topografica = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19
+        });
+
+        map.removeLayer(topografica);
+        topografica.addTo(map);
+      } else {
+        var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+          maxZoom: 17
+        });
+
+        map.removeLayer(topografica);
+        topografica.addTo(map);
+      }
+    });
 
 
     const limite = $.ajax({
@@ -160,17 +191,17 @@
     const osm = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 8, attribution: osmAttrib });
     const miniMap = new L.Control.MiniMap(osm, { toggleDisplay: true }).addTo(map);
 
-    const baseMaps = {
-      "Stamen Terrain": stamenTerrain, // googleStreets,
+
+    var baseMaps = {
+      "Topografica": topografica, // googleStreets,
       "Google Maps Hybrid": googleHybrid
     };
-
 
     L.control.layers(baseMaps).addTo(map);
     L.control.scale().addTo(map);
     L.Control.measureControl().addTo(map);
 
-    // carica hash plogin dopo il caricamento della pagina
+    // carica hash plugin dopo il caricamento della pagina
     window.addEventListener("load", function () {
       var hash = new L.Hash(map);
     });
