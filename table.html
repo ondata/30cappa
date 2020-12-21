@@ -91,11 +91,11 @@
 					<table id="table_comuni" class="display" style="width:100%">
 						<thead>
 							<tr>
+								<th>MAPPA</th>
 								<th>COMUNE</th>
-								<th>PROVINCIA</th>
 								<th>POPOLAZIONE</th>
 								<th>SUPERFICIE (km²)</th>
-								<th>MAPPA</th>
+								<th>PROVINCIA</th>
 							</tr>
 						</thead>
 					</table>
@@ -134,15 +134,15 @@
 					"autoWidth": true,
 					"ajax": "data/comuni.json",
 					"columns": [
+					{ "data": "MAPPA" },
 					{ "data": "COMUNE" },
-					{ "data": "PROVINCIA" },
 					{ "data": "POPOLAZIONE" },
 					{ "data": "SUPERFICIE (km²)" },
-					{ "data": "MAPPA" },
+					{ "data": "PROVINCIA" },
 					],
 					columnDefs: [
 					{
-						targets: 4,
+						targets: 0,
 						render: function ( data, type, row, meta ) {
 							if(type === 'display'){
 								data = '<a href="map.html?id=' + data + '">vedi</a>';
