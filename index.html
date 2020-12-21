@@ -11,6 +11,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  <meta property="og:title" content="I 30 chilometri di spostamenti del decreto di Natale" />
+  <meta property="og:description"
+  content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto" />
+  <meta property="og:url" content="https://ondata.github.io/30cappa" />
+  <meta property="og:type" content="article" />
+  <meta property="article:tag" content="dati" />
+  <meta property="article:tag" content="covid" />
+  <meta property="article:tag" content="covid-19" />
+  <meta property="og:image" content="https://i.imgur.com/CxiskOb.png" />
+  <meta property="og:site_name" content="30cappa" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="I 30 chilometri di spostamenti del decreto di Natale">
+  <meta name="twitter:description"
+  content="Per avere un quadro sul contesto numerico e geografico di questa parte del decreto">
+  <meta name="twitter:image" content="https://i.imgur.com/CxiskOb.png">
+  <meta name="twitter:site" content="30cappa" />
+  <meta name="twitter:url" content="https://ondata.github.io/30cappa/">
 </head>
 <body class="is-preload">
 
@@ -127,7 +145,7 @@
 						targets: 4,
 						render: function ( data, type, row, meta ) {
 							if(type === 'display'){
-								data = '<a href="https://ondata.github.io/30cappa/bindex.html?id=' + data + '">vedi</a>';
+								data = '<a href="map.html?id=' + data + '">vedi</a>';
 							}
 
 							return data;
