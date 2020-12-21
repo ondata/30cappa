@@ -116,16 +116,14 @@
       console.log("Zoom level: ", map.getZoom());
       if (map.getZoom() > 13) { //Level 13 is the treshold
         var topografica = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          maxZoom: 19
         });
 
         map.removeLayer(topografica);
         topografica.addTo(map);
       } else {
         var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
-          maxZoom: 17,
-          attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+          maxZoom: 17
         });
 
         map.removeLayer(topografica);
