@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>I 30 chilometri di spostamenti del decreto di Natale</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+</head>
+<body class="is-preload">
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1 id="title">Il decreto di Natale in chilometri</h1>
+				<p>aborruso napo pigrecoinfinito</p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+					<li><a href="#comuni" id="portfolio-link"><span class="icon solid fa-th">Comuni</span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Intro -->
+		<section id="top" class="one dark cover">
+			<div class="container">
+
+				<header>
+					<h2 class="alt">Il decreto <strong>“di Natale”</strong> in chilometri</h2>
+					<p style="text-align: left;">
+						Il <a href="https://www.gazzettaufficiale.it/eli/id/2020/12/18/20G00196/s">decreto legge numero 172 del 18 dicembre 2020</a> - detto in maniera un po’ fastidiosa "di Natale" - definisce delle misure urgenti per le festività natalizie e di inizio anno nuovo.</p>
+						<p>
+							In questo si legge:
+						</p>
+						<blockquote style="text-align: left;">
+							nei giorni <strong>28, 29, 30 dicembre 2020 e 4 gennaio 2021</strong> si applicano le misure di cui all’articolo 2 del <u>medesimo</u> decreto del Presidente del Consiglio dei ministri 3 dicembre 2020, ma sono altresì <strong>consentiti</strong> gli <strong>spostamenti</strong> dai <strong>comuni</strong> con <strong>popolazione non superiore a 5.000 abitanti</strong> e <strong>per una distanza non superiore a 30 chilometri dai relativi confini</strong>, con <strong>esclusione</strong> in ogni caso degli <strong>spostamenti verso i capoluoghi di provincia.</strong>
+						</blockquote>
+					</header>
+
+					<footer>
+						<a href="#comuni" class="button scrolly">Quali comuni?</a>
+					</footer>
+
+				</div>
+			</section>
+
+			<!-- Comuni -->
+			<section id="comuni" class="two">
+				<div class="container">
+
+					<header>
+						<h2>Comuni</h2>
+					</header>
+					<table id="table_comuni" class="display" style="width:100%">
+						<thead>
+							<tr>
+								<th>COMUNE</th>
+								<th>PROVINCIA</th>
+								<th>POPOLAZIONE</th>
+								<th>SUPERFICIE (km²)</th>
+								<th>MAPPA</th>
+							</tr>
+						</thead>
+					</table>
+					
+
+				</div>
+			</section>
+
+
+
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+
+			<!-- Copyright -->
+			<ul class="copyright">
+				<li>da una idea di </li><li>aborruso napo pigrecoinfinito</li>
+			</ul>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#table_comuni').DataTable( {
+					"autoWidth": true,
+					"ajax": "data/comuni.json",
+					"columns": [
+					{ "data": "COMUNE" },
+					{ "data": "PROVINCIA" },
+					{ "data": "POPOLAZIONE" },
+					{ "data": "SUPERFICIE (km²)" },
+					{ "data": "MAPPA" },
+					],
+					columnDefs: [
+					{
+						targets: 4,
+						render: function ( data, type, row, meta ) {
+							if(type === 'display'){
+								data = '<a href="https://ondata.github.io/30cappa/bindex.html?id=' + data + '">vedi</a>';
+							}
+
+							return data;
+						}
+					}
+					]   
+				} );
+			} );
+		</script>
+	</body>
+	</html>
