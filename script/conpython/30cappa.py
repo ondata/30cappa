@@ -18,7 +18,7 @@ queste istruzoni possono essere commentate
 
 #!pip install matplotlib
 
-#!pip install pandas
+!pip install pandas
 
 #!pip install geopandas
 
@@ -210,9 +210,18 @@ il codice ISTAT dei comuni è fatto da sei cifre ed è composto dal codice provi
 Per renderlo di 6 cifre si aggiungo tanti zero quanti necessari (funzione *zfill* di python)
 """
 
-comuni_popolazione['PRO_COM_T'] = comuni_popolazione['PRO_COM_T'].apply(lambda k: str(k).zfill(6))
+comuni_popolazione_tojoin['PRO_COM_T'] = comuni_popolazione_tojoin['PRO_COM_T'].apply(lambda k: str(k).zfill(6))
 
 geo_comuni_popolazione = limiti_comuni.merge(comuni_popolazione_tojoin,on='PRO_COM_T')
+
+"""**comuni fino a 5000 abitanti e i loro confini**"""
+
+geo_piccoli_comuni = geo_comuni_popolazione[geo_comuni_popolazione.POPOLAZIONE <= 5000]
+
+geo_piccoli_comuni.shape
+
+ax = geo_piccoli_comuni.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:red',facecolor="none")
+ctx.add_basemap(ax,crs=geo_piccoli_comuni.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
 
 """**inizio del calcolo**
 
@@ -256,13 +265,11 @@ def area30Cappa(comune,comuni_capoluogo,confine):
 """... e qui comincia il ciclo"""
 
 tutti_i_comuni = []
-# estrazione comune sotto i 5000 abitanti
-piccoli_comuni = geo_comuni_popolazione[geo_comuni_popolazione.POPOLAZIONE <= 5000]
 # estrazione comuni capoluogo 
 geo_comuni_capoluoogo_provincia = geo_comuni_popolazione[geo_comuni_popolazione.CC_UTS == 1]
-for codice in piccoli_comuni.PRO_COM_T.unique():
+for codice in geo_piccoli_comuni.PRO_COM_T.unique():
   # estrazione singolo comune
-  comune = piccoli_comuni[piccoli_comuni['PRO_COM_T'] == codice].reset_index()
+  comune = geo_piccoli_comuni[geo_piccoli_comuni['PRO_COM_T'] == codice].reset_index()
   comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
   nome = str(comune['PRO_COM_T'].values[0])
   comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
@@ -273,7 +280,7 @@ for codice in piccoli_comuni.PRO_COM_T.unique():
 
 """giusto per curiosità creiamo la mappa dell'ultimo comune processato"""
 
-ax = comune.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+ax = comune.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="xkcd:orange",alpha=0.5)
 ctx.add_basemap(ax,crs=comune.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
 
 """**creazione del layer con tutti i dati calcolati**
