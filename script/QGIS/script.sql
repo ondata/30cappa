@@ -8,43 +8,52 @@ SELECT InitSpatialMetadata(1);
 -- crea un db vuoto e importa il vettore Com01012020_g_WGS84 e il CSV comuni
 -- in OUTPUT crea un vettore diff_buffer_capol
 
--- crea vista - buffer da 30km su comuni da 5k
-CREATE VIEW v_comuni5k_ab_b30k AS
+-- crea tabella - buffer da 30km su comuni da 5k
+CREATE TABLE comuni5k_ab_b30k AS
 SELECT c.pro_com_t,c.cod_reg,c.comune,p.Abitanti, st_buffer (geom,30000) as geom  FROM Com01012020_g_WGS84 c 
 JOIN (SELECT Abitanti, PRO_COM_T FROM comuni ) p ON c.pro_com_t=p.PRO_COM_T 
 WHERE p.Abitanti <=5000;
-
-INSERT INTO views_geometry_columns
-(view_name, view_geometry, view_rowid, f_table_name, f_geometry_column, read_only)
-VALUES ('v_comuni5k_ab_b30k', 'geom', 'rowid', 'com01012020_g_wgs84', 'geom',1);
+SELECT RecoverGeometryColumn('comuni5k_ab_b30k','geom',32632,'POLYGON','XY');
+SELECT CreateSpatialIndex('comuni5k_ab_b30k', 'geom');
 
 -- crea vista - capoluoghi di provincia
-CREATE VIEW v_capoluoghi_prov AS
+CREATE TABLE capoluoghi_prov AS
 SELECT pro_com_t,cod_rip,cod_reg,comune,geom  
 FROM Com01012020_g_WGS84
-WHERE cc_uts != 0 ;
+WHERE cc_uts != 0;
+SELECT RecoverGeometryColumn('capoluoghi_prov','geom',32632,'MULTIPOLYGON','XY');
+SELECT CreateSpatialIndex('capoluoghi_prov', 'geom');
 
-INSERT INTO views_geometry_columns
-(view_name, view_geometry, view_rowid, f_table_name, f_geometry_column, read_only)
-VALUES ('v_capoluoghi_prov', 'geom', 'rowid', 'com01012020_g_wgs84', 'geom',1);
+CREATE TABLE tmp_cap_prov AS
+SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom FROM capoluoghi_prov;
+SELECT RecoverGeometryColumn('tmp_cap_prov','geom',32632,'MULTIPOLYGON','XY');
 
--- clippa i capoluoghi con i buffer da 30km
-CREATE TABLE diff_buffer_capol AS
+
+-- clippa i capoluoghi con i buffer da 30km - cod_reg=19 Sicilia
+CREATE TABLE diff_buffer_capoluoghi AS
 SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMultiPolygon(ST_DIFFERENCE(b.geom , p.geom)) as geom
-FROM (SELECT * FROM v_comuni5k_ab_b30k WHERE cod_reg=19)b, (SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom FROM v_capoluoghi_prov WHERE cod_reg=19 ) p
-WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 1
+FROM (SELECT * FROM comuni5k_ab_b30k)b, tmp_cap_prov p
+WHERE ST_intersects (b.geom , p.geom) = 1
 union
 SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMultiPolygon(b.geom) as geom
-FROM (SELECT * FROM v_comuni5k_ab_b30k WHERE cod_reg=19)b,(SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom FROM v_capoluoghi_prov WHERE cod_reg=19 ) p
-WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 0;
-SELECT RecoverGeometryColumn('diff_buffer_capol','geom',32632,'MULTIPOLYGON','XY');
+FROM (SELECT * FROM comuni5k_ab_b30k)b,tmp_cap_prov p
+WHERE ST_intersects (b.geom , p.geom) = 0;
+SELECT RecoverGeometryColumn('diff_buffer_capoluoghi','geom',32632,'MULTIPOLYGON','XY');
+SELECT CreateSpatialIndex('diff_buffer_capoluoghi', 'geom');
 
 -- clippa i buffer comunali con la regione - da rivedere
--- CREATE TABLE inters_buffer_reg AS
--- SELECT b.pro_com_t,b.cod_reg,b.comune,CastToMulti(ST_Intersection(b.geom ,p.geom)) as geom
--- FROM diff_buffer_capol b, (SELECT cod_reg, CastToMultiPolygon(st_union(geom)) as geom FROM Com01012020_g_WGS84 WHERE cod_reg=19 group by cod_reg=19) p
--- WHERE b.cod_reg = 19 and ST_intersects (b.geom , p.geom) = 1;
--- SELECT RecoverGeometryColumn('inters_buffer_reg','geom',32632,'MULTIPOLYGON','XY');
+CREATE TABLE aree30cappa AS
+SELECT b.pro_com_t,b.cod_reg,p.cod_reg AS cod_reg_2,b.comune,CastToMultiPolygon(ST_Intersection(b.geom ,p.geom)) as geom
+FROM diff_buffer_capoluoghi b, tmp_regioni p
+WHERE ST_intersects (b.geom , p.geom) = 1
+AND
+b.ROWID IN (
+    SELECT ROWID 
+    FROM SpatialIndex
+    WHERE f_table_name = 'diff_buffer_capoluoghi' 
+        AND search_frame = p.geom)
+AND COD_REG = COD_REG_2;
+SELECT RecoverGeometryColumn('aree30cappa','geom',32632,'MULTIPOLYGON','XY');
 
 
 --
