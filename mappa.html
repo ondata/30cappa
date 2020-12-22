@@ -91,7 +91,7 @@
     function onEachFeature(feature, layer) {
       layer.bindPopup()
       layer.on('click', (a) => {
-        layer.bindPopup('In <span style="color:#ff7800">arancione</span>, l\'area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b>' + feature.properties.COMUNE + '</b> (<a href="https://www.gazzettaufficiale.it/eli/id/2020/12/18/20G00196/s" target="_blank">decreto legge 172</a>)')
+        layer.bindPopup('In <span style="color:#ff7800">arancione</span>, l\'area in cui sono consentiti spostamenti, nei giorni <b>28, 29, 30 dicembre 2020</b> e <b>4 gennaio 2021</b>, per i residenti nel comune di <b><span style="color:#FF0000">' + feature.properties.COMUNE + '</span></b> (<a href="https://www.gazzettaufficiale.it/eli/id/2020/12/18/20G00196/s" target="_blank">decreto legge 172</a>)')
       });
 
     }
