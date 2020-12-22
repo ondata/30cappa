@@ -9,6 +9,8 @@
 - calcolare i 30kmdal confine  da cui possono spostare
 - impedendo di andare nei Comuni capoluogo di Provincia
 
+uno script creato da [@napo](https://twitter.com/napo) e distribuito con licenza [WTFPL](https://it.wikipedia.org/wiki/WTFPL)
+
 ## Setup
 
 queste istruzoni possono essere commentate
@@ -257,9 +259,9 @@ def area30Cappa(comune,comuni_capoluogo,confine):
       comuni_30cappa += nome + " ,"
   comuni_30cappa = comuni_30cappa.lstrip(" ,")
   # aggiunta dell'elenco dei comuni raggiungibili
-  comune['30CAPPA'] = comuni_30cappa
+  #comune['30CAPPA'] = comuni_30cappa
   # selezione dei campi utili allo scopo
-  comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','30CAPPA','geometry']]
+  comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
   return(comune)
 
 """... e qui comincia il ciclo"""
@@ -272,10 +274,10 @@ for codice in geo_piccoli_comuni.PRO_COM_T.unique():
   comune = geo_piccoli_comuni[geo_piccoli_comuni['PRO_COM_T'] == codice].reset_index()
   comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
   nome = str(comune['PRO_COM_T'].values[0])
-  comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
-  comune = area30Cappa(comune,geo_comuni_capoluoogo_provincia,confini_italia)
+  #comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
+  #comune = area30Cappa(comune,geo_comuni_capoluoogo_provincia,confini_italia)
   ## creazione del file geojson
-  comune.to_crs(epsg=4326).to_file(nome + "_a30cappa.geojson",driver="GeoJSON")
+  comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
   tutti_i_comuni.append(comune)
 
 """giusto per curiosità creiamo la mappa dell'ultimo comune processato"""
