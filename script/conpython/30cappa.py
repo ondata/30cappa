@@ -18,7 +18,7 @@ queste istruzoni possono essere commentate
 
 #!pip install matplotlib
 
-!pip install pandas
+#!pip install pandas
 
 #!pip install geopandas
 
