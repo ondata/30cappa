@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 """30cappa.ipynb
 
-
 # 30cappa con meno di 5mila abitanti
 
 ![](https://raw.githubusercontent.com/aborruso/30cappa/main/risorse/2020-12-18_slide_Natale.png)
 
 - trovare i piccoli Comuni (fino a 5mila abitanti)
 - calcolare i 30kmdal confine  da cui possono spostare
-- impedendo di andare nei Comuni capoluogo di Provincia e rimanendo nella stessa regione o Provincia Autonoma.
+- impedendo di andare nei Comuni capoluogo di Provincia
 
 ## Setup
 
@@ -25,11 +24,15 @@ queste istruzoni possono essere commentate
 
 #!pip install pygeos
 
+# giusto per aggiungere una mappa in background
+#!pip install contextily
+
 import pandas as pd
 import geopandas as gpd
 import os
 import requests, zipfile, io
 import matplotlib.pyplot as plt
+import contextily as ctx
 
 """# Raccolta dei dati
 - confini comunali
@@ -68,6 +71,37 @@ z.extractall()
 
 limiti_comuni = gpd.read_file("Limiti01012020" + os.sep + "Com01012020" + os.sep + "Com01012020_WGS84.shp",encoding='utf-8')
 
+"""ed ecco la mappa dei comuni d'Italia"""
+
+ax = limiti_comuni.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+ctx.add_basemap(ax,crs=limiti_comuni.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
+
+"""**creazione del confine nazionale**
+questo servirà per tagliare le aree all'interno del confine nazionale.<br/>
+Per creare il confine partiamo dal file con le macroregioni d'Italia solo per questioni di performance
+"""
+
+macroregioni_italiane = gpd.read_file("Limiti01012020" + os.sep + "RipGeo01012020" + os.sep + "RipGeo01012020_WGS84.shp",encoding='utf-8')
+
+"""questa la mappa delle macroregioni (DEN_RIP contiene il nome)"""
+
+ax = macroregioni_italiane.to_crs(epsg=3857).plot(column='DEN_RIP',figsize=(12,12),alpha=0.5,edgecolor="black",cmap="RdYlBu",legend=True)
+ctx.add_basemap(ax,crs=limiti_comuni.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
+
+"""creiamo un campo per creare la dissolvenza ( = unire tutti i poligoni con lo stesso valore)"""
+
+macroregioni_italiane['nazione']='Italia'
+
+confini_italia = macroregioni_italiane[['nazione', 'geometry']]
+
+"""... ed ora procediamo con la dissolvenza"""
+
+confini_italia = confini_italia.dissolve(by='nazione')
+
+"""ed ora vediamo la mappa"""
+
+ax = confini_italia.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+
 """**ottenere l'elenco dei capoluoghi di provincia**
 
 CC_UTS = 1
@@ -97,7 +131,7 @@ dati_demografici_comuni_italiani = "http://demo.istat.it/pop2020/dati/comuni.zip
 La codifica caratteri è *utf-8*
 """
 
-demo_comuni = pd.read_csv(dati_demografici_comuni_italiani,skiprows=1,encoding='utf-8')
+demo_comuni = pd.read_csv(dati_demografici_comuni_italiani,skiprows=1,encoding='utf-8',low_memory=False)
 
 """visualizzazione prime righe"""
 
@@ -162,9 +196,7 @@ comuni5001_5020.sort_values('POPOLAZIONE')
 operazioni da svolgere:
 - aggiungere ai dati dei confini comunali l'attributo della popolazione per ciascun comune
 - l'area a 30cappa si calcola usando la funzione [buffer](https://geopandas.org/geometric_manipulations.html#GeoSeries.buffer)
-- a questa va sottratta: 
-  - l'area dei confini regionali (o della provincia autonoma)
-  - l'area del comune capoluogo si provincia
+- a questa va sottratta dei confini nazionali 
 
 come output generiamo un file geojson per ogni comune e associamo anche la lista dei comuni a 30km di distanza nel campo *comunia30cappa*
 
@@ -190,21 +222,21 @@ La fuzione *area30Cappa* si occupa di calcolare l'area di un singolo comune a 30
 
 """
 
-def area30Cappa(comune,regione,gdf_confine):
+def area30Cappa(comune,comuni_capoluogo,confine):
   # creazione dell'area a 30cappa dal confine
   comune['geometry'] = comune.geometry.buffer(30000)
   # taglio sul confine regionale
-  comune = gpd.overlay(comune,gdf_confine, how='intersection')
+  comune = gpd.overlay(comune,confine, how='intersection')
   # spatial join al fine di avere i nomi dei comuni che intersecano l'area
   # nota: l'intersezione aggiunge i suffissi _right
-  comuni_raggiungibili = gpd.sjoin(comune,regione)[['COMUNE_right','PRO_COM_T_right','CC_UTS']]
+  comuni_raggiungibili = gpd.sjoin(comune,comuni_capoluogo)[['COMUNE_right','PRO_COM_T_right','CC_UTS']]
   # pulizia del suffisso
   for col in comuni_raggiungibili.columns:
     comuni_raggiungibili.rename(columns={col:col.replace("_right","")},inplace=True)
   # esclusione dell'aree dei comuni capoluogo
   capoluoghi = []
   for cod_capoluogo in comuni_raggiungibili[comuni_raggiungibili.CC_UTS==1].PRO_COM_T.unique():
-    capoluogo = regione[regione.PRO_COM_T == cod_capoluogo].reset_index()
+    capoluogo = comuni_capoluogo[comuni_capoluogo.PRO_COM_T == cod_capoluogo].reset_index()
     capoluoghi.append(capoluogo.COMUNE.values[0])
     # creazione della nuova geometria
     comune = gpd.overlay(comune,capoluogo,how='difference')
@@ -223,63 +255,39 @@ def area30Cappa(comune,regione,gdf_confine):
 
 """... e qui comincia il ciclo"""
 
-#variabile per raccogliere tutti i comuni utile per salvare poi il risultato in un unico file
 tutti_i_comuni = []
-for cod_reg in geo_comuni_popolazione.COD_REG.unique():
-  # quando cod_reg vale 4 vuole dire che siamo davanti alla regione Trentino Alto Adige
-  # quindi dobbiamo guardare per le province
-  if (cod_reg != 4):
-    #estrazione dei comuni per regione
-    regione = geo_comuni_popolazione[geo_comuni_popolazione['COD_REG'] == cod_reg]
-    #calcolo della geometria del confine regionale
-    confine_regionale = regione.geometry.unary_union
-    #trasformazione in geodataframe per necessità delle funzioni di overlay
-    #di geopandas
-    gdf_confine = gpd.GeoDataFrame(
-        pd.DataFrame(data={'regione': [cod_reg]}),
-        crs='EPSG:32632',
-        geometry=gpd.GeoSeries(confine_regionale))
-    #estrazione dei piccoli comuni per questa regione
-    piccoli_comuni = regione[regione.POPOLAZIONE <= 5000]
-    #inizio del calcolo dell'area del comune a 30cappa dal confine e
-    #sottrazione dei confini regionali e dei comuni capoluogo dall'area trovata
-    #per ciascun comune
-    for codice in piccoli_comuni.PRO_COM_T.unique():
-      # estrazione singolo comune
-      comune = piccoli_comuni[piccoli_comuni['PRO_COM_T'] == codice].reset_index()
-      comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
-      nome = str(comune['PRO_COM_T'].values[0])
-      comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
-      comune = area30Cappa(comune,regione,gdf_confine)
-      ## creazione del file geojson
-      comune.to_crs(epsg=4326).to_file(nome + "_a30cappa.geojson",driver="GeoJSON")
-      tutti_i_comuni.append(comune)
-  else:
-    # questo è il caso in cui si tratta delle Province autonome
-    codici_provincia = [21,22]
-    for cod_prov in codici_provincia:
-      provincia = geo_comuni_popolazione[geo_comuni_popolazione['COD_PROV'] == cod_prov]
-      confine_provinciale = provincia.geometry.unary_union
-      gdf_confine = gpd.GeoDataFrame(
-        pd.DataFrame(data={'provincia': [cod_prov]}),
-        crs='EPSG:32632',
-        geometry=gpd.GeoSeries(confine_provinciale))
-      piccoli_comuni = provincia[provincia.POPOLAZIONE <= 5000]
-      for codice in piccoli_comuni.PRO_COM_T.unique():
-        # estrazione singolo comune
-        comune = piccoli_comuni[piccoli_comuni['PRO_COM_T'] == codice].reset_index()
-        comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
-        nome = str(comune['PRO_COM_T'].values[0])
-        comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
-        comune = area30Cappa(comune,provincia,gdf_confine)
-        ## creazione del file geojson
-        comune.to_crs(epsg=4326).to_file(nome + "_a30cappa.geojson",driver="GeoJSON")
-        tutti_i_comuni.append(comune)
+# estrazione comune sotto i 5000 abitanti
+piccoli_comuni = geo_comuni_popolazione[geo_comuni_popolazione.POPOLAZIONE <= 5000]
+# estrazione comuni capoluogo 
+geo_comuni_capoluoogo_provincia = geo_comuni_popolazione[geo_comuni_popolazione.CC_UTS == 1]
+for codice in piccoli_comuni.PRO_COM_T.unique():
+  # estrazione singolo comune
+  comune = piccoli_comuni[piccoli_comuni['PRO_COM_T'] == codice].reset_index()
+  comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
+  nome = str(comune['PRO_COM_T'].values[0])
+  comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
+  comune = area30Cappa(comune,geo_comuni_capoluoogo_provincia,confini_italia)
+  ## creazione del file geojson
+  comune.to_crs(epsg=4326).to_file(nome + "_a30cappa.geojson",driver="GeoJSON")
+  tutti_i_comuni.append(comune)
 
-"""**creazione del layer con tutti i dati calcolati**"""
+"""giusto per curiosità creiamo la mappa dell'ultimo comune processato"""
+
+ax = comune.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+ctx.add_basemap(ax,crs=comune.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
+
+"""**creazione del layer con tutti i dati calcolati**
+
+
+"""
 
 finoa5mila30cappa = gpd.GeoDataFrame( pd.concat( tutti_i_comuni, ignore_index=True) )
 
 """il file creato è un geojson dal nome finoa5mila30cappa.geojson"""
 
 finoa5mila30cappa.to_crs(epsg=4326).to_file('finoa5mila30cappa.geojson',driver="GeoJSON")
+
+"""e qui la mappa di tutti i comuni messi insieme"""
+
+ax = finoa5mila30cappa.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+ctx.add_basemap(ax,crs=finoa5mila30cappa.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
