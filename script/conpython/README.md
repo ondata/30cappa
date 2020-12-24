@@ -1,6 +1,18 @@
-# lo script con python
+# i 30cappa calcolati con python3
 autore [@napo](https://github.com/napo/)<br/>
 licenza [WTFPL](https://it.wikipedia.org/wiki/WTFPL)
+
+## lo script 
+scarica il file [https://raw.githubusercontent.com/ondata/30cappa/main/script/conpython/30cappa.py](https://raw.githubusercontent.com/ondata/30cappa/main/script/conpython/30cappa.py) e poi esegui questi comand e armati di pazienza 
+```
+pip install requirements.txt 
+python 30cappa.py
+``` 
+
+
+## il notebook
+
+... ma se vuoi studiarlo, meglio se guardi l notebook  [30cappa.ipyng](https://github.com/ondata/30cappa/blob/main/script/conpython/30cappa.ipynb)
 
 ![](https://raw.githubusercontent.com/aborruso/30cappa/main/risorse/2020-12-18_slide_Natale.png)
 
