@@ -19,5 +19,5 @@ Ma il consiglio è di usarlo sul proprio computer
 ## un esempio di output di un comune
 ![](https://raw.githubusercontent.com/ondata/30cappa/main/script/conpython/images/comune30k.png)
 
-##tutti i comuni con il loro confine di 30k su una mappa
+## tutti i comuni con il loro confine di 30k su una mappa
 ![](https://raw.githubusercontent.com/ondata/30cappa/main/script/conpython/images/comnu30k.png)
