@@ -2,6 +2,11 @@
 
 La cartella contiene i dati, progetto e script utili per risolvere i `30cappa` del Decreto di Natale.
 
+# i 30cappa calcolati con QGIS 3.x e SpatiaLite 5.0
+
+- autore @totofiandaca
+- licenza [WTFPL](https://it.wikipedia.org/wiki/WTFPL)
+
 ## Struttura cartella
 
 La struttura di base è:
