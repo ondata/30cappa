@@ -10,3 +10,4 @@ tmp*
 # rimuovi momentaneamente cartella output di bash
 dati/arigadicomando/test/*
 
+dati/arigadicomando/output/*.json
