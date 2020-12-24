@@ -3,6 +3,7 @@ autore [@napo](https://github.com/napo/)<br/>
 licenza [WTFPL](https://it.wikipedia.org/wiki/WTFPL)
 
 ## lo script 
+
 scarica il file [https://raw.githubusercontent.com/ondata/30cappa/main/script/conpython/30cappa.py](https://raw.githubusercontent.com/ondata/30cappa/main/script/conpython/30cappa.py) e poi esegui questi comand e armati di pazienza 
 ```
 pip install requirements.txt 
