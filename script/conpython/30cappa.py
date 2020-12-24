@@ -326,7 +326,7 @@ def area30Cappa(comune,comuni_capoluogo,confine):
   # taglio sul confine regionale
   comune = gpd.overlay(comune,confine, how='intersection')
   # differenza con i comuni capoluogo della regione
-  cod_reg = limiti_comuni[limiti_comuni.PRO_COM_T == '022034'].COD_REG.values[0]
+  cod_reg = limiti_comuni[limiti_comuni.PRO_COM_T == comune.PRO_COM_T.values[0]].COD_REG.values[0]
   comune = gpd.overlay(comune,comuni_capoluoogo_provincia[comuni_capoluoogo_provincia.COD_REG==cod_reg], how="difference")
   comune = comune[['geometry']]
   return(comune)
@@ -345,7 +345,7 @@ for codice in geo_piccoli_comuni.PRO_COM_T.unique():
   comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
   tutti_i_comuni.append(comune)
 
-"""giusto per curiosità creiamo la mappa dell'ultimo comune processato"""
+""".. vediamo il primo comune processato"""
 
 ax = comune.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="xkcd:orange",alpha=0.5)
 ctx.add_basemap(ax,crs=comune.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
@@ -362,6 +362,8 @@ finoa5mila30cappa = gpd.GeoDataFrame( pd.concat( tutti_i_comuni, ignore_index=Tr
 finoa5mila30cappa.to_crs(epsg=4326).to_file('finoa5mila30cappa.geojson',driver="GeoJSON")
 
 """e qui la mappa di tutti i comuni messi insieme"""
+
+finoa5mila30cappa = gpd.read_file('output.geojson',driver='GeoJSON')
 
 ax = finoa5mila30cappa.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
 ctx.add_basemap(ax,crs=finoa5mila30cappa.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
