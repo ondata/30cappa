@@ -51,9 +51,14 @@ QGIS     | 30cappa.model | modello per QGIS
 QGIS     | 30cappaAtlas.model | modello per QGIS per l'Atlas
 QGIS     | 30cappaAtlas.qgs | progetto QGIS
 QGIS     | modello_all_FINALE.png | immagine del workflow del modello
+QGIS     | pagina_Atlas_orizzontale.png | pagina dell'Atlas layout orizzontale
+
+## modello
+
+![](modello_all_FINALE.png)
 
 ## atlas
 
 Nel progetto QGIS sono presenti due Atlas, uno con layout orizzontale e l'altro verticale:
 
-![](modello_all_FINALE.png)
+![](pagina_Atlas_orizzontale.png)
