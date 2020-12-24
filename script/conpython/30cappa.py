@@ -35,6 +35,7 @@ import os
 import requests, zipfile, io
 import matplotlib.pyplot as plt
 import contextily as ctx
+import datetime
 
 """# Raccolta dei dati
 - confini comunali
@@ -75,8 +76,10 @@ limiti_comuni = gpd.read_file("Limiti01012020" + os.sep + "Com01012020" + os.sep
 
 """ed ecco la mappa dei comuni d'Italia"""
 
-ax = limiti_comuni.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
-ctx.add_basemap(ax,crs=limiti_comuni.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
+f, ax = plt.subplots(1,figsize = (12, 12))
+limiti_comuni.to_crs(epsg=3857).plot(ax=ax,figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+ctx.add_basemap(ax,source=ctx.providers.Stamen.Terrain)
+plt.show()
 
 """**creazione del confine nazionale**
 questo servirà per tagliare le aree all'interno del confine nazionale.<br/>
@@ -109,14 +112,15 @@ ax = confini_italia.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orang
 CC_UTS = 1
 """
 
-comuni_capoluoogo_provincia = limiti_comuni[limiti_comuni.CC_UTS == 1][['COMUNE','PRO_COM_T']]
+comuni_capoluoogo_provincia = limiti_comuni[limiti_comuni.CC_UTS == 1][['COMUNE','PRO_COM_T','COD_REG','geometry']]
 
 # visualizzare i primi 5
 comuni_capoluoogo_provincia.head(5)
 
-"""export della tabella in formato csv"""
+"""**ed ecco la mappa dei comuni capoluogo di provincia**"""
 
-comuni_capoluoogo_provincia.to_csv("comuni_capoluoogo_provincia.csv")
+ax = comuni_capoluoogo_provincia.to_crs(epsg=3857).plot(figsize=(12,12),alpha=0.5,edgecolor="black",facecolor="xkcd:peach",legend=True)
+ctx.add_basemap(ax,crs=comuni_capoluoogo_provincia.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
 
 """## Informazioni statistiche sulla popolazione in Italia
 
@@ -162,6 +166,87 @@ comuni_popolazione = comuni_popolazione[['Codice comune','Denominazione','POPOLA
 """per comodità nelle operazioni successive conviene rinominare le colonne allo stesso modo di quelle del file con i confini comunali"""
 
 comuni_popolazione.rename(columns={'Codice comune':'PRO_COM_T','Denominazione':'COMUNE'}, inplace=True)
+
+"""i codici istat sono stringhe di 6 caratteri composte dal codice della provincia e un valore incrementale per ogni comune della provincia stessa.<Br/>
+Per ottenere 6 caratteri si aggiungono degli zeri all'inizio
+"""
+
+comuni_popolazione['PRO_COM_T'] = comuni_popolazione.PRO_COM_T.apply(lambda k: str(k).zfill(6))
+
+"""la tabella con i dati demografici di ISTAT non è aggiornata con i comuni che si sono uniti.<br/>
+Occorre ricavare questa lista.
+
+ANPR offre l'elenco di tutti i comuni d'Italia<br/>
+Qui il file csv<br/>
+https://www.anpr.interno.it/portale/documents/20182/50186/ANPR_archivio_comuni.csv
+"""
+
+anpr_comuni = pd.read_csv("https://www.anpr.interno.it/portale/documents/20182/50186/ANPR_archivio_comuni.csv")
+
+anpr_comuni[anpr_comuni.DENOMINAZIONE_IT == 'TAIO']
+
+anpr_comuni['PRO_COM_T'] = anpr_comuni['CODISTAT'].apply(lambda k: str(k).zfill(6))
+
+codici_comuni_anpr = anpr_comuni['PRO_COM_T'].unique()
+
+codici_comuni_confini = limiti_comuni.PRO_COM_T.unique()
+
+codici_comune_popolazione = comuni_popolazione.PRO_COM_T.unique()
+
+comuni_prefusione = set(codici_comune_popolazione) - set(codici_comuni_confini)
+
+for excomune in comuni_prefusione:
+  df_comune = comuni_popolazione[comuni_popolazione['PRO_COM_T'] == excomune]
+  print(df_comune.COMUNE.values[0])
+  print(df_comune.PRO_COM_T.values[0])
+
+"""... questo è fatto a mano da wikipedia perchè non ho trovato tabelle che aiutano a farlo in automatico"""
+
+fusioni = []
+nuovo = {}
+nuovo['COMUNE'] = 'NOVELLA'
+nuovo['PRO_COM_T'] = '022253'
+excomuni=['022063','022152','022030','022027','022154']
+nuovo['excomuni']=excomuni
+fusioni.append(nuovo)
+nuovo = {'COMUNE':"BORGO D'ANAUNIA"}
+nuovo['PRO_COM_T'] = '022252'
+excomuni=['022046','022088','022027']
+nuovo['excomuni']=excomuni
+fusioni.append(nuovo)
+nuovo = {'COMUNE':"VILLE DI FIEMME"}
+nuovo['PRO_COM_T'] = '022254'
+excomuni=['022041','022070','022211']
+nuovo['excomuni']=excomuni
+fusioni.append(nuovo)
+
+for fusione in fusioni:
+  row = {}
+  abitanti = 0
+  for da in fusione['excomuni']:
+    abitanti += comuni_popolazione[comuni_popolazione.PRO_COM_T == da].POPOLAZIONE.values[0]
+  row['COMUNE'] = fusione['COMUNE']
+  row['PRO_COM_T'] = fusione['PRO_COM_T']
+  row['POPOLAZIONE'] = abitanti
+  comuni_popolazione = comuni_popolazione.append(row,ignore_index=True)
+
+"""... cosi come i comuni annessi ad altri"""
+
+daggiungere = []
+daa = {}
+daa['da'] = '022080'
+daa['a'] = '022167'
+daggiungere.append(daa)
+daa = {}
+daa['da'] = '097085'
+daa['a'] = '097008'
+
+for aggiungi in daggiungere:
+  da = aggiungi['da']
+  a = aggiungi['a']
+  abitanti_da = comuni_popolazione[comuni_popolazione.PRO_COM_T == da].POPOLAZIONE.values[0]
+  abitanti_a = comuni_popolazione[comuni_popolazione.PRO_COM_T == a].POPOLAZIONE.values[0]
+  comuni_popolazione[comuni_popolazione.PRO_COM_T == a].POPOLAZIONE = abitanti_da + abitanti_a
 
 """**elenco dei 'piccoli Comuni'**
 
@@ -233,49 +318,29 @@ La fuzione *area30Cappa* si occupa di calcolare l'area di un singolo comune a 30
 
 """
 
+comuni_capoluoogo_provincia[comuni_capoluoogo_provincia.COD_REG==4]
+
 def area30Cappa(comune,comuni_capoluogo,confine):
   # creazione dell'area a 30cappa dal confine
   comune['geometry'] = comune.geometry.buffer(30000)
   # taglio sul confine regionale
   comune = gpd.overlay(comune,confine, how='intersection')
-  # spatial join al fine di avere i nomi dei comuni che intersecano l'area
-  # nota: l'intersezione aggiunge i suffissi _right
-  comuni_raggiungibili = gpd.sjoin(comune,comuni_capoluogo)[['COMUNE_right','PRO_COM_T_right','CC_UTS']]
-  # pulizia del suffisso
-  for col in comuni_raggiungibili.columns:
-    comuni_raggiungibili.rename(columns={col:col.replace("_right","")},inplace=True)
-  # esclusione dell'aree dei comuni capoluogo
-  capoluoghi = []
-  for cod_capoluogo in comuni_raggiungibili[comuni_raggiungibili.CC_UTS==1].PRO_COM_T.unique():
-    capoluogo = comuni_capoluogo[comuni_capoluogo.PRO_COM_T == cod_capoluogo].reset_index()
-    capoluoghi.append(capoluogo.COMUNE.values[0])
-    # creazione della nuova geometria
-    comune = gpd.overlay(comune,capoluogo,how='difference')
-  comuni_30cappa = ""
-  lista_comuni = list(comuni_raggiungibili.COMUNE.unique())
-  for ncapoluogo in capoluoghi:
-    lista_comuni.remove(ncapoluogo)
-  for nome in lista_comuni:
-      comuni_30cappa += nome + " ,"
-  comuni_30cappa = comuni_30cappa.lstrip(" ,")
-  # aggiunta dell'elenco dei comuni raggiungibili
-  #comune['30CAPPA'] = comuni_30cappa
-  # selezione dei campi utili allo scopo
-  comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
+  # differenza con i comuni capoluogo della regione
+  cod_reg = limiti_comuni[limiti_comuni.PRO_COM_T == '022034'].COD_REG.values[0]
+  comune = gpd.overlay(comune,comuni_capoluoogo_provincia[comuni_capoluoogo_provincia.COD_REG==cod_reg], how="difference")
+  comune = comune[['geometry']]
   return(comune)
 
 """... e qui comincia il ciclo"""
 
 tutti_i_comuni = []
-# estrazione comuni capoluogo 
-geo_comuni_capoluoogo_provincia = geo_comuni_popolazione[geo_comuni_popolazione.CC_UTS == 1]
 for codice in geo_piccoli_comuni.PRO_COM_T.unique():
   # estrazione singolo comune
   comune = geo_piccoli_comuni[geo_piccoli_comuni['PRO_COM_T'] == codice].reset_index()
   comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
   nome = str(comune['PRO_COM_T'].values[0])
   #comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
-  #comune = area30Cappa(comune,geo_comuni_capoluoogo_provincia,confini_italia)
+  comune = area30Cappa(comune,comuni_capoluoogo_provincia,confini_italia)
   ## creazione del file geojson
   comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
   tutti_i_comuni.append(comune)
