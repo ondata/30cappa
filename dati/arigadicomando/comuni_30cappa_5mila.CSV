@@ -1,0 +1,5497 @@
+PRO_COM_T,COD_REG,COMUNE,Abitanti
+001293,1,Verolengo,4846
+002072,1,Lozzolo,820
+002078,1,Mollia,96
+002079,1,Moncrivello,1385
+002082,1,Motta de' Conti,746
+002088,1,Olcenengo,797
+002089,1,Oldenico,211
+002090,1,Palazzolo Vercellese,1147
+002091,1,Pertengo,289
+002093,1,Pezzana,1291
+002096,1,Pila,139
+002097,1,Piode,183
+002102,1,Postua,561
+002104,1,Prarolo,712
+002107,1,Quarona,3951
+002108,1,Quinto Vercellese,382
+002110,1,Rassa,62
+002113,1,Rimella,132
+002115,1,Rive,451
+002116,1,Roasio,2347
+002118,1,Ronsecco,551
+002121,1,Rossa,175
+002122,1,Rovasenda,928
+002126,1,Salasco,220
+002127,1,Sali Vercellese,102
+002128,1,Saluggia,3883
+002131,1,San Germano Vercellese,1522
+002134,1,Scopa,372
+002135,1,Scopello,365
+002137,1,Serravalle Sesia,4870
+002142,1,Stroppiana,1180
+002147,1,Tricerro,697
+002150,1,Tronzano Vercellese,3430
+002152,1,Valduggia,1933
+002163,1,Villarboit,410
+002164,1,Villata,1554
+002166,1,Vocca,160
+002170,1,Alto Sermenza,151
+002171,1,Cellio con Breia,969
+055024,10,Otricoli,1807
+055025,10,Parrano,489
+055026,10,Penna in Teverina,1076
+055027,10,Polino,223
+055028,10,Porano,1910
+055029,10,San Gemini,4911
+002032,1,Carisio,775
+002033,1,Casanova Elvo,210
+002035,1,San Giacomo Vercellese,290
+002041,1,Cervatto,58
+002042,1,Cigliano,4371
+002043,1,Civiasco,253
+002045,1,Collobiano,88
+002047,1,Costanzana,744
+002048,1,Cravagliana,254
+002052,1,Crova,408
+002054,1,Desana,1066
+002057,1,Fobello,186
+002058,1,Fontanetto Po,1091
+002059,1,Formigliana,487
+002062,1,Ghislarengo,826
+002065,1,Greggio,346
+002066,1,Guardabosone,340
+002067,1,Lamporo,521
+002068,1,Lenta,813
+002070,1,Lignana,545
+002071,1,Livorno Ferraris,4306
+084039,19,Sant'Angelo Muxaro,1241
+084040,19,Santo Stefano Quisquina,4337
+084042,19,Siculiana,4313
+084043,19,Villafranca Sicula,1371
+085001,19,Acquaviva Platani,918
+085002,19,Bompensiere,526
+085003,19,Butera,4411
+085005,19,Campofranco,2854
+085006,19,Delia,4106
+085008,19,Marianopoli,1737
+085010,19,Milena,2888
+085011,19,Montedoro,1462
+085014,19,Resuttano,1862
+055030,10,San Venanzo,2197
+055031,10,Stroncone,4766
+055033,10,Avigliano Umbro,2453
+056002,12,Arlena di Castro,837
+056003,12,Bagnoregio,3556
+056004,12,Barbarano Romano,1030
+056005,12,Bassano Romano,4729
+056006,12,Bassano in Teverina,1283
+056007,12,Blera,3127
+056008,12,Bolsena,3865
+056009,12,Bomarzo,1743
+056010,12,Calcata,907
+056011,12,Canepina,3032
+056013,12,Capodimonte,1690
+056016,12,Carbognano,1937
+056017,12,Castel Sant'Elia,2557
+056018,12,Castiglione in Teverina,2305
+056019,12,Celleno,1308
+056020,12,Cellere,1110
+056022,12,Civitella d'Agliano,1551
+056023,12,Corchiano,3672
+084035,19,San Biagio Platani,3088
+084037,19,Santa Elisabetta,2267
+003022,1,Bolzano Novarese,1170
+003023,1,Borgolavezzaro,2009
+003026,1,Briga Novarese,2818
+003027,1,Briona,1121
+003030,1,Caltignaga,2504
+003036,1,Carpignano Sesia,2510
+003037,1,Casalbeltrame,974
+003039,1,Casaleggio Novara,911
+003040,1,Casalino,1531
+003041,1,Casalvolone,888
+003042,1,Castellazzo Novarese,324
+003044,1,Cavaglietto,389
+003045,1,Cavaglio d'Agogna,1185
+003047,1,Cavallirio,1314
+003051,1,Colazza,467
+003052,1,Comignago,1245
+003055,1,Cressa,1608
+003058,1,Cureggio,2594
+003060,1,Divignano,1402
+003062,1,Dormelletto,2573
+003065,1,Fara Novarese,2027
+003066,1,Fontaneto d'Agogna,2620
+003069,1,Garbagna Novarese,1424
+003070,1,Gargallo,1775
+003073,1,Ghemme,3467
+003077,1,Granozzo con Monticello,1345
+003079,1,Grignasco,4379
+003082,1,Invorio,4328
+003083,1,Landiona,547
+003084,1,Lesa,2212
+003088,1,Maggiora,1639
+003090,1,Mandello Vitta,227
+003091,1,Marano Ticino,1639
+003093,1,Massino Visconti,1107
+003095,1,Meina,2441
+003097,1,Mezzomerico,1237
+003098,1,Miasino,787
+003100,1,Momo,2481
+003103,1,Nebbiuno,1797
+003104,1,Nibbiola,814
+003109,1,Oleggio Castello,2174
+003112,1,Orta San Giulio,1341
+003114,1,Paruzzaro,2173
+003115,1,Pella,928
+003116,1,Pettenasco,1350
+003119,1,Pisano,814
+003120,1,Pogno,1381
+003121,1,Pombia,2140
+003122,1,Prato Sesia,1868
+003129,1,Recetto,945
+003130,1,Romagnano Sesia,3860
+003133,1,San Maurizio d'Opaglio,3039
+003134,1,San Nazzaro Sesia,740
+003135,1,San Pietro Mosezzo,1958
+003138,1,Sillavengo,554
+003139,1,Sizzano,1407
+003140,1,Soriso,747
+003141,1,Sozzago,1078
+003143,1,Suno,2731
+003144,1,Terdobbiate,467
+003146,1,Tornaco,921
+003153,1,Vaprio d'Agogna,976
+003154,1,Varallo Pombia,4922
+003158,1,Vespolate,2028
+003159,1,Vicolungo,867
+003164,1,Vinzaglio,546
+085020,19,Sutera,1299
+085021,19,Vallelunga Pratameno,3331
+085022,19,Villalba,1526
+086002,19,Aidone,4674
+003001,1,Agrate Conturbia,1572
+003002,1,Ameno,958
+003006,1,Armeno,2162
+003012,1,Barengo,760
+003018,1,Biandrate,1296
+003019,1,Boca,1152
+003021,1,Bogogno,1275
+004043,1,Carrù,4345
+004044,1,Cartignano,174
+001015,1,Bairo,802
+001016,1,Balangero,3136
+001017,1,Baldissero Canavese,535
+001018,1,Baldissero Torinese,3659
+001019,1,Balme,112
+001020,1,Banchette,3225
+001021,1,Barbania,1598
+001022,1,Bardonecchia,3159
+001023,1,Barone Canavese,578
+001025,1,Bibiana,3476
+001026,1,Bobbio Pellice,546
+001027,1,Bollengo,2135
+001029,1,Borgiallo,597
+001030,1,Borgofranco d'Ivrea,3631
+001031,1,Borgomasino,796
+001032,1,Borgone Susa,2210
+001033,1,Bosconero,3107
+001035,1,Bricherasio,4600
+001036,1,Brosso,401
+001037,1,Brozolo,443
+001039,1,Brusasco,1498
+001040,1,Bruzolo,1519
+001054,1,Cantoira,585
+001055,1,Caprie,2078
+001056,1,Caravino,911
+001057,1,Carema,765
+001041,1,Buriasco,1355
+001042,1,Burolo,1135
+001043,1,Busano,1637
+001046,1,Cafasse,3383
+001049,1,Campiglione Fenile,1339
+001050,1,Candia Canavese,1214
+001052,1,Canischio,274
+001053,1,Cantalupa,2590
+001001,1,Agliè,2638
+001002,1,Airasca,3696
+001003,1,Ala di Stura,453
+001004,1,Albiano d'Ivrea,1641
+001007,1,Alpette,246
+001009,1,Andezeno,2058
+001010,1,Andrate,495
+001011,1,Angrogna,845
+001012,1,Arignano,1081
+001014,1,Azeglio,1250
+001103,1,Fenestrelle,506
+001104,1,Fiano,2639
+001105,1,Fiorano Canavese,764
+001106,1,Foglizzo,2284
+001107,1,Forno Canavese,3321
+001108,1,Frassinetto,263
+001109,1,Front,1662
+001110,1,Frossasco,2876
+001111,1,Garzigliana,551
+001113,1,Germagnano,1131
+001114,1,Giaglione,602
+001116,1,Givoletto,3974
+001117,1,Gravere,671
+001118,1,Groscavallo,192
+001119,1,Grosso,1000
+001121,1,Ingria,47
+001122,1,Inverso Pinasca,701
+001123,1,Isolabella,379
+001124,1,Issiglio,395
+001126,1,La Cassa,1795
+001128,1,Lanzo Torinese,4986
+001129,1,Lauriano,1494
+001131,1,Lemie,164
+001132,1,Lessolo,1802
+001133,1,Levone,445
+001134,1,Locana,1427
+001135,1,Lombardore,1721
+001136,1,Lombriasco,1053
+001137,1,Loranzè,1154
+001140,1,Lusernetta,508
+001141,1,Lusigliè,565
+001142,1,Macello,1158
+001143,1,Maglione,411
+001144,1,Marentino,1304
+001145,1,Massello,53
+001146,1,Mathi,3889
+001147,1,Mattie,663
+001148,1,Mazzè,4194
+001149,1,Meana di Susa,827
+001150,1,Mercenasco,1269
+001152,1,Mezzenile,761
+001153,1,Mombello di Torino,379
+001060,1,Casalborgone,1880
+001061,1,Cascinette d'Ivrea,1517
+001062,1,Caselette,3041
+001064,1,Castagneto Po,1757
+001065,1,Castagnole Piemonte,2202
+001067,1,Castelnuovo Nigra,414
+001069,1,Cavagnolo,2247
+001071,1,Cercenasco,1781
+001072,1,Ceres,1033
+001073,1,Ceresole Reale,163
+001074,1,Cesana Torinese,940
+001075,1,Chialamberto,355
+001076,1,Chianocco,1590
+001077,1,Chiaverano,2045
+001079,1,Chiesanuova,220
+001080,1,Chiomonte,881
+001081,1,Chiusa di San Michele,1601
+001083,1,Ciconio,385
+001084,1,Cintano,245
+001085,1,Cinzano,328
+001087,1,Claviere,204
+001088,1,Coassolo Torinese,1491
+001089,1,Coazze,3196
+001091,1,Colleretto Castelnuovo,302
+001092,1,Colleretto Giacosa,584
+001093,1,Condove,4485
+001094,1,Corio,3183
+001095,1,Cossano Canavese,463
+001096,1,Cuceglio,959
+001100,1,Exilles,238
+001102,1,Feletto,2240
+001180,1,Pavarolo,1127
+001181,1,Pavone Canavese,3757
+001183,1,Pecetto Torinese,4102
+001184,1,Perosa Argentina,3169
+001185,1,Perosa Canavese,527
+001186,1,Perrero,624
+001187,1,Pertusio,746
+001188,1,Pessinetto,617
+001190,1,Pinasca,2918
+001193,1,Piobesi Torinese,3856
+001195,1,Piscina,3350
+001196,1,Piverone,1373
+001198,1,Pomaretto,986
+001199,1,Pont-Canavese,3210
+001200,1,Porte,1054
+001201,1,Pragelato,770
+001202,1,Prali,248
+001203,1,Pralormo,1908
+001204,1,Pramollo,217
+001205,1,Prarostino,1270
+001206,1,Prascorsano,731
+001207,1,Pratiglione,481
+001208,1,Quagliuzzo,330
+001209,1,Quassolo,352
+001210,1,Quincinetto,1029
+001211,1,Reano,1776
+001212,1,Ribordone,49
+001213,1,Rivalba,1162
+001215,1,Riva presso Chieri,4765
+001216,1,Rivara,2537
+001218,1,Rivarossa,1577
+001220,1,Robassomero,3031
+001221,1,Rocca Canavese,1716
+001222,1,Roletto,2026
+001223,1,Romano Canavese,2665
+001224,1,Ronco Canavese,299
+001225,1,Rondissone,1883
+001226,1,Rorà,231
+001227,1,Roure,789
+001229,1,Rubiana,2385
+001230,1,Rueglio,785
+001231,1,Salassa,1842
+001232,1,Salbertrand,623
+001233,1,Salerano Canavese,468
+001234,1,Salza di Pinerolo,75
+001235,1,Samone,1532
+001237,1,San Carlo Canavese,4012
+001238,1,San Colombano Belmonte,348
+001239,1,San Didero,524
+001240,1,San Francesco al Campo,4882
+001241,1,Sangano,3729
+001242,1,San Germano Chisone,1747
+001243,1,San Gillio,3148
+001154,1,Mompantero,643
+001155,1,Monastero di Lanzo,335
+001157,1,Moncenisio,33
+001158,1,Montaldo Torinese,714
+001159,1,Montalenghe,989
+001160,1,Montalto Dora,3380
+001162,1,Monteu da Po,840
+001163,1,Moriondo Torinese,852
+001165,1,Noasca,110
+001167,1,Nomaglio,295
+001169,1,Novalesa,526
+001170,1,Oglianico,1460
+001172,1,Orio Canavese,767
+001173,1,Osasco,1168
+001174,1,Osasio,911
+001175,1,Oulx,3316
+001176,1,Ozegna,1192
+001177,1,Palazzo Canavese,852
+001178,1,Pancalieri,2046
+001179,1,Parella,417
+001294,1,Verrua Savoia,1389
+001295,1,Vestignè,802
+001296,1,Vialfrè,248
+001298,1,Vidracco,513
+001300,1,Villafranca Piemonte,4602
+001301,1,Villanova Canavese,1214
+001302,1,Villarbasse,3482
+001303,1,Villar Dora,2847
+001304,1,Villareggia,1010
+001305,1,Villar Focchiardo,1940
+001306,1,Villar Pellice,1056
+001307,1,Villar Perosa,3990
+001308,1,Villastellone,4624
+001310,1,Virle Piemonte,1152
+001311,1,Vische,1226
+001312,1,Vistrorio,519
+001313,1,Viù,1021
+001317,1,Val di Chy,1276
+001318,1,Valchiusa,1026
+002002,1,Alagna Valsesia,727
+002003,1,Albano Vercellese,309
+002004,1,Alice Castello,2544
+002006,1,Arborio,863
+002007,1,Asigliano Vercellese,1420
+002008,1,Balmuccia,115
+002009,1,Balocco,217
+002011,1,Bianzè,1876
+002014,1,Boccioleto,170
+002015,1,Borgo d'Ale,2320
+002017,1,Borgo Vercelli,2211
+002021,1,Buronzo,849
+002025,1,Campertogno,230
+002029,1,Carcoforo,74
+002030,1,Caresana,1038
+002031,1,Caresanablot,1109
+001244,1,San Giorgio Canavese,2565
+001245,1,San Giorio di Susa,971
+001246,1,San Giusto Canavese,3312
+001247,1,San Martino Canavese,807
+001250,1,San Pietro Val Lemina,1426
+001251,1,San Ponso,263
+001252,1,San Raffaele Cimena,3107
+001253,1,San Sebastiano da Po,1895
+001254,1,San Secondo di Pinerolo,3645
+001255,1,Sant'Ambrogio di Torino,4711
+001256,1,Sant'Antonino di Susa,4197
+001258,1,Sauze di Cesana,245
+001259,1,Sauze d'Oulx,1090
+001260,1,Scalenghe,3267
+001261,1,Scarmagno,826
+001262,1,Sciolze,1455
+001263,1,Sestriere,922
+001264,1,Settimo Rottaro,468
+001266,1,Settimo Vittone,1542
+001267,1,Sparone,962
+001268,1,Strambinello,270
+001271,1,Tavagnasco,774
+001273,1,Torrazza Piemonte,2974
+001274,1,Torre Canavese,604
+001275,1,Torre Pellice,4543
+001276,1,Trana,3814
+001278,1,Traversella,322
+001279,1,Traves,524
+001281,1,Usseaux,189
+001282,1,Usseglio,200
+001283,1,Vaie,1418
+001284,1,Val della Torre,3960
+001285,1,Valgioie,928
+001286,1,Vallo Torinese,792
+001287,1,Valperga,3026
+001288,1,Valprato Soana,95
+001289,1,Varisella,851
+001290,1,Vauda Canavese,1452
+001291,1,Venaus,880
+005033,1,Cellarengo,709
+005034,1,Celle Enomondo,470
+005035,1,Cerreto d'Asti,221
+005036,1,Cerro Tanaro,594
+005037,1,Cessole,368
+005038,1,Chiusano d'Asti,229
+005039,1,Cinaglio,450
+005040,1,Cisterna d'Asti,1222
+005041,1,Coazzolo,292
+005042,1,Cocconato,1454
+005044,1,Corsione,203
+005045,1,Cortandone,308
+005046,1,Cortanze,274
+005047,1,Cortazzone,593
+005048,1,Cortiglione,536
+005049,1,Cossombrato,521
+005051,1,Cunico,452
+005052,1,Dusino San Michele,1072
+005053,1,Ferrere,1533
+005054,1,Fontanile,551
+005055,1,Frinco,731
+005056,1,Grana,587
+005057,1,Grazzano Badoglio,608
+005058,1,Incisa Scapaccino,2138
+005059,1,Isola d'Asti,2023
+005060,1,Loazzolo,321
+005061,1,Maranzana,244
+005062,1,Maretto,383
+005063,1,Moasca,502
+005064,1,Mombaldone,202
+005065,1,Mombaruzzo,1028
+005066,1,Mombercelli,2126
+005067,1,Monale,1001
+005068,1,Monastero Bormida,912
+004207,1,San Damiano Macra,407
+004208,1,Sanfrè,3014
+004209,1,Sanfront,2340
+004210,1,San Michele Mondovì,1887
+004211,1,Sant'Albano Stura,2359
+004212,1,Santa Vittoria d'Alba,2861
+004213,1,Santo Stefano Belbo,3959
+004214,1,Santo Stefano Roero,1374
+004216,1,Scagnello,182
+004217,1,Scarnafigi,2133
+004218,1,Serralunga d'Alba,561
+004219,1,Serravalle Langhe,300
+004220,1,Sinio,493
+004221,1,Somano,323
+004223,1,Sommariva Perno,2723
+004224,1,Stroppo,101
+004225,1,Tarantasca,2153
+004226,1,Torre Bormida,165
+004227,1,Torre Mondovì,490
+004228,1,Torre San Giorgio,731
+004229,1,Torresina,46
+004230,1,Treiso,773
+004231,1,Trezzo Tinella,312
+004232,1,Trinità,2235
+004233,1,Valdieri,908
+004234,1,Valgrana,774
+004235,1,Valloriate,104
+004237,1,Venasca,1384
+004238,1,Verduno,528
+004239,1,Vernante,1155
+004241,1,Vezza d'Alba,2313
+004242,1,Vicoforte,3162
+004243,1,Vignolo,2605
+004244,1,Villafalletto,2936
+004246,1,Villanova Solaro,745
+004247,1,Villar San Costanzo,1537
+004248,1,Vinadio,607
+004249,1,Viola,364
+004250,1,Vottignasco,501
+005001,1,Agliano Terme,1578
+005002,1,Albugnano,500
+005003,1,Antignano,962
+005004,1,Aramengo,567
+005104,1,Serole,113
+005105,1,Sessame,251
+005106,1,Settime,530
+005107,1,Soglio,152
+005108,1,Tigliole,1713
+005109,1,Tonco,796
+005110,1,Tonengo,246
+005111,1,Vaglio Serra,281
+005112,1,Valfenera,2418
+005113,1,Vesime,609
+005114,1,Viale,241
+005115,1,Viarigi,861
+005116,1,Vigliano d'Asti,821
+005117,1,Villafranca d'Asti,2985
+005119,1,Villa San Secondo,387
+005120,1,Vinchio,567
+005121,1,Montiglio Monferrato,1585
+006002,1,Albera Ligure,293
+006004,1,Alfiano Natta,742
+006005,1,Alice Bel Colle,732
+006007,1,Altavilla Monferrato,424
+006008,1,Alzano Scrivia,364
+006010,1,Avolasca,262
+006011,1,Balzola,1335
+006012,1,Basaluzzo,2068
+006013,1,Bassignana,1642
+006014,1,Belforte Monferrato,502
+006015,1,Bergamasco,708
+006016,1,Berzano di Tortona,156
+006017,1,Bistagno,1810
+006018,1,Borghetto di Borbera,1951
+006019,1,Borgoratto Alessandrino,558
+006020,1,Borgo San Martino,1384
+006021,1,Bosco Marengo,2311
+006022,1,Bosio,1158
+006023,1,Bozzole,326
+006024,1,Brignano-Frascata,433
+006025,1,Cabella Ligure,481
+006026,1,Camagna Monferrato,478
+006027,1,Camino,733
+006028,1,Cantalupo Ligure,451
+006029,1,Capriata d'Orba,1835
+006030,1,Carbonara Scrivia,1126
+006031,1,Carentino,310
+006032,1,Carezzano,426
+006033,1,Carpeneto,931
+006034,1,Carrega Ligure,85
+006035,1,Carrosio,502
+006036,1,Cartosio,726
+006037,1,Casal Cermelli,1191
+006038,1,Casaleggio Boiro,372
+005069,1,Moncalvo,2833
+005070,1,Moncucco Torinese,883
+005071,1,Mongardino,874
+005072,1,Montabone,321
+005073,1,Montafia,935
+005074,1,Montaldo Scarampi,740
+005075,1,Montechiaro d'Asti,1276
+005076,1,Montegrosso d'Asti,2320
+005077,1,Montemagno,1080
+005079,1,Moransengo,186
+005081,1,Olmo Gentile,71
+005082,1,Passerano Marmorito,420
+005083,1,Penango,460
+005084,1,Piea,559
+005085,1,Pino d'Asti,216
+005086,1,Piovà Massaia,588
+005087,1,Portacomaro,2021
+005088,1,Quaranti,166
+005089,1,Refrancore,1562
+005090,1,Revigliasco d'Asti,779
+005091,1,Roatto,374
+005092,1,Robella,473
+005093,1,Rocca d'Arazzo,901
+005094,1,Roccaverano,382
+005095,1,Rocchetta Palafea,347
+005096,1,Rocchetta Tanaro,1416
+005098,1,San Giorgio Scarampi,106
+005099,1,San Martino Alfieri,683
+005100,1,San Marzano Oliveto,1017
+005101,1,San Paolo Solbrito,1209
+005103,1,Scurzolengo,539
+006085,1,Grondona,479
+006086,1,Guazzora,303
+006087,1,Isola Sant'Antonio,659
+006088,1,Lerma,817
+006090,1,Malvicino,78
+006091,1,Masio,1318
+006092,1,Melazzo,1294
+006093,1,Merana,181
+006094,1,Mirabello Monferrato,1262
+006095,1,Molare,2104
+006096,1,Molino dei Torti,589
+006097,1,Mombello Monferrato,955
+006098,1,Momperone,199
+006099,1,Moncestino,190
+006100,1,Mongiardino Ligure,149
+006101,1,Monleale,562
+006102,1,Montacuto,251
+006103,1,Montaldeo,237
+006104,1,Montaldo Bormida,619
+006105,1,Montecastello,307
+006106,1,Montechiaro d'Acqui,532
+006107,1,Montegioco,293
+006108,1,Montemarzino,304
+006109,1,Morano sul Po,1385
+006110,1,Morbello,417
+006111,1,Mornese,711
+006112,1,Morsasco,627
+006113,1,Murisengo,1343
+006115,1,Occimiano,1270
+006116,1,Odalengo Grande,438
+006117,1,Odalengo Piccolo,239
+006118,1,Olivola,117
+006119,1,Orsara Bormida,415
+006120,1,Ottiglio,616
+006122,1,Oviglio,1198
+006123,1,Ozzano Monferrato,1382
+006124,1,Paderna,200
+006040,1,Casalnoceto,984
+006041,1,Casasco,119
+006043,1,Cassine,2943
+006044,1,Cassinelle,850
+006045,1,Castellania Coppi,88
+006046,1,Castellar Guidobono,400
+006047,1,Castellazzo Bormida,4454
+006048,1,Castelletto d'Erro,141
+006049,1,Castelletto d'Orba,1925
+006050,1,Castelletto Merli,460
+006051,1,Castelletto Monferrato,1473
+006052,1,Castelnuovo Bormida,636
+006054,1,Castelspina,412
+006055,1,Cavatore,265
+006056,1,Cella Monte,495
+006057,1,Cereseto,405
+006058,1,Cerreto Grue,300
+006059,1,Cerrina Monferrato,1347
+006060,1,Coniolo,440
+006061,1,Conzano,955
+006062,1,Costa Vescovato,323
+006063,1,Cremolino,1036
+006065,1,Denice,170
+006066,1,Dernice,184
+006067,1,Fabbrica Curone,593
+006068,1,Felizzano,2210
+006069,1,Fraconalto,311
+006070,1,Francavilla Bisio,510
+006071,1,Frascaro,440
+006072,1,Frassinello Monferrato,490
+006073,1,Frassineto Po,1378
+006074,1,Fresonara,652
+006075,1,Frugarolo,1928
+006076,1,Fubine Monferrato,1599
+006077,1,Gabiano,1052
+006078,1,Gamalero,816
+006079,1,Garbagna,652
+006081,1,Gavi,4459
+006082,1,Giarole,686
+006083,1,Gremiasco,302
+006084,1,Grognardo,243
+006149,1,Rosignano Monferrato,1498
+006150,1,Sala Monferrato,324
+006151,1,Sale,3994
+006152,1,San Cristoforo,568
+006153,1,San Giorgio Monferrato,1207
+006154,1,San Salvatore Monferrato,4179
+006155,1,San Sebastiano Curone,571
+006156,1,Sant'Agata Fossili,384
+006157,1,Sardigliano,394
+006158,1,Sarezzano,1157
+006159,1,Serralunga di Crea,523
+006161,1,Sezzadio,1264
+006162,1,Silvano d'Orba,1911
+006163,1,Solero,1634
+006164,1,Solonghello,209
+006165,1,Spigno Monferrato,976
+006166,1,Spineto Scrivia,359
+006167,1,Stazzano,2387
+006168,1,Strevi,1910
+006169,1,Tagliolo Monferrato,1538
+006170,1,Tassarolo,617
+006171,1,Terruggia,922
+006172,1,Terzo,854
+006173,1,Ticineto,1341
+006175,1,Treville,276
+006176,1,Trisobbio,676
+006178,1,Valmacca,982
+006179,1,Vignale Monferrato,959
+006180,1,Vignole Borbera,2061
+006181,1,Viguzzolo,3111
+006182,1,Villadeati,479
+006183,1,Villalvernia,896
+006184,1,Villamiroglio,300
+006185,1,Villanova Monferrato,1804
+006186,1,Villaromagnano,662
+006187,1,Visone,1207
+006188,1,Volpedo,1186
+006189,1,Volpeglino,133
+006190,1,Voltaggio,709
+006191,1,Cassano Spinola,1867
+006192,1,Alluvioni Piovera,1689
+006193,1,Lu e Cuccaro Monferrato,1379
+007001,2,Allein,209
+007002,2,Antey-Saint-André,553
+007004,2,Arnad,1243
+007005,2,Arvier,861
+007006,2,Avise,302
+007007,2,Ayas,1380
+007008,2,Aymavilles,2115
+007009,2,Bard,120
+006125,1,Pareto,539
+006126,1,Parodi Ligure,641
+006127,1,Pasturana,1271
+006128,1,Pecetto di Valenza,1187
+006129,1,Pietra Marazzi,895
+006131,1,Pomaro Monferrato,334
+006132,1,Pontecurone,3531
+006133,1,Pontestura,1375
+006134,1,Ponti,578
+006135,1,Ponzano Monferrato,329
+006136,1,Ponzone,1012
+006137,1,Pozzol Groppo,296
+006138,1,Pozzolo Formigaro,4612
+006139,1,Prasco,486
+006140,1,Predosa,1954
+006141,1,Quargnento,1382
+006142,1,Quattordio,1564
+006143,1,Ricaldone,640
+006144,1,Rivalta Bormida,1388
+006145,1,Rivarone,402
+006146,1,Roccaforte Ligure,125
+006147,1,Rocca Grimalda,1484
+006148,1,Rocchetta Ligure,215
+007046,2,Ollomont,164
+007047,2,Oyace,212
+007048,2,Perloz,460
+007049,2,Pollein,1537
+007050,2,Pontboset,170
+007051,2,Pontey,794
+007052,2,Pont-Saint-Martin,3638
+007053,2,Pré-Saint-Didier,1020
+007054,2,Quart,4106
+007055,2,Rhêmes-Notre-Dame,84
+007056,2,Rhêmes-Saint-Georges,169
+007057,2,Roisan,1024
+007058,2,Saint-Christophe,3517
+007059,2,Saint-Denis,374
+007060,2,Saint-Marcel,1360
+007061,2,Saint-Nicolas,314
+007062,2,Saint-Oyen,200
+007063,2,Saint-Pierre,3228
+007064,2,Saint-Rhémy-en-Bosses,329
+007065,2,Saint-Vincent,4564
+007066,2,Sarre,4856
+007067,2,Torgnon,559
+007068,2,Valgrisenche,193
+007069,2,Valpelline,608
+007070,2,Valsavarenche,173
+007071,2,Valtournenche,2263
+007072,2,Verrayes,1276
+007073,2,Verrès,2632
+007074,2,Villeneuve,1250
+008001,7,Airole,370
+008002,7,Apricale,622
+008003,7,Aquila d'Arroscia,153
+008004,7,Armo,117
+008005,7,Aurigo,333
+008006,7,Badalucco,1094
+008007,7,Bajardo,341
+008009,7,Borghetto d'Arroscia,417
+008010,7,Borgomaro,835
+008012,7,Caravonica,265
+007010,2,Bionaz,223
+007011,2,Brissogne,946
+007012,2,Brusson,862
+007013,2,Challand-Saint-Anselme,751
+007014,2,Challand-Saint-Victor,535
+007015,2,Chambave,908
+007016,2,Chamois,96
+007017,2,Champdepraz,706
+007018,2,Champorcher,384
+007019,2,Charvensod,2401
+007020,2,Châtillon,4582
+007021,2,Cogne,1350
+007022,2,Courmayeur,2730
+007023,2,Donnas,2460
+007024,2,Doues,505
+007025,2,Emarèse,226
+007026,2,Etroubles,476
+007027,2,Fénis,1790
+007028,2,Fontainemore,430
+007029,2,Gaby,448
+007030,2,Gignod,1741
+007031,2,Gressan,3375
+007032,2,Gressoney-La-Trinité,314
+007033,2,Gressoney-Saint-Jean,795
+007034,2,Hône,1172
+007035,2,Introd,652
+007036,2,Issime,405
+007037,2,Issogne,1368
+007038,2,Jovençan,708
+007039,2,La Magdeleine,107
+007040,2,La Salle,2040
+007041,2,La Thuile,797
+007042,2,Lillianes,444
+007043,2,Montjovet,1771
+007044,2,Morgex,2123
+007045,2,Nus,2971
+010026,7,Gorreto,85
+010027,7,Isola del Cantone,1445
+010029,7,Leivi,2389
+015035,3,Bubbiano,2438
+015038,3,Buscate,4648
+015042,3,Calvignasco,1225
+015050,3,Carpiano,4168
+015055,3,Casarile,4033
+015061,3,Cassinetta di Lugagnano,1856
+017082,3,Idro,1899
+017083,3,Incudine,357
+017084,3,Irma,128
+017086,3,Isorella,4126
+017087,3,Lavenone,515
+017089,3,Limone sul Garda,1142
+017090,3,Lodrino,1666
+017091,3,Lograto,3842
+010030,7,Lorsica,422
+010031,7,Lumarzo,1504
+010032,7,Masone,3593
+010033,7,Mele,2641
+010034,7,Mezzanego,1488
+010035,7,Mignanego,3557
+010036,7,Moconesi,2468
+010037,7,Moneglia,2684
+010038,7,Montebruno,225
+010039,7,Montoggio,2022
+013044,3,Carate Urio,1144
+013045,3,Carbonate,2956
+013046,3,Carimate,4491
+013047,3,Carlazzo,3187
+013052,3,Caslino d'Erba,1665
+013053,3,Casnate con Bernate,4984
+013055,3,Cassina Rizzardi,3373
+013058,3,Castelmarte,1257
+013059,3,Castelnuovo Bozzente,907
+013062,3,Cavargna,203
+013063,3,Cerano d'Intelvi,545
+013068,3,Cirimido,2135
+013071,3,Claino con Osteno,568
+013074,3,Colonno,499
+016135,3,Misano di Gera d'Adda,2974
+016136,3,Moio de' Calvi,207
+016137,3,Monasterolo del Castello,1165
+016139,3,Montello,3313
+016140,3,Morengo,2511
+016141,3,Mornico al Serio,2968
+016142,3,Mozzanica,4500
+016145,3,Olmo al Brembo,494
+016146,3,Oltre il Colle,990
+016147,3,Oltressenda Alta,146
+016148,3,Oneta,583
+016149,3,Onore,907
+016150,3,Orio al Serio,1706
+015078,3,Cisliano,4876
+015082,3,Colturano,2064
+015097,3,Cusago,4263
+015101,3,Dresano,3012
+010040,7,Ne,2203
+010041,7,Neirone,841
+010042,7,Orero,527
+010043,7,Pieve Ligure,2485
+010044,7,Portofino,377
+010045,7,Propata,137
+010048,7,Rezzoaglio,949
+010049,7,Ronco Scrivia,4219
+013077,3,Corrido,825
+013083,3,Cremia,674
+013084,3,Cucciago,3495
+013085,3,Cusino,224
+013087,3,Dizzasco,607
+013089,3,Domaso,1482
+013090,3,Dongo,3289
+013092,3,Dosso del Liro,248
+013097,3,Eupilio,2618
+013098,3,Faggeto Lario,1162
+013099,3,Faloppio,4780
+013100,3,Fenegrò,3227
+016151,3,Ornica,147
+016154,3,Pagazzano,2118
+016155,3,Paladina,4049
+016156,3,Palazzago,4487
+016158,3,Parre,2711
+016159,3,Parzanica,357
+016161,3,Peia,1777
+016162,3,Pianico,1461
+016163,3,Piario,1065
+016164,3,Piazza Brembana,1205
+016165,3,Piazzatorre,394
+016166,3,Piazzolo,89
+016167,3,Pognano,1602
+016168,3,Ponte Nossa,1770
+004045,1,Casalgrasso,1418
+004046,1,Castagnito,2207
+004047,1,Casteldelfino,155
+004049,1,Castelletto Stura,1374
+004050,1,Castelletto Uzzone,317
+004051,1,Castellinaldo d'Alba,904
+004052,1,Castellino Tanaro,296
+004053,1,Castelmagno,59
+004054,1,Castelnuovo di Ceva,107
+004055,1,Castiglione Falletto,698
+004056,1,Castiglione Tinella,839
+004057,1,Castino,477
+004058,1,Cavallerleone,665
+004060,1,Celle di Macra,86
+004062,1,Ceresole Alba,2031
+004063,1,Cerretto Langhe,420
+004065,1,Cervere,2240
+004068,1,Chiusa di Pesio,3622
+004069,1,Cigliè,181
+004070,1,Cissone,86
+004071,1,Clavesana,809
+004072,1,Corneliano d'Alba,2166
+004073,1,Cortemilia,2269
+004074,1,Cossano Belbo,940
+004075,1,Costigliole Saluzzo,3318
+004076,1,Cravanzana,373
+004077,1,Crissolo,158
+004079,1,Demonte,1914
+004080,1,Diano d'Alba,3638
+004081,1,Dogliani,4677
+004083,1,Elva,89
+004084,1,Entracque,847
+004001,1,Acceglio,156
+004002,1,Aisone,216
+004004,1,Albaretto della Torre,231
+004005,1,Alto,137
+004006,1,Argentera,76
+004007,1,Arguello,200
+004008,1,Bagnasco,1017
+004010,1,Baldissero d'Alba,1066
+004011,1,Barbaresco,615
+004013,1,Barolo,680
+004014,1,Bastia Mondovì,643
+004015,1,Battifollo,219
+004016,1,Beinette,3461
+004017,1,Bellino,101
+004018,1,Belvedere Langhe,352
+004019,1,Bene Vagienna,3663
+004020,1,Benevello,481
+004021,1,Bergolo,56
+004022,1,Bernezzo,4170
+004023,1,Bonvicino,100
+004024,1,Borgomale,378
+004026,1,Bosia,174
+004027,1,Bossolasco,636
+004030,1,Briaglia,298
+004031,1,Briga Alta,42
+004032,1,Brondello,279
+004033,1,Brossasco,1025
+004035,1,Camerana,591
+004038,1,Canosio,78
+004039,1,Caprauna,92
+004041,1,Caramagna Piemonte,3057
+004042,1,Cardè,1150
+004108,1,Lesegno,834
+004109,1,Levice,196
+004110,1,Limone Piemonte,1456
+004111,1,Lisio,189
+004112,1,Macra,49
+004113,1,Magliano Alfieri,2220
+004114,1,Magliano Alpi,2210
+004115,1,Mango,1313
+004116,1,Manta,3820
+004117,1,Marene,3290
+004118,1,Margarita,1421
+004119,1,Marmora,60
+004120,1,Marsaglia,221
+004121,1,Martiniana Po,738
+004122,1,Melle,284
+004123,1,Moiola,223
+004124,1,Mombarcaro,262
+004125,1,Mombasiglio,604
+004126,1,Monastero di Vasco,1288
+004127,1,Monasterolo Casotto,82
+004128,1,Monasterolo di Savigliano,1379
+004129,1,Monchiero,572
+020012,3,Casalromano,1517
+020013,3,Castelbelforte,3259
+020014,3,Castel d'Ario,4541
+020018,3,Cavriana,3809
+020019,3,Ceresara,2561
+020020,3,Commessaggio,1113
+020022,3,Dosolo,3373
+020024,3,Gazoldo degli Ippoliti,3019
+020025,3,Gazzuolo,2190
+020029,3,Magnacavallo,1475
+020032,3,Mariana Mantovana,808
+020034,3,Medole,4128
+020036,3,Monzambano,4977
+020037,3,Motteggiana,2522
+004085,1,Envie,1967
+004086,1,Farigliano,1734
+004087,1,Faule,475
+004088,1,Feisoglio,298
+004090,1,Frabosa Soprana,745
+004091,1,Frabosa Sottana,1564
+004092,1,Frassino,269
+004093,1,Gaiola,576
+004094,1,Gambasca,341
+004095,1,Garessio,2987
+004096,1,Genola,2609
+004097,1,Gorzegno,264
+004098,1,Gottasecca,129
+004099,1,Govone,2294
+004100,1,Grinzane Cavour,2017
+004101,1,Guarene,3589
+004102,1,Igliano,66
+004103,1,Isasca,78
+004104,1,Lagnasco,1428
+004105,1,La Morra,2738
+004106,1,Lequio Berria,451
+004107,1,Lequio Tanaro,762
+022089,4,Fornace,1319
+022090,4,Frassilongo,338
+022091,4,Garniga Terme,400
+022092,4,Giovo,2519
+022093,4,Giustino,742
+026078,5,Sarmede,3038
+026079,5,Segusino,1865
+026084,5,Tarzo,4270
+026090,5,Vidor,3671
+026094,5,Zenson di Piave,1797
+027001,5,Annone Veneto,3825
+027009,5,Cinto Caomaggiore,3198
+027010,5,Cona,2921
+020041,3,Piubega,1725
+020043,3,Pomponesco,1700
+020044,3,Ponti sul Mincio,2327
+020046,3,Quingentole,1124
+020048,3,Redondesco,1240
+022036,4,Campitello di Fassa,707
+022037,4,Campodenno,1519
+022038,4,Canal San Bovo,1477
+022039,4,Canazei,1881
+022040,4,Capriana,584
+022042,4,Carisolo,959
+022043,4,Carzano,526
+022045,4,Castel Condino,221
+022047,4,Castello-Molina di Fiemme,2319
+022048,4,Castello Tesino,1182
+022049,4,Castelnuovo,1057
+022050,4,Cavalese,4112
+022051,4,Cavareno,1107
+022052,4,Cavedago,542
+022053,4,Cavedine,3016
+022054,4,Cavizzana,234
+022058,4,Cimone,694
+022059,4,Cinte Tesino,352
+022060,4,Cis,305
+022061,4,Civezzano,4090
+022064,4,Commezzadura,996
+022068,4,Croviana,679
+022071,4,Dambel,425
+022074,4,Denno,1240
+022078,4,Drena,585
+022081,4,Fai della Paganella,912
+022083,4,Fiavè,1075
+022085,4,Fierozzo,487
+022087,4,Folgaria,3161
+004151,1,Niella Tanaro,1000
+004152,1,Novello,972
+004153,1,Nucetto,397
+004154,1,Oncino,82
+004155,1,Ormea,1557
+004156,1,Ostana,89
+004157,1,Paesana,2682
+004158,1,Pagno,568
+004159,1,Pamparato,283
+004160,1,Paroldo,204
+004161,1,Perletto,268
+004162,1,Perlo,112
+004164,1,Pezzolo Valle Uzzone,329
+004165,1,Pianfei,2101
+004166,1,Piasco,2750
+004167,1,Pietraporzio,76
+004168,1,Piobesi d'Alba,1395
+004169,1,Piozzo,982
+004170,1,Pocapaglia,3333
+004171,1,Polonghera,1108
+004172,1,Pontechianale,166
+004173,1,Pradleves,235
+004174,1,Prazzo,172
+004175,1,Priero,490
+004176,1,Priocca,2019
+004177,1,Priola,681
+004178,1,Prunetto,424
+004180,1,Revello,4253
+004181,1,Rifreddo,1056
+004182,1,Rittana,109
+004183,1,Roaschia,98
+004184,1,Roascio,94
+004185,1,Robilante,2223
+004186,1,Roburent,474
+004187,1,Roccabruna,1535
+004188,1,Rocca Cigliè,130
+004189,1,Rocca de' Baldi,1608
+004190,1,Roccaforte Mondovì,2121
+004191,1,Roccasparvera,743
+004192,1,Roccavione,2668
+004193,1,Rocchetta Belbo,156
+004194,1,Roddi,1607
+004195,1,Roddino,420
+004196,1,Rodello,958
+004197,1,Rossana,831
+004198,1,Ruffia,354
+004199,1,Sale delle Langhe,475
+004200,1,Sale San Giovanni,162
+004201,1,Saliceto,1245
+004202,1,Salmour,718
+004204,1,Sambuco,85
+004205,1,Sampeyre,998
+004206,1,San Benedetto Belbo,163
+004131,1,Monesiglio,610
+004132,1,Monforte d'Alba,1979
+004133,1,Montà,4687
+004134,1,Montaldo di Mondovì,544
+004135,1,Montaldo Roero,851
+004136,1,Montanera,741
+004137,1,Montelupo Albese,478
+004138,1,Montemale di Cuneo,226
+004139,1,Monterosso Grana,521
+004140,1,Monteu Roero,1594
+004141,1,Montezemolo,229
+004142,1,Monticello d'Alba,2365
+004143,1,Moretta,4069
+004144,1,Morozzo,2021
+004145,1,Murazzano,851
+004146,1,Murello,933
+004147,1,Narzole,3549
+004148,1,Neive,3363
+004149,1,Neviglie,363
+004150,1,Niella Belbo,363
+005006,1,Azzano d'Asti,381
+005007,1,Baldichieri d'Asti,1157
+005008,1,Belveglio,328
+005009,1,Berzano di San Pietro,409
+005010,1,Bruno,309
+005011,1,Bubbio,805
+005012,1,Buttigliera d'Asti,2527
+005013,1,Calamandrana,1702
+005014,1,Calliano,1287
+005015,1,Calosso,1212
+005016,1,Camerano Casasco,414
+005018,1,Cantarana,999
+005019,1,Capriglio,316
+005020,1,Casorzo,601
+005021,1,Cassinasco,599
+005022,1,Castagnole delle Lanze,3704
+005023,1,Castagnole Monferrato,1171
+005024,1,Castel Boglione,594
+005025,1,Castell'Alfero,2678
+005026,1,Castellero,305
+005027,1,Castelletto Molina,140
+005028,1,Castello di Annone,1871
+005029,1,Castelnuovo Belbo,826
+005030,1,Castelnuovo Calcea,726
+005031,1,Castelnuovo Don Bosco,3126
+005032,1,Castel Rocchero,400
+013242,3,Vertemate con Minoprio,4176
+013246,3,Zelbio,197
+013248,3,San Siro,1752
+016215,3,Torre de' Busi,2163
+016216,3,Torre de' Roveri,2458
+016217,3,Torre Pallavicina,1114
+016221,3,Ubiale Clanezzo,1380
+016223,3,Valbondione,1015
+016224,3,Valbrembo,4372
+016225,3,Valgoglio,595
+016226,3,Valleve,132
+016227,3,Valnegra,213
+015222,3,Tribiano,3641
+015236,3,Vernate,3315
+015244,3,Vizzolo Predabissi,4007
+011025,7,Rocchetta di Vara,685
+011028,7,Sesta Godano,1329
+011029,7,Varese Ligure,1882
+011030,7,Vernazza,779
+011032,7,Zignago,497
+012001,3,Agra,408
+013249,3,Gravedona ed Uniti,4153
+013250,3,Bellagio,3694
+013253,3,Alta Valle Intelvi,2949
+013254,3,Centro Valle Intelvi,3598
+013255,3,Solbiate con Cagno,4721
+014001,3,Albaredo per San Marco,286
+014002,3,Albosaggia,2997
+014003,3,Andalo Valtellino,587
+014004,3,Aprica,1546
+016229,3,Valtorta,261
+016230,3,Vedeseta,189
+016234,3,Vertova,4553
+016235,3,Viadanica,1131
+016236,3,Vigano San Martino,1349
+016237,3,Vigolo,579
+016238,3,Villa d'Adda,4645
+016241,3,Villa d'Ogna,1832
+016243,3,Vilminore di Scalve,1447
+016244,3,Zandobbio,2738
+016001,3,Adrara San Martino,2191
+016002,3,Adrara San Rocco,812
+016009,3,Ambivere,2392
+016010,3,Antegnate,3224
+016011,3,Arcene,4858
+016012,3,Ardesio,3428
+016013,3,Arzago d'Adda,2737
+012005,3,Arsago Seprio,4835
+012006,3,Azzate,4691
+012007,3,Azzio,763
+012008,3,Barasso,1683
+012009,3,Bardello,1616
+012010,3,Bedero Valcuvia,659
+012011,3,Besano,2549
+012014,3,Biandronno,3287
+012015,3,Bisuschio,4389
+012016,3,Bodio Lomnago,2215
+012017,3,Brebbia,3208
+012018,3,Bregano,862
+012019,3,Brenta,1723
+012020,3,Brezzo di Bedero,1236
+012021,3,Brinzio,799
+012049,3,Cazzago Brabbia,817
+012051,3,Cittiglio,3832
+012052,3,Clivio,1943
+012053,3,Cocquio-Trevisago,4699
+012054,3,Comabbio,1209
+012055,3,Comerio,2931
+012056,3,Cremenaga,785
+012057,3,Crosio della Valle,609
+012058,3,Cuasso al Monte,3611
+012059,3,Cugliate-Fabiasco,3099
+012060,3,Cunardo,2991
+012061,3,Curiglia con Monteviasco,165
+012062,3,Cuveglio,3341
+012063,3,Cuvio,1673
+012064,3,Daverio,3035
+012065,3,Dumenza,1490
+012066,3,Duno,124
+014031,3,Gerola Alta,157
+014032,3,Gordona,1957
+014033,3,Grosio,4471
+014034,3,Grosotto,1670
+014035,3,Madesimo,533
+014036,3,Lanzada,1300
+017018,3,Bienno,3771
+017019,3,Bione,1336
+017022,3,Borno,2667
+017024,3,Bovegno,2094
+017026,3,Brandico,1710
+017027,3,Braone,690
+016052,3,Caprino Bergamasco,3086
+016055,3,Carobbio degli Angeli,4823
+016056,3,Carona,300
+016057,3,Carvico,4713
+016058,3,Casazza,3970
+016059,3,Casirate d'Adda,4121
+016060,3,Casnigo,3186
+016061,3,Cassiglio,113
+016063,3,Castel Rozzone,2847
+016064,3,Castione della Presolana,3391
+016065,3,Castro,1292
+016066,3,Cavernago,2635
+012069,3,Ferrera di Varese,699
+012071,3,Galliate Lombardo,996
+012073,3,Gazzada Schianno,4626
+012074,3,Gemonio,2882
+012076,3,Germignaga,3897
+012077,3,Golasecca,2635
+012078,3,Gorla Maggiore,4947
+012080,3,Gornate Olona,2171
+012081,3,Grantola,1255
+012082,3,Inarzo,1066
+012088,3,Leggiuno,3738
+014038,3,Lovero,630
+014039,3,Mantello,742
+014040,3,Mazzo di Valtellina,995
+014041,3,Mello,940
+014043,3,Mese,1821
+014044,3,Montagna in Valtellina,2966
+014046,3,Novate Mezzola,1904
+014047,3,Pedesina,37
+014048,3,Piantedo,1407
+017028,3,Breno,4814
+017030,3,Brione,735
+017031,3,Caino,2134
+017033,3,Calvagese della Riviera,3583
+017035,3,Capo di Ponte,2441
+017036,3,Capovalle,349
+017037,3,Capriano del Colle,4616
+016067,3,Cazzano Sant'Andrea,1645
+016068,3,Cenate Sopra,2552
+016069,3,Cenate Sotto,3904
+016070,3,Cene,4166
+016071,3,Cerete,1588
+016072,3,Chignolo d'Isola,3448
+016078,3,Colere,1122
+016080,3,Colzate,1648
+016081,3,Comun Nuovo,4436
+012091,3,Lozza,1258
+012093,3,Luvinate,1340
+012095,3,Malgesso,1270
+012097,3,Marchirolo,3597
+012099,3,Marzio,316
+012100,3,Masciago Primo,303
+012101,3,Mercallo,1836
+012102,3,Mesenzana,1613
+012103,3,Montegrino Valtravaglia,1499
+012104,3,Monvalle,1933
+012105,3,Morazzone,4275
+012106,3,Mornago,4968
+012107,3,Oggiona con Santo Stefano,4319
+012110,3,Orino,821
+012113,3,Porto Ceresio,2941
+014049,3,Piateda,2144
+014050,3,Piuro,1919
+014051,3,Poggiridenti,1852
+014052,3,Ponte in Valtellina,2252
+014053,3,Postalesio,661
+014054,3,Prata Camportaccio,2957
+014055,3,Rasura,289
+014056,3,Rogolo,545
+014057,3,Samolaco,2904
+014058,3,San Giacomo Filippo,354
+014059,3,Sernio,488
+017044,3,Casto,1660
+017047,3,Cedegolo,1141
+017048,3,Cellatica,4879
+017049,3,Cerveno,654
+017050,3,Ceto,1814
+016082,3,Corna Imagna,933
+016083,3,Cortenuova,1941
+016084,3,Costa di Mezzate,3381
+016085,3,Costa Valle Imagna,557
+016087,3,Covo,4168
+016088,3,Credaro,3610
+016090,3,Cusio,227
+016092,3,Dossena,894
+016093,3,Endine Gaiano,3429
+016094,3,Entratico,2010
+016097,3,Fara Olivana con Sola,1294
+016098,3,Filago,3121
+016099,3,Fino del Monte,1137
+012114,3,Porto Valtravaglia,2330
+012115,3,Rancio Valcuvia,930
+012116,3,Ranco,1310
+012117,3,Saltrio,3083
+012121,3,Solbiate Arno,4081
+012125,3,Taino,3676
+012126,3,Ternate,2592
+012128,3,Travedona-Monate,4079
+012129,3,Tronzano Lago Maggiore,227
+014060,3,Sondalo,4043
+014062,3,Spriana,81
+014063,3,Talamona,4684
+014064,3,Tartano,195
+014065,3,Teglio,4524
+014067,3,Torre di Santa Maria,751
+014068,3,Tovo di Sant'Agata,647
+014069,3,Traona,2853
+014070,3,Tresivio,2016
+017051,3,Cevo,843
+017053,3,Cigole,1524
+017054,3,Cimbergo,536
+017055,3,Cividate Camuno,2738
+017057,3,Collebeato,4598
+017058,3,Collio,2037
+017060,3,Comezzano-Cizzago,4012
+016100,3,Fiorano al Serio,2996
+016101,3,Fontanella,4726
+016102,3,Fonteno,565
+016103,3,Foppolo,187
+016104,3,Foresto Sparso,3085
+016105,3,Fornovo San Giovanni,3428
+016106,3,Fuipiano Valle Imagna,207
+016107,3,Gandellino,998
+016109,3,Gandosso,1491
+016110,3,Gaverina Terme,856
+016116,3,Gorno,1519
+012131,3,Valganna,1591
+012132,3,Varano Borghi,2453
+012140,3,Vizzola Ticino,572
+012141,3,Sangiano,1490
+012142,3,Maccagno con Pino e Veddasca,2580
+012143,3,Cadrezzate con Osmate,2672
+013004,3,Albese con Cassano,4222
+013005,3,Albiolo,2730
+013006,3,Alserio,1294
+014071,3,Valdidentro,4179
+014072,3,Valdisotto,3614
+014073,3,Valfurva,2551
+014074,3,Val Masino,868
+014075,3,Verceia,1076
+014076,3,Vervio,214
+014077,3,Villa di Chiavenna,956
+017063,3,Corteno Golgi,1927
+017064,3,Corzano,1420
+017068,3,Edolo,4474
+016118,3,Gromo,1195
+016119,3,Grone,886
+016121,3,Isola di Fondra,173
+016122,3,Isso,648
+016123,3,Lallio,4162
+016124,3,Leffe,4411
+016125,3,Lenna,574
+016126,3,Levate,3748
+016127,3,Locatello,831
+016129,3,Lurano,2863
+016130,3,Luzzana,894
+016131,3,Madone,4083
+016134,3,Mezzoldo,162
+013007,3,Alzate Brianza,4900
+013009,3,Anzano del Parco,1835
+013011,3,Argegno,679
+013013,3,Asso,3572
+013015,3,Barni,582
+013021,3,Bene Lario,329
+013022,3,Beregazzo con Figliaro,2780
+013023,3,Binago,4792
+013024,3,Bizzarone,1722
+013025,3,Blessagno,286
+013026,3,Blevio,1217
+013029,3,Brenna,2180
+013030,3,Brienno,330
+013032,3,Brunate,1685
+013034,3,Bulgarograsso,4081
+013037,3,Caglio,494
+013040,3,Campione d'Italia,2003
+014078,3,Villa di Tirano,2969
+015005,3,Albairate,4735
+015014,3,Basiano,3702
+015016,3,Bellinzago Lombardo,3868
+015019,3,Bernate Ticino,3059
+015022,3,Besate,2054
+015026,3,Boffalora sopra Ticino,4093
+017071,3,Fiesse,2022
+017073,3,Gambara,4660
+017074,3,Gardone Riviera,2658
+017076,3,Gargnano,2826
+017079,3,Gianico,2143
+021016,4,Campo di Trens,2667
+021018,4,Castelbello-Ciardes,2286
+008028,7,Diano San Pietro,1106
+008029,7,Dolceacqua,2068
+008030,7,Dolcedo,1323
+012022,3,Brissago-Valtravaglia,1240
+012023,3,Brunello,937
+014005,3,Ardenno,3257
+014006,3,Bema,118
+014007,3,Berbenno di Valtellina,4098
+014008,3,Bianzone,1295
+014009,3,Bormio,4161
+014010,3,Buglio in Monte,1999
+014011,3,Caiolo,1084
+014012,3,Campodolcino,934
+014013,3,Caspoggio,1367
+014014,3,Castello dell'Acqua,619
+014015,3,Castione Andevenno,1575
+014016,3,Cedrasco,430
+014017,3,Cercino,794
+016247,3,Costa Serina,897
+016248,3,Algua,658
+016249,3,Cornalba,297
+016250,3,Medolago,2402
+016251,3,Solza,2038
+016252,3,Sant'Omobono Terme,3892
+016253,3,Val Brembilla,4256
+017001,3,Acquafredda,1504
+017003,3,Agnosine,1665
+017004,3,Alfianello,2425
+017005,3,Anfo,467
+016014,3,Averara,182
+016015,3,Aviatico,557
+016017,3,Azzone,388
+016018,3,Bagnatica,4396
+016019,3,Barbata,698
+016020,3,Bariano,4237
+016021,3,Barzana,2001
+016022,3,Bedulita,709
+016023,3,Berbenno,2443
+016025,3,Berzo San Fermo,1397
+016026,3,Bianzano,590
+016027,3,Blello,76
+016032,3,Borgo di Terzo,1166
+012024,3,Brusimpiano,1179
+012025,3,Buguggiate,3127
+012027,3,Cadegliano-Viconago,2212
+012030,3,Cantello,4764
+012031,3,Caravate,2595
+012035,3,Caronno Varesino,4882
+012036,3,Casale Litta,2719
+012037,3,Casalzuigno,1384
+012038,3,Casciago,3705
+012041,3,Cassano Valcuvia,662
+012043,3,Castello Cabiaglio,559
+012044,3,Castelseprio,1305
+012045,3,Castelveccana,1961
+014019,3,Chiesa in Valmalenco,2433
+014020,3,Chiuro,2525
+014021,3,Cino,340
+014022,3,Civo,1127
+014023,3,Colorina,1377
+014025,3,Dazio,457
+014026,3,Delebio,3344
+014027,3,Dubino,3711
+014028,3,Faedo Valtellino,554
+014029,3,Forcola,796
+014030,3,Fusine,562
+017006,3,Angolo Terme,2344
+017007,3,Artogne,3614
+017008,3,Azzano Mella,3396
+017010,3,Bagolino,3807
+017011,3,Barbariga,2320
+017012,3,Barghe,1159
+017013,3,Bassano Bresciano,2329
+017015,3,Berlingo,2791
+017016,3,Berzo Demo,1582
+017017,3,Berzo Inferiore,2468
+016033,3,Bossico,999
+016035,3,Bracca,715
+016036,3,Branzi,694
+016041,3,Brumano,114
+016047,3,Calvenzano,4304
+016048,3,Camerata Cornello,599
+016049,3,Canonica d'Adda,4327
+016050,3,Capizzone,1210
+015110,3,Grezzago,3071
+015112,3,Gudo Visconti,1622
+015122,3,Liscate,4134
+010050,7,Rondanina,62
+010051,7,Rossiglione,2628
+010052,7,Rovegno,506
+010053,7,San Colombano Certenoli,2618
+010056,7,Santo Stefano d'Aveto,1057
+010057,7,Savignone,3083
+013106,3,Garzeno,708
+013107,3,Gera Lario,1035
+013110,3,Grandate,2852
+013111,3,Grandola ed Uniti,1325
+013113,3,Griante,620
+013119,3,Laglio,891
+013120,3,Laino,531
+013121,3,Lambrugo,2489
+013123,3,Lasnigo,471
+013126,3,Lezzeno,2024
+013128,3,Limido Comasco,3898
+013130,3,Livo,166
+013131,3,Locate Varesino,4337
+013134,3,Longone al Segrino,1937
+016171,3,Pontida,3358
+016173,3,Pradalunga,4592
+016174,3,Predore,1880
+016175,3,Premolo,1102
+016176,3,Presezzo,4839
+016177,3,Pumenengo,1699
+016179,3,Ranzanico,1230
+016180,3,Riva di Solto,913
+016182,3,Rogno,3871
+016184,3,Roncobello,420
+016185,3,Roncola,801
+016186,3,Rota d'Imagna,920
+015136,3,Masate,3634
+015144,3,Mesero,4231
+015150,3,Morimondo,1057
+015155,3,Nosate,649
+015158,3,Noviglio,4577
+010060,7,Sori,4078
+010061,7,Tiglieto,513
+010062,7,Torriglia,2219
+010063,7,Tribogna,592
+010064,7,Uscio,2171
+010065,7,Valbrevenna,764
+010066,7,Vobbia,370
+010067,7,Zoagli,2400
+011001,7,Ameglia,4364
+011003,7,Beverino,2329
+013135,3,Luisago,2767
+013137,3,Lurago Marinone,2596
+013139,3,Magreglio,652
+013144,3,Maslianico,3269
+013145,3,Menaggio,3124
+013147,3,Merone,4092
+013152,3,Moltrasio,1596
+013153,3,Monguzzo,2378
+013155,3,Montemezzo,221
+013157,3,Montorfano,2600
+013160,3,Musso,958
+013161,3,Nesso,1202
+013163,3,Novedrate,2863
+013169,3,Oltrona di San Mamette,2404
+013170,3,Orsenigo,2703
+016187,3,Rovetta,4158
+016188,3,San Giovanni Bianco,4732
+016190,3,San Pellegrino Terme,4827
+016191,3,Santa Brigida,540
+016195,3,Schilpario,1153
+016196,3,Sedrina,2510
+016197,3,Selvino,2020
+015164,3,Ossona,4326
+015165,3,Ozzero,1435
+011005,7,Bonassola,836
+011006,7,Borghetto di Vara,901
+011007,7,Brugnato,1290
+011008,7,Calice al Cornoviglio,1087
+011009,7,Carro,520
+011010,7,Carrodano,486
+011012,7,Deiva Marina,1373
+011014,7,Framura,629
+013178,3,Peglio,186
+013183,3,Pianello del Lario,1062
+013184,3,Pigra,237
+013185,3,Plesio,834
+013186,3,Pognana Lario,692
+013187,3,Ponna,233
+013188,3,Ponte Lambro,4364
+013189,3,Porlezza,4947
+013192,3,Proserpio,944
+013193,3,Pusiano,1383
+013195,3,Rezzago,305
+013197,3,Rodero,1308
+013199,3,Ronago,1715
+013203,3,Sala Comacina,508
+013204,3,San Bartolomeo Val Cavargna,991
+013207,3,San Nazzaro Val Cavargna,290
+013211,3,Schignano,870
+013212,3,Senna Comasco,3158
+016199,3,Serina,2062
+016200,3,Solto Collina,1804
+016201,3,Songavazzo,710
+016203,3,Sotto il Monte Giovanni XXIII,4497
+016205,3,Spinone al Lago,996
+016208,3,Strozza,1068
+016209,3,Suisio,3820
+016210,3,Taleggio,546
+016211,3,Tavernola Bergamasca,2018
+015183,3,Robecchetto con Induno,4853
+015185,3,Rodano,4586
+015202,3,San Zenone al Lambro,4466
+011018,7,Maissana,615
+011019,7,Monterosso al Mare,1402
+011021,7,Pignone,542
+011022,7,Portovenere,3420
+011023,7,Riccò del Golfo di Spezia,3628
+011024,7,Riomaggiore,1429
+013216,3,Sorico,1234
+013217,3,Sormano,640
+013218,3,Stazzona,617
+013223,3,Torno,1150
+013226,3,Trezzone,232
+013228,3,Uggiate-Trevano,4940
+013229,3,Valbrona,2665
+013232,3,Valmorea,2687
+013233,3,Val Rezzo,162
+013234,3,Valsolda,1499
+013236,3,Veleso,200
+013238,3,Veniano,3064
+013239,3,Vercana,756
+018044,3,Ceretto Lomellina,181
+018045,3,Cergnago,707
+018047,3,Cervesina,1180
+018048,3,Chignolo Po,3984
+018049,3,Cigognola,1304
+018051,3,Codevilla,958
+018052,3,Confienza,1580
+018053,3,Copiano,1772
+018054,3,Corana,772
+019068,3,Persico Dosimo,3383
+019069,3,Pescarolo ed Uniti,1518
+019070,3,Pessina Cremonese,609
+019072,3,Pianengo,2527
+019073,3,Pieranica,1130
+019074,3,Pieve d'Olmi,1269
+019075,3,Pieve San Giacomo,1597
+019077,3,Pozzaglio ed Uniti,1441
+019078,3,Quintano,894
+019079,3,Ricengo,1773
+019080,3,Ripalta Arpina,1001
+019081,3,Ripalta Cremasca,3417
+019082,3,Ripalta Guerina,526
+019083,3,Rivarolo del Re ed Uniti,1869
+021057,4,Naz-Sciaves,3245
+021058,4,Nova Levante,1999
+021059,4,Nova Ponente,3977
+021060,4,Ora,3875
+021061,4,Ortisei,4864
+021062,4,Parcines,3815
+021063,4,Perca,1598
+021064,4,Plaus,737
+021065,4,Ponte Gardena,191
+009054,7,Roccavignale,773
+009055,7,Sassello,1767
+009057,7,Spotorno,3626
+009058,7,Stella,2960
+009059,7,Stellanello,839
+009060,7,Testico,172
+009061,7,Toirano,2695
+009062,7,Tovo San Giacomo,2577
+009063,7,Urbe,688
+018057,3,Corvino San Quirico,1027
+018058,3,Costa de' Nobili,395
+018059,3,Cozzo,367
+018060,3,Cura Carpignano,4928
+018061,3,Dorno,4615
+018062,3,Ferrera Erbognone,1097
+018063,3,Filighera,810
+018064,3,Fortunago,358
+018065,3,Frascarolo,1160
+018066,3,Galliavola,194
+018067,3,Gambarana,209
+019085,3,Robecco d'Oglio,2287
+019086,3,Romanengo,3169
+019087,3,Salvirola,1151
+019088,3,San Bassano,2182
+019089,3,San Daniele Po,1319
+019090,3,San Giovanni in Croce,1910
+019091,3,San Martino del Lago,406
+019092,3,Scandolara Ravara,1347
+019093,3,Scandolara Ripa d'Oglio,545
+019094,3,Sergnano,3542
+019095,3,Sesto ed Uniti,3266
+019096,3,Solarolo Rainerio,940
+021066,4,Postal,1903
+021067,4,Prato allo Stelvio,3646
+021068,4,Predoi,545
+021069,4,Proves,256
+021070,4,Racines,4538
+021071,4,Rasun-Anterselva,2911
+009066,7,Vendone,362
+009067,7,Vezzi Portio,804
+009068,7,Villanova d'Albenga,2774
+009069,7,Zuccarello,296
+010002,7,Avegno,2525
+010003,7,Bargagli,2613
+010004,7,Bogliasco,4450
+010005,7,Borzonasca,1946
+018071,3,Gerenzago,1411
+018073,3,Godiasco Salice Terme,3243
+018074,3,Golferenzo,189
+018075,3,Gravellona Lomellina,2738
+018076,3,Gropello Cairoli,4389
+018077,3,Inverno e Monteleone,1471
+018079,3,Langosco,360
+018080,3,Lardirago,1154
+018081,3,Linarolo,2830
+019099,3,Sospiro,3127
+019100,3,Spinadesco,1491
+019101,3,Spineda,616
+019103,3,Stagno Lombardo,1502
+019104,3,Ticengo,420
+019105,3,Torlino Vimercati,473
+019106,3,Tornata,458
+019107,3,Torre de' Picenardi,2079
+019108,3,Torricella del Pizzo,592
+019109,3,Trescore Cremasco,2809
+019110,3,Trigolo,1688
+019111,3,Vaiano Cremasco,3655
+019112,3,Vailate,4527
+021073,4,Rifiano,1394
+021074,4,Rio di Pusteria,3161
+021075,4,Rodengo,1262
+021076,4,Salorno sulla strada del vino,3807
+010008,7,Campo Ligure,2841
+010010,7,Carasco,3743
+010012,7,Casella,3146
+010013,7,Castiglione Chiavarese,1569
+010014,7,Ceranesi,3735
+010016,7,Cicagna,2375
+010019,7,Coreglia Ligure,277
+010020,7,Crocefieschi,523
+018082,3,Lirio,125
+018083,3,Lomello,2107
+018084,3,Lungavilla,2459
+018085,3,Magherno,1743
+018086,3,Marcignago,2507
+018087,3,Marzano,1661
+018089,3,Menconico,355
+018090,3,Mezzana Bigli,1053
+018091,3,Mezzana Rabattone,472
+018092,3,Mezzanino,1347
+018093,3,Miradolo Terme,3830
+018094,3,Montalto Pavese,884
+018095,3,Montebello della Battaglia,1543
+019113,3,Vescovato,3891
+019114,3,Volongo,487
+019115,3,Voltido,340
+019116,3,Piadena Drizzona,3959
+020001,3,Acquanegra sul Chiese,2815
+020007,3,Bozzolo,4168
+020008,3,Canneto sull'Oglio,4292
+020010,3,Casalmoro,2232
+021077,4,San Candido,3349
+021079,4,San Genesio Atesino,3074
+021080,4,San Leonardo in Passiria,3569
+021081,4,San Lorenzo di Sebato,3879
+021082,4,San Martino in Badia,1754
+010021,7,Davagna,1842
+010022,7,Fascia,65
+010023,7,Favale di Malvaro,452
+010024,7,Fontanigorda,253
+017093,3,Longhena,557
+017094,3,Losine,611
+017095,3,Lozio,386
+017097,3,Maclodio,1466
+017098,3,Magasa,110
+017099,3,Mairano,3542
+017100,3,Malegno,2003
+017101,3,Malonno,3106
+018096,3,Montecalvo Versiggia,520
+018097,3,Montescano,408
+018098,3,Montesegale,271
+018099,3,Monticelli Pavese,693
+018100,3,Montù Beccaria,1658
+018101,3,Mornico Losana,626
+018103,3,Nicorvo,289
+018104,3,Olevano di Lomellina,721
+018105,3,Oliva Gessi,169
+018106,3,Ottobiano,1098
+018107,3,Palestro,1884
+018108,3,Pancarana,313
+020011,3,Casaloldo,2755
+020050,3,Rivarolo Mantovano,2474
+020054,3,Sabbioneta,4124
+020056,3,San Giacomo delle Segnate,1520
+021083,4,San Martino in Passiria,3244
+021084,4,San Pancrazio,1541
+021085,4,Santa Cristina Valgardena,2015
+021087,4,Scena,2916
+017104,3,Marcheno,4274
+017105,3,Marmentino,655
+017106,3,Marone,3146
+017108,3,Milzano,1733
+017109,3,Moniga del Garda,2621
+017110,3,Monno,536
+017111,3,Monte Isola,1688
+017112,3,Monticelli Brusati,4558
+017115,3,Mura,780
+017116,3,Muscoline,2675
+018109,3,Parona,1940
+018111,3,Pietra de' Giorgi,808
+018112,3,Pieve Albignola,872
+018113,3,Pieve del Cairo,1828
+018114,3,Pieve Porto Morone,2655
+018115,3,Pinarolo Po,1714
+018116,3,Pizzale,692
+018117,3,Ponte Nizza,779
+018118,3,Portalbera,1480
+018119,3,Rea,410
+018120,3,Redavalle,1037
+020058,3,San Giovanni del Dosso,1247
+020059,3,San Martino dall'Argine,1678
+020060,3,Schivenoglia,1132
+020062,3,Serravalle a Po,1471
+020063,3,Solferino,2686
+020064,3,Sustinente,2048
+021088,4,Selva dei Molini,1421
+021089,4,Selva di Val Gardena,2586
+021091,4,Senales,1245
+021092,4,Sesto,1879
+017118,3,Niardo,2018
+017119,3,Nuvolento,3923
+017120,3,Nuvolera,4758
+017121,3,Odolo,1929
+017122,3,Offlaga,4077
+017123,3,Ome,3208
+017124,3,Ono San Pietro,980
+017126,3,Orzivecchi,2484
+017128,3,Ossimo,1530
+017129,3,Padenghe sul Garda,4729
+017130,3,Paderno Franciacorta,3671
+018121,3,Retorbido,1577
+018124,3,Robecco Pavese,541
+018125,3,Rocca de' Giorgi,83
+018126,3,Rocca Susella,209
+018127,3,Rognano,626
+018128,3,Romagnese,629
+018129,3,Roncaro,1558
+018130,3,Rosasco,555
+018131,3,Rovescala,875
+018133,3,San Cipriano Po,489
+018134,3,San Damiano al Colle,643
+018135,3,San Genesio ed Uniti,3952
+018136,3,San Giorgio di Lomellina,1060
+020068,3,Villimpenta,2149
+020073,3,Borgocarbonara,1928
+021094,4,Sluderno,1839
+021095,4,Stelvio,1150
+021096,4,Terento,1759
+021097,4,Terlano,4538
+021098,4,Termeno sulla strada del vino,3438
+021099,4,Tesimo,1994
+021100,4,Tires,1010
+021101,4,Tirolo,2443
+017131,3,Paisco Loveno,175
+017132,3,Paitone,2126
+017134,3,Paratico,4853
+017135,3,Paspardo,599
+017137,3,Pavone del Mella,2763
+017138,3,San Paolo,4495
+017139,3,Pertica Alta,540
+017140,3,Pertica Bassa,605
+017141,3,Pezzaze,1469
+017142,3,Pian Camuno,4770
+018139,3,Santa Cristina e Bissone,1900
+018140,3,Santa Giuletta,1592
+018141,3,Sant'Alessio con Vialone,973
+018142,3,Santa Margherita di Staffora,472
+018143,3,Santa Maria della Versa,2299
+018144,3,Sant'Angelo Lomellina,793
+018145,3,San Zenone al Po,553
+018146,3,Sartirana Lomellina,1539
+018147,3,Scaldasole,887
+018148,3,Semiana,204
+018149,3,Silvano Pietra,663
+021001,4,Aldino,1656
+021002,4,Andriano,1038
+021003,4,Anterivo,395
+021005,4,Avelengo,780
+021006,4,Badia,3471
+021007,4,Barbiano,1754
+008014,7,Castellaro,1228
+008015,7,Castel Vittorio,274
+008016,7,Ceriana,1164
+008017,7,Cervo,1138
+008018,7,Cesio,267
+008019,7,Chiusanico,575
+008020,7,Chiusavecchia,512
+008021,7,Cipressa,1226
+008022,7,Civezza,602
+008023,7,Cosio d'Arroscia,187
+008024,7,Costarainera,780
+008025,7,Diano Arentino,684
+008026,7,Diano Castello,2275
+017144,3,Polaveno,2475
+017145,3,Polpenazze del Garda,2710
+017146,3,Pompiano,3769
+017148,3,Ponte di Legno,1752
+017151,3,Pozzolengo,3570
+017152,3,Pralboino,2892
+017153,3,Preseglie,1533
+018151,3,Sommo,1164
+018152,3,Spessa,526
+018154,3,Suardi,616
+018155,3,Torrazza Coste,1608
+018156,3,Torre Beretti e Castellaro,554
+018157,3,Torre d'Arese,939
+018158,3,Torre de' Negri,316
+018159,3,Torre d'Isola,2410
+018160,3,Torrevecchia Pia,3538
+018161,3,Torricella Verzate,823
+018162,3,Travacò Siccomario,4463
+018163,3,Trivolzio,2330
+021009,4,Braies,654
+021010,4,Brennero,2252
+021012,4,Bronzolo,2783
+021014,4,Caines,386
+026074,5,San Polo di Piave,4916
+027015,5,Fossalta di Piave,4149
+027018,5,Gruaro,2771
+030191,6,Treppo Ligosullo,710
+031001,6,Capriva del Friuli,1641
+031003,6,Doberdò del Lago,1351
+031004,6,Dolegna del Collio,329
+031005,6,Farra d'Isonzo,1674
+031006,6,Fogliano Redipuglia,3040
+031010,6,Mariano del Friuli,1477
+029031,5,Lusia,3415
+029032,5,Melara,1734
+029034,5,Papozze,1433
+029035,5,Pettorazza Grimani,1528
+029036,5,Pincara,1135
+029037,5,Polesella,3824
+029038,5,Pontecchio Polesine,2191
+034028,8,Pellegrino Parmense,983
+034030,8,Roccabianca,2923
+034035,8,Solignano,1717
+034036,8,Soragna,4830
+031011,6,Medea,977
+031013,6,Moraro,710
+031014,6,Mossa,1552
+031015,6,Romans d'Isonzo,3704
+031017,6,Sagrado,2181
+031019,6,San Floriano del Collio,755
+031020,6,San Lorenzo Isontino,1536
+031021,6,San Pier d'Isonzo,1989
+031022,6,Savogna d'Isonzo,1701
+027030,5,Pramaggiore,4680
+029042,5,Salara,1115
+029043,5,San Bellino,1067
+029044,5,San Martino di Venezze,3848
+029045,5,Stienta,3153
+029047,5,Trecenta,2625
+034038,8,Terenzo,1197
+034039,8,Tizzano Val Parma,2117
+034040,8,Tornolo,916
+034044,8,Valmozzola,528
+031024,6,Turriaco,2857
+031025,6,Villesse,1685
+032002,6,Monrupino,863
+032005,6,Sgonico,2030
+027040,5,Teglio Veneto,2273
+027041,5,Torre di Mosto,4786
+029048,5,Villadose,4929
+029049,5,Villamarzana,1140
+029050,5,Villanova del Ghebbo,1976
+029051,5,Villanova Marchesana,898
+030001,6,Aiello del Friuli,2211
+030002,6,Amaro,849
+030003,6,Ampezzo,959
+030004,6,Aquileia,3225
+030005,6,Arta Terme,2068
+034045,8,Varano de' Melegari,2616
+034046,8,Varsi,1178
+034050,8,Polesine Zibello,3205
+033001,8,Agazzano,2002
+033002,8,Alseno,4697
+033003,8,Besenzone,954
+028002,5,Agna,3213
+028004,5,Anguillara Veneta,4248
+030006,6,Artegna,2885
+030007,6,Attimis,1710
+030008,6,Bagnaria Arsa,3428
+030010,6,Bertiolo,2418
+030011,6,Bicinicco,1821
+030012,6,Bordano,710
+030014,6,Buttrio,3930
+030015,6,Camino al Tagliamento,1577
+030018,6,Carlino,2775
+030019,6,Cassacco,2862
+035003,8,Baiso,3225
+035011,8,Carpineti,3956
+033004,8,Bettola,2685
+033005,8,Bobbio,3548
+033008,8,Calendasco,2410
+033010,8,Caorso,4842
+028005,5,Arquà Petrarca,1842
+028006,5,Arre,2108
+028007,5,Arzergrande,4859
+028008,5,Bagnoli di Sopra,3458
+028009,5,Baone,3086
+028010,5,Barbona,621
+008032,7,Isolabona,686
+008033,7,Lucinasco,282
+008034,7,Mendatica,172
+008035,7,Molini di Triora,614
+008037,7,Montegrosso Pian Latte,113
+008038,7,Olivetta San Michele,193
+017157,3,Provaglio Val Sabbia,893
+017158,3,Puegnago del Garda,3477
+017160,3,Remedello,3399
+017162,3,Roccafranca,4800
+017164,3,Roè Volciano,4430
+017168,3,Sabbio Chiese,3979
+017169,3,Sale Marasino,3350
+018164,3,Tromello,3736
+018165,3,Trovo,1023
+018166,3,Val di Nizza,582
+018167,3,Valeggio,209
+018168,3,Valle Lomellina,2149
+018169,3,Valle Salimbene,1481
+018171,3,Varzi,3094
+018172,3,Velezzo Lomellina,98
+018173,3,Vellezzo Bellini,3355
+018174,3,Verretto,375
+018175,3,Verrua Po,1253
+021102,4,Trodena nel parco naturale,1056
+021103,4,Tubre,958
+021104,4,Ultimo,2911
+021105,4,Vadena,1050
+021106,4,Valdaora,3170
+021107,4,Val di Vizze,3090
+008039,7,Ospedaletti,3154
+008040,7,Perinaldo,833
+008041,7,Pietrabruna,449
+008042,7,Pieve di Teco,1346
+008043,7,Pigna,785
+008044,7,Pompeiana,859
+008045,7,Pontedassio,2311
+008046,7,Pornassio,670
+008047,7,Prelà,476
+008048,7,Ranzo,551
+017171,3,San Felice del Benaco,3448
+017172,3,San Gervasio Bresciano,2666
+017173,3,San Zeno Naviglio,4777
+017175,3,Saviore dell'Adamello,872
+017176,3,Sellero,1428
+017177,3,Seniga,1455
+017178,3,Serle,3057
+017180,3,Soiano del Lago,1920
+017181,3,Sonico,1253
+017182,3,Sulzano,1963
+018178,3,Villa Biscossi,67
+018179,3,Villanova d'Ardenghi,780
+018180,3,Villanterio,3396
+018181,3,Vistarino,1579
+018183,3,Volpara,120
+018184,3,Zavattarello,978
+018185,3,Zeccone,1692
+018186,3,Zeme,1005
+018187,3,Zenevredo,478
+018188,3,Zerbo,391
+021020,4,Cermes,1544
+021021,4,Chienes,2927
+021023,4,Cornedo all'Isarco,3421
+021024,4,Cortaccia sulla strada del vino,2219
+021025,4,Cortina sulla strada del vino,653
+021026,4,Corvara in Badia,1376
+008049,7,Rezzo,314
+008050,7,Riva Ligure,2845
+008051,7,Rocchetta Nervina,296
+008052,7,San Bartolomeo al Mare,3062
+008053,7,San Biagio della Cima,1266
+008054,7,San Lorenzo al Mare,1260
+008056,7,Santo Stefano al Mare,2086
+008057,7,Seborga,275
+008058,7,Soldano,1013
+008060,7,Terzorio,232
+017183,3,Tavernole sul Mella,1250
+017184,3,Temù,1124
+017185,3,Tignale,1211
+017189,3,Tremosine sul Garda,2077
+017191,3,Treviso Bresciano,521
+017192,3,Urago d'Oglio,3731
+017193,3,Vallio Terme,1442
+017194,3,Valvestino,178
+018189,3,Zerbolò,1745
+018190,3,Zinasco,3123
+018191,3,Cornale e Bastida,848
+018192,3,Corteolona e Genzone,2583
+018193,3,Colli Verdi,1071
+019001,3,Acquanegra Cremonese,1163
+019002,3,Agnadello,3917
+019003,3,Annicco,2011
+019004,3,Azzanello,608
+019005,3,Bagnolo Cremasco,4919
+019006,3,Bonemerse,1467
+019007,3,Bordolano,580
+021027,4,Curon Venosta,2386
+021028,4,Dobbiaco,3346
+021030,4,Falzes,2860
+021031,4,Fiè allo Sciliar,3616
+008061,7,Triora,350
+008062,7,Vallebona,1293
+008064,7,Vasia,390
+008066,7,Vessalico,245
+008067,7,Villa Faraldi,460
+008068,7,Montalto Carpasio,498
+017196,3,Verolavecchia,3770
+017197,3,Vestone,4288
+017198,3,Vezza d'Oglio,1454
+017200,3,Villachiara,1386
+017202,3,Vione,654
+017203,3,Visano,2013
+017205,3,Zone,1054
+019009,3,Calvatone,1171
+019010,3,Camisano,1239
+019011,3,Campagnola Cremasca,673
+019012,3,Capergnanica,2165
+019013,3,Cappella Cantone,548
+019014,3,Cappella de' Picenardi,423
+019015,3,Capralba,2324
+019016,3,Casalbuttano ed Uniti,3817
+019017,3,Casale Cremasco-Vidolasco,1876
+019018,3,Casaletto Ceredano,1145
+019019,3,Casaletto di Sopra,520
+019020,3,Casaletto Vaprio,1837
+019022,3,Casalmorano,1633
+021032,4,Fortezza,1005
+021033,4,Funes,2571
+021034,4,Gais,3298
+021035,4,Gargazzone,1751
+021036,4,Glorenza,905
+009005,7,Altare,2001
+009007,7,Arnasco,596
+009008,7,Balestrino,537
+009009,7,Bardineto,761
+009010,7,Bergeggi,1073
+009011,7,Boissano,2511
+009012,7,Borghetto Santo Spirito,4659
+009013,7,Borgio Verezzi,2146
+009014,7,Bormida,357
+009016,7,Calice Ligure,1722
+017206,3,Piancogno,4713
+018001,3,Alagna,818
+018002,3,Albaredo Arnaboldi,240
+018003,3,Albonese,534
+018004,3,Albuzzano,3638
+018005,3,Arena Po,1564
+018006,3,Badia Pavese,362
+018007,3,Bagnaria,642
+018008,3,Barbianello,854
+018009,3,Bascapè,1808
+018011,3,Bastida Pancarana,955
+018012,3,Battuda,675
+018014,3,Bereguardo,2908
+019023,3,Casteldidone,573
+019024,3,Castel Gabbiano,450
+019027,3,Castelvisconti,307
+019028,3,Cella Dati,479
+019029,3,Chieve,2280
+019030,3,Cicognolo,901
+019031,3,Cingia de' Botti,1195
+019032,3,Corte de' Cortesi con Cignone,1075
+019033,3,Corte de' Frati,1359
+019034,3,Credera Rubbiano,1569
+021039,4,Laion,2746
+021042,4,Lasa,4094
+021043,4,Lauregno,338
+021044,4,Luson,1555
+021045,4,Magrè sulla strada del vino,1281
+009017,7,Calizzano,1438
+009019,7,Casanova Lerrone,733
+009020,7,Castelbianco,320
+009021,7,Castelvecchio di Rocca Barbena,145
+009023,7,Cengio,3421
+009025,7,Cisano sul Neva,2089
+009026,7,Cosseria,1065
+009027,7,Dego,1945
+018015,3,Borgarello,2646
+018016,3,Borgo Priolo,1385
+018017,3,Borgoratto Mormorolo,415
+018018,3,Borgo San Siro,945
+018019,3,Bornasco,2671
+018020,3,Bosnasco,626
+018021,3,Brallo di Pregola,530
+018022,3,Breme,737
+018023,3,Bressana Bottarone,3501
+018025,3,Calvignano,107
+018026,3,Campospinoso,1097
+019037,3,Cremosano,1730
+019038,3,Crotta d'Adda,643
+019039,3,Cumignano sul Naviglio,433
+019040,3,Derovere,302
+019041,3,Dovera,3809
+019043,3,Fiesco,1219
+019044,3,Formigara,1046
+019045,3,Gabbioneta-Binanuova,881
+019046,3,Gadesco-Pieve Delmona,1920
+019047,3,Genivolta,1144
+019048,3,Gerre de' Caprioli,1336
+019049,3,Gombito,627
+021047,4,Marebbe,3118
+021048,4,Marlengo,2814
+021049,4,Martello,829
+021050,4,Meltina,1694
+009028,7,Erli,223
+009030,7,Garlenda,1265
+009031,7,Giustenice,1000
+009032,7,Giusvalla,415
+009033,7,Laigueglia,1759
+009035,7,Magliolo,934
+009036,7,Mallare,1081
+009037,7,Massimino,108
+009038,7,Millesimo,3281
+009039,7,Mioglia,505
+009040,7,Murialdo,785
+018027,3,Candia Lomellina,1515
+018029,3,Canneto Pavese,1369
+018030,3,Carbonara al Ticino,1436
+018031,3,Casanova Lonati,451
+018032,3,Casatisma,880
+018033,3,Casei Gerola,2472
+018036,3,Castana,729
+018038,3,Castelletto di Branduzzo,1050
+018039,3,Castello d'Agogna,1110
+018040,3,Castelnovetto,535
+019050,3,Grontardo,1511
+019051,3,Grumello Cremonese ed Uniti,1730
+019052,3,Gussola,2697
+019053,3,Isola Dovarese,1139
+019054,3,Izano,1968
+019055,3,Madignano,2818
+019056,3,Malagnino,1718
+019057,3,Martignana di Po,2084
+019058,3,Monte Cremasco,2279
+019059,3,Montodine,2491
+019060,3,Moscazzano,750
+019061,3,Motta Baluffi,837
+019063,3,Olmeneta,927
+019064,3,Ostiano,2825
+019065,3,Paderno Ponchielli,1404
+019066,3,Palazzo Pignano,3826
+021052,4,Monguelfo-Tesido,2919
+021053,4,Montagna,1714
+021054,4,Moso in Passiria,2066
+021055,4,Nalles,1979
+009041,7,Nasino,189
+009042,7,Noli,2590
+009043,7,Onzo,216
+009044,7,Orco Feglino,893
+009045,7,Ortovero,1612
+009046,7,Osiglia,450
+009047,7,Pallare,934
+009048,7,Piana Crixia,797
+009050,7,Plodio,642
+009051,7,Pontinvrea,838
+009053,7,Rialto,553
+018042,3,Cecima,224
+018043,3,Ceranova,2261
+028088,5,Stanghella,4134
+028090,5,Terrassa Padovana,2669
+030082,6,Precenicco,1457
+030083,6,Premariacco,4019
+030084,6,Preone,250
+030085,6,Prepotto,740
+030086,6,Pulfero,876
+030087,6,Ragogna,2834
+030088,6,Ravascletto,501
+030089,6,Raveo,450
+030090,6,Reana del Rojale,4837
+030092,6,Resia,944
+036016,8,Frassinoro,1849
+036017,8,Guiglia,3929
+036018,8,Lama Mocogno,2668
+034003,8,Bedonia,3288
+034004,8,Berceto,2002
+034005,8,Bore,681
+028094,5,Tribano,4334
+028095,5,Urbana,2078
+028096,5,Veggiano,4765
+028097,5,Vescovana,1766
+028098,5,Vighizzolo d'Este,916
+028102,5,Villa Estense,2179
+028105,5,Vo',3279
+030093,6,Resiutta,284
+030094,6,Rigolato,395
+030095,6,Rive d'Arcano,2392
+030097,6,Ronchis,1995
+030098,6,Ruda,2859
+030102,6,San Leonardo,1069
+030103,6,San Pietro al Natisone,2113
+030104,6,Santa Maria la Longa,2314
+030105,6,San Vito al Torre,1248
+036024,8,Montecreto,916
+036025,8,Montefiorino,2129
+036026,8,Montese,3286
+034008,8,Calestano,2105
+034011,8,Compiano,1089
+034012,8,Corniglio,1787
+029002,5,Ariano nel Polesine,4193
+029003,5,Arquà Polesine,2667
+029005,5,Bagnolo di Po,1203
+029006,5,Bergantino,2506
+030106,6,San Vito di Fagagna,1703
+030107,6,Sauris,394
+030108,6,Savogna,361
+030109,6,Sedegliano,3745
+030110,6,Socchieve,883
+030111,6,Stregna,327
+030112,6,Sutrio,1267
+030113,6,Taipana,565
+030114,6,Talmassons,3966
+036029,8,Palagano,2076
+036031,8,Pievepelago,2299
+036032,8,Polinago,1605
+036033,8,Prignano sulla Secchia,3753
+036035,8,Riolunato,685
+029007,5,Bosaro,1455
+029008,5,Calto,686
+029009,5,Canaro,2670
+029010,5,Canda,870
+029011,5,Castelguglielmo,1542
+029012,5,Castelmassa,4051
+029013,5,Castelnovo Bariano,2647
+029014,5,Ceneselli,1599
+029015,5,Ceregnano,3510
+029017,5,Corbola,2305
+029018,5,Costa di Rovigo,2486
+030117,6,Tarvisio,4140
+030120,6,Terzo d'Aquileia,2791
+030122,6,Torreano,2085
+030123,6,Torviscosa,2714
+030124,6,Trasaghis,2171
+030126,6,Treppo Grande,1703
+030128,6,Trivignano Udinese,1595
+036038,8,San Possidonio,3500
+036043,8,Sestola,2458
+034022,8,Monchio delle Corti,858
+034024,8,Neviano degli Arduini,3557
+034026,8,Palanzano,1085
+029019,5,Crespino,1761
+029021,5,Ficarolo,2305
+029022,5,Fiesso Umbertiano,3940
+029023,5,Frassinelle Polesine,1400
+029024,5,Fratta Polesine,2582
+029025,5,Gaiba,981
+029026,5,Gavello,1517
+029027,5,Giacciano con Baruchella,2074
+029028,5,Guarda Veneta,1121
+029030,5,Loreo,3392
+030130,6,Varmo,2710
+030131,6,Venzone,1998
+030132,6,Verzegnis,875
+030133,6,Villa Santina,2200
+030135,6,Visco,794
+030136,6,Zuglio,570
+030137,6,Forgaria nel Friuli,1740
+030138,6,Campolongo Tapogliano,1136
+030189,6,Sappada,1315
+038023,8,Voghiera,3679
+038025,8,Goro,3642
+024001,5,Agugliaro,1392
+024002,5,Albettone,2013
+024003,5,Alonte,1599
+024005,5,Altissimo,2172
+024007,5,Arsiero,3091
+024010,5,Asigliano Veneto,883
+021114,4,Villandro,1825
+021116,4,Velturno,2988
+021117,4,La Valle,1398
+021118,4,Senale-San Felice,760
+022002,4,Albiano,1485
+022003,4,Aldeno,3148
+025058,5,Sovramonte,1357
+025059,5,Taibon Agordino,1742
+025060,5,Tambre,1306
+025062,5,Vallada Agordina,485
+025063,5,Valle di Cadore,1870
+025065,5,Vigo di Cadore,1395
+025066,5,Vodo Cadore,841
+025067,5,Voltago Agordino,834
+025069,5,Zoppè di Cadore,197
+022203,4,Trambileno,1479
+022209,4,Valfloriana,462
+022210,4,Vallarsa,1365
+022213,4,Vermiglio,1820
+022216,4,Vignola-Falesina,172
+026065,5,Refrontolo,1688
+026067,5,Revine Lago,2121
+022005,4,Andalo,1124
+022007,4,Avio,4119
+022011,4,Bedollo,1482
+022013,4,Besenello,2709
+022015,4,Bieno,431
+022017,4,Bleggio Superiore,1535
+022018,4,Bocenago,386
+022021,4,Bondone,657
+022246,4,Sella Giudicarie,2912
+022247,4,Tre Ville,1395
+022249,4,Ville d'Anaunia,4801
+024063,5,Monte di Malo,2804
+024064,5,Montegalda,3404
+024065,5,Montegaldella,1811
+024066,5,Monteviale,2848
+024068,5,Montorso Vicentino,3069
+024071,5,Nanto,3110
+024072,5,Nogarole Vicentino,1207
+024073,5,Nove,4943
+025013,5,Cibiana di Cadore,378
+025014,5,Colle Santa Lucia,349
+025015,5,Comelico Superiore,2135
+025017,5,Danta di Cadore,442
+025018,5,Domegge di Cadore,2347
+025019,5,Falcade,1864
+037026,8,Fontanelice,1955
+037027,8,Gaggio Montano,4899
+037031,8,Grizzana Morandi,3892
+022250,4,San Giovanni di Fassa,3561
+022251,4,Terre d'Adige,3055
+022252,4,Borgo d'Anaunia,2482
+022253,4,Novella,3618
+022254,4,Ville di Fiemme,2569
+023001,5,Affi,2366
+024075,5,Orgiano,3051
+024076,5,Pedemonte,728
+024077,5,Pianezze,2173
+024079,5,Pojana Maggiore,4260
+024080,5,Posina,558
+024081,5,Pove del Grappa,3113
+024082,5,Pozzoleone,2789
+024085,5,Roana,4228
+025022,5,Fonzaso,3128
+025023,5,Canale d'Agordo,1096
+025025,5,Gosaldo,562
+025026,5,Lamon,2791
+025027,5,La Valle Agordina,1069
+025030,5,Livinallongo del Col di Lana,1298
+025032,5,Lorenzago di Cadore,556
+037033,8,Lizzano in Belvedere,2183
+037034,8,Loiano,4381
+023003,5,Angiari,2315
+023005,5,Badia Calavena,2606
+023007,5,Belfiore,3261
+023008,5,Bevilacqua,1714
+023009,5,Bonavigo,1990
+023010,5,Boschi Sant'Anna,1375
+023011,5,Bosco Chiesanuova,3561
+024089,5,Rotzo,651
+024090,5,Salcedo,1026
+024094,5,San Pietro Mussolino,1604
+024096,5,San Vito di Leguzzano,3618
+024099,5,Schiavon,2648
+024101,5,Solagna,1864
+024102,5,Sossano,4260
+025033,5,Lozzo di Cadore,1296
+025035,5,Ospitale di Cadore,268
+025036,5,Pedavena,4377
+037040,8,Monghidoro,3704
+022095,4,Grigno,2136
+022097,4,Imer,1173
+022098,4,Isera,2765
+022102,4,Lavarone,1176
+022106,4,Livo,801
+022108,4,Lona-Lases,877
+023013,5,Brentino Belluno,1343
+023014,5,Brenzone sul Garda,2484
+023020,5,Castagnaro,3663
+024106,5,Tonezza del Cimone,519
+024112,5,Valdastico,1245
+024113,5,Valli del Pasubio,3091
+024115,5,Velo d'Astico,2294
+037045,8,Mordano,4739
+022109,4,Luserna,260
+022110,4,Malé,2217
+022112,4,Massimeno,141
+022113,4,Mazzin,585
+022114,4,Mezzana,893
+022115,4,Mezzano,1589
+023024,5,Cazzano di Tramigna,1492
+023026,5,Cerro Veronese,2508
+023029,5,Concamarise,1089
+023030,5,Costermano sul Garda,3902
+023031,5,Dolcè,2603
+023032,5,Erbè,1896
+024117,5,Villaga,1895
+024120,5,Zermeghedo,1387
+024121,5,Zovencedo,786
+024123,5,Val Liona,3081
+026007,5,Cappella Maggiore,4705
+037051,8,San Benedetto Val di Sambro,4174
+022118,4,Moena,2626
+022120,4,Molveno,1111
+022124,4,Nago-Torbole,2852
+022127,4,Nogaredo,2068
+022128,4,Nomi,1343
+022129,4,Novaledo,1099
+022130,4,Ospedaletto,790
+022131,4,Ossana,834
+022133,4,Palù del Fersina,164
+023033,5,Erbezzo,770
+023034,5,Ferrara di Monte Baldo,250
+023035,5,Fumane,4115
+023036,5,Garda,4111
+023041,5,Isola Rizza,3248
+026011,5,Castelcucco,2298
+026014,5,Cavaso del Tomba,2908
+026015,5,Cessalto,3884
+026016,5,Chiarano,3671
+026017,5,Cimadolmo,3399
+026018,5,Cison di Valmarino,2636
+025070,5,Quero Vas,3161
+025073,5,Val di Zoldo,3022
+026002,5,Arcade,4548
+022222,4,Villa Lagarina,3801
+022224,4,Volano,3023
+022226,4,Ziano di Fiemme,1770
+022228,4,Comano Terme,2934
+024016,5,Bressanvido,3189
+024017,5,Brogliano,4009
+024019,5,Caltrano,2492
+024020,5,Calvene,1324
+024022,5,Campiglia dei Berici,1682
+024024,5,Carrè,3579
+024025,5,Cartigliano,3801
+022025,4,Brentonico,4012
+022026,4,Bresimo,254
+022029,4,Caderzone Terme,684
+022032,4,Calceranica al Lago,1352
+022033,4,Caldes,1098
+022034,4,Caldonazzo,3830
+022035,4,Calliano,1981
+036047,8,Zocca,4591
+022231,4,San Lorenzo Dorsino,1568
+022232,4,Valdaone,1150
+022233,4,Dimaro Folgarida,2110
+022234,4,Pieve di Bono-Prezzo,1443
+022235,4,Altavalle,1610
+022237,4,Amblar-Don,541
+024027,5,Castegnero,2893
+024030,5,Chiuppano,2489
+024032,5,Cogollo del Cengio,3136
+024037,5,Crespadoro,1308
+024039,5,Enego,1583
+024040,5,Fara Vicentino,3787
+024041,5,Foza,680
+024127,5,Lusiana Conco,4655
+025001,5,Agordo,4080
+025002,5,Alano di Piave,2761
+025003,5,Alleghe,1166
+025004,5,Arsiè,2237
+037007,8,Borgo Tossignano,3273
+037010,8,Camugnano,1843
+037012,8,Casalfiumanese,3422
+037013,8,Castel d'Aiano,1854
+022238,4,Borgo Chiese,1994
+022239,4,Borgo Lares,712
+022240,4,Castel Ivano,3309
+022241,4,Cembra Lisignago,2338
+022242,4,Contà,1388
+022243,4,Madruzzo,2902
+022244,4,Porte di Rendena,1792
+024042,5,Gallio,2380
+024043,5,Gambellara,3432
+024044,5,Gambugliano,832
+024046,5,Grisignano di Zocco,4285
+024047,5,Grumolo delle Abbadesse,3767
+024049,5,Laghi,124
+024050,5,Lastebasse,191
+024053,5,Lugo di Vicenza,3623
+025005,5,Auronzo di Cadore,3222
+025007,5,Borca di Cadore,820
+025008,5,Calalzo di Cadore,1928
+025010,5,Cencenighe Agordino,1260
+025011,5,Cesiomaggiore,3969
+025012,5,Chies d'Alpago,1297
+037014,8,Castel del Rio,1208
+037015,8,Castel di Casio,3371
+037016,8,Castel Guelfo di Bologna,4534
+028011,5,Battaglia Terme,3900
+028012,5,Boara Pisani,2434
+028014,5,Bovolenta,3503
+028018,5,Campodoro,2647
+030020,6,Castions di Strada,3746
+030021,6,Cavazzo Carnico,987
+030022,6,Cercivento,667
+030024,6,Chiopris-Viscone,651
+030025,6,Chiusaforte,621
+030028,6,Colloredo di Monte Albano,2179
+030029,6,Comeglians,461
+030030,6,Corno di Rosazzo,3117
+035013,8,Casina,4400
+035018,8,Canossa,3729
+033012,8,Castell'Arquato,4563
+033015,8,Cerignale,120
+033016,8,Coli,846
+033017,8,Corte Brugnatella,573
+028021,5,Candiana,2294
+028022,5,Carceri,1508
+028026,5,Cartura,4600
+028027,5,Casale di Scodosia,4811
+028029,5,Castelbaldo,1463
+028031,5,Cinto Euganeo,1973
+030031,6,Coseano,2123
+030032,6,Dignano,2287
+030033,6,Dogna,157
+030034,6,Drenchia,102
+030035,6,Enemonzo,1313
+030036,6,Faedis,2829
+030039,6,Flaibano,1102
+030040,6,Forni Avoltri,551
+030041,6,Forni di Sopra,910
+033018,8,Cortemaggiore,4670
+033019,8,Farini,1148
+033020,8,Ferriere,1157
+033022,8,Gazzola,2121
+033024,8,Gragnano Trebbiense,4578
+028040,5,Galzignano Terme,4363
+028041,5,Gazzo,4278
+028042,5,Grantorto,4556
+028043,5,Granze,1991
+030042,6,Forni di Sotto,572
+030044,6,Gonars,4684
+030045,6,Grimacco,313
+030047,6,Lauco,678
+030048,6,Lestizza,3709
+030051,6,Lusevera,607
+035035,8,Rolo,4002
+035041,8,Toano,4329
+033025,8,Gropparello,2228
+033026,8,Lugagnano Val d'Arda,3889
+033028,8,Morfasso,948
+033030,8,Ottone,463
+028047,5,Lozzo Atestino,3030
+028049,5,Masi,1776
+028052,5,Megliadino San Vitale,1842
+028053,5,Merlara,2566
+030052,6,Magnano in Riviera,2303
+030054,6,Malborghetto Valbruna,908
+030056,6,Marano Lagunare,1782
+030058,6,Mereto di Tomba,2574
+030059,6,Moggio Udinese,1676
+030060,6,Moimacco,1653
+035042,8,Vetto,1802
+035043,8,Vezzano sul Crostolo,4273
+035044,8,Viano,3332
+035045,8,Villa Minozzo,3609
+035046,8,Ventasso,4082
+036001,8,Bastiglia,4239
+033033,8,Pianello Val Tidone,2206
+033034,8,Piozzano,596
+033036,8,Ponte dell'Olio,4694
+028061,5,Pernumia,3818
+028062,5,Piacenza d'Adige,1260
+028066,5,Polverara,3343
+030061,6,Montenars,496
+030062,6,Mortegliano,4909
+030063,6,Moruzzo,2470
+030064,6,Muzzana del Turgnano,2454
+030065,6,Nimis,2643
+030066,6,Osoppo,2858
+030067,6,Ovaro,1835
+030069,6,Palazzolo dello Stella,2934
+030071,6,Paluzza,2056
+036004,8,Camposanto,3216
+033041,8,San Pietro in Cerro,836
+033042,8,Sarmato,2917
+033043,8,Travo,2141
+033044,8,Vernasca,2053
+033045,8,Vigolzone,4200
+033046,8,Villanova sull'Arda,1698
+028067,5,Ponso,2407
+028068,5,Pontelongo,3736
+028070,5,Pozzonovo,3534
+028071,5,Rovolon,4911
+028073,5,Saccolongo,4907
+028078,5,San Pietro in Gu,4434
+028079,5,San Pietro Viminario,3063
+030073,6,Paularo,2457
+030075,6,Pocenia,2440
+030076,6,Pontebba,1348
+030077,6,Porpetto,2526
+030080,6,Pradamano,3589
+030081,6,Prato Carnico,880
+036011,8,Fanano,2970
+036014,8,Fiumalbo,1206
+033047,8,Zerba,69
+033048,8,Ziano Piacentino,2497
+033049,8,Alta Val Tidone,2959
+034001,8,Albareto,2125
+034002,8,Bardi,2119
+028083,5,Sant'Elena,2562
+028084,5,Sant'Urbano,1937
+054028,10,Massa Martana,3697
+054029,10,Monte Castello di Vibio,1504
+054031,10,Monteleone di Spoleto,580
+058080,12,Ponzano Romano,1143
+058083,12,Riofreddo,742
+058084,12,Rocca Canterano,188
+058085,12,Rocca di Cave,354
+058087,12,Roccagiovine,258
+058089,12,Rocca Santo Stefano,949
+058090,12,Roiate,674
+058092,12,Roviano,1315
+057012,12,Casperia,1213
+057013,12,Castel di Tora,270
+057014,12,Castelnuovo di Farfa,1052
+057015,12,Castel Sant'Angelo,1203
+057017,12,Cittareale,426
+057018,12,Collalto Sabino,398
+057019,12,Colle di Tora,358
+057020,12,Collegiove,140
+057021,12,Collevecchio,1519
+057022,12,Colli sul Velino,478
+057023,12,Concerviano,273
+052025,9,Radicondoli,914
+052027,9,San Casciano dei Bagni,1575
+052030,9,San Quirico d'Orcia,2639
+052031,9,Sarteano,4625
+054032,10,Monte Santa Maria Tiberina,1144
+054033,10,Montone,1614
+054035,10,Norcia,4764
+054036,10,Paciano,968
+057024,12,Configni,568
+057025,12,Contigliano,3886
+057026,12,Cottanello,530
+057028,12,Fiamignano,1259
+057029,12,Forano,3196
+057030,12,Frasso Sabino,723
+057031,12,Greccio,1551
+057032,12,Labro,363
+052036,9,Trequanda,1219
+054040,10,Piegaro,3531
+058094,12,Sambuci,874
+058095,12,San Gregorio da Sassola,1490
+058096,12,San Polo dei Cavalieri,2825
+058098,12,Sant'Angelo Romano,4983
+058099,12,Sant'Oreste,3650
+058100,12,San Vito Romano,3265
+058101,12,Saracinesco,172
+057033,12,Leonessa,2218
+057034,12,Longone Sabino,555
+057035,12,Magliano Sabina,3634
+057036,12,Marcetelli,69
+057037,12,Micigliano,118
+057038,12,Mompeo,483
+057039,12,Montasola,387
+057040,12,Montebuono,869
+057041,12,Monteleone Sabino,1201
+057042,12,Montenero Sabino,279
+053001,9,Arcidosso,4283
+053002,9,Campagnatico,2365
+054041,10,Pietralunga,2049
+054042,10,Poggiodomo,96
+054043,10,Preci,714
+054045,10,Sant'Anatolia di Narco,546
+054046,10,Scheggia e Pascelupo,1347
+058105,12,Tolfa,4923
+058106,12,Torrita Tiberina,1070
+058108,12,Vallepietra,258
+058109,12,Vallinfreda,287
+057043,12,Monte San Giovanni in Sabina,658
+057044,12,Montopoli di Sabina,4160
+057045,12,Morro Reatino,352
+057046,12,Nespolo,201
+057047,12,Orvinio,398
+057048,12,Paganico Sabino,157
+057049,12,Pescorocchiano,1976
+057050,12,Petrella Salto,1097
+057051,12,Poggio Bustone,1973
+057052,12,Poggio Catino,1268
+053003,9,Capalbio,3994
+053004,9,Castel del Piano,4827
+053005,9,Castell'Azzara,1397
+053007,9,Cinigiano,2457
+054047,10,Scheggino,464
+054048,10,Sellano,1032
+054049,10,Sigillo,2321
+058112,12,Vicovaro,3802
+058113,12,Vivaro Romano,163
+057054,12,Poggio Moiano,2811
+057055,12,Poggio Nativo,2537
+057056,12,Poggio San Lorenzo,517
+057057,12,Posta,611
+057058,12,Pozzaglia Sabina,314
+053008,9,Civitella Paganico,3109
+054055,10,Tuoro sul Trasimeno,3810
+059002,12,Bassiano,1477
+059003,12,Campodimele,597
+059004,12,Castelforte,4325
+057060,12,Rivodutri,1187
+057061,12,Roccantica,543
+057062,12,Rocca Sinibalda,779
+057063,12,Salisano,518
+057064,12,Scandriglia,3125
+057065,12,Selci,1081
+057066,12,Stimigliano,2317
+057067,12,Tarano,1413
+057068,12,Toffia,1063
+057069,12,Torricella in Sabina,1348
+053012,9,Isola del Giglio,1403
+053013,9,Magliano in Toscana,3403
+054057,10,Valfabbrica,3286
+054058,10,Vallo di Nera,357
+054059,10,Valtopina,1325
+055001,10,Acquasparta,4611
+055002,10,Allerona,1722
+055003,10,Alviano,1428
+057070,12,Torri in Sabina,1223
+057071,12,Turania,234
+057072,12,Vacone,228
+057073,12,Varco Sabino,172
+058001,12,Affile,1463
+058002,12,Agosta,1738
+058004,12,Allumiere,3914
+058006,12,Anticoli Corrado,848
+058008,12,Arcinazzo Romano,1286
+053017,9,Montieri,1163
+055005,10,Arrone,2703
+055006,10,Attigliano,2012
+055007,10,Baschi,2683
+055008,10,Calvi dell'Umbria,1765
+055009,10,Castel Giorgio,2099
+055010,10,Castel Viscardo,2825
+055011,10,Fabro,2733
+055012,10,Ferentillo,1839
+059012,12,Lenola,4161
+059013,12,Maenza,3060
+059016,12,Norma,3823
+058010,12,Arsoli,1454
+058012,12,Bellegra,2800
+058014,12,Camerata Nuova,420
+058016,12,Canale Monterano,4198
+058017,12,Canterano,350
+053019,9,Pitigliano,3732
+053020,9,Roccalbegna,951
+055013,10,Ficulle,1622
+055014,10,Giove,1874
+055015,10,Guardea,1774
+055016,10,Lugnano in Teverina,1433
+055017,10,Montecastrilli,4936
+055018,10,Montecchio,1597
+055019,10,Montefranco,1298
+055020,10,Montegabbione,1157
+055021,10,Monteleone d'Orvieto,1380
+059018,12,Ponza,3396
+059020,12,Prossedi,1198
+059021,12,Roccagorga,4335
+059022,12,Rocca Massima,1115
+059023,12,Roccasecca dei Volsci,1119
+058019,12,Capranica Prenestina,322
+058020,12,Carpineto Romano,4278
+058021,12,Casape,678
+058025,12,Castel San Pietro Romano,853
+058027,12,Cerreto Laziale,1081
+058028,12,Cervara di Roma,450
+053022,9,Santa Fiora,2535
+053023,9,Scansano,4348
+053024,9,Scarlino,3904
+053025,9,Seggiano,990
+056025,12,Faleria,2089
+056026,12,Farnese,1436
+056027,12,Gallese,2728
+056028,12,Gradoli,1294
+056029,12,Graffignano,2218
+056030,12,Grotte di Castro,2531
+059030,12,Sperlonga,3236
+059031,12,Spigno Saturnia,2914
+059033,12,Ventotene,748
+060001,12,Acquafondata,274
+060002,12,Acuto,1882
+058030,12,Ciciliano,1278
+058031,12,Cineto Romano,586
+058033,12,Civitella San Paolo,2063
+058035,12,Colonna,4292
+058037,12,Filacciano,434
+053026,9,Sorano,3180
+053027,9,Monterotondo Marittimo,1298
+053028,9,Semproniano,1003
+054003,10,Bettona,4322
+056031,12,Ischia di Castro,2235
+056032,12,Latera,798
+056033,12,Lubriano,896
+056034,12,Marta,3362
+056037,12,Monte Romano,1940
+060004,12,Alvito,2586
+060005,12,Amaseno,4288
+060009,12,Arnara,2287
+042004,11,Barbara,1303
+042005,11,Belvedere Ostrense,2146
+042007,11,Camerata Picena,2547
+042011,11,Castelleone di Suasa,1592
+042012,11,Castelplanio,3514
+042013,11,Cerreto d'Esi,3544
+042015,11,Corinaldo,4889
+044064,11,Roccafluvione,1960
+044065,11,Rotella,843
+044073,11,Venarotta,1971
+045002,9,Bagnone,1788
+051024,9,Monterchi,1718
+051027,9,Ortignano Raggiolo,868
+051030,9,Pieve Santo Stefano,3060
+039017,8,Sant'Agata sul Santerno,2935
+039018,8,Solarolo,4506
+042016,11,Cupramontana,4485
+045004,9,Casola in Lunigiana,994
+045005,9,Comano,690
+045006,9,Filattiera,2243
+045008,9,Fosdinovo,4750
+045009,9,Licciana Nardi,4870
+049001,9,Bibbona,3239
+049003,9,Campo nell'Elba,4817
+049004,9,Capoliveri,4103
+040004,8,Borghi,2902
+042020,11,Genga,1699
+042024,11,Mergo,1016
+042025,11,Monsano,3326
+042026,11,Montecarotto,1886
+045012,9,Mulazzo,2333
+045013,9,Podenzana,2144
+045015,9,Tresana,1934
+045016,9,Villafranca in Lunigiana,4675
+049005,9,Capraia Isola,392
+049010,9,Marciana,2127
+049011,9,Marciana Marina,1952
+040009,8,Civitella di Romagna,3719
+040011,8,Dovadola,1575
+040014,8,Galeata,2446
+042029,11,Monte Roberto,3068
+042031,11,Morro d'Alba,1826
+042032,11,Numana,3780
+042033,11,Offagna,2039
+042036,11,Ostra Vetere,3178
+042037,11,Poggio San Marcello,660
+045017,9,Zeri,1004
+049013,9,Porto Azzurro,3708
+049019,9,Sassetta,465
+040022,8,Modigliana,4435
+040028,8,Montiano,1726
+040031,8,Portico e San Benedetto,734
+042038,11,Polverigi,4607
+042040,11,Rosora,1948
+042041,11,San Marcello,2000
+042042,11,San Paolo di Jesi,923
+042043,11,Santa Maria Nuova,4109
+042046,11,Serra de' Conti,3720
+046006,9,Camporgiano,2106
+046008,9,Careggine,533
+046010,9,Castiglione di Garfagnana,1755
+049020,9,Suvereto,3044
+049021,9,Rio,3430
+050006,9,Casale Marittimo,1073
+040033,8,Premilcuore,723
+040036,8,Rocca San Casciano,1815
+040037,8,Roncofreddo,3383
+042047,11,Serra San Quirico,2671
+042048,11,Sirolo,4101
+042049,11,Staffolo,2192
+043002,11,Apiro,2126
+043003,11,Appignano,4121
+043004,11,Belforte del Chienti,1852
+043005,11,Bolognola,143
+043006,11,Caldarola,1714
+046014,9,Fosciandora,571
+046015,9,Gallicano,3618
+046019,9,Minucciano,1918
+046020,9,Molazzana,1038
+050010,9,Castellina Marittima,1924
+050011,9,Castelnuovo di Val di Cecina,2166
+050012,9,Chianni,1330
+050014,9,Fauglia,3629
+040043,8,Santa Sofia,4080
+040044,8,Sarsina,3372
+040046,8,Sogliano al Rubicone,3181
+043008,11,Camporotondo di Fiastrone,517
+043009,11,Castelraimondo,4453
+043010,11,Castelsantangelo sul Nera,248
+043011,11,Cessapalombo,458
+046021,9,Montecarlo,4372
+046022,9,Pescaglia,3371
+046023,9,Piazza al Serchio,2225
+046025,9,Pieve Fosciana,2470
+046027,9,San Romano in Garfagnana,1384
+050015,9,Guardistallo,1216
+050016,9,Lajatico,1303
+050019,9,Montecatini Val di Cecina,1660
+050020,9,Montescudaio,2133
+050021,9,Monteverdi Marittimo,767
+050023,9,Orciano Pisano,614
+040049,8,Tredozio,1152
+040050,8,Verghereto,1784
+041001,11,Acqualagna,4292
+041002,11,Apecchio,1787
+041005,11,Belforte all'Isauro,742
+043014,11,Colmurano,1219
+043016,11,Esanatoglia,1930
+043017,11,Fiastra,644
+043019,11,Fiuminata,1313
+043020,11,Gagliole,595
+043021,11,Gualdo,762
+043022,11,Loro Piceno,2263
+046030,9,Stazzema,2996
+046031,9,Vagli Sotto,877
+046034,9,Villa Basilica,1540
+046035,9,Villa Collemandina,1268
+046036,9,Fabbriche di Vergemoli,799
+046037,9,Sillano Giuncugnano,1025
+050024,9,Palaia,4565
+050025,9,Peccioli,4740
+041006,11,Borgo Pace,552
+041008,11,Cantiano,2128
+041009,11,Carpegna,1649
+043025,11,Mogliano,4485
+043027,11,Monte Cavallo,111
+043029,11,Montefano,3401
+043030,11,Montelupone,3472
+047007,9,Marliana,3155
+050030,9,Riparbella,1601
+022134,4,Panchià,827
+022135,4,Ronzo-Chienis,994
+022136,4,Peio,1836
+022137,4,Pellizzano,785
+022138,4,Pelugo,402
+023045,5,Malcesine,3689
+023046,5,Marano di Valpolicella,3153
+023047,5,Mezzane di Sotto,2530
+023048,5,Minerbe,4562
+023049,5,Montecchia di Crosara,4322
+026027,5,Follina,3715
+022142,4,Pieve Tesino,637
+022143,4,Pinzolo,3041
+022144,4,Pomarolo,2468
+022147,4,Predazzo,4528
+022150,4,Rabbi,1343
+023054,5,Nogarole Rocca,3735
+023056,5,Palù,1252
+023057,5,Pastrengo,3143
+023061,5,Pressana,2516
+023062,5,Rivoli Veronese,2202
+023063,5,Roncà,3772
+026030,5,Fregona,2854
+026034,5,Gorgo al Monticano,4065
+022155,4,Romeno,1408
+022156,4,Roncegno Terme,2911
+022157,4,Ronchi Valsugana,457
+022159,4,Ronzone,438
+022160,4,Roverè della Luna,1645
+022162,4,Ruffrè-Mendola,407
+022163,4,Rumo,810
+022164,4,Sagron Mis,180
+022165,4,Samone,556
+023065,5,Roverchiara,2634
+023066,5,Roveredo di Guà,1597
+023067,5,Roverè Veronese,2096
+023068,5,Salizzole,3822
+023072,5,Sanguinetto,4119
+026041,5,Meduna di Livenza,2946
+026042,5,Miane,3225
+026044,5,Monastier di Treviso,4403
+026045,5,Monfumo,1319
+026047,5,Morgano,4458
+026048,5,Moriago della Battaglia,2809
+038010,8,Jolanda di Savoia,2753
+038011,8,Lagosanto,4785
+038012,8,Masi Torello,2300
+025037,5,Perarolo di Cadore,356
+022167,4,San Michele all'Adige,3904
+022168,4,Sant'Orsola Terme,1116
+022169,4,Sanzeno,912
+022170,4,Sarnonico,796
+022171,4,Scurelle,1400
+022172,4,Segonzano,1422
+022173,4,Sfruz,372
+022176,4,Soraga di Fassa,683
+022177,4,Sover,802
+023074,5,San Mauro di Saline,572
+023075,5,San Pietro di Morubio,3030
+023078,5,Sant'Anna d'Alfaedo,2540
+023079,5,San Zeno di Montagna,1414
+023080,5,Selva di Progno,894
+026052,5,Ormelle,4492
+026053,5,Orsago,3867
+026060,5,Portobuffolè,750
+026061,5,Possagno,2206
+025039,5,Pieve di Cadore,3729
+025043,5,Rivamonte Agordino,615
+025044,5,Rocca Pietore,1196
+025045,5,San Gregorio nelle Alpi,1588
+025046,5,San Nicolò di Comelico,387
+025047,5,San Pietro di Cadore,1583
+025049,5,San Tomaso Agordino,612
+022179,4,Spiazzo,1252
+022180,4,Spormaggiore,1276
+022181,4,Sporminore,700
+022182,4,Stenico,1205
+022183,4,Storo,4579
+022184,4,Strembo,592
+022188,4,Telve,1916
+023084,5,Sorgà,3005
+023085,5,Terrazzo,2150
+023086,5,Torri del Benaco,3071
+023087,5,Tregnago,4909
+023088,5,Trevenzuolo,2763
+023090,5,Velo Veronese,757
+021109,4,Valle di Casies,2325
+021110,4,Vandoies,3324
+021111,4,Varna,4794
+021112,4,Verano,973
+021113,4,Villabassa,1602
+025050,5,Santo Stefano di Cadore,2474
+025051,5,San Vito di Cadore,1929
+025054,5,Selva di Cadore,493
+025055,5,Seren del Grappa,2429
+025056,5,Sospirolo,3127
+025057,5,Soverzene,365
+022189,4,Telve di Sopra,592
+022190,4,Tenna,1045
+022191,4,Tenno,2012
+022193,4,Terragnolo,699
+022195,4,Terzolas,642
+022196,4,Tesero,2999
+022199,4,Tione di Trento,3660
+022200,4,Ton,1310
+022202,4,Torcegno,676
+023093,5,Vestenanova,2559
+023098,5,Zimella,4865
+051035,9,Sestino,1256
+051038,9,Talla,999
+056038,12,Monterosi,4782
+056040,12,Onano,977
+056041,12,Oriolo Romano,3834
+056043,12,Piansano,1972
+056044,12,Proceno,539
+060011,12,Atina,4264
+060012,12,Ausonia,2560
+060013,12,Belmonte Castello,700
+060015,12,Broccostella,2747
+060016,12,Campoli Appennino,1660
+060017,12,Casalattico,531
+060018,12,Casalvieri,2581
+052003,9,Buonconvento,3087
+054004,10,Bevagna,4919
+054005,10,Campello sul Clitunno,2392
+054006,10,Cannara,4305
+054007,10,Cascia,3068
+054008,10,Castel Ritaldi,3156
+058041,12,Gavignano,1922
+058044,12,Gerano,1206
+058045,12,Gorga,702
+056046,12,Villa San Giovanni in Tuscia,1264
+056047,12,San Lorenzo Nuovo,2072
+056051,12,Tessennano,306
+052004,9,Casole d'Elsa,3803
+052005,9,Castellina in Chianti,2807
+052007,9,Castiglione d'Orcia,2260
+052008,9,Cetona,2563
+054010,10,Cerreto di Spoleto,1012
+054011,10,Citerna,3463
+058048,12,Jenne,349
+058051,12,Licenza,896
+058052,12,Magliano Romano,1503
+058053,12,Mandela,911
+058055,12,Marano Equo,782
+058058,12,Mazzano Romano,3107
+056053,12,Valentano,2811
+056054,12,Vallerano,2516
+056055,12,Vasanello,3970
+056056,12,Vejano,2220
+056058,12,Vignanello,4433
+052010,9,Chiusdino,1845
+052013,9,Gaiole in Chianti,2635
+054014,10,Collazzone,3388
+054016,10,Costacciaro,1143
+054019,10,Fossato di Vico,2738
+054020,10,Fratta Todina,1840
+058061,12,Monteflavio,1242
+058062,12,Montelanico,2119
+058066,12,Montorio Romano,2034
+058067,12,Moricone,2524
+058069,12,Nazzano,1355
+058070,12,Nemi,1930
+057001,12,Accumoli,585
+057002,12,Amatrice,2381
+052018,9,Monticiano,1525
+052019,9,Murlo,2393
+054021,10,Giano dell'Umbria,3813
+054025,10,Lisciano Niccone,600
+058071,12,Nerola,1921
+058076,12,Percile,215
+058077,12,Pisoniano,736
+058078,12,Poli,2321
+057003,12,Antrodoco,2438
+057004,12,Ascrea,216
+057005,12,Belmonte in Sabina,639
+057006,12,Borbona,603
+057007,12,Borgorose,4374
+057008,12,Borgo Velino,947
+057009,12,Cantalice,2576
+057010,12,Cantalupo in Sabina,1652
+057011,12,Casaprota,717
+052020,9,Piancastagnaio,4064
+052021,9,Pienza,2058
+052023,9,Radda in Chianti,1518
+052024,9,Radicofani,1073
+075017,16,Castri di Lecce,2821
+075018,16,Castrignano de' Greci,3829
+066082,13,Rocca di Mezzo,1434
+066083,13,Rocca Pia,180
+066084,13,Roccaraso,1604
+066085,13,San Benedetto dei Marsi,3850
+066086,13,San Benedetto in Perillis,95
+066087,13,San Demetrio ne' Vestini,1931
+066088,13,San Pio delle Camere,669
+066089,13,Sante Marie,1145
+066090,13,Sant'Eusanio Forconese,380
+066091,13,Santo Stefano di Sessanio,115
+069032,13,Filetto,883
+069034,13,Fraine,291
+069036,13,Fresagrandinaria,927
+069037,13,Frisa,1685
+069038,13,Furci,870
+069039,13,Gamberale,294
+069040,13,Gessopalena,1311
+069041,13,Gissi,2642
+069042,13,Giuliano Teatino,1198
+072008,16,Binetto,2214
+070077,14,Tavenna,640
+070079,14,Torella del Sannio,727
+070080,14,Toro,1328
+070081,14,Trivento,4570
+070082,14,Tufara,832
+070083,14,Ururi,2578
+070084,14,Vinchiaturo,3319
+071001,16,Accadia,2277
+066092,13,San Vincenzo Valle Roveto,2215
+066093,13,Scanno,1762
+066094,13,Scontrone,544
+066095,13,Scoppito,3812
+066096,13,Scurcola Marsicana,2781
+066097,13,Secinaro,331
+069044,13,Guilmi,420
+069045,13,Lama dei Peligni,1134
+069047,13,Lentella,656
+069048,13,Lettopalena,329
+069049,13,Liscia,678
+069050,13,Miglianico,4776
+069051,13,Montazzoli,907
+069052,13,Monteferrante,118
+069053,13,Montelapiano,82
+071002,16,Alberona,902
+071003,16,Anzano di Puglia,1185
+071006,16,Biccari,2696
+066100,13,Tione degli Abruzzi,285
+066101,13,Tornimparte,3024
+066103,13,Villalago,529
+066104,13,Villa Santa Lucia degli Abruzzi,93
+066105,13,Villa Sant'Angelo,462
+066106,13,Villavallelonga,870
+066107,13,Villetta Barrea,617
+066108,13,Vittorito,846
+067002,13,Ancarano,1855
+067003,13,Arsita,798
+069054,13,Montenerodomo,640
+069055,13,Monteodorisio,2428
+069056,13,Mozzagrogna,2458
+069057,13,Orsogna,3746
+069059,13,Paglieta,4208
+069060,13,Palena,1292
+069061,13,Palmoli,843
+069062,13,Palombaro,976
+069063,13,Pennadomo,219
+071007,16,Bovino,3138
+071009,16,Candela,2732
+071011,16,Carlantino,916
+071012,16,Carpino,4008
+071013,16,Casalnuovo Monterotaro,1434
+071014,16,Casalvecchio di Puglia,1763
+067005,13,Basciano,2362
+067007,13,Bisenti,1798
+067009,13,Canzano,1831
+067010,13,Castel Castagna,457
+067012,13,Castelli,1025
+069064,13,Pennapiedimonte,445
+069065,13,Perano,1564
+069066,13,Pizzoferrato,1006
+069067,13,Poggiofiorito,835
+069068,13,Pollutri,2131
+069069,13,Pretoro,871
+069070,13,Quadri,747
+069071,13,Rapino,1258
+069072,13,Ripa Teatina,4060
+069073,13,Roccamontepiano,1635
+069074,13,Rocca San Giovanni,2301
+069075,13,Roccascalegna,1143
+072034,16,Poggiorsini,1352
+071015,16,Castelluccio dei Sauri,2097
+071016,16,Castelluccio Valmaggiore,1253
+071017,16,Castelnuovo della Daunia,1359
+071018,16,Celenza Valfortore,1485
+071019,16,Celle di San Vito,164
+067013,13,Castiglione Messer Raimondo,2185
+067014,13,Castilenti,1435
+067015,13,Cellino Attanasio,2400
+067016,13,Cermignano,1576
+067017,13,Civitella del Tronto,4787
+067018,13,Colledara,2160
+067019,13,Colonnella,3660
+067020,13,Controguerra,2302
+069076,13,Roccaspinalveti,1229
+069077,13,Roio del Sangro,94
+069078,13,Rosello,218
+069079,13,San Buono,911
+069080,13,San Giovanni Lipioni,149
+069082,13,San Martino sulla Marrucina,897
+069084,13,Santa Maria Imbaro,2074
+069085,13,Sant'Eusanio del Sangro,2357
+069087,13,Scerni,3127
+071021,16,Chieuti,1618
+071022,16,Deliceto,3671
+071023,16,Faeto,614
+067022,13,Cortino,606
+067023,13,Crognaleto,1169
+067024,13,Fano Adriano,272
+067026,13,Isola del Gran Sasso d'Italia,4621
+067027,13,Montefino,983
+067029,13,Morro d'Oro,3603
+069088,13,Schiavi di Abruzzo,732
+069089,13,Taranta Peligna,352
+069090,13,Tollo,4031
+069091,13,Torino di Sangro,3006
+069092,13,Tornareccio,1726
+069093,13,Torrebruna,776
+069094,13,Torrevecchia Teatina,4222
+069095,13,Torricella Peligna,1252
+069096,13,Treglio,1689
+069097,13,Tufillo,376
+069098,13,Vacri,1609
+071025,16,Ischitella,4373
+071026,16,Isole Tremiti,458
+067033,13,Penna Sant'Andrea,1708
+067034,13,Pietracamela,240
+067036,13,Rocca Santa Maria,497
+068025,13,Moscufo,3146
+068026,13,Nocciano,1813
+068029,13,Pescosansonesco,486
+068031,13,Picciano,1327
+068032,13,Pietranico,467
+068033,13,Popoli,4880
+068034,13,Roccamorice,937
+070030,14,Jelsi,1731
+070032,14,Limosano,718
+070033,14,Lucito,630
+070034,14,Lupara,451
+070035,14,Macchia Valfortore,515
+073028,16,Torricella,4190
+071052,16,Sant'Agata di Puglia,1886
+068035,13,Rosciano,3998
+068036,13,Salle,282
+068037,13,Sant'Eufemia a Maiella,257
+068038,13,San Valentino in Abruzzo Citeriore,1904
+068039,13,Scafa,3599
+068040,13,Serramonacesca,539
+068042,13,Tocco da Casauria,2488
+068043,13,Torre de' Passeri,2994
+068044,13,Turrivalignani,811
+068045,13,Vicoli,383
+068046,13,Villa Celiera,615
+069001,13,Altino,3119
+070036,14,Mafalda,1152
+070037,14,Matrice,1071
+070038,14,Mirabello Sannitico,2123
+070039,14,Molise,158
+070040,14,Monacilioni,488
+070041,14,Montagano,1035
+070042,14,Montecilfone,1274
+070043,14,Montefalcone nel Sannio,1456
+070044,14,Montelongo,332
+070045,14,Montemitro,327
+071053,16,Serracapriola,3806
+069002,13,Archi,2097
+069003,13,Ari,1108
+069004,13,Arielli,1116
+069006,13,Bomba,756
+069007,13,Borrello,322
+069009,13,Montebello sul Sangro,81
+069010,13,Canosa Sannita,1306
+069011,13,Carpineto Sinello,549
+070047,14,Montorio nei Frentani,392
+070048,14,Morrone del Sannio,564
+070049,14,Oratino,1656
+070050,14,Palata,1648
+070051,14,Petacciato,3724
+070052,14,Petrella Tifernina,1100
+071061,16,Volturara Appula,397
+071062,16,Volturino,1656
+071063,16,Ordona,2869
+071064,16,Zapponeta,3421
+069012,13,Carunchio,631
+069013,13,Casacanditella,1234
+069014,13,Casalanguida,867
+069016,13,Casalincontrada,3051
+069018,13,Castel Frentano,4371
+069019,13,Castelguidone,344
+069020,13,Castiglione Messer Marino,1627
+070053,14,Pietracatella,1281
+070054,14,Pietracupa,220
+070055,14,Portocannone,2406
+070056,14,Provvidenti,105
+070058,14,Ripabottoni,479
+070059,14,Ripalimosani,3060
+070060,14,Roccavivara,658
+069021,13,Celenza sul Trigno,846
+069023,13,Civitaluparella,310
+069024,13,Civitella Messer Raimondo,807
+069025,13,Colledimacine,171
+069026,13,Colledimezzo,449
+069027,13,Crecchio,2769
+069028,13,Cupello,4833
+069029,13,Dogliola,326
+069030,13,Fara Filiorum Petri,1977
+069031,13,Fara San Martino,1324
+070061,14,Rotello,1165
+070062,14,Salcito,641
+070063,14,San Biase,149
+070064,14,San Felice del Molise,592
+070065,14,San Giacomo degli Schiavoni,1385
+070066,14,San Giovanni in Galdo,531
+070067,14,San Giuliano del Sannio,950
+070068,14,San Giuliano di Puglia,1031
+075005,16,Andrano,4726
+075007,16,Arnesano,4006
+075008,16,Bagnolo del Salento,1815
+065091,15,Perdifumo,1767
+065092,15,Perito,876
+065093,15,Pertosa,670
+065094,15,Petina,1083
+065095,15,Piaggine,1231
+065096,15,Pisciotta,2555
+065098,15,Pollica,2284
+065100,15,Positano,3854
+060028,12,Collepardo,921
+060029,12,Colle San Magno,662
+060030,12,Coreno Ausonio,1578
+060031,12,Esperia,3841
+060032,12,Falvaterra,543
+060034,12,Filettino,510
+060036,12,Fontana Liri,2813
+060037,12,Fontechiari,1293
+062004,15,Apollosa,2588
+062005,15,Arpaia,2000
+062006,15,Arpaise,738
+062007,15,Baselice,2223
+062009,15,Bonea,1381
+062010,15,Bucciano,2088
+062011,15,Buonalbergo,1633
+062012,15,Calvi,2596
+062013,15,Campolattaro,999
+062014,15,Campoli del Monte Taburno,1603
+064027,15,Chianche,459
+064028,15,Chiusano di San Domenico,2178
+064029,15,Contrada,3013
+064030,15,Conza della Campania,1301
+064031,15,Domicella,1862
+064032,15,Flumeri,2856
+064033,15,Fontanarosa,2968
+064035,15,Frigento,3541
+064036,15,Gesualdo,3418
+064037,15,Greci,627
+066063,13,Ortona dei Marsi,451
+066064,13,Ortucchio,1778
+066065,13,Ovindoli,1196
+066066,13,Pacentro,1129
+066067,13,Pereto,656
+066068,13,Pescasseroli,2126
+066069,13,Pescina,3949
+066070,13,Pescocostanzo,1134
+060039,12,Fumone,2048
+060040,12,Gallinaro,1249
+060041,12,Giuliano di Roma,2412
+060042,12,Guarcino,1538
+060045,12,Morolo,3243
+062015,15,Casalduni,1289
+062016,15,Castelfranco in Miscano,863
+062017,15,Castelpagano,1407
+062018,15,Castelpoto,1172
+062019,15,Castelvenere,2644
+062020,15,Castelvetere in Val Fortore,1094
+062021,15,Cautano,1981
+062022,15,Ceppaloni,3285
+062023,15,Cerreto Sannita,3747
+062024,15,Circello,2263
+064039,15,Grottolella,1893
+064040,15,Guardia Lombardi,1599
+064041,15,Lacedonia,2170
+069100,13,Villalfonsina,916
+069101,13,Villamagna,2260
+069102,13,Villa Santa Maria,1276
+069103,13,Pietraferrazzana,131
+069104,13,Fallo,120
+070001,14,Acquaviva Collecroce,605
+070002,14,Baranello,2582
+070004,14,Bonefro,1291
+070005,14,Busso,1189
+073005,16,Faggiano,3470
+071032,16,Monteleone di Puglia,977
+067042,13,Torano Nuovo,1552
+067043,13,Torricella Sicura,2572
+067045,13,Tossicia,1289
+067046,13,Valle Castellana,903
+070007,14,Campochiaro,623
+070008,14,Campodipietra,2441
+070009,14,Campolieto,826
+070011,14,Casacalenda,1988
+070012,14,Casalciprano,509
+071034,16,Motta Montecorvino,682
+071035,16,Orsara di Puglia,2604
+071037,16,Panni,740
+071038,16,Peschici,4431
+068001,13,Abbateggio,365
+068002,13,Alanno,3458
+068003,13,Bolognano,1066
+068004,13,Brittoli,268
+068005,13,Bussi sul Tirino,2405
+068006,13,Cappelle sul Tavo,4032
+068007,13,Caramanico Terme,1890
+068008,13,Carpineto della Nora,597
+068009,13,Castiglione a Casauria,766
+068010,13,Catignano,1280
+070013,14,Castelbottaccio,264
+070014,14,Castellino del Biferno,511
+070015,14,Castelmauro,1384
+070016,14,Castropignano,897
+070017,14,Cercemaggiore,3675
+070018,14,Cercepiccola,623
+070019,14,Civitacampomarano,341
+070020,14,Colle d'Anchise,768
+070021,14,Colletorto,1779
+073017,16,Montemesola,3736
+073018,16,Monteparano,2340
+071039,16,Pietramontecorvino,2612
+071040,16,Poggio Imperiale,2609
+071041,16,Rignano Garganico,1958
+071042,16,Rocchetta Sant'Antonio,1767
+071043,16,Rodi Garganico,3571
+071044,16,Roseto Valfortore,1054
+068013,13,Civitaquana,1217
+068014,13,Civitella Casanova,1702
+068016,13,Corvara,225
+068017,13,Cugnoli,1414
+068018,13,Elice,1673
+068019,13,Farindola,1418
+068020,13,Lettomanoppello,2817
+070022,14,Duronia,393
+070023,14,Ferrazzano,3260
+070024,14,Fossalto,1241
+070025,14,Gambatesa,1342
+070026,14,Gildone,767
+070027,14,Guardialfiera,980
+070028,14,Guardiaregia,734
+073023,16,Roccaforzata,1806
+071048,16,San Marco la Catola,925
+068023,13,Montebello di Bertona,940
+050034,9,Santa Luce,1619
+041016,11,Fratte Rosa,913
+041017,11,Frontino,288
+041018,11,Frontone,1230
+041020,11,Gradara,4897
+041021,11,Isola del Piano,555
+043032,11,Monte San Martino,716
+043034,11,Muccia,865
+043035,11,Penna San Giovanni,997
+043036,11,Petriolo,1881
+043038,11,Pieve Torina,1357
+043039,11,Pioraco,1037
+043040,11,Poggio San Vicino,229
+047018,9,Sambuca Pistoiese,1535
+047022,9,Chiesina Uzzanese,4507
+047023,9,Abetone Cutigliano,2033
+050036,9,Terricciola,4498
+041022,11,Lunano,1496
+041023,11,Macerata Feltria,1980
+041025,11,Mercatello sul Metauro,1321
+041026,11,Mercatino Conca,1018
+041027,11,Mombaroccio,2076
+041028,11,Mondavio,3725
+041030,11,Montecalvo in Foglia,2740
+041031,11,Monte Cerignone,653
+043045,11,Ripe San Ginesio,840
+043046,11,San Ginesio,3226
+043048,11,Sant'Angelo in Pontano,1353
+041032,11,Monteciccardo,1629
+041033,11,Montecopiolo,1069
+041034,11,Montefelcino,2567
+041035,11,Monte Grimano Terme,1112
+041038,11,Monte Porzio,2797
+041041,11,Peglio,659
+043049,11,Sarnano,3120
+043050,11,Sefro,436
+043051,11,Serrapetrona,916
+043052,11,Serravalle di Chienti,1050
+051003,9,Badia Tedalda,1030
+051007,9,Caprese Michelangelo,1399
+051008,9,Castel Focognano,3025
+041045,11,Petriano,2784
+041047,11,Piandimeleto,2088
+041048,11,Pietrarubbia,624
+041049,11,Piobbico,1878
+041051,11,San Costanzo,4599
+041054,11,San Lorenzo in Campo,3254
+043055,11,Urbisaglia,2517
+043056,11,Ussita,390
+043057,11,Visso,1032
+043058,11,Valfornace,974
+044001,11,Acquasanta Terme,2635
+048018,9,Firenzuola,4517
+048020,9,Gambassi Terme,4790
+051010,9,Castel San Niccolò,2603
+051011,9,Castiglion Fibocchi,2125
+051014,9,Chitignano,907
+051015,9,Chiusi della Verna,1931
+041057,11,Sant'Angelo in Vado,4006
+041058,11,Sant'Ippolito,1488
+041060,11,Sassofeltrio,1368
+041061,11,Serra Sant'Abbondio,960
+041064,11,Tavoleto,859
+044002,11,Acquaviva Picena,3701
+044005,11,Appignano del Tronto,1722
+044006,11,Arquata del Tronto,1059
+044010,11,Carassai,1005
+048025,9,Londa,1865
+048026,9,Marradi,3014
+051021,9,Lucignano,3472
+051022,9,Marciano della Chiana,3414
+051023,9,Montemignaio,532
+044012,11,Castignano,2682
+044013,11,Castorano,2305
+044014,11,Colli del Tronto,3661
+044015,11,Comunanza,3020
+044016,11,Cossignano,900
+044021,11,Force,1228
+044027,11,Maltignano,2296
+044029,11,Massignano,1643
+048027,9,Montaione,3555
+048031,9,Palazzuolo sul Senio,1127
+039003,8,Bagnara di Romagna,2416
+039005,8,Casola Valsenio,2492
+041071,11,Sassocorvaro Auditore,4890
+042001,11,Agugliano,4791
+042003,11,Arcevia,4325
+044031,11,Monsampolo del Tronto,4563
+044032,11,Montalto delle Marche,1981
+044034,11,Montedinove,506
+044036,11,Montefiore dell'Aso,2001
+044038,11,Montegallo,463
+044044,11,Montemonaco,558
+044054,11,Offida,4893
+044056,11,Palmiano,171
+044063,11,Ripatransone,4142
+048039,9,San Godenzo,1094
+066071,13,Pettorano sul Gizio,1411
+066072,13,Pizzoli,4344
+066073,13,Poggio Picenze,1063
+066074,13,Prata d'Ansidonia,463
+066076,13,Prezza,919
+066077,13,Raiano,2707
+066078,13,Rivisondoli,673
+066079,13,Roccacasale,634
+066080,13,Rocca di Botte,858
+066081,13,Rocca di Cambio,480
+070069,14,San Martino in Pensilis,4694
+070070,14,San Massimo,819
+070071,14,San Polo Matese,471
+070072,14,Santa Croce di Magliano,4199
+070073,14,Sant'Angelo Limosano,340
+070074,14,Sant'Elia a Pianisi,1679
+070075,14,Sepino,1833
+070076,14,Spinete,1219
+075009,16,Botrugno,2694
+075012,16,Cannole,1675
+075013,16,Caprarica di Lecce,2395
+075015,16,Carpignano Salentino,3726
+065018,15,Buonabitacolo,2509
+065019,15,Caggiano,2651
+065020,15,Calvanico,1456
+066011,13,Bisegna,209
+066012,13,Bugnara,1077
+066013,13,Cagnano Amiterno,1260
+066014,13,Calascio,136
+066015,13,Campo di Giove,779
+066016,13,Campotosto,487
+066017,13,Canistro,967
+066018,13,Cansano,240
+066019,13,Capestrano,874
+061024,15,Castel di Sasso,1121
+061025,15,Castello del Matese,1425
+061026,15,Castel Morrone,3738
+061028,15,Cervino,4987
+061030,15,Ciorlano,389
+061031,15,Conca della Campania,1193
+061033,15,Dragoni,2081
+061034,15,Fontegreca,785
+061035,15,Formicola,1435
+061036,15,Francolise,4721
+063038,15,Lacco Ameno,4769
+063040,15,Liveri,1563
+065023,15,Campora,368
+065024,15,Cannalonga,1009
+065026,15,Casalbuono,1143
+065027,15,Casaletto Spartano,1346
+066021,13,Capitignano,637
+066022,13,Caporciano,209
+066023,13,Cappadocia,554
+066024,13,Carapelle Calvisio,86
+066026,13,Castel del Monte,444
+066027,13,Castel di Ieri,303
+066029,13,Castellafiume,1073
+061038,15,Gallo Matese,540
+061039,15,Galluccio,2059
+061040,15,Giano Vetusto,660
+061041,15,Gioia Sannitica,3469
+061044,15,Letino,666
+061045,15,Liberi,1104
+065029,15,Caselle in Pittari,1894
+065030,15,Castelcivita,1564
+065032,15,Castelnuovo Cilento,2840
+065033,15,Castelnuovo di Conza,602
+065035,15,Castel San Lorenzo,2313
+065036,15,Castiglione del Genovesi,1325
+066030,13,Castelvecchio Calvisio,127
+066031,13,Castelvecchio Subequo,870
+066033,13,Cerchio,1571
+066034,13,Civita d'Antino,966
+066035,13,Civitella Alfedena,283
+066036,13,Civitella Roveto,3144
+066037,13,Cocullo,212
+066038,13,Collarmele,871
+061050,15,Marzano Appio,2127
+061051,15,Mignano Monte Lungo,3074
+061055,15,Pastorano,3015
+061056,15,Piana di Monte Verna,2256
+061058,15,Pietramelara,4604
+061059,15,Pietravairano,2912
+063069,15,San Paolo Bel Sito,3383
+065038,15,Celle di Bulgheria,1804
+065040,15,Ceraso,2301
+065041,15,Cetara,2061
+065042,15,Cicerale,1208
+065043,15,Colliano,3521
+065044,15,Conca dei Marini,675
+065045,15,Controne,806
+065046,15,Contursi Terme,3312
+065047,15,Corbara,2525
+065048,15,Corleto Monforte,528
+066039,13,Collelongo,1148
+066040,13,Collepietro,217
+066041,13,Corfinio,1012
+066042,13,Fagnano Alto,380
+066043,13,Fontecchio,310
+066044,13,Fossa,704
+066045,13,Gagliano Aterno,251
+066046,13,Gioia dei Marsi,1742
+066047,13,Goriano Sicoli,526
+066048,13,Introdacqua,2059
+061061,15,Pontelatone,1626
+061063,15,Prata Sannita,1436
+061064,15,Pratella,1491
+061065,15,Presenzano,1789
+061066,15,Raviscanina,1265
+061068,15,Riardo,2330
+061069,15,Rocca d'Evandro,3088
+061070,15,Roccamonfina,3340
+063078,15,Serrara Fontana,3110
+063085,15,Tufino,3574
+065049,15,Cuccaro Vetere,555
+065051,15,Felitto,1213
+065053,15,Furore,747
+065054,15,Futani,1126
+066050,13,Lecce nei Marsi,1587
+066052,13,Lucoli,910
+066053,13,Magliano de' Marsi,3601
+061071,15,Roccaromana,843
+061072,15,Rocchetta e Croce,455
+061073,15,Ruviano,1729
+061076,15,San Gregorio Matese,912
+061079,15,San Pietro Infine,883
+061080,15,San Potito Sannitico,1959
+063088,15,Visciano,4362
+064001,15,Aiello del Sabato,4034
+064002,15,Altavilla Irpina,4123
+064003,15,Andretta,1765
+064004,15,Aquilonia,1580
+065057,15,Gioi,1190
+065058,15,Giungano,1306
+065059,15,Ispani,1001
+065060,15,Laureana Cilento,1191
+065061,15,Laurino,1376
+065062,15,Laurito,745
+065063,15,Laviano,1378
+065064,15,Lustra,1033
+065065,15,Magliano Vetere,644
+065068,15,Minori,2679
+065069,15,Moio della Civitella,1874
+066054,13,Massa d'Albe,1409
+066055,13,Molina Aterno,370
+066056,13,Montereale,2329
+066057,13,Morino,1388
+066058,13,Navelli,531
+066059,13,Ocre,1126
+066060,13,Ofena,445
+066061,13,Opi,393
+066062,13,Oricola,1272
+061084,15,Santa Maria la Fossa,2597
+061086,15,Sant'Angelo d'Alife,2193
+061093,15,Tora e Piccilli,839
+064009,15,Bagnoli Irpino,3111
+064010,15,Baiano,4616
+064011,15,Bisaccia,3719
+064012,15,Bonito,2320
+064013,15,Cairano,297
+064014,15,Calabritto,2314
+065070,15,Montano Antilia,1912
+065071,15,Montecorice,2631
+065074,15,Monteforte Cilento,536
+065075,15,Monte San Giacomo,1507
+065077,15,Morigerati,623
+060020,12,Castelliri,3332
+060021,12,Castelnuovo Parano,870
+060022,12,Castrocielo,3911
+060023,12,Castro dei Volsci,4640
+060027,12,Colfelice,1868
+061096,15,Valle Agricola,804
+061097,15,Valle di Maddaloni,2697
+061101,15,Falciano del Massico,3492
+062002,15,Amorosi,2702
+064015,15,Calitri,4453
+064016,15,Candida,1105
+064017,15,Caposele,3370
+064018,15,Capriglia Irpina,2340
+064019,15,Carife,1357
+064020,15,Casalbore,1693
+064021,15,Cassano Irpino,918
+064022,15,Castel Baronia,1096
+064023,15,Castelfranci,1924
+064024,15,Castelvetere sul Calore,1564
+064026,15,Cesinali,2631
+065080,15,Novi Velia,2321
+065081,15,Ogliastro Cilento,2270
+065083,15,Oliveto Citra,3702
+065084,15,Omignano,1646
+065085,15,Orria,1022
+065086,15,Ottati,644
+065089,15,Palomonte,3904
+079002,18,Albi,870
+079003,18,Amaroni,1773
+079004,18,Amato,796
+079005,18,Andali,690
+079007,18,Argusto,482
+082025,19,Castronovo di Sicilia,2944
+082026,19,Cefalà Diana,997
+082029,19,Chiusa Sclafani,2682
+082030,19,Ciminna,3560
+079008,18,Badolato,2912
+079009,18,Belcastro,1271
+079017,18,Caraffa di Catanzaro,1793
+079018,18,Cardinale,1975
+079020,18,Carlopoli,1467
+080046,18,Maropati,1419
+080047,18,Martone,510
+080048,18,Melicuccà,863
+080049,18,Melicucco,4982
+080051,18,Molochio,2392
+080052,18,Monasterace,3627
+083051,19,Mirto,927
+083052,19,Mistretta,4554
+083053,19,Moio Alcantara,687
+083054,19,Monforte San Giorgio,2634
+083055,19,Mongiuffi Melia,564
+083056,19,Montagnareale,1489
+083057,19,Montalbano Elicona,2118
+083058,19,Motta Camastra,819
+083059,19,Motta d'Affermo,685
+083060,19,Naso,3623
+082032,19,Collesano,3858
+082033,19,Contessa Entellina,1608
+079024,18,Cenadi,518
+079025,18,Centrache,378
+079027,18,Cerva,1152
+079030,18,Cicala,909
+079033,18,Conflenti,1352
+079034,18,Cortale,1976
+080056,18,Palizzi,2313
+080058,18,Pazzano,520
+080059,18,Placanica,1111
+080060,18,Platì,3768
+080062,18,Portigliola,1114
+083061,19,Nizza di Sicilia,3628
+083062,19,Novara di Sicilia,1251
+083063,19,Oliveri,2105
+083065,19,Pagliara,1139
+083067,19,Pettineo,1274
+083068,19,Piraino,3868
+083069,19,Raccuja,924
+083070,19,Reitano,749
+083071,19,Roccafiorita,187
+083072,19,Roccalumera,4073
+082037,19,Geraci Siculo,1765
+082038,19,Giardinello,2306
+082039,19,Giuliana,1802
+082040,19,Godrano,1122
+082041,19,Gratteri,905
+082042,19,Isnello,1418
+082044,19,Lascari,3647
+079036,18,Cropani,4790
+079043,18,Decollatura,3039
+079047,18,Falerna,3907
+079048,18,Feroleto Antico,2014
+079052,18,Fossato Serralta,581
+079055,18,Gagliato,447
+079056,18,Gasperina,2036
+080064,18,Riace,2142
+080066,18,Roccaforte del Greco,404
+083073,19,Roccavaldina,1056
+083074,19,Roccella Valdemone,597
+083075,19,Rodì Milici,1986
+083078,19,San Fratello,3466
+083079,19,San Marco d'Alunzio,1864
+083080,19,San Pier Niceto,2706
+083081,19,San Piero Patti,2723
+083082,19,San Salvatore di Fitalia,1219
+082047,19,Mezzojuso,2797
+082051,19,Montemaggiore Belsito,3151
+082052,19,Palazzo Adriano,1928
+079058,18,Gimigliano,3167
+079061,18,Guardavalle,4410
+079063,18,Isca sullo Ionio,1554
+079065,18,Jacurso,596
+079068,18,Magisano,1167
+080068,18,Roghudi,972
+080070,18,Samo,763
+080071,18,San Giorgio Morgeto,3023
+080072,18,San Giovanni di Gerace,435
+080073,18,San Lorenzo,2480
+083083,19,Santa Domenica Vittoria,894
+083085,19,Sant'Alessio Siculo,1508
+083086,19,Santa Lucia del Mela,4543
+083087,19,Santa Marina Salina,875
+083088,19,Sant'Angelo di Brolo,2912
+083090,19,San Teodoro,1313
+083091,19,Santo Stefano di Camastra,4575
+083092,19,Saponara,3820
+083093,19,Savoca,1732
+083094,19,Scaletta Zanclea,1958
+079069,18,Maida,4643
+079071,18,Marcedusa,406
+079072,18,Marcellinara,2213
+079073,18,Martirano,857
+079074,18,Martirano Lombardo,1016
+079077,18,Miglierina,725
+079080,18,Montauro,1751
+079083,18,Motta Santa Lucia,811
+080074,18,San Luca,3633
+080075,18,San Pietro di Caridà,1085
+080076,18,San Procopio,526
+080077,18,San Roberto,1627
+080078,18,Santa Cristina d'Aspromonte,818
+080079,18,Sant'Agata del Bianco,583
+080080,18,Sant'Alessio in Aspromonte,320
+080081,18,Sant'Eufemia d'Aspromonte,3899
+080082,18,Sant'Ilario dello Ionio,1406
+083095,19,Sinagra,2601
+083096,19,Spadafora,4827
+083100,19,Tripi,818
+083101,19,Tusa,2718
+083102,19,Ucria,969
+083103,19,Valdina,1298
+083104,19,Venetico,4008
+082055,19,Petralia Soprana,3120
+082056,19,Petralia Sottana,2593
+079087,18,Nocera Terinese,4760
+079088,18,Olivadi,517
+079089,18,Palermiti,1157
+079092,18,Pentone,1968
+079094,18,Petrizzi,1054
+079095,18,Petronà,2538
+079096,18,Pianopoli,2608
+079099,18,Platania,2019
+079108,18,San Floro,719
+079110,18,San Mango d'Aquino,1496
+080083,18,Santo Stefano in Aspromonte,1220
+080084,18,Scido,881
+080085,18,Scilla,4798
+080086,18,Seminara,2609
+080087,18,Serrata,813
+080089,18,Sinopoli,1955
+080090,18,Staiti,212
+083108,19,Torrenova,4490
+084002,19,Alessandria della Rocca,2717
+082058,19,Polizzi Generosa,3112
+082059,19,Pollina,2891
+082060,19,Prizzi,4508
+082061,19,Roccamena,1429
+079114,18,San Pietro a Maida,4011
+079115,18,San Pietro Apostolo,1585
+079116,18,San Sostene,1395
+079117,18,Santa Caterina dello Ionio,2099
+079118,18,Sant'Andrea Apostolo dello Ionio,1809
+079122,18,San Vito sullo Ionio,1689
+079123,18,Satriano,3440
+079126,18,Sellia,512
+080091,18,Stignano,1318
+080092,18,Stilo,2499
+080094,18,Terranova Sappo Minulio,483
+080095,18,Varapodio,2050
+080097,18,San Ferdinando,4701
+084004,19,Bivona,3438
+084005,19,Burgio,2586
+084006,19,Calamonaci,1270
+084007,19,Caltabellotta,3420
+084008,19,Camastra,2012
+064042,15,Lapio,1491
+064043,15,Lauro,3429
+064045,15,Luogosano,1127
+064046,15,Manocalzati,3147
+064047,15,Marzano di Nola,1671
+064048,15,Melito Irpino,1874
+065101,15,Postiglione,2048
+065102,15,Praiano,2020
+065103,15,Prignano Cilento,1063
+065104,15,Ravello,2469
+065105,15,Ricigliano,1102
+065107,15,Roccagloriosa,1628
+065109,15,Rofrano,1458
+065110,15,Romagnano al Monte,377
+065111,15,Roscigno,679
+060047,12,Pastena,1337
+060048,12,Patrica,3125
+060049,12,Pescosolido,1492
+060050,12,Picinisco,1146
+060051,12,Pico,2774
+060053,12,Piglio,4530
+060054,12,Pignataro Interamna,2504
+060055,12,Pofi,4059
+062025,15,Colle Sannita,2321
+062026,15,Cusano Mutri,3959
+062027,15,Dugenta,2751
+062028,15,Durazzano,2173
+062029,15,Faicchio,3545
+062030,15,Foglianise,3240
+062031,15,Foiano di Val Fortore,1396
+062032,15,Forchia,1219
+062033,15,Fragneto l'Abate,999
+062034,15,Fragneto Monforte,1772
+062035,15,Frasso Telesino,2206
+062036,15,Ginestra degli Schiavoni,439
+064051,15,Montaguto,373
+064052,15,Montecalvo Irpino,3502
+064053,15,Montefalcione,3235
+064055,15,Montefredane,2166
+064056,15,Montefusco,1260
+064058,15,Montemarano,2741
+065112,15,Rutino,791
+065113,15,Sacco,454
+065115,15,Salento,1929
+065117,15,Salvitelle,508
+065119,15,San Giovanni a Piro,3719
+065120,15,San Gregorio Magno,4089
+065121,15,San Mango Piemonte,2702
+065123,15,San Mauro Cilento,868
+060057,12,Posta Fibreno,1092
+060059,12,Rocca d'Arce,937
+060061,12,San Biagio Saracinisco,315
+060062,12,San Donato Val di Comino,1985
+060063,12,San Giorgio a Liri,3092
+060064,12,San Giovanni Incarico,3221
+062037,15,Guardia Sanframondi,4807
+062038,15,Limatola,4140
+062039,15,Melizzano,1787
+062040,15,Moiano,4129
+062041,15,Molinara,1537
+062042,15,Montefalcone di Val Fortore,1398
+062044,15,Morcone,4752
+062045,15,Paduli,3826
+062046,15,Pago Veiano,2367
+064060,15,Monteverde,740
+064063,15,Morra De Sanctis,1188
+064064,15,Moschiano,1634
+064066,15,Nusco,4068
+064067,15,Ospedaletto d'Alpinolo,2150
+064068,15,Pago del Vallo di Lauro,1761
+064069,15,Parolise,646
+064070,15,Paternopoli,2272
+064071,15,Petruro Irpino,289
+064072,15,Pietradefusi,2167
+064073,15,Pietrastornina,1473
+064074,15,Prata di Principato Ultra,2911
+064075,15,Pratola Serra,3735
+064076,15,Quadrelle,1881
+065124,15,San Mauro la Bruca,549
+065125,15,San Pietro al Tanagro,1689
+065126,15,San Rufo,1680
+065127,15,Santa Marina,3243
+065128,15,Sant'Angelo a Fasanella,546
+065129,15,Sant'Arsenio,2771
+065131,15,Santomenna,414
+060065,12,Sant'Ambrogio sul Garigliano,931
+060066,12,Sant'Andrea del Garigliano,1393
+060067,12,Sant'Apollinare,1872
+060069,12,Santopadre,1277
+060070,12,San Vittore del Lazio,2549
+060071,12,Serrone,3015
+060072,12,Settefrati,720
+060073,12,Sgurgola,2513
+060075,12,Strangolagalli,2371
+062047,15,Pannarano,2106
+062048,15,Paolisi,2072
+062049,15,Paupisi,1663
+062050,15,Pesco Sannita,1922
+062051,15,Pietraroja,516
+062052,15,Pietrelcina,3008
+062053,15,Ponte,2512
+062054,15,Pontelandolfo,2082
+062055,15,Puglianello,1360
+062056,15,Reino,1153
+062057,15,San Bartolomeo in Galdo,4573
+064077,15,Quindici,1906
+064078,15,Roccabascerana,2341
+064079,15,Rocca San Felice,818
+064080,15,Rotondi,3585
+064081,15,Salza Irpina,741
+064082,15,San Mango sul Calore,1137
+064083,15,San Martino Valle Caudina,4884
+064084,15,San Michele di Serino,2488
+064085,15,San Nicola Baronia,760
+064086,15,San Potito Ultra,1558
+064087,15,San Sossio Baronia,1567
+064088,15,Santa Lucia di Serino,1386
+064089,15,Sant'Andrea di Conza,1381
+064090,15,Sant'Angelo all'Esca,748
+064091,15,Sant'Angelo a Scala,740
+065133,15,Sanza,2477
+065136,15,Sassano,4868
+065138,15,Scala,1522
+065139,15,Serramezzana,292
+065140,15,Serre,3877
+065141,15,Sessa Cilento,1244
+060076,12,Supino,4828
+060077,12,Terelle,329
+060078,12,Torre Cajetani,1367
+060079,12,Torrice,4826
+060080,12,Trevi nel Lazio,1798
+060081,12,Trivigliano,1638
+060082,12,Vallecorsa,2523
+060083,12,Vallemaio,908
+060084,12,Vallerotonda,1480
+062059,15,San Giorgio La Molara,2923
+062060,15,San Leucio del Sannio,3021
+062061,15,San Lorenzello,2188
+062062,15,San Lorenzo Maggiore,2036
+062063,15,San Lupo,736
+062064,15,San Marco dei Cavoti,3170
+062065,15,San Martino Sannita,1204
+062066,15,San Nazzaro,870
+062067,15,San Nicola Manfredi,3650
+062068,15,San Salvatore Telesino,3985
+062069,15,Santa Croce del Sannio,869
+064092,15,Sant'Angelo dei Lombardi,4080
+064093,15,Santa Paolina,1257
+064095,15,Santo Stefano del Sole,2108
+064096,15,Savignano Irpino,1087
+064097,15,Scampitella,1126
+064098,15,Senerchia,770
+064100,15,Sirignano,2841
+064102,15,Sorbo Serpico,571
+064103,15,Sperone,3763
+064104,15,Sturno,3011
+064105,15,Summonte,1525
+065143,15,Sicignano degli Alburni,3268
+065144,15,Stella Cilento,689
+065145,15,Stio,802
+065147,15,Torchiara,1850
+065148,15,Torraca,1233
+065149,15,Torre Orsaia,2062
+065150,15,Tortorella,498
+060086,12,Vicalvi,746
+060087,12,Vico nel Lazio,2159
+060088,12,Villa Latina,1212
+060089,12,Villa Santa Lucia,2574
+060090,12,Villa Santo Stefano,1699
+060091,12,Viticuso,308
+061001,15,Ailano,1333
+062071,15,Sant'Angelo a Cupolo,4310
+062072,15,Sassinoro,641
+062073,15,Solopaca,3679
+062075,15,Tocco Caudio,1464
+062076,15,Torrecuso,3375
+062077,15,Vitulano,2865
+062078,15,Sant'Arcangelo Trimonte,521
+064106,15,Taurano,1513
+064107,15,Taurasi,2277
+064108,15,Teora,1459
+064109,15,Torella dei Lombardi,2022
+064110,15,Torre Le Nocelle,1251
+064111,15,Torrioni,483
+064112,15,Trevico,908
+064113,15,Tufo,831
+064114,15,Vallata,2620
+064115,15,Vallesaccarda,1279
+064116,15,Venticano,2458
+064117,15,Villamaina,930
+064118,15,Villanova del Battista,1553
+064119,15,Volturara Irpina,3125
+065151,15,Tramonti,4131
+065152,15,Trentinara,1600
+065153,15,Valle dell'Angelo,225
+065155,15,Valva,1617
+065156,15,Vibonati,3268
+066001,13,Acciano,312
+066002,13,Aielli,1469
+061003,15,Alvignano,4714
+061006,15,Baia e Latina,2089
+061008,15,Caianello,1833
+061011,15,Camigliano,1989
+063015,15,Carbonara di Nola,2498
+064120,15,Zungoli,1037
+065001,15,Acerno,2613
+065004,15,Alfano,989
+065008,15,Aquara,1423
+066003,13,Alfedena,917
+066004,13,Anversa degli Abruzzi,325
+066005,13,Ateleta,1120
+066007,13,Balsorano,3379
+066008,13,Barete,638
+066009,13,Barisciano,1712
+066010,13,Barrea,713
+061014,15,Capriati a Volturno,1539
+061023,15,Castel Campagnano,1507
+063018,15,Casamarciano,3213
+063022,15,Casola di Napoli,3791
+063029,15,Comiziano,1744
+065010,15,Atena Lucana,2417
+065011,15,Atrani,837
+065012,15,Auletta,2217
+065015,15,Bellosguardo,746
+065017,15,Buccino,4778
+086017,19,Sperlinga,712
+086020,19,Villarosa,4646
+087001,19,Aci Bonaccorsi,3542
+078137,18,Scala Coeli,895
+078139,18,Scigliano,1177
+078140,18,Serra d'Aiello,511
+078143,18,Spezzano della Sila,4399
+078145,18,Tarsia,1948
+075032,16,Giuggianello,1155
+075033,16,Giurdignano,1948
+076054,17,Nemoli,1424
+076055,17,Noepoli,787
+076056,17,Oppido Lucano,3685
+076057,17,Palazzo San Gervasio,4690
+076058,17,Pescopagano,1787
+078012,18,Aprigliano,2690
+078013,18,Belmonte Calabro,1916
+078014,18,Belsito,914
+078016,18,Bianchi,1257
+078018,18,Bocchigliero,1181
+075041,16,Martignano,1630
+075045,16,Melpignano,2208
+075046,16,Miggiano,3426
+076060,17,Pietragalla,3992
+076061,17,Pietrapertosa,958
+076064,17,Rapolla,4289
+078019,18,Bonifati,2733
+078020,18,Buonvicino,2145
+078021,18,Calopezzati,1338
+078022,18,Caloveto,1172
+078023,18,Campana,1629
+078024,18,Canna,680
+078026,18,Carolei,3280
+078027,18,Carpanzano,226
+078146,18,Terranova da Sibari,4922
+078147,18,Terravecchia,675
+078148,18,Torano Castello,4543
+078152,18,Vaccarizzo Albanese,1086
+078153,18,Verbicaro,2819
+078155,18,Zumpano,2666
+075047,16,Minervino di Lecce,3559
+075049,16,Montesano Salentino,2646
+075050,16,Morciano di Leuca,3178
+075051,16,Muro Leccese,4890
+075054,16,Nociglia,2215
+075056,16,Ortelle,2317
+076065,17,Rapone,913
+076067,17,Ripacandida,1651
+076068,17,Rivello,2674
+076069,17,Roccanova,1413
+076070,17,Rotonda,3389
+076071,17,Ruoti,3465
+078030,18,Castiglione Cosentino,2874
+078032,18,Castroregio,252
+075058,16,Palmariggi,1433
+075060,16,Patù,1655
+076072,17,Ruvo del Monte,1035
+076073,17,San Chirico Nuovo,1264
+076074,17,San Chirico Raparo,966
+076075,17,San Costantino Albanese,643
+076076,17,San Fele,2785
+076077,17,San Martino d'Agri,705
+078034,18,Celico,2770
+078035,18,Cellara,483
+078036,18,Cerchiara di Calabria,2337
+078037,18,Cerisano,3047
+078038,18,Cervicati,810
+078039,18,Cerzeto,1315
+087013,19,Castel di Iudica,4448
+087014,19,Castiglione di Sicilia,3082
+075066,16,Salve,4555
+075067,16,Sanarica,1477
+075071,16,San Pietro in Lama,3508
+075072,16,Santa Cesarea Terme,2983
+075074,16,Seclì,1858
+075075,16,Sogliano Cavour,3984
+075077,16,Specchia,4722
+076078,17,San Severino Lucano,1462
+076079,17,Sant'Angelo Le Fratte,1376
+076081,17,Sarconi,1423
+076082,17,Sasso di Castalda,795
+076083,17,Satriano di Lucania,2291
+076084,17,Savoia di Lucania,1065
+078041,18,Civita,872
+078042,18,Cleto,1235
+078043,18,Colosimi,1182
+078046,18,Cropalati,1032
+078049,18,Dipignano,4319
+087020,19,Licodia Eubea,3005
+075078,16,Spongano,3580
+075080,16,Sternatia,2218
+075081,16,Supersano,4296
+075082,16,Surano,1592
+075086,16,Tiggiano,2865
+076086,17,Spinoso,1401
+076087,17,Teana,568
+076088,17,Terranova di Pollino,1116
+078050,18,Domanico,935
+078051,18,Fagnano Castello,3695
+078052,18,Falconara Albanese,1384
+078053,18,Figline Vegliaturo,1152
+078054,18,Firmo,1973
+078055,18,Fiumefreddo Bruzio,2889
+078056,18,Francavilla Marittima,2870
+078057,18,Frascineto,1979
+078059,18,Grimaldi,1618
+087022,19,Maletto,3697
+087026,19,Milo,1041
+087028,19,Mirabella Imbaccari,4577
+075091,16,Uggiano la Chiesa,4361
+075094,16,Zollino,1904
+075095,16,San Cassiano,1993
+075096,16,Castro,2344
+076090,17,Tolve,3140
+076091,17,Tramutola,2992
+076092,17,Trecchina,2222
+076093,17,Trivigno,617
+076094,17,Vaglio Basilicata,1942
+078060,18,Grisolia,2227
+078061,18,Guardia Piemontese,1802
+078062,18,Lago,2458
+078063,18,Laino Borgo,1828
+078064,18,Laino Castello,791
+078065,18,Lappano,909
+078066,18,Lattarico,3931
+078067,18,Longobardi,2302
+087035,19,Piedimonte Etneo,4078
+087036,19,Raddusa,2979
+076001,17,Abriola,1379
+077019,17,Oliveto Lucano,381
+078097,18,Piane Crati,1411
+078098,18,Pietrafitta,1215
+078099,18,Pietrapaola,1066
+078100,18,Plataci,683
+078103,18,Rocca Imperiale,3312
+076032,17,Filiano,2837
+076033,17,Forenza,1959
+076034,17,Francavilla in Sinni,4132
+076035,17,Gallicchio,842
+077022,17,Pomarico,4001
+077023,17,Rotondella,2541
+077024,17,Salandra,2653
+077025,17,San Giorgio Lucano,1112
+078106,18,Rose,4354
+078107,18,Roseto Capo Spulico,1916
+078109,18,Rota Greca,1060
+078110,18,Rovito,3143
+078111,18,San Basile,1019
+078112,18,San Benedetto Ullano,1464
+078113,18,San Cosmo Albanese,601
+078114,18,San Demetrio Corone,3282
+089003,19,Buccheri,1889
+089004,19,Buscemi,995
+076037,17,Grumento Nova,1654
+076038,17,Guardia Perticara,537
+076040,17,Latronico,4288
+076041,17,Laurenzana,1681
+077026,17,San Mauro Forte,1405
+077027,17,Stigliano,3914
+077029,17,Tursi,4901
+078115,18,San Donato di Ninea,1235
+078116,18,San Fili,2601
+078117,18,Sangineto,1269
+078118,18,San Giorgio Albanese,1364
+078120,18,San Lorenzo Bellizzi,574
+089007,19,Cassaro,751
+089008,19,Ferla,2400
+076044,17,Maratea,4995
+076045,17,Marsico Nuovo,4048
+077030,17,Valsinni,1423
+078001,18,Acquaformosa,1064
+078002,18,Acquappesa,1803
+078004,18,Aiello Calabro,1607
+078121,18,San Lorenzo del Vallo,3204
+078124,18,San Martino di Finita,985
+078125,18,San Nicola Arcella,1973
+078126,18,San Pietro in Amantea,506
+078127,18,San Pietro in Guarano,3573
+078128,18,San Sosti,2098
+075025,16,Cursi,4037
+075027,16,Diso,2903
+076047,17,Maschito,1570
+076049,17,Missanello,539
+076050,17,Moliterno,3771
+076051,17,Montemilone,1510
+076052,17,Montemurro,1160
+078005,18,Aieta,767
+078006,18,Albidona,1243
+078007,18,Alessandria del Carretto,384
+078008,18,Altilia,684
+078009,18,Altomonte,4320
+078011,18,Amendolara,2854
+078129,18,Santa Caterina Albanese,1192
+078130,18,Santa Domenica Talao,1200
+078131,18,Sant'Agata di Esaro,1786
+078133,18,Santa Sofia d'Epiro,2407
+078134,18,Santo Stefano di Rogliano,1691
+078135,18,San Vincenzo La Costa,2115
+078136,18,Saracena,3615
+094002,14,Agnone,4901
+094003,14,Bagnoli del Trigno,675
+094004,14,Belmonte del Sannio,695
+094005,14,Cantalupo nel Sannio,752
+094006,14,Capracotta,837
+094007,14,Carovilli,1286
+094008,14,Carpinone,1087
+099006,8,Mondaino,1355
+099008,8,Montefiore Conca,2236
+099009,8,Montegridolfo,996
+099015,8,Saludecio,3065
+090036,20,Luogosanto,1860
+090037,20,Luras,2486
+090038,20,Mara,562
+090039,20,Martis,478
+090040,20,Monteleone Rocca Doria,107
+090041,20,Monti,2399
+091043,20,Lula,1318
+091046,20,Mamoiada,2472
+091047,20,Meana Sardo,1691
+091050,20,Noragugume,289
+096002,1,Andorno Micca,3130
+096003,1,Benna,1146
+096005,1,Bioglio,875
+096006,1,Borriana,885
+096007,1,Brusnengo,2027
+096008,1,Callabiana,141
+096009,1,Camandona,320
+096010,1,Camburzano,1148
+096013,1,Caprile,185
+094009,14,Castel del Giudice,311
+094010,14,Castelpetroso,1620
+094011,14,Castelpizzuto,157
+094012,14,Castel San Vincenzo,481
+094013,14,Castelverrino,105
+094014,14,Cerro al Volturno,1200
+094015,14,Chiauci,204
+094016,14,Civitanova del Sannio,926
+094017,14,Colli a Volturno,1343
+094018,14,Conca Casale,173
+090042,20,Mores,1873
+090043,20,Muros,829
+090044,20,Nughedu San Nicolò,783
+090045,20,Nule,1336
+090046,20,Nulvi,2699
+090048,20,Olmedo,4185
+090049,20,Oschiri,3142
+091056,20,Ollolai,1240
+091057,20,Olzai,820
+091058,20,Onanì,372
+091059,20,Onifai,719
+091060,20,Oniferi,900
+096014,1,Casapinta,408
+096015,1,Castelletto Cervo,826
+096016,1,Cavaglià,3571
+096018,1,Cerrione,2846
+096019,1,Coggiola,1742
+096021,1,Crevacuore,1476
+096023,1,Curino,468
+096024,1,Donato,716
+096025,1,Dorzano,545
+096026,1,Gaglianico,3823
+096027,1,Gifflenga,109
+094019,14,Filignano,610
+094020,14,Forlì del Sannio,643
+094021,14,Fornelli,1906
+094022,14,Frosolone,2985
+094024,14,Longano,663
+094025,14,Macchia d'Isernia,1065
+094026,14,Macchiagodena,1756
+090050,20,Osilo,2937
+091061,20,Orani,2806
+091062,20,Orgosolo,4117
+091064,20,Orotelli,1962
+091066,20,Ortueri,1094
+091067,20,Orune,2238
+096028,1,Graglia,1495
+096030,1,Magnano,386
+096031,1,Massazza,537
+096032,1,Masserano,2036
+096033,1,Mezzana Mortigliengo,490
+096034,1,Miagliano,580
+096035,1,Mongrando,3833
+096037,1,Mottalciata,1328
+096038,1,Muzzano,591
+096039,1,Netro,941
+096040,1,Occhieppo Inferiore,3852
+096041,1,Occhieppo Superiore,2694
+096042,1,Pettinengo,1503
+094027,14,Miranda,970
+094028,14,Montaquila,2385
+094029,14,Montenero Val Cocchiara,517
+094030,14,Monteroduni,2090
+094031,14,Pesche,1668
+094032,14,Pescolanciano,829
+094033,14,Pescopennataro,257
+076002,17,Acerenza,2268
+076003,17,Albano di Lucania,1381
+076004,17,Anzi,1597
+076005,17,Armento,580
+076096,17,Vietri di Potenza,2773
+076097,17,Viggianello,2867
+076098,17,Viggiano,3357
+076099,17,Ginestra,724
+076100,17,Paterno,3224
+077001,17,Accettura,1718
+078068,18,Longobucco,2875
+078069,18,Lungro,2364
+078071,18,Maierà,1198
+078072,18,Malito,753
+078073,18,Malvito,1751
+078074,18,Mandatoriccio,2715
+087040,19,San Cono,2582
+087043,19,San Michele di Ganzaria,3136
+076006,17,Atella,3812
+076008,17,Balvano,1794
+076009,17,Banzi,1284
+076010,17,Baragiano,2580
+076011,17,Barile,2746
+077002,17,Aliano,907
+077004,17,Calciano,685
+077005,17,Cirigliano,310
+077006,17,Colobraro,1131
+077007,17,Craco,668
+078075,18,Mangone,1904
+078076,18,Marano Marchesato,3436
+078077,18,Marano Principato,3129
+078078,18,Marzi,967
+078080,18,Mongrassano,1530
+078082,18,Montegiordano,1706
+087046,19,Sant'Alfio,1560
+076012,17,Bella,4916
+076013,17,Brienza,3967
+076014,17,Brindisi Montagna,854
+076015,17,Calvello,1851
+076016,17,Calvera,365
+076017,17,Campomaggiore,754
+076018,17,Cancellara,1215
+077009,17,Garaguso,1025
+077010,17,Gorgoglione,911
+077011,17,Grassano,4978
+077012,17,Grottole,2149
+078083,18,Morano Calabro,4262
+078084,18,Mormanno,2798
+078085,18,Mottafollone,1151
+078086,18,Nocara,354
+078087,18,Oriolo,1993
+087056,19,Mazzarrone,3997
+087057,19,Maniace,3762
+087058,19,Ragalna,4047
+076019,17,Carbone,567
+076020,17,San Paolo Albanese,228
+076021,17,Castelgrande,876
+076022,17,Castelluccio Inferiore,1993
+076023,17,Castelluccio Superiore,749
+076024,17,Castelmezzano,756
+076025,17,Castelsaraceno,1271
+076026,17,Castronuovo di Sant'Andrea,966
+077013,17,Irsina,4632
+077015,17,Miglionico,2447
+078088,18,Orsomarso,1198
+078089,18,Paludi,1031
+078090,18,Panettieri,316
+078092,18,Papasidero,665
+078093,18,Parenti,2108
+078094,18,Paterno Calabro,1383
+078096,18,Pedivigliano,807
+088004,19,Giarratana,2862
+088007,19,Monterosso Almo,2886
+076027,17,Cersosimo,589
+076028,17,Chiaromonte,1868
+076029,17,Corleto Perticara,2461
+076030,17,Episcopia,1329
+076031,17,Fardella,577
+082062,19,Roccapalumba,2385
+082065,19,San Mauro Castelverde,1470
+082066,19,Santa Cristina Gela,997
+082068,19,Sciara,2674
+079129,18,Serrastretta,3039
+079130,18,Sersale,4436
+079131,18,Settingiano,3137
+079133,18,Simeri Crichi,4708
+079134,18,Sorbo San Basile,792
+081002,19,Buseto Palizzolo,2855
+084013,19,Castrofilippo,2786
+084014,19,Cattolica Eraclea,3491
+084015,19,Cianciana,3322
+084016,19,Comitini,896
+082069,19,Sclafani Bagni,397
+082072,19,Torretta,4319
+082074,19,Trappeto,3102
+082075,19,Ustica,1302
+082076,19,Valledolmo,3400
+079138,18,Soveria Mannelli,2971
+079139,18,Soveria Simeri,1508
+079142,18,Squillace,3629
+079143,18,Stalettì,2388
+079146,18,Taverna,2562
+079147,18,Tiriolo,3746
+079148,18,Torre di Ruggiero,972
+081009,19,Favignana,4313
+081010,19,Gibellina,3931
+084019,19,Joppolo Giancaxio,1151
+084022,19,Lucca Sicula,1752
+082077,19,Ventimiglia di Sicilia,1869
+082078,19,Vicari,2559
+082080,19,Villafrati,3271
+082081,19,Scillato,613
+082082,19,Blufi,931
+083001,19,Alcara li Fusi,1812
+083002,19,Alì,710
+083003,19,Alì Terme,2446
+079151,18,Vallefiorita,1618
+079157,18,Zagarise,1526
+080001,18,Africo,2899
+080002,18,Agnana Calabra,498
+080003,18,Anoia,2102
+084024,19,Montallegro,2484
+084025,19,Montevago,2876
+083004,19,Antillo,860
+083006,19,Basicò,577
+083008,19,Capizzi,2977
+083010,19,Capri Leone,4419
+083011,19,Caronia,3136
+083012,19,Casalvecchio Siculo,763
+083013,19,Castel di Lucio,1250
+083014,19,Castell'Umberto,2965
+080004,18,Antonimina,1248
+080006,18,Bagaladi,977
+080008,18,Benestare,2515
+080009,18,Bianco,4151
+080010,18,Bivongi,1257
+080011,18,Bova,410
+081016,19,Poggioreale,1454
+081017,19,Salaparuta,1615
+081019,19,Santa Ninfa,4955
+081020,19,San Vito Lo Capo,4818
+084032,19,Realmonte,4485
+086005,19,Calascibetta,4309
+083015,19,Castelmola,1094
+083016,19,Castroreale,2336
+083017,19,Cesarò,2257
+083018,19,Condrò,483
+083019,19,Falcone,2729
+083020,19,Ficarra,1376
+083021,19,Fiumedinisi,1332
+083022,19,Floresta,456
+080013,18,Bova Marina,4205
+080014,18,Brancaleone,3460
+080015,18,Bruzzano Zeffirio,1104
+080016,18,Calanna,820
+080017,18,Camini,745
+080018,18,Campo Calabro,4521
+080019,18,Candidoni,421
+080020,18,Canolo,686
+080021,18,Caraffa del Bianco,483
+081023,19,Vita,1897
+082001,19,Alia,3510
+082002,19,Alimena,1915
+086006,19,Catenanuova,4636
+086008,19,Cerami,1916
+083023,19,Fondachelli-Fantina,1021
+083024,19,Forza d'Agrò,889
+083025,19,Francavilla di Sicilia,3725
+083026,19,Frazzanò,621
+083027,19,Furci Siculo,3230
+083028,19,Furnari,3848
+083029,19,Gaggi,3181
+083030,19,Galati Mamertino,2408
+083031,19,Gallodoro,342
+083034,19,Graniti,1455
+080022,18,Cardeto,1464
+080023,18,Careri,2203
+080024,18,Casignana,727
+080026,18,Ciminà,551
+082003,19,Aliminusa,1138
+082008,19,Baucina,1915
+082010,19,Bisacquino,4321
+082011,19,Bolognetta,4138
+086010,19,Gagliano Castelferrato,3460
+083035,19,Gualtieri Sicaminò,1657
+083036,19,Itala,1568
+083037,19,Leni,689
+083038,19,Letojanni,2846
+083039,19,Librizzi,1619
+083040,19,Limina,746
+080029,18,Condofuri,4910
+080030,18,Cosoleto,832
+080031,18,Delianuova,3232
+080032,18,Feroleto della Chiesa,1596
+080033,18,Ferruzzano,766
+080034,18,Fiumara,890
+080035,18,Galatro,1572
+080036,18,Gerace,2501
+080037,18,Giffone,1720
+082012,19,Bompietro,1295
+082015,19,Caltavuturo,3768
+082016,19,Campofelice di Fitalia,473
+082018,19,Campofiorito,1209
+086013,19,Nissoria,2958
+083042,19,Longi,1374
+083043,19,Malfa,987
+083044,19,Malvagna,663
+083045,19,Mandanici,557
+083046,19,Mazzarrà Sant'Andrea,1473
+083047,19,Merì,2359
+083050,19,Militello Rosmarino,1245
+080040,18,Grotteria,3030
+080041,18,Laganadi,395
+080042,18,Laureana di Borrello,4907
+080044,18,Mammola,2648
+082019,19,Camporeale,3135
+082024,19,Castellana Sicula,3200
+095058,20,Simala,307
+095059,20,Simaxis,2186
+095060,20,Sini,488
+095061,20,Siris,224
+095062,20,Solarussa,2345
+095063,20,Sorradile,355
+095064,20,Tadasuni,148
+095066,20,Tramatza,950
+095067,20,Tresnuraghes,1097
+091011,20,Borore,2038
+091012,20,Bortigali,1286
+091016,20,Desulo,2219
+091018,20,Dualchi,598
+091019,20,Elini,551
+093028,6,Morsano al Tagliamento,2705
+093030,6,Pinzano al Tagliamento,1530
+093031,6,Polcenigo,3157
+093035,6,Pravisdomini,3463
+098026,3,Fombio,2324
+098027,3,Galgagnano,1288
+098028,3,Graffignana,2599
+098029,3,Guardamiglio,2660
+098030,3,Livraga,2511
+098033,3,Maccastorna,67
+098034,3,Mairago,1383
+098035,3,Maleo,3083
+098036,3,Marudo,1779
+098037,3,Massalengo,4435
+098038,3,Meleti,460
+098039,3,Merlino,1705
+098040,3,Montanaso Lombardo,2255
+095068,20,Ulà Tirso,492
+095069,20,Uras,2802
+095070,20,Usellus,736
+095071,20,Villanova Truschedu,297
+095072,20,Villaurbana,1567
+095073,20,Villa Verde,296
+095074,20,Zeddiani,1153
+095075,20,Zerfaliu,1027
+095076,20,Siapiccia,345
+095077,20,Curcuris,301
+095078,20,Soddì,119
+091024,20,Fonni,3834
+091025,20,Gadoni,748
+091026,20,Gairo,1370
+091027,20,Galtellì,2442
+091028,20,Gavoi,2586
+091031,20,Girasole,1321
+091032,20,Ilbono,2091
+091033,20,Irgoli,2278
+093038,6,San Giorgio della Richinvelda,4582
+093039,6,San Martino al Tagliamento,1428
+093040,6,San Quirino,4229
+093042,6,Sequals,2233
+098042,3,Orio Litta,2025
+098043,3,Ospedaletto Lodigiano,1986
+098044,3,Ossago Lodigiano,1421
+098045,3,Pieve Fissiraga,1732
+098046,3,Salerano sul Lambro,2638
+098047,3,San Fiorano,1848
+098048,3,San Martino in Strada,3752
+098049,3,San Rocco al Porto,3376
+098051,3,Santo Stefano Lodigiano,1889
+098052,3,Secugnago,1952
+098053,3,Senna Lodigiana,1835
+098054,3,Somaglia,3879
+095080,20,Flussio,436
+095082,20,Laconi,1759
+095083,20,Magomadas,629
+095084,20,Modolo,157
+095085,20,Montresta,456
+095086,20,Sagama,195
+095087,20,Suni,1032
+095088,20,Tinnura,241
+096001,1,Ailoche,328
+091035,20,Jerzu,3147
+091038,20,Lei,490
+091039,20,Loceri,1300
+091040,20,Loculi,501
+091041,20,Lodè,1614
+091042,20,Lotzorai,2124
+093045,6,Tramonti di Sopra,287
+093046,6,Tramonti di Sotto,344
+093047,6,Travesio,1809
+093049,6,Vito d'Asio,700
+093050,6,Vivaro,1309
+093052,6,Vajont,1688
+093053,6,Valvasone Arzene,3909
+094001,14,Acquaviva d'Isernia,400
+098055,3,Sordio,3460
+098057,3,Terranova dei Passerini,915
+098058,3,Turano Lodigiano,1551
+098059,3,Valera Fratta,1716
+098060,3,Villanova del Sillaro,1847
+098062,3,Castelgerundo,1488
+099004,8,Gemmano,1130
+089020,19,Portopalo di Capo Passero,3867
+090001,20,Aggius,1438
+090002,20,Alà dei Sardi,1832
+102032,18,San Calogero,4094
+102033,18,San Costantino Calabro,2137
+102034,18,San Gregorio d'Ippona,2631
+102035,18,San Nicola da Crissa,1267
+102036,18,Sant'Onofrio,2973
+102038,18,Simbario,930
+102039,18,Sorianello,1139
+102040,18,Soriano Calabro,2346
+102041,18,Spadola,819
+090004,20,Anela,611
+090005,20,Ardara,760
+090007,20,Banari,536
+090008,20,Benetutti,1784
+090009,20,Berchidda,2694
+102042,18,Spilinga,1456
+102043,18,Stefanaconi,2399
+102045,18,Vallelonga,740
+102046,18,Vazzano,1000
+102048,18,Zaccanopoli,699
+102049,18,Zambrone,1774
+102050,18,Zungri,1946
+103001,1,Antrona Schieranco,404
+090010,20,Bessude,397
+090011,20,Bonnanaro,952
+090012,20,Bono,3488
+090013,20,Bonorva,3310
+090014,20,Bortigiadas,743
+090015,20,Borutta,267
+090016,20,Bottidda,669
+103002,1,Anzola d'Ossola,406
+103003,1,Arizzano,1981
+103004,1,Arola,236
+103005,1,Aurano,100
+103006,1,Baceno,886
+103007,1,Bannio Anzino,472
+103008,1,Baveno,4961
+103009,1,Bee,774
+103010,1,Belgirate,507
+103011,1,Beura-Cardezza,1450
+103012,1,Bognanco,185
+111002,20,Armungia,440
+111003,20,Ballao,743
+111004,20,Barrali,1109
+111005,20,Barumini,1225
+111006,20,Buggerru,1048
+111007,20,Burcei,2740
+090017,20,Buddusò,3762
+090018,20,Bultei,864
+090019,20,Bulzi,487
+090020,20,Burgos,878
+090021,20,Calangianus,3978
+090022,20,Cargeghe,617
+090024,20,Cheremule,417
+103013,1,Brovello-Carpugnino,740
+103014,1,Calasca-Castiglione,593
+103015,1,Cambiasca,1594
+103016,1,Cannero Riviera,894
+103018,1,Caprezzo,172
+103019,1,Casale Corte Cerro,3444
+103021,1,Ceppo Morelli,296
+103022,1,Cesara,583
+103023,1,Cossogno,672
+111008,20,Calasetta,2847
+111011,20,Castiadas,1678
+111012,20,Collinas,803
+111013,20,Decimoputzu,4327
+090025,20,Chiaramonti,1573
+090026,20,Codrongianos,1307
+090027,20,Cossoine,788
+090028,20,Esporlatu,380
+090029,20,Florinas,1500
+090030,20,Giave,508
+090031,20,Illorai,798
+103024,1,Craveggia,764
+103025,1,Crevoladossola,4525
+103026,1,Crodo,1400
+103029,1,Druogno,1056
+103031,1,Formazza,446
+103032,1,Germagno,188
+103033,1,Ghiffa,2362
+111015,20,Domus de Maria,1655
+111017,20,Donori,2029
+111018,20,Escalaplano,2122
+111019,20,Escolca,560
+111020,20,Esterzili,580
+111021,20,Fluminimaggiore,2807
+090032,20,Ittireddu,485
+090034,20,Laerru,881
+099021,8,Casteldelci,383
+103034,1,Gignese,1044
+103036,1,Gurro,193
+103037,1,Intragna,111
+103038,1,Loreglia,229
+103039,1,Macugnaga,537
+103040,1,Madonna del Sasso,402
+103041,1,Malesco,1384
+103042,1,Masera,1457
+103043,1,Massiola,121
+103044,1,Mergozzo,2152
+111022,20,Furtei,1572
+111023,20,Genoni,787
+111024,20,Genuri,307
+111025,20,Gergei,1177
+111026,20,Gesico,808
+111027,20,Gesturi,1206
+111028,20,Giba,1982
+111029,20,Goni,462
+111030,20,Gonnesa,4855
+099022,8,Maiolo,800
+099024,8,Pennabilli,2697
+099025,8,San Leo,2877
+099026,8,Sant'Agata Feltria,2063
+099027,8,Talamello,1079
+103045,1,Miazzina,365
+103046,1,Montecrestese,1259
+103047,1,Montescheno,384
+103048,1,Nonio,857
+103049,1,Oggebbio,881
+103051,1,Ornavasso,3418
+103052,1,Pallanzeno,1138
+103053,1,Piedimulera,1494
+103054,1,Pieve Vergonte,2513
+103055,1,Premeno,762
+111032,20,Guamaggiore,945
+111033,20,Guasila,2628
+111036,20,Isili,2579
+100001,9,Cantagallo,3167
+103056,1,Premia,539
+103057,1,Premosello-Chiovenda,1907
+103058,1,Quarna Sopra,248
+103059,1,Quarna Sotto,386
+103060,1,Re,705
+103061,1,San Bernardino Verbano,1302
+103062,1,Santa Maria Maggiore,1290
+111037,20,Las Plassas,221
+111038,20,Lunamatrona,1661
+111039,20,Mandas,2094
+111040,20,Masainas,1271
+111041,20,Monastir,4589
+111043,20,Musei,1523
+111044,20,Narcao,3153
+111045,20,Nuragus,862
+111046,20,Nurallao,1210
+101001,18,Belvedere di Spinello,2167
+101002,18,Caccuri,1604
+101003,18,Carfizzi,552
+101004,18,Casabona,2494
+101005,18,Castelsilano,935
+101006,18,Cerenzia,1071
+103064,1,Stresa,4816
+103065,1,Toceno,724
+103066,1,Trarego Viggiona,413
+103067,1,Trasquera,172
+103068,1,Trontano,1663
+103069,1,Valstrona,1209
+103070,1,Vanzone con San Carlo,385
+111047,20,Nuraminis,2453
+111048,20,Nurri,2109
+111049,20,Nuxis,1506
+111050,20,Orroli,2132
+111051,20,Ortacesus,882
+111052,20,Pabillonis,2684
+111053,20,Pauli Arbarei,582
+111054,20,Perdaxius,1365
+111055,20,Pimentel,1160
+111056,20,Piscinas,827
+111057,20,Portoscuso,4998
+101007,18,Cirò,2643
+101011,18,Crucoli,2978
+103071,1,Varzo,2008
+103074,1,Vignone,1198
+103076,1,Villette,268
+103077,1,Vogogna,1750
+103078,1,Borgomezzavalle,313
+103079,1,Valle Cannobina,478
+108002,3,Aicurzio,2125
+111058,20,Sadali,924
+111060,20,Samatzai,1615
+111061,20,San Basilio,1191
+111064,20,San Nicolò Gerrei,727
+101014,18,Melissa,3398
+108013,3,Burago di Molgora,4281
+108014,3,Camparada,2157
+108022,3,Correzzana,3034
+111066,20,San Vito,3564
+111068,20,Santadi,3296
+111069,20,Sant'Andrea Frius,1720
+111070,20,Sant'Anna Arresi,2717
+101016,18,Pallagorio,1062
+101018,18,Roccabernarda,3297
+101020,18,San Mauro Marchesato,2043
+101021,18,San Nicola dell'Alto,742
+101022,18,Santa Severina,1978
+108031,3,Mezzago,4491
+108037,3,Renate,4086
+108038,3,Ronco Briantino,3540
+108042,3,Sulbiate,4363
+108047,3,Veduggio con Colzano,4304
+111072,20,Sardara,3948
+111073,20,Segariu,1132
+111074,20,Selegas,1347
+111075,20,Senorbì,4849
+111076,20,Serdiana,2664
+111078,20,Serrenti,4738
+101023,18,Savelli,1136
+101024,18,Scandale,2998
+101026,18,Umbriatico,795
+101027,18,Verzino,1701
+102001,18,Acquaro,2048
+102002,18,Arena,1328
+108055,3,Roncello,4780
+109001,11,Altidona,3546
+109002,11,Amandola,3471
+109003,11,Belmonte Piceno,614
+109004,11,Campofilone,1934
+109005,11,Falerone,3262
+111079,20,Serri,641
+111080,20,Setzu,137
+111081,20,Seui,1239
+111082,20,Seulo,793
+111083,20,Siddi,620
+111084,20,Siliqua,3706
+111085,20,Silius,1129
+111086,20,Siurgus Donigala,1940
+102003,18,Briatico,4267
+102004,18,Brognaturo,592
+102005,18,Capistrano,984
+102006,18,Cessaniti,3145
+102007,18,Dasà,1126
+102008,18,Dinami,1995
+102009,18,Drapia,2063
+102010,18,Fabrizia,2078
+102012,18,Filandari,1799
+109007,11,Francavilla d'Ete,928
+109008,11,Grottazzolina,3289
+109009,11,Lapedona,1172
+109010,11,Magliano di Tenna,1418
+109011,11,Massa Fermana,913
+109012,11,Monsampietro Morico,632
+109013,11,Montappone,1637
+109014,11,Montefalcone Appennino,399
+109015,11,Montefortino,1108
+109016,11,Monte Giberto,763
+111087,20,Soleminis,1860
+111088,20,Suelli,1100
+111089,20,Teulada,3448
+111090,20,Tratalias,1036
+111091,20,Tuili,979
+111092,20,Turri,409
+111093,20,Ussana,4128
+111094,20,Ussaramanna,512
+111095,20,Vallermosa,1874
+102013,18,Filogaso,1362
+102014,18,Francavilla Angitola,1877
+102015,18,Francica,1643
+102016,18,Gerocarne,2034
+102017,18,Ionadi,4476
+102018,18,Joppolo,1852
+102019,18,Limbadi,3478
+102020,18,Maierato,2120
+109019,11,Monteleone di Fermo,366
+109020,11,Montelparo,735
+109021,11,Monte Rinaldo,336
+109022,11,Monterubbiano,2142
+109023,11,Monte San Pietrangeli,2358
+109025,11,Monte Vidon Combatte,409
+109026,11,Monte Vidon Corrado,697
+109027,11,Montottone,890
+109028,11,Moresco,547
+111097,20,Villamar,2604
+111098,20,Villamassargia,3488
+111099,20,Villanova Tulo,1056
+111100,20,Villanovaforru,656
+111101,20,Villanovafranca,1247
+111102,20,Villaperuccio,1060
+111103,20,Villaputzu,4615
+102022,18,Mongiana,690
+102023,18,Monterosso Calabro,1622
+102024,18,Nardodipace,1216
+102026,18,Parghelia,1277
+102028,18,Pizzoni,1040
+102029,18,Polia,937
+102030,18,Ricadi,4976
+102031,18,Rombiolo,4463
+109029,11,Ortezzano,744
+109030,11,Pedaso,2832
+109031,11,Petritoli,2236
+109032,11,Ponzano di Fermo,1658
+109035,11,Rapagnano,2003
+109036,11,Santa Vittoria in Matenano,1283
+109038,11,Servigliano,2243
+109039,11,Smerillo,333
+109040,11,Torre San Patrizio,1954
+111104,20,Villasalto,1016
+111105,20,Villasimius,3750
+111107,20,Villaspeciosa,2597
+094034,14,Pettoranello del Molise,437
+094035,14,Pietrabbondante,664
+090053,20,Padria,634
+090054,20,Palau,4245
+090055,20,Pattada,2984
+091068,20,Osidda,224
+091069,20,Osini,743
+091070,20,Ottana,2254
+091071,20,Ovodda,1596
+091072,20,Perdasdefogu,1825
+091073,20,Posada,3085
+091077,20,Sarule,1664
+091083,20,Silanus,2060
+096043,1,Piatto,489
+096044,1,Piedicavallo,178
+096046,1,Pollone,2121
+096047,1,Ponderano,3787
+096048,1,Portula,1166
+096049,1,Pralungo,2350
+096050,1,Pray,2102
+096053,1,Ronco Biellese,1486
+096054,1,Roppolo,862
+096055,1,Rosazza,90
+096056,1,Sagliano Micca,1579
+096057,1,Sala Biellese,585
+096058,1,Salussola,1914
+096059,1,Sandigliano,2645
+094036,14,Pizzone,311
+094037,14,Poggio Sannita,618
+094038,14,Pozzilli,2266
+094039,14,Rionero Sannitico,1069
+094040,14,Roccamandolfi,896
+094041,14,Roccasicura,516
+094042,14,Rocchetta a Volturno,1098
+090056,20,Perfugas,2343
+090057,20,Ploaghe,4440
+090059,20,Pozzomaggiore,2520
+091084,20,Sindia,1671
+091086,20,Sorgono,1605
+091088,20,Talana,975
+091089,20,Tertenia,3907
+091090,20,Teti,641
+096063,1,Sordevolo,1342
+096064,1,Sostegno,763
+096065,1,Strona,1052
+096066,1,Tavigliano,919
+096067,1,Ternengo,270
+096068,1,Tollegno,2457
+096069,1,Torrazzo,202
+096071,1,Valdengo,2397
+096072,1,Vallanzengo,202
+096074,1,Valle San Nicolao,921
+096075,1,Veglio,464
+096076,1,Verrone,1240
+096078,1,Villa del Bosco,331
+094043,14,San Pietro Avellana,451
+094044,14,Sant'Agapito,1381
+094045,14,Santa Maria del Molise,687
+094046,14,Sant'Angelo del Pesco,359
+094047,14,Sant'Elena Sannita,292
+094048,14,Scapoli,642
+094049,14,Sessano del Molise,707
+094050,14,Sesto Campano,2239
+090060,20,Putifigari,720
+090061,20,Romana,523
+090062,20,Aglientu,1193
+091091,20,Tiana,466
+091093,20,Tonara,1888
+091094,20,Torpè,2829
+091097,20,Triei,1096
+091098,20,Ulassai,1415
+091099,20,Urzulei,1178
+091100,20,Ussassai,506
+096079,1,Villanova Biellese,190
+096080,1,Viverone,1408
+096081,1,Zimone,393
+096082,1,Zubiena,1140
+096083,1,Zumaglia,981
+096085,1,Lessona,2719
+096086,1,Campiglia Cervo,493
+096087,1,Quaregna Cerreto,2044
+097001,3,Abbadia Lariana,3207
+097002,3,Airuno,2802
+097003,3,Annone di Brianza,2322
+097004,3,Ballabio,4114
+094051,14,Vastogirardi,662
+095001,20,Abbasanta,2643
+095002,20,Aidomaggiore,414
+095003,20,Albagiara,250
+095004,20,Ales,1366
+095005,20,Allai,355
+095006,20,Arborea,3844
+095007,20,Ardauli,826
+090065,20,Sedini,1296
+090066,20,Semestene,142
+090068,20,Siligo,838
+091101,20,Villagrande Strisaili,3085
+091103,20,Cardedu,1966
+091104,20,Lodine,321
+097005,3,Barzago,2388
+097007,3,Barzio,1284
+097008,3,Bellano,3490
+097009,3,Bosisio Parini,3386
+097010,3,Brivio,4529
+097011,3,Bulciago,2909
+097014,3,Carenno,1414
+097015,3,Casargo,848
+097017,3,Cassago Brianza,4374
+097018,3,Cassina Valsassina,527
+097019,3,Castello di Brianza,2603
+097020,3,Cernusco Lombardone,3859
+097021,3,Cesana Brianza,2393
+097022,3,Civate,3779
+095008,20,Assolo,353
+095009,20,Asuni,320
+095010,20,Baradili,77
+095011,20,Baratili San Pietro,1262
+095012,20,Baressa,598
+095013,20,Bauladu,668
+095014,20,Bidonì,136
+095015,20,Bonarcado,1538
+095016,20,Boroneddu,153
+095017,20,Busachi,1241
+090071,20,Thiesi,2866
+090072,20,Tissi,2387
+090073,20,Torralba,938
+090074,20,Trinità d'Agultu e Vignola,2233
+097024,3,Colle Brianza,1745
+097025,3,Cortenova,1171
+097026,3,Costa Masnaga,4775
+097027,3,Crandola Valsassina,261
+097028,3,Cremella,1713
+097029,3,Cremeno,1636
+097030,3,Dervio,2614
+097031,3,Dolzago,2558
+097032,3,Dorio,308
+097033,3,Ello,1206
+097034,3,Erve,691
+097035,3,Esino Lario,757
+097037,3,Garbagnate Monastero,2512
+097038,3,Garlate,2716
+097039,3,Imbersago,2469
+097040,3,Introbio,1962
+095019,20,Cuglieri,2548
+095020,20,Fordongianus,870
+095021,20,Ghilarza,4409
+095022,20,Gonnoscodina,453
+095023,20,Gonnosnò,716
+095024,20,Gonnostramatza,853
+095025,20,Marrubiu,4737
+095026,20,Masullas,1044
+095027,20,Milis,1517
+095028,20,Mogorella,432
+090075,20,Tula,1499
+090076,20,Uri,2921
+090077,20,Usini,4306
+090078,20,Villanova Monteleone,2222
+090079,20,Valledoria,4323
+090080,20,Telti,2296
+090081,20,Badesi,1857
+090082,20,Viddalba,1663
+092099,20,Villa San Pietro,2143
+097043,3,Lierna,2139
+097045,3,Malgrate,4312
+097047,3,Margno,368
+097050,3,Moggio,480
+097051,3,Molteno,3586
+097052,3,Monte Marenzo,1904
+097053,3,Montevecchia,2704
+097054,3,Monticello Brianza,4158
+097055,3,Morterone,30
+097056,3,Nibionno,3668
+095029,20,Mogoro,4048
+095030,20,Morgongiori,693
+095031,20,Narbolia,1727
+095032,20,Neoneli,637
+095033,20,Norbello,1198
+095034,20,Nughedu Santa Vittoria,462
+095035,20,Nurachi,1780
+095036,20,Nureci,336
+095037,20,Ollastra,1182
+095039,20,Palmas Arborea,1498
+090083,20,Golfo Aranci,2468
+090084,20,Loiri Porto San Paolo,3623
+090085,20,Sant'Antonio di Gallura,1492
+090086,20,Tergu,609
+090087,20,Santa Maria Coghinas,1368
+090088,20,Erula,725
+090089,20,Stintino,1581
+093001,6,Andreis,244
+093002,6,Arba,1318
+093006,6,Barcis,243
+093008,6,Budoia,2559
+097060,3,Oliveto Lario,1242
+097061,3,Osnago,4829
+097062,3,Paderno d'Adda,3832
+097063,3,Pagnona,345
+097064,3,Parlasco,134
+097065,3,Pasturo,1961
+097067,3,Perledo,894
+097068,3,Pescate,2223
+097069,3,Premana,2205
+097070,3,Primaluna,2279
+097072,3,Rogeno,3105
+097074,3,Santa Maria Hoè,2177
+097075,3,Sirone,2313
+097076,3,Sirtori,2813
+097077,3,Sueglio,153
+097078,3,Suello,1771
+097079,3,Taceno,535
+097082,3,Valgreghentino,3444
+095040,20,Pau,294
+095041,20,Paulilatino,2164
+095042,20,Pompu,237
+095043,20,Riola Sardo,2101
+095044,20,Ruinas,647
+095045,20,Samugheo,2926
+095046,20,San Nicolò d'Arcidano,2578
+095047,20,Santa Giusta,4757
+095048,20,Villa Sant'Antonio,337
+090090,20,Padru,2107
+091001,20,Aritzo,1266
+091002,20,Arzana,2322
+091003,20,Atzara,1081
+093011,6,Castelnovo del Friuli,834
+093012,6,Cavasso Nuovo,1525
+093014,6,Cimolais,355
+093015,6,Claut,887
+093016,6,Clauzetto,388
+097084,3,Varenna,742
+097086,3,Vercurago,2819
+097090,3,Viganò,2109
+097092,3,La Valletta Brianza,4697
+097093,3,Valvarrone,530
+098001,3,Abbadia Cerreto,270
+098002,3,Bertonico,1081
+098003,3,Boffalora d'Adda,1769
+098004,3,Borghetto Lodigiano,4363
+098005,3,Borgo San Giovanni,2443
+098006,3,Brembio,2721
+098008,3,Casaletto Lodigiano,2908
+098009,3,Casalmaiocco,3224
+095049,20,Santu Lussurgiu,2300
+095050,20,San Vero Milis,2461
+095051,20,Scano di Montiferro,1461
+095052,20,Sedilo,2049
+095053,20,Seneghe,1734
+095054,20,Senis,433
+095055,20,Sennariolo,161
+095056,20,Siamaggiore,904
+091004,20,Austis,778
+091005,20,Bari Sardo,3973
+091006,20,Baunei,3564
+091007,20,Belvì,577
+091008,20,Birori,511
+091009,20,Bitti,2735
+091010,20,Bolotana,2526
+093018,6,Cordovado,2762
+093019,6,Erto e Casso,369
+093020,6,Fanna,1521
+093024,6,Frisanco,594
+093026,6,Meduno,1543
+093027,6,Montereale Valcellina,4338
+098011,3,Caselle Landi,1537
+098012,3,Caselle Lurani,3023
+098013,3,Castelnuovo Bocca d'Adda,1586
+098014,3,Castiglione d'Adda,4658
+098015,3,Castiraga Vidardo,2897
+098017,3,Cavenago d'Adda,2145
+098018,3,Cervignano d'Adda,2218
+098020,3,Comazzo,2293
+098021,3,Cornegliano Laudense,2889
+098022,3,Corno Giovine,1149
+098023,3,Cornovecchio,206
+098024,3,Corte Palasio,1552
+098025,3,Crespiatica,2289
+095057,20,Siamanna,791
