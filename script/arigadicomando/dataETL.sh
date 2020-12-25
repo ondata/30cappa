@@ -13,7 +13,7 @@ folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "$folder"/../../dati
 mkdir -p "$folder"/../../dati/arigadicomando
-mkdir -p "$folder"/../../dati/arigadicomando/output
+mkdir -p "$folder"/../../dati/arigadicomando/output_noreg
 
 ### dati sulla popolazione ###
 
@@ -50,10 +50,14 @@ mapshaper "$folder"/../../dati/arigadicomando/comuni.shp -dissolve -proj wgs84 -
 # ritagliare i buffer dei comuni con il limite dell'italia
 mapshaper "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp -clip "$folder"/../../dati/arigadicomando/italia.shp -o "$folder"/../../dati/arigadicomando/tmp.shp
 
-# crea lista codici comuni
-ogr2ogr -f CSV /vsistdout/ "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp | mlr --c2t clean-whitespace then cut -f PRO_COM_T,COD_REG | tail -n +2 >"$folder"/../../dati/arigadicomando/lista.tsv
+### dati per pagina web ###
 
-## estrai un geojson per ogni comune
+# crea lista codici comuni
+ogr2ogr -f CSV /vsistdout/ "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp |
+  mlr --c2t clean-whitespace then cut -f PRO_COM_T,COD_REG |
+  tail -n +2 >"$folder"/../../dati/arigadicomando/lista.tsv
+
+# estrai un geojson per ogni comune
 mapshaper "$folder"/../../dati/arigadicomando/tmp.shp -split PRO_COM_T -o format=geojson "$folder"/../../dati/arigadicomando/output_noreg/
 
 # rimuovi dai "poligoni buffer comune" l'area dei capoluoghi di provincia
