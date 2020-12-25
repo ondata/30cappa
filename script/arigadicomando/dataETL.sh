@@ -1,5 +1,10 @@
 #!/bin/bash
 
+### Nota ###
+# Per sapere le ragioni di questo script, leggi qui
+# https://medium.com/tantotanto/il-decreto-di-natale-in-chilometri-8af38744a7d5
+### Nota ###
+
 ### requisiti ###
 # gdal/ogr https://gdal.org/
 # mapshaper https://github.com/mbloch/mapshaper
@@ -11,9 +16,8 @@ set -x
 
 folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mkdir -p "$folder"/../../dati
-mkdir -p "$folder"/../../dati/arigadicomando
-mkdir -p "$folder"/../../dati/arigadicomando/output_noreg
+# crea cartella per raccogliere dati per sito web
+mkdir -p "$folder"/../../adati/arigadicomando/output_noreg
 
 ### dati sulla popolazione ###
 
