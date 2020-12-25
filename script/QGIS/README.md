@@ -67,3 +67,15 @@ QGIS     | pagina_Atlas_orizzontale.png | pagina dell'Atlas layout orizzontale
 Nel progetto QGIS sono presenti due Atlas, uno con layout orizzontale e l'altro verticale:
 
 ![](pagina_Atlas_orizzontale.png)
+
+## Test performance
+
+Laptop anno 2015
+
+partendo dal vettore _comuni_ creato da @aborruso (che contiene già il campo abitanti)
+
+- con **QGIS**:
+per ottenere il vettore delle `aree30cappa` (unico file) impiego circa 5 min - modello di processing;
+
+- con **Script SQL**:
+per ottenere il vettore delle `aree30cappa` (unico file) impiego circa 7 min - lancio script da spatialite_gui;
