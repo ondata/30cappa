@@ -1,5 +1,10 @@
 #!/bin/bash
 
+### Nota ###
+# Per sapere le ragioni di questo script, leggi qui
+# https://medium.com/tantotanto/il-decreto-di-natale-in-chilometri-8af38744a7d5
+### Nota ###
+
 ### requisiti ###
 # gdal/ogr https://gdal.org/
 # mapshaper https://github.com/mbloch/mapshaper
@@ -11,9 +16,8 @@ set -x
 
 folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mkdir -p "$folder"/../../dati
-mkdir -p "$folder"/../../dati/arigadicomando
-mkdir -p "$folder"/../../dati/arigadicomando/output
+# crea cartella per raccogliere dati per sito web
+mkdir -p "$folder"/../../adati/arigadicomando/output_noreg
 
 ### dati sulla popolazione ###
 
@@ -50,14 +54,14 @@ mapshaper "$folder"/../../dati/arigadicomando/comuni.shp -dissolve -proj wgs84 -
 # ritagliare i buffer dei comuni con il limite dell'italia
 mapshaper "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp -clip "$folder"/../../dati/arigadicomando/italia.shp -o "$folder"/../../dati/arigadicomando/tmp.shp
 
-# crea CSV di servizio
-ogr2ogr -f CSV "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.CSV "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp
-mlr -I --csv clean-whitespace "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.CSV
+### dati per pagina web ###
 
 # crea lista codici comuni
-mlr --c2t cut -f PRO_COM_T,COD_REG "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.CSV | tail -n +2 >"$folder"/../../dati/arigadicomando/lista.tsv
+ogr2ogr -f CSV /vsistdout/ "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp |
+  mlr --c2t clean-whitespace then cut -f PRO_COM_T,COD_REG |
+  tail -n +2 >"$folder"/../../dati/arigadicomando/lista.tsv
 
-## estrai un geojson per ogni comune
+# estrai un geojson per ogni comune
 mapshaper "$folder"/../../dati/arigadicomando/tmp.shp -split PRO_COM_T -o format=geojson "$folder"/../../dati/arigadicomando/output_noreg/
 
 # rimuovi dai "poligoni buffer comune" l'area dei capoluoghi di provincia

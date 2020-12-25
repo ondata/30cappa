@@ -318,16 +318,13 @@ La fuzione *area30Cappa* si occupa di calcolare l'area di un singolo comune a 30
 
 """
 
-comuni_capoluoogo_provincia[comuni_capoluoogo_provincia.COD_REG==4]
-
 def area30Cappa(comune,comuni_capoluogo,confine):
   # creazione dell'area a 30cappa dal confine
   comune['geometry'] = comune.geometry.buffer(30000)
   # taglio sul confine regionale
   comune = gpd.overlay(comune,confine, how='intersection')
-  # differenza con i comuni capoluogo della regione
-  cod_reg = limiti_comuni[limiti_comuni.PRO_COM_T == comune.PRO_COM_T.values[0]].COD_REG.values[0]
-  comune = gpd.overlay(comune,comuni_capoluoogo_provincia[comuni_capoluoogo_provincia.COD_REG==cod_reg], how="difference")
+  # differenza con tutti i comuni capoluogo della regione
+  comune = gpd.overlay(comune,comuni_capoluoogo_provincia, how="difference")
   comune = comune[['geometry']]
   return(comune)
 
