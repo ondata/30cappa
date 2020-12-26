@@ -17,7 +17,7 @@ script/
 ├── QGIS/
 │   ├── dati/
 |       ├── Italy.geojson
-|       ├── aree30cappa.sqlite
+|       ├── 30cappa.sqlite
 |       ├── comuni.*
 |       ├── province.csv
 |       ├── regioni.csv
@@ -26,6 +26,8 @@ script/
 |       ├── Aree30cappa.*
 |       ├── lista_nro_comuni_x_comune5k.csv
 |       ├── stile.qml
+|       ├── atlas_EN/
+|       ├── atlas_PA/
 |   ├── scriptSQL/
 |       ├── script.sql
 |       ├── script_atlas.sql
@@ -42,7 +44,7 @@ script/
 cartella | nome file | descrizione
 ---------|-----------|-----------
 dati     | Italy.geojson | limiti nazionali
-dati     | aree30cappa.sqlite | database con elaborazioni
+dati     | 30cappa.sqlite | database con elaborazioni
 dati     | comuni.* | shapefile ISTAT 2020 con aggiunto il campo abitanti ISTAT 01/01/2020
 dati     | province.csv | tabella con moni e sigle province
 dati     | regioni.csv | tabella con nomi regioni
@@ -50,6 +52,8 @@ dati     | regioni_vett.geojson | vettore con le regioni italiane
 output   | Aree30cappa.* | shapefile output modello
 output   | lista_nro_comuni_x_comune5k.csv | tabella con la lista dei comuni, output dello script_atlas.sql
 output   | stile.qml | stile per QGIS
+output   | pagine | pagine atlas comuni della provincia di Enna
+output   | pagine | pagine atlas comuni della provincia di Palermo
 scriptSQL| script.sql | script SQL da usare in spatialite_gui, genera aree30cappa
 scriptSQL| script_atlas.sql | script SQL da usare in spatialite_gui, genera tabella lista_nro_comuni_x_comune5k
 QGIS     | 30cappa.model | modello per QGIS
@@ -67,6 +71,16 @@ QGIS     | pagina_Atlas_orizzontale.png | pagina dell'Atlas layout orizzontale
 Nel progetto QGIS sono presenti due Atlas, uno con layout orizzontale e l'altro verticale:
 
 ![](pagina_Atlas_orizzontale.png)
+
+![](./output/atlas_PA/30cappaPA.gif)
+
+![](./output/atlas_EN/30cappaEN.gif)
+
+## Video demo
+
+[![](https://img.youtube.com/vi/jq9shGmd2vU/0.jpg)](https://youtu.be/jq9shGmd2vU "#30cappa by @pigreco")
+
+blog post di riferimento: <https://pigrecoinfinito.com/2020/12/26/il-decreto-di-natale-in-chilometri/>
 
 ## Test performance
 
