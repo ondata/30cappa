@@ -17,7 +17,7 @@ set -x
 folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # crea cartella per raccogliere dati per sito web
-mkdir -p "$folder"/../../adati/arigadicomando/output_noreg
+mkdir -p "$folder"/../../dati/arigadicomando/output_noreg
 
 ### dati sulla popolazione ###
 
