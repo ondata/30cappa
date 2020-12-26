@@ -21,13 +21,13 @@ b.ROWID IN (
 AND b.CC_UTS != 1
 AND b.comune != p.comune;
 --
--- crea tabella - per ogni aree30cappa lista dei comuni ed altro
+-- crea geotabella - per ogni aree30cappa lista dei comuni ed altro
 CREATE TABLE lista_nro_comuni_x_comune5k AS
 SELECT cc."COD_REG_2" AS COD_REG, cc."PRO_COM_T_2" AS PRO_COM_T, cc."COMUNE_2" AS COMUNI,
 group_concat(distinct cc."COD_REG_2") AS lista_COD_REG_2, group_concat(cc."PRO_COM_T") AS lista_PRO_COM_T, group_concat(cc."COMUNE") AS lista_comuni,
 sum(cc."Abitanti") AS tot_abitanti, count(*) AS nro_comuni, CastToMultiPolygon(ST_UNION (c.geom)) as geom
 FROM "comune_e_comuni" cc join "Com01012020_g_WGS84" c USING (PRO_COM_T)
-GROUP BY 3
+GROUP BY 3;
 SELECT RecoverGeometryColumn('lista_nro_comuni_x_comune5k','geom',32632,'MULTIPOLYGON','XY');
 
 --
