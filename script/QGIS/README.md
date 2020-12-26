@@ -26,6 +26,8 @@ script/
 |       ├── Aree30cappa.*
 |       ├── lista_nro_comuni_x_comune5k.csv
 |       ├── stile.qml
+|       ├── atlas_EN/
+|       ├── atlas_PA/
 |   ├── scriptSQL/
 |       ├── script.sql
 |       ├── script_atlas.sql
@@ -50,6 +52,8 @@ dati     | regioni_vett.geojson | vettore con le regioni italiane
 output   | Aree30cappa.* | shapefile output modello
 output   | lista_nro_comuni_x_comune5k.csv | tabella con la lista dei comuni, output dello script_atlas.sql
 output   | stile.qml | stile per QGIS
+output   | pagine | pagine atlas comuni della provincia di Enna
+output   | pagine | pagine atlas comuni della provincia di Palermo
 scriptSQL| script.sql | script SQL da usare in spatialite_gui, genera aree30cappa
 scriptSQL| script_atlas.sql | script SQL da usare in spatialite_gui, genera tabella lista_nro_comuni_x_comune5k
 QGIS     | 30cappa.model | modello per QGIS
