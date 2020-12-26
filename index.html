@@ -53,6 +53,7 @@
 					<li><a href="#home" id="home-link"><span class="icon solid fa-home">Intro</span></a></li>
 					<li><a href="#comuni" id="comuni-link"><span class="icon solid fa-th">Comuni</span></a></li>
 					<li><a href="#faq" id="faq-link"><span class="icon solid fa-question">FAQ</span></a></li>
+					<li><a href="#embed" id="embed-link"><span class="icon solid fa-code">Embed</span></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -234,6 +235,33 @@
 
 			</div>
 
+			<!-- embed -->
+
+			<section id="embed" class="three">
+				<div class="container" style="text-align: left;">
+
+					<header>
+						<h2>Inserire la mappa di un comune nel tuo sito</h2>
+					</header>
+
+					<p>Se vuoi inserire la mappa di un comune nel tuo sito, puoi usare il codice di <i>embedding</i> sottostante.<br>
+					Basta un copia e incolla e poi sostituire - due volte - il codice ISTAT del comune, con quello di tuo interesse. In questo esempio il codice è "001002", ovvero quello del comune di Airasca.<br>
+					<a href="https://jsfiddle.net/aborruso/8audt7km/5/" target="_blank">Qui</a> puoi testare la cosa.
+					</p>
+
+					<p>
+					&lt;iframe height="400" src="https://ondata.github.io/30cappa/embed.html?id=001002"
+					style="width: 0; min-width: 100% !important; border: none;" frameborder="0"&gt;&lt;/iframe&gt;&lt;br&gt;
+					&lt;a href="https://ondata.github.io/30cappa/mappa.html?id=001002" target="_blank"&gt;Schermo intero&lt;/a&gt;
+					</p>
+
+					<iframe height="400" src="https://ondata.github.io/30cappa/embed.html?id=001002"
+							style="width: 0; min-width: 100% !important; border: none;" frameborder="0"></iframe><br>
+							<a href="https://ondata.github.io/30cappa/mappa.html?id=001002" target="_blank">Schermo intero</a>
+
+				</div>
+			</section>
+
 			<!-- Footer -->
 			<div id="footer">
 
@@ -286,21 +314,5 @@
 			    });
 			});
 		</script>
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//stats.labmod.org/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '8']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//stats.labmod.org/matomo.php?idsite=8&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
 		</body>
 		</html>
