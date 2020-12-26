@@ -72,6 +72,12 @@ Nel progetto QGIS sono presenti due Atlas, uno con layout orizzontale e l'altro 
 
 ![](pagina_Atlas_orizzontale.png)
 
+## Video demo
+
+[![](https://img.youtube.com/vi/jq9shGmd2vU/0.jpg)](https://youtu.be/jq9shGmd2vU "#30cappa by @pigreco")
+
+blog post di riferimento: <https://pigrecoinfinito.com/2020/12/26/il-decreto-di-natale-in-chilometri/>
+
 ## Test performance
 
 Laptop anno 2015
