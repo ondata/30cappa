@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """30cappa.ipynb
 
+    https://colab.research.google.com/drive/1nKTrFCjYKzE-la12QyIRHEmd5GtEZjfD
+
 # 30cappa con meno di 5mila abitanti
 
 ![](https://raw.githubusercontent.com/aborruso/30cappa/main/risorse/2020-12-18_slide_Natale.png)
@@ -36,6 +38,7 @@ import requests, zipfile, io
 import matplotlib.pyplot as plt
 import contextily as ctx
 import datetime
+from shapely.geometry.multipolygon import MultiPolygon
 
 """# Raccolta dei dati
 - confini comunali
@@ -183,8 +186,6 @@ https://www.anpr.interno.it/portale/documents/20182/50186/ANPR_archivio_comuni.c
 
 anpr_comuni = pd.read_csv("https://www.anpr.interno.it/portale/documents/20182/50186/ANPR_archivio_comuni.csv")
 
-anpr_comuni[anpr_comuni.DENOMINAZIONE_IT == 'TAIO']
-
 anpr_comuni['PRO_COM_T'] = anpr_comuni['CODISTAT'].apply(lambda k: str(k).zfill(6))
 
 codici_comuni_anpr = anpr_comuni['PRO_COM_T'].unique()
@@ -323,44 +324,61 @@ def area30Cappa(comune,comuni_capoluogo,confine):
   comune['geometry'] = comune.geometry.buffer(30000)
   # taglio sul confine regionale
   comune = gpd.overlay(comune,confine, how='intersection')
-  # differenza con tutti i comuni capoluogo della regione
+  # differenza con tutti i comuni capoluogo
   comune = gpd.overlay(comune,comuni_capoluoogo_provincia, how="difference")
   comune = comune[['geometry']]
   return(comune)
 
-"""... e qui comincia il ciclo"""
+"""estrazione delle geometrie dei confini
 
-tutti_i_comuni = []
-for codice in geo_piccoli_comuni.PRO_COM_T.unique():
-  # estrazione singolo comune
-  comune = geo_piccoli_comuni[geo_piccoli_comuni['PRO_COM_T'] == codice].reset_index()
-  comune = comune[['COMUNE','PRO_COM_T','POPOLAZIONE','geometry']]
-  nome = str(comune['PRO_COM_T'].values[0])
-  #comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
-  comune = area30Cappa(comune,comuni_capoluoogo_provincia,confini_italia)
-  ## creazione del file geojson
-  comune.to_crs(epsg=4326).to_file(nome + ".geojson",driver="GeoJSON")
-  tutti_i_comuni.append(comune)
-
-""".. vediamo il primo comune processato"""
-
-ax = comune.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="xkcd:orange",alpha=0.5)
-ctx.add_basemap(ax,crs=comune.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
-
-"""**creazione del layer con tutti i dati calcolati**
-
-
+il confine italiano è in una sola geometria
 """
 
-finoa5mila30cappa = gpd.GeoDataFrame( pd.concat( tutti_i_comuni, ignore_index=True) )
+confini = confini_italia.geometry.values[0]
 
-"""il file creato è un geojson dal nome finoa5mila30cappa.geojson"""
+"""per i comuni capoluogo invece avrò un array"""
 
-finoa5mila30cappa.to_crs(epsg=4326).to_file('finoa5mila30cappa.geojson',driver="GeoJSON")
+confini_comuni_capoluogo = comuni_capoluoogo_provincia.geometry
 
-"""e qui la mappa di tutti i comuni messi insieme"""
+def area30Cappa(geom,comuni_capoluogo,confine):
+  # creazione dell'area a 30cappa dal confine
+  # per ogni geometria (caso comuni su più poligoni)
+  # creazione buffer
+  geom = geom.buffer(30000)
+  # interesezione con il confine italiano
+  # qui mi basta solo la geometrai
+  geom = geom.intersection(confine)
+  # ciclo su tutti i capoluoghi di provincia
+  for cg in comuni_capoluogo.values:
+    # se si toccano
+    if geom.intersects(cg.buffer(0)):
+      # allora calcolo differenza con il poligono
+      geom = geom.difference(cg.buffer(0))
 
-finoa5mila30cappa = gpd.read_file('output.geojson',driver='GeoJSON')
+  return(geom)
 
-ax = finoa5mila30cappa.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
-ctx.add_basemap(ax,crs=finoa5mila30cappa.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
+geo_piccoli_comuni_30cappa = geo_piccoli_comuni
+
+# Commented out IPython magic to ensure Python compatibility.
+geo_piccoli_comuni_30cappa['geometry'] = geo_piccoli_comuni_30cappa['geometry'].apply(lambda geom: area30Cappa(geom,confini_comuni_capoluogo,confini))
+# %time
+
+"""ecco la mappa con tutti i comuni d'Italia e le aree dove muoversi"""
+
+ax = geo_piccoli_comuni_30cappa.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="none")
+ctx.add_basemap(ax,crs=geo_piccoli_comuni_30cappa.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
+
+"""e qui un ciclo per generare tutti i file geojson"""
+
+for index,row in geo_piccoli_comuni_30cappa.to_crs(epsg=4326).iterrows():
+  codice = row['PRO_COM_T']
+  gdf_comune = gpd.GeoDataFrame(
+    None,
+    crs='EPSG:4326',
+    geometry=[row['geometry']])
+  gdf_comune.to_file(codice + ".geojson",driver="GeoJSON")
+
+""".. mappa dell'ultimo comune creato"""
+
+ax = gdf_comune.to_crs(epsg=3857).plot(figsize=(12,12),edgecolor='xkcd:orange',facecolor="xkcd:orange",alpha=0.5)
+ctx.add_basemap(ax,crs=gdf_comune.to_crs(epsg=3857).crs.to_string(),source=ctx.providers.Stamen.Terrain)
