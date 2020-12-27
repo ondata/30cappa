@@ -20,7 +20,7 @@ Maurizio le ha calcolate usando [Python](https://github.com/ondata/30cappa/blob/
 Lo script *bash* sfrutta principalmente queste 4 *utility*:
 
 - **GDAL/OGR**, la più importante libreria *open source* per leggere e scrivere file geografici vettoriali e *raster* https://gdal.org/
-- **Mapshaper**, una straordinaria applicazione *open source* per modificare file in formato Shapefile, GeoJSON, TopoJSON, CSV, ecc. https://github.com/mbloch/mapshaper
+- **Mapshaper** (usare versione >= 0.5.22), una straordinaria applicazione *open source* per modificare file in formato Shapefile, GeoJSON, TopoJSON, CSV, ecc. https://github.com/mbloch/mapshaper
 - **Miller**, una straordinaria applicazione *open source* per elaborare file in formato CSV, TSV, ecc. https://miller.readthedocs.io/en/latest/features.html
 - **gnu parallel**, una straordinaria applicazione *open source*  per eseguire processi in parallelo https://www.gnu.org/software/parallel/.
 

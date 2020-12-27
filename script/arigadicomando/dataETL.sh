@@ -7,7 +7,7 @@
 
 ### requisiti ###
 # gdal/ogr https://gdal.org/
-# mapshaper https://github.com/mbloch/mapshaper
+# mapshaper, versione >= 0.5.22 https://github.com/mbloch/mapshaper
 # gnu parallel https://www.gnu.org/software/parallel/
 # miller https://github.com/johnkerl/miller
 ### requisiti ###
