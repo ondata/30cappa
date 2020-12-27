@@ -24,6 +24,13 @@ mkdir -p "$folder"/../../dati/arigadicomando/output_noreg
 # rimuovi riga intestazione
 tail <"$folder"/../../dati/rawdata/comuni.csv -n +2 >"$folder"/../../dati/arigadicomando/comuni.csv
 
+# estri riga con nomi campo
+head <"$folder"/../../dati/arigadicomando/comuni.csv -n 1 >"$folder"/../../dati/arigadicomando/tmp_comuni.csv
+# aggiungi corpo, rimuovendo ciò che non inizia per codice comune (in modo da rimuovere footer)
+grep <"$folder"/../../dati/arigadicomando/comuni.csv -P '^[0-9]+' >>"$folder"/../../dati/arigadicomando/tmp_comuni.csv
+
+mv "$folder"/../../dati/arigadicomando/tmp_comuni.csv "$folder"/../../dati/arigadicomando/comuni.csv
+
 # crea totale popolazione per codice comunale
 mlr -I --csv clean-whitespace \
   then filter -S '${Età}=="999"' \
@@ -40,7 +47,7 @@ mlr -I --csv put '$PRO_COM_T=fmtnum($PRO_COM_T,"%06d")' "$folder"/../../dati/ari
 mapshaper "$folder"/../../dati/rawdata/Limiti01012020_g/Com01012020_g/Com01012020_g_WGS84.shp -clean gap-fill-area=0 -o "$folder"/../../dati/tmp.shp
 
 # JOIN con CSV per abitanti
-mapshaper "$folder"/../../dati/tmp.shp -join "$folder"/../../dati/comuni.csv keys=PRO_COM_T,PRO_COM_T field-types=PRO_COM_T:str -o "$folder"/../../dati/arigadicomando/comuni.shp
+mapshaper "$folder"/../../dati/tmp.shp -join "$folder"/../../dati/arigadicomando/comuni.csv keys=PRO_COM_T,PRO_COM_T field-types=PRO_COM_T:str -o "$folder"/../../dati/arigadicomando/comuni.shp
 
 # genera buffer a 30 kilometri dei comuni con meno di 5001 abitanti
 ogr2ogr -t_srs EPSG:4326 "$folder"/../../dati/arigadicomando/comuni_30cappa_5mila.shp "$folder"/../../dati/arigadicomando/comuni.shp -dialect sqlite -sql "SELECT PRO_COM_T,COD_REG,COMUNE,Abitanti,st_buffer(comuni.geometry,30000) AS geom FROM comuni where Abitanti <= 5000"
@@ -65,4 +72,4 @@ ogr2ogr -f CSV /vsistdout/ "$folder"/../../dati/arigadicomando/comuni_30cappa_5m
 mapshaper "$folder"/../../dati/arigadicomando/tmp.shp name='' -split PRO_COM_T -o format=geojson "$folder"/../../dati/arigadicomando/output_noreg/
 
 # rimuovi dai "poligoni buffer comune" l'area dei capoluoghi di provincia
-parallel --colsep "\t" -j100% 'mapshaper ../../dati/arigadicomando/output_noreg/{1}.json -erase ../../dati/arigadicomando/capoluoghi_4326.shp -o precision=0.000001 ../../dati/arigadicomando/output_noreg/{1}.geojson' :::: ./../../dati/arigadicomando/lista.tsv
+parallel --colsep "\t" -j100% 'mapshaper '"$folder"'/../../dati/arigadicomando/output_noreg/{1}.json -erase '"$folder"'/../../dati/arigadicomando/capoluoghi_4326.shp -o precision=0.000001 '"$folder"'/../../dati/arigadicomando/output_noreg/{1}.geojson' :::: "$folder"/../../dati/arigadicomando/tmp_lista.tsv
