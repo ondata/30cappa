@@ -2,6 +2,7 @@ tmp*
 
 # sottopone a versioning soltanto dati comunali
 /dati/rawdata/Limiti01012020_g/*
+dati/rawdata/*.zip
 !/dati/rawdata/Limiti01012020_g/Com01012020_g
 
 # sottopone a versioning soltanto il file qgs
