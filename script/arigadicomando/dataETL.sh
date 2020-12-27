@@ -72,4 +72,4 @@ ogr2ogr -f CSV /vsistdout/ "$folder"/../../dati/arigadicomando/comuni_30cappa_5m
 mapshaper "$folder"/../../dati/arigadicomando/tmp.shp name='' -split PRO_COM_T -o format=geojson "$folder"/../../dati/arigadicomando/output_noreg/
 
 # rimuovi dai "poligoni buffer comune" l'area dei capoluoghi di provincia
-parallel --colsep "\t" -j100% 'mapshaper '"$folder"'/../../dati/arigadicomando/output_noreg/{1}.json -erase '"$folder"'/../../dati/arigadicomando/capoluoghi_4326.shp -o precision=0.000001 '"$folder"'/../../dati/arigadicomando/output_noreg/{1}.geojson' :::: "$folder"/../../dati/arigadicomando/tmp_lista.tsv
+parallel --colsep "\t" -j100% 'mapshaper '"$folder"'/../../dati/arigadicomando/output_noreg/{1}.json -erase '"$folder"'/../../dati/arigadicomando/capoluoghi_4326.shp -o precision=0.000001 '"$folder"'/../../dati/arigadicomando/output_noreg/{1}.geojson' :::: "$folder"/../../dati/arigadicomando/lista.tsv
