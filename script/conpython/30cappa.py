@@ -56,6 +56,7 @@ Alcuni campi significativi:
 
 # indirizzo del file
 zip_file_url = 'https://www.istat.it/storage/cartografia/confini_amministrativi/non_generalizzati/Limiti01012020.zip'
+zip_file_url = 'https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/Limiti01012020_g.zip'
 #download
 r = requests.get(zip_file_url)
 z = zipfile.ZipFile(io.BytesIO(r.content))
@@ -64,7 +65,7 @@ z.extractall()
 
 """**geodataframe con i limiti comunali**"""
 
-limiti_comuni = gpd.read_file("Limiti01012020" + os.sep + "Com01012020" + os.sep + "Com01012020_WGS84.shp",encoding='utf-8')
+limiti_comuni = gpd.read_file("Limiti01012020_g" + os.sep + "Com01012020_g" + os.sep + "Com01012020_g_WGS84.shp",encoding='utf-8')
 
 
 """**creazione del confine nazionale**
@@ -72,7 +73,7 @@ questo servirà per tagliare le aree all'interno del confine nazionale.<br/>
 Per creare il confine partiamo dal file con le macroregioni d'Italia solo per questioni di performance
 """
 
-macroregioni_italiane = gpd.read_file("Limiti01012020" + os.sep + "RipGeo01012020" + os.sep + "RipGeo01012020_WGS84.shp",encoding='utf-8')
+macroregioni_italiane = gpd.read_file("Limiti01012020_g" + os.sep + "RipGeo01012020_g" + os.sep + "RipGeo01012020_g_WGS84.shp",encoding='utf-8')
 
 """creiamo un campo per creare la dissolvenza ( = unire tutti i poligoni con lo stesso valore)"""
 
@@ -277,7 +278,7 @@ geo_comuni_popolazione = limiti_comuni.merge(comuni_popolazione_tojoin,on='PRO_C
 
 """genero un csv con tutti i nomi dei comuni, sigla della provincia, numero di abitanti e superfice"""
 
-limiti_province = gpd.read_file("Limiti01012020" + os.sep + "ProvCM01012020" + os.sep + "ProvCM01012020_WGS84.shp",encoding='utf-8')
+limiti_province = gpd.read_file("Limiti01012020_g" + os.sep + "ProvCM01012020_g" + os.sep + "ProvCM01012020_g_WGS84.shp",encoding='utf-8')
 
 def sigla(cod_prov):
   sigla = limiti_province[limiti_province.COD_PROV == cod_prov].SIGLA.values[0]
