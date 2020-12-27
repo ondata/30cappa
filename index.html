@@ -81,7 +81,7 @@
 					<!--
 					Maggiori informazioni nella storia del <a href="https://medium.com/tantotanto/il-decreto-di-natale-in-chilometri-8af38744a7d5" target='_new'>progetto</a>-->
 					<footer>
-						<a href="#comuni" class="button scrolly">Vedi lista dei piccoli comuni</a>
+						<a href="#comuni" class="button scrolly">Vedi la tabella dei comuni</a>
 					</footer>
 
 				</div>
@@ -92,16 +92,17 @@
 				<div class="container">
 
 					<header>
-						<h2>Comuni fino a 5000 abitanti</h2>
+						<h2>Comuni</h2>
+						<h4>la mappa è disponibile per i comuni fino a 5000 abitanti</h4>
 					</header>
 					<table id="table_comuni" class="display" style="width:100%">
 						<thead>
 							<tr>
 								<th>MAPPA</th>
 								<th>COMUNE</th>
-								<th>POPOLAZIONE</th>
+								<th>ABITANTI</th>
 								<th>SUPERFICIE (km²)</th>
-								<th>PROVINCIA</th>
+								<th>PROV</th>
 							</tr>
 						</thead>
 					</table>
@@ -117,7 +118,7 @@
 						<h2>Risposte alle domande più frequenti</h2>
 					</header>
 					<small>
-						1. <a href="#faq1" class="scrollFaq">Come è nata questa idea?<br/>
+						1. <a href="#faq1" class="scrollFaq">Come è nata questa idea?</a><br/>
 						2. <a href="#faq2" class="scrollFaq">Tutto questo ha valore legale?</a><br/>
 						3. <a href="#faq3" class="scrollFaq">Da dove vengono i dati?</a><br/>
 						4. <a href="#faq4" class="scrollFaq">Perché la distanza è in linea d'aria?</a><br/>
@@ -172,7 +173,7 @@
 						<p>
 							Abbiamo riflettuto a lungo sulla frase del decreto legge <i>"sono consentiti gli spostamenti dai comuni con popolazione non superiore a 5.000 abitanti e per una distanza non superiore a 30 chilometri dai relativi confini"</i><br/>
 							e su questa slide presentata dal Giuseppe Conte<br/>
-							<img width="60%"src="https://raw.githubusercontent.com/aborruso/30cappa/main/risorse/2020-12-18_slide_Natale.png"/>
+							<img width="60%" src="https://raw.githubusercontent.com/aborruso/30cappa/main/risorse/2020-12-18_slide_Natale.png"/>
 							<br/>
 							Anche se a valere è il decreto legge, dichiarare <i>"distanza non superiore a 30 chilometri dai relativi confini"</i>, vuole proprio dire creare un perimetro a 30km dal confine comunale e quindi in distanza aerea
 							<br/>
@@ -281,32 +282,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/table.js"></script>
 			<script>
-				$(document).ready(function() {
-					$('#table_comuni').DataTable( {
-						"autoWidth": true,
-						"ajax": "dati/comuni.json",
-						"columns": [
-						{ "data": "MAPPA" },
-						{ "data": "COMUNE" },
-						{ "data": "POPOLAZIONE" },
-						{ "data": "SUPERFICIE (km²)" },
-						{ "data": "PROVINCIA" },
-						],
-						columnDefs: [
-						{
-							targets: 0,
-							render: function ( data, type, row, meta ) {
-								if(type === 'display'){
-									data = '<a target="_new" href="mappa.html?id=' + data + '">vedi</a>';
-								}
-
-								return data;
-							}
-						}
-						]
-					} );
-				} );
 			$(document).ready(function(){
 			    $( "a.scrollFaq" ).click(function( event ) {
 			        event.preventDefault();
