@@ -15,6 +15,7 @@ $(document).ready(function() {
 				if(type === 'display'){
 					values = data.split("_");
 					idistat = values[0];
+					idistat = idistat.padStart(6, "0");
 					abitanti = parseFloat(values[1]);
 					if (parseFloat(values[1]) <= 5000) { 
 						data = '<a target="_new" href="mappa.html?id=' + idistat + '">vedi</a>';
