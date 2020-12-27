@@ -41,6 +41,9 @@ mlr -I --csv clean-whitespace \
 # applica zero padding ai codici comunali, da 1001 a 001001
 mlr -I --csv put '$PRO_COM_T=fmtnum($PRO_COM_T,"%06d")' "$folder"/../../dati/arigadicomando/comuni.csv
 
+# Estrai dati ANPR
+mlr <"$folder"/../../dati/rawdata/ANPR.csv --csv cut -f PRO_COM_T,Abitanti >"$folder"/../../dati/arigadicomando/ANPR.csv
+
 ### dati geografici ###
 
 # pulizia topologica di base
