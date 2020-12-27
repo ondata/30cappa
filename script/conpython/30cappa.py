@@ -347,4 +347,4 @@ geo_piccoli_comuni_30cappa['geometry'] = geo_piccoli_comuni_30cappa.apply(lambda
 
 """genero il file geojson"""
 
-geo_piccoli_comuni_30cappa.to_file("piccolicomuni30cappa.geojson",driver="GeoJSON")
+#geo_piccoli_comuni_30cappa.to_file("piccolicomuni30cappa.geojson",driver="GeoJSON")
