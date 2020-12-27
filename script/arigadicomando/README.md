@@ -165,7 +165,7 @@ Alcune note:
 - il *buffer* viene calcolato tramite una interrogazione `SQL` di tipo spaziale, sfruttando il dialetto `sqlite` e la funzione [`ST_BUFFER`](https://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html#:~:text=space\)-,Buffer). Questa vuole come argomenti la colonna geometrica e la distanza (di *default* usando l'unità di misura nativa, che qui sono metri);
 - vengono estratte soltanto le colonne utili per l'applicazione creata (codice comunale a 6 caratteri, codice regionale numerico e numero di abitanti).
 
-I **poligoni** dei **capoluoghi** sono tutti quelli che ne *file* di *input* hanno `CC_UTS==1`. Vengono estratti con [`Mapshaper`](https://github.com/mbloch/mapshaper/wiki/Command-Reference):
+I **poligoni** dei **capoluoghi** sono tutti quelli che nel *file* di *input* hanno `CC_UTS==1`. Vengono estratti con [`Mapshaper`](https://github.com/mbloch/mapshaper/wiki/Command-Reference):
 
 ```bash
 mapshaper ./comuni.shp \
@@ -187,7 +187,7 @@ mapshaper ./comuni.shp -dissolve \
 
 Il comando [`dissolve`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-dissolve) è il cuore del processo e ancora una volta in *output* `EPSG:4326`.
 
-Questo *output* viene usato per **ritagliare** le aree di *buffer* dei comuni. Su utilizza il comando [`clip`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-clip) di Mapshaper:
+Questo *output* viene usato per **ritagliare** le aree di *buffer* dei comuni. Si utilizza il comando [`clip`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-clip) di Mapshaper:
 
 ```bash
 mapshaper ./comuni_30cappa_5mila.shp -clip ./italia.shp -o ./output.shp
@@ -205,7 +205,7 @@ Al cambio di `id`, che qui è il codice ISTAT a caratteri del comune di proprio 
 Quindi indicato ad esempio l'identificativo `067042`, devono essere visualizzate due geometrie distinte.<br>
 Quella del comune viene restituita in risposta a un'interrogazione alle [API SQL di CARTO](https://carto.com/developers/sql-api/), mentre quella del buffer è una chiamata diretta al file `
 GeoJSON` del buffer di 30.000 metri del confine di un dato comune.<br>
-Era quini necessario generare **5.496 file**, perché tanti sono i comuni con abitanti `<=5.000`.
+Era quindi necessario generare **5.496 file**, perché tanti sono i comuni con abitanti `<=5.000`.
 
 Per farlo è stata creato un file TSV con la lista, con le colonne con il codice del comune e il codice regionale:
 
