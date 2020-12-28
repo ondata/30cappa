@@ -144,7 +144,7 @@
       dataType: "json",
       success: console.log("geometria caricata."),
       error(xhr) {
-        alert(xhr.statusText)
+        alert("Codice comune non trovato o numero di abitanti superiore a 5000")
       }
     })
     $.when(limite).done(() => {
