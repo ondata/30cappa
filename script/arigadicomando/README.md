@@ -41,8 +41,10 @@ Abbiamo scelto come **fonte** questa di **ISTAT**: <http://demo.istat.it/pop2020
 - formato CSV;
   - *encoding* `UTF-8`;
   - la `,` come separatore di campi;
+- 807.233 righe;
 - 2 righe di intestazione, una descrittiva e una con i nomi dei campi;
-- 5 campi
+- 2 righe al piede, con note, a partire da riga 807.232;
+- 19 campi. Tra questi:
   - il codice ISTAT in formato numerico del comune;
   - il nome del comune;
   - la classe di età della popolazione, da `0` a `100` a passo di un anno, con uno speciale valore di `999` per il totale di popolazione per comune;
@@ -53,29 +55,52 @@ Abbiamo scelto come **fonte** questa di **ISTAT**: <http://demo.istat.it/pop2020
 Questo un estratto:
 
 ```
-Popolazione residente al 1° Gennaio 2020 per età sesso e stato civile
-Codice comune,Denominazione,Età,Totale Maschi,Totale Femmine
-1001,Agliè,0,5,11
-1001,Agliè,1,9,15
-1001,Agliè,2,6,8
-...,...,...,...,...
-1001,Agliè,999,1236,1402
+"Popolazione residente al 1° Gennaio 2020 per sesso età (b) e stato civile post censimento (n)"
+Codice comune,Denominazione,Età,Maschi celibi,Maschi coniugati,Maschi divorziati,Maschi vedovi,Maschi uniti civilmente,Maschi già in unione civile (per scioglimento),Maschi già in unione civile (per decesso del partner),Totale Maschi,Femmine nubili,Femmine coniugate,Femmine divorziate,Femmine vedove,Femmine unite civilmente,Femmine già in unione civile (per scioglimento),Femmine già in unione civile (per decesso del partner),Totale Femmine
+1001,Agliè,0,5,0,0,0,,,,5,11,0,0,0,,,,11
+1001,Agliè,1,9,0,0,0,,,,9,15,0,0,0,,,,15
+1001,Agliè,2,6,0,0,0,,,,6,8,0,0,0,,,,8
 ```
 
 E queste le informazioni di sintesi sullo schema:
 
-| field | type | min | max | min_length | max_length | mean | stddev | median | cardinality |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Codice comune | Integer | 1001 | 111107 | 4 | 6 | 45193.820597166 | 32622.60515262005 | 40034.5 | 7904 |
-| Denominazione | Unicode | Abano Terme | Zungri | 2 | 34 |  |  |  | 7898 |
-| Età | Integer | 0 | 999 | 1 | 3 | 59.30392156862904 | 97.90058875583414 | 50.5 | 102 |
-| Totale Maschi | Integer | 0 | 1341940 | 1 | 7 | 72.78658857267648 | 2060.840107118411 | 10 | 4667 |
-| Totale Femmine | Integer | 0 | 1495392 | 1 | 7 | 76.66526256251474 | 2266.2967872158915 | 11 | 4816 |
+| field | type | min | max | min_length | max_length | mean | stddev | median | mode | cardinality |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Codice comune | Integer | 1001 | 111107 | 4 | 6 | 45174.040561031616 | 32616.550968795535 | 40025 | N/A | 7914 |
+| Denominazione | Unicode | Abano Terme | Zungri | 2 | 34 |  |  |  | Zungri | 7908 |
+| Età | Integer | 0 | 999 | 1 | 3 | 59.30392156862911 | 97.90058875583402 | 50.5 | N/A | 102 |
+| Maschi celibi | Integer | 0 | 657437 | 1 | 6 | 33.77095442675566 | 1006.9727727317525 | 3 | 0 | 3240 |
+| Maschi coniugati | Integer | 0 | 595382 | 1 | 6 | 34.436627569905205 | 925.9212538764326 | 2 | 0 | 3280 |
+| Maschi divorziati | Integer | 0 | 39802 | 1 | 5 | 1.8825511503563923 | 62.32985002343896 | 0 | 0 | 668 |
+| Maschi vedovi | Integer | 0 | 34367 | 1 | 5 | 1.860064318878973 | 53.77542444503943 | 0 | 0 | 642 |
+| Maschi uniti civilmente | Integer | 0 | 1648 | 0 | 4 | 0.3779806618128552 | 10.428816258323753 | 0 |  | 80 |
+| Maschi già in unione civile (per scioglimento) | Integer | 0 | 12 | 0 | 2 | 0.003043260526214392 | 0.0909561975397487 | 0 |  | 9 |
+| Maschi già in unione civile (per decesso del partner) | Integer | 0 | 24 | 0 | 2 | 0.0037751839439115484 | 0.15223719532902208 | 0 |  | 8 |
+| Totale Maschi | Integer | 0 | 1328672 | 1 | 7 | 71.97494635963314 | 2041.7766432801977 | 10 | 0 | 4665 |
+| Femmine nubili | Integer | 0 | 619849 | 1 | 6 | 29.1584583289974 | 930.2729647386509 | 2 | 0 | 2966 |
+| Femmine coniugate | Integer | 0 | 622722 | 1 | 6 | 34.93128831011793 | 960.3575344588396 | 2 | 0 | 3282 |
+| Femmine divorziate | Integer | 0 | 73590 | 1 | 5 | 2.7011674520704756 | 109.60897785110757 | 0 | 0 | 819 |
+| Femmine vedove | Integer | 0 | 162700 | 1 | 6 | 8.991179691487366 | 256.8362857139779 | 0 | 0 | 1569 |
+| Femmine unite civilmente | Integer | 0 | 747 | 0 | 3 | 0.17369698370507336 | 4.320684602241422 | 0 |  | 46 |
+| Femmine già in unione civile (per scioglimento) | Integer | 0 | 12 | 0 | 2 | 0.0032743942370661314 | 0.08923783595966905 | 0 |  | 8 |
+| Femmine già in unione civile (per decesso del partner) | Integer | 0 | 9 | 0 | 1 | 0.0032358719519242057 | 0.08923924112796663 | 0 |  | 8 |
+| Totale Femmine | Integer | 0 | 1479621 | 1 | 7 | 75.79368406447678 | 2244.6609533014753 | 11 | 0 | 4748 |
 
 Per poterlo utilizzare è necessario rimuovere la prima riga di intestazione. Nello script è stata rimossa con [`tail`](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/tail.html#top), con l'opzione `-n` e l'argomento `2`, per avere in output il file a partire dalla seconda riga:
 
 ```bash
 tail <./comuni.csv -n +2
+```
+
+Successivamente le righe al piede, che contengono le note. <br>Viene fatto in due passaggi: prima estraendo la riga che contiene i nomi dei campi, e poi aggiungendo a questa tutte le righe che iniziano con un numero (quindi tutto, tranne le righe con le note).<br>Gli strumenti sono i due classici `head`, per estrarre soltanto la prima riga, e `grep` per filtrare tramite espressioni regolari le righe che iniziano con un numero:
+
+```bash
+# estri riga con nomi campo
+head <./comuni.csv -n 1 >./tmp_comuni.csv
+# aggiungi corpo, rimuovendo ciò che non inizia per codice comune (in modo da rimuovere footer)
+grep <./comuni.csv -P '^[0-9]+' >>./tmp_comuni.csv
+# rinomina file
+mv ./tmp_comuni.csv ./comuni.csv
 ```
 
 Il passo successivo è quello di estrarre il totale di popolazione per comune. Per come è fatto il file, è necessario estrarre tutte le righe in cui `Età=="999"` e fare poi la somma del totale di maschi e femmine.<br>A questo è stata aggiunta l'estrazione dei campi `Codice comune` e `Abitanti` (e la rimozione dei restanti) e il loro cambio nome.<br>

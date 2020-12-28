@@ -107,12 +107,6 @@
       attribution: '<a href="https://www.google.com/maps/">Google</a>'
     });
 
-    const stamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
-      maxZoom: 17,
-      attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
-    });
-    //stamenTerrain.addTo(map);
-
     const opens = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -120,7 +114,7 @@
     //opens.addTo(map);
 
     var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
-      maxZoom: 17,
+      maxZoom: 13,
       attribution: 'Layer topografici <a target="_blank" href="https://stamen.com/">Stamen Design</a> e &copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
     topografica.addTo(map);
@@ -136,7 +130,7 @@
         topografica.addTo(map);
       } else {
         var topografica = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
-          maxZoom: 17
+          maxZoom: 13
         });
 
         map.removeLayer(topografica);
@@ -150,7 +144,7 @@
       dataType: "json",
       success: console.log("geometria caricata."),
       error(xhr) {
-        alert(xhr.statusText)
+        alert("Codice comune non trovato o numero di abitanti superiore a 5000")
       }
     })
     $.when(limite).done(() => {
