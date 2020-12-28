@@ -13,7 +13,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="manifest" href="/images/site.webmanifest">
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
 	<meta property="og:title" content="I 30 chilometri di spostamenti del decreto di Natale" />
@@ -34,6 +33,7 @@
 	<meta name="twitter:image" content="https://i.imgur.com/CxiskOb.png">
 	<meta name="twitter:site" content="30cappa" />
 	<meta name="twitter:url" content="https://ondata.github.io/30cappa/">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
 <body class="is-preload">
 
@@ -52,6 +52,7 @@
 				<ul>
 					<li><a href="#home" id="home-link"><span class="icon solid fa-home">Intro</span></a></li>
 					<li><a href="#comuni" id="comuni-link"><span class="icon solid fa-th">Comuni</span></a></li>
+					<li><a href="#telegram" id="telegram-link"><span class="icon solid fa-comments">Telegram</span></a></li>
 					<li><a href="#faq" id="faq-link"><span class="icon solid fa-question">FAQ</span></a></li>
 					<li><a href="#embed" id="embed-link"><span class="icon solid fa-code">Embed</span></a></li>
 				</ul>
@@ -79,58 +80,68 @@
 						</blockquote>
 					</header>
 					<!--
-					Maggiori informazioni nella storia del <a href="https://medium.com/tantotanto/il-decreto-di-natale-in-chilometri-8af38744a7d5" target='_new'>progetto</a>-->
-					<footer>
-						<a href="#comuni" class="button scrolly">Vedi la tabella dei comuni</a>
-					</footer>
+						Maggiori informazioni nella storia del <a href="https://medium.com/tantotanto/il-decreto-di-natale-in-chilometri-8af38744a7d5" target='_new'>progetto</a>-->
+						<footer>
+							<a href="#comuni" class="button scrolly">Vedi la tabella dei comuni</a>
+						</footer>
 
-				</div>
-			</section>
+					</div>
+				</section>
 
-			<!-- Comuni -->
-			<section id="comuni" class="two">
-				<div class="container">
+				<!-- Comuni -->
+				<section id="comuni" class="two">
+					<div class="container">
+						<header>
+							<h2>Comuni</h2>
+							<h4>la mappa è disponibile per i comuni fino a 5000 abitanti</h4>
+						</header>
+						<table id="table_comuni" class="display" style="width:100%">
+							<thead>
+								<tr>
+									<th>MAPPA</th>
+									<th>COMUNE</th>
+									<th>ABITANTI</th>
+									<th>SUPERFICIE (km²)</th>
+									<th>PROV</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+				</section>
 
-					<header>
-						<h2>Comuni</h2>
-						<h4>la mappa è disponibile per i comuni fino a 5000 abitanti</h4>
-					</header>
-					<table id="table_comuni" class="display" style="width:100%">
-						<thead>
-							<tr>
-								<th>MAPPA</th>
-								<th>COMUNE</th>
-								<th>ABITANTI</th>
-								<th>SUPERFICIE (km²)</th>
-								<th>PROV</th>
-							</tr>
-						</thead>
-					</table>
+				<!-- Telegram -->
+				<section id="telegram" class="three">
+					<div class="container" style="text-align: left;">
 
+						<header>
+							<h2>bot Telegram dedicato</h2>
+						</header>
+						<p>
+							<a href="https://twitter.com/lrssvt">Salvatore Larosa</a> ha creato un <a href="https://t.me/trentacappa_bot">bot Telegram</a> che — a partire dal nome di uno dei comuni con non più di 5000 abitanti — restituisce l’elenco dei comuni limitrofi in cui è possibile spostarsi e il link alle nostre mappe.
+						</p>
+						<a href="https://t.me/trentacappa_bot">Accedi</a> al bot telegram		
+					</div>
+				</section>
 
-				</div>
-			</section>
-
-			<!-- FAQ -->
-			<section id="faq" class="three">
-				<div class="container" style="text-align: left;">
-					<header>
-						<h2>Risposte alle domande più frequenti</h2>
-					</header>
-					<small>
-						1. <a href="#faq1" class="scrollFaq">Come è nata questa idea?</a><br/>
-						2. <a href="#faq2" class="scrollFaq">Tutto questo ha valore legale?</a><br/>
-						3. <a href="#faq3" class="scrollFaq">Da dove vengono i dati?</a><br/>
-						4. <a href="#faq4" class="scrollFaq">Perché la distanza è in linea d'aria?</a><br/>
-						5. <a href="#faq5" class="scrollFaq">Se è un perimetro dal confine perché sono circonferenze?</a><br/>
-						6. <a href="#faq6" class="scrollFaq">Cosa sono le macchie "rosse" nelle mappe?</a><br/>
-						7. <a href="#faq7" class="scrollFaq">In alcuni casi le aree in rosso sono più di una</a><br/>
-						8. <a href="#faq8" class="scrollFaq">Perché le aree vanno anche oltre il confine regionale?</a><br/>
-						9. <a href="#faq9" class="scrollFaq">Posso farlo anche io?</a>
+				<!-- FAQ -->
+				<section id="faq" class="two">
+					<div class="container" style="text-align: left;">
+						<header>
+							<h2>Risposte alle domande più frequenti</h2>
+						</header>
+						<small>
+							1. <a href="#faq1" class="scrollFaq">Come è nata questa idea?</a><br/>
+							2. <a href="#faq2" class="scrollFaq">Tutto questo ha valore legale?</a><br/>
+							3. <a href="#faq3" class="scrollFaq">Da dove vengono i dati?</a><br/>
+							4. <a href="#faq4" class="scrollFaq">Perché la distanza è in linea d'aria?</a><br/>
+							5. <a href="#faq5" class="scrollFaq">Se è un perimetro dal confine perché sono circonferenze?</a><br/>
+							6. <a href="#faq6" class="scrollFaq">Cosa sono le macchie "rosse" nelle mappe?</a><br/>
+							7. <a href="#faq7" class="scrollFaq">In alcuni casi le aree in rosso sono più di una</a><br/>
+							8. <a href="#faq8" class="scrollFaq">Perché le aree vanno anche oltre il confine regionale?</a><br/>
+							9. <a href="#faq9" class="scrollFaq">Posso farlo anche io?</a>
 						</small>
 						<hr/>
-						<a name="faq1"/>
-						<h3>Come è nata questa idea?</h3>
+						<h3 id="faq1">Come è nata questa idea?</h3>
 						<p>
 							quando abbiamo visto il decreto ci siamo subito interrogati come andasse interpretato e, dialogando assieme, abbiamo ragionato come creare le mappe.
 							<br/>
@@ -234,66 +245,67 @@
 					</div>
 				</section>
 
-				<!-- embed -->
 
+				<!-- embed -->
 				<section id="embed" class="three">
 					<div class="container" style="text-align: left;">
-
 						<header>
 							<h2>Inserire la mappa di un comune nel tuo sito</h2>
 						</header>
-
 						<p>Se vuoi inserire la mappa di un comune nel tuo sito, puoi usare il codice di <i>embedding</i> sottostante.<br>
-						Basta un copia e incolla e poi sostituire - due volte - il <strong>codice ISTAT</strong> del comune a <strong>6 caratteri</strong>, con quello di tuo interesse. In questo esempio il codice è "001002", ovvero quello del comune di Airasca.<br>
-						<a href="https://jsfiddle.net/aborruso/8audt7km/5/" target="_blank">Qui</a> puoi testare la cosa.
+							Basta un copia e incolla e poi sostituire - due volte - il <strong>codice ISTAT</strong> del comune a <strong>6 caratteri</strong>, con quello di tuo interesse. In questo esempio il codice è "001002", ovvero quello del comune di Airasca.<br>
+							<a href="https://jsfiddle.net/aborruso/8audt7km/5/" target="_blank">Qui</a> puoi testare la cosa.
 						</p>
 
 						<p style="font-family: Courier;background-color: white;padding:10px">
-						&lt;iframe height="400" src="https://ondata.github.io/30cappa/embed.html?id=001002"
-						style="width: 0; min-width: 100% !important; border: none;" frameborder="0"&gt;&lt;/iframe&gt;&lt;br&gt;
-						&lt;a href="https://ondata.github.io/30cappa/mappa.html?id=001002" target="_blank"&gt;Schermo intero&lt;/a&gt;
+							&lt;iframe height="400" src="https://ondata.github.io/30cappa/embed.html?id=001002"
+							style="width: 0; min-width: 100% !important; border: none;" frameborder="0"&gt;&lt;/iframe&gt;&lt;br&gt;
+							&lt;a href="https://ondata.github.io/30cappa/mappa.html?id=001002" target="_blank"&gt;Schermo intero&lt;/a&gt;
 						</p>
 						<hr/>
 						<br/>
 
 						<iframe height="400" src="https://ondata.github.io/30cappa/embed.html?id=001002"
-								style="width: 0; min-width: 100% !important; border: none;" frameborder="0"></iframe><br>
-								<a href="https://ondata.github.io/30cappa/mappa.html?id=001002" target="_blank">Schermo intero</a>
+						style="width: 0; min-width: 100% !important; border: none;" frameborder="0">
+					</iframe>
+					<br>
+					<a href="https://ondata.github.io/30cappa/mappa.html?id=001002" target="_blank">Schermo intero</a>
+				</div>
+			</section>
 
-					</div>
-				</section>
-			</div>
 
 
-			<!-- Footer -->
-			<div id="footer">
+		</div>
 
-				<!-- Copyright -->
-				<ul class="copyright">
-					<li>da una idea di <a href="http://twitter.com/aborruso">aborruso</a> <a href="https://twitter.com/napo">napo</a> <a href="https://twitter.com/">pigreco</a></li>
-				</ul>
-			</div>
+		<!-- Footer -->
+		<div id="footer">
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+			<!-- Copyright -->
+			<ul class="copyright">
+				<li>da una idea di <a href="http://twitter.com/aborruso">aborruso</a> <a href="https://twitter.com/napo">napo</a> <a href="https://twitter.com/">pigreco</a></li>
+			</ul>
+		</div>
 
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/table.js"></script>
-			<script src="assets/js/matomo.js"></script>
-			<script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/table.js"></script>
+		<script src="assets/js/matomo.js"></script>
+		<script>
 			$(document).ready(function(){
-			    $( "a.scrollFaq" ).click(function( event ) {
-			        event.preventDefault();
-			        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-			    });
+				$( "a.scrollFaq" ).click(function( event ) {
+					event.preventDefault();
+					$("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+				});
 			});
 		</script>
 		<noscript><p><img src="//stats.labmod.org/matomo.php?idsite=8&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-		</body>
-		</html>
+	</body>
+	</html>
