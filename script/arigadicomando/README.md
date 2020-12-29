@@ -104,7 +104,7 @@ mv ./tmp_comuni.csv ./comuni.csv
 ```
 
 Il passo successivo è quello di estrarre il totale di popolazione per comune. Per come è fatto il file, è necessario estrarre tutte le righe in cui `Età=="999"` e fare poi la somma del totale di maschi e femmine.<br>A questo è stata aggiunta l'estrazione dei campi `Codice comune` e `Abitanti` (e la rimozione dei restanti) e il loro cambio nome.<br>
-Ho usato Miller:
+È stato usato Miller:
 
 ```bash
 mlr -I --csv clean-whitespace \

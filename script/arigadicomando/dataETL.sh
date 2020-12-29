@@ -103,4 +103,4 @@ ogr2ogr "$folder"/../../dati/arigadicomando/tmp_buffer.shp "$folder"/../../dati/
 mapshaper-xl "$folder"/../../dati/arigadicomando/tmp_buffer.shp -dissolve PRO_COM_T copy-fields=COMUNE -o precision=0.000001 "$folder"/../../dati/arigadicomando/buffer.shp
 
 # estrai un geojson per ogni comune
-#mapshaper-xl "$folder"/../../dati/arigadicomando/buffer.shp -split PRO_COM_T -o format=geojson "$folder"/../../dati/arigadicomando/output_noreg/
+mapshaper-xl "$folder"/../../dati/arigadicomando/buffer.shp -split PRO_COM_T -o format=geojson "$folder"/../../dati/arigadicomando/output_noreg/
