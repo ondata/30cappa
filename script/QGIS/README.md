@@ -92,4 +92,4 @@ partendo dal vettore _comuni_ creato da @aborruso (che contiene già il campo ab
 per ottenere il vettore delle `aree30cappa` (unico file) impiego circa 5 min - modello di processing;
 
 - con **Script SQL**:
-per ottenere il vettore delle `aree30cappa` (unico file) impiego circa 7 min - lancio script da spatialite_gui;
+per ottenere il vettore delle `aree30cappa` (unico file) impiego circa 7/4 min - lancio script da spatialite_gui;

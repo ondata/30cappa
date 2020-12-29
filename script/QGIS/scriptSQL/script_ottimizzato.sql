@@ -1,7 +1,5 @@
 --
--- the present SQL script is intended to be executed from SpatiaLite_gui
---
-SELECT InitSpatialMetadata(1);
+-- the present SQL script is intended to be executed from SpatiaLite_gui 2.10
 --
 -- il vettore Com01012020_g_WGS84 contiene già il campo Abitanti demoistat2020
 -- in OUTPUT crea un vettore aree30cappa
