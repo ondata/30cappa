@@ -8,7 +8,6 @@ dati/rawdata/*.zip
 # sottopone a versioning soltanto il file qgs
 *.qgs~
 
-# rimuovi momentaneamente cartella output di bash
 dati/arigadicomando/test/*
-
+dati/arigadicomando/output_noreg/*.sqlite
 dati/arigadicomando/output_noreg/*.json

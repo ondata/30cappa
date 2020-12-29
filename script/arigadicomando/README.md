@@ -22,9 +22,9 @@ Lo script *bash* sfrutta principalmente queste 4 *utility*:
 - **GDAL/OGR**, la più importante libreria *open source* per leggere e scrivere file geografici vettoriali e *raster* https://gdal.org/
 - **Mapshaper** (usare versione >= 0.5.22), una straordinaria applicazione *open source* per modificare file in formato Shapefile, GeoJSON, TopoJSON, CSV, ecc. https://github.com/mbloch/mapshaper
 - **Miller**, una straordinaria applicazione *open source* per elaborare file in formato CSV, TSV, ecc. https://miller.readthedocs.io/en/latest/features.html
-- **gnu parallel**, una straordinaria applicazione *open source*  per eseguire processi in parallelo https://www.gnu.org/software/parallel/.
+- **SpatiaLite**, uno straordinaria RDBMS *open source* con funzioni spaziali <https://www.gaia-gis.it/fossil/libspatialite/index>.
 
-Per usare lo *script*, è necessario che siano installate.
+Per usare lo *script*, è necessario installarle.
 
 ### Lo script
 
@@ -64,27 +64,27 @@ Codice comune,Denominazione,Età,Maschi celibi,Maschi coniugati,Maschi divorziat
 
 E queste le informazioni di sintesi sullo schema:
 
-| field | type | min | max | min_length | max_length | mean | stddev | median | mode | cardinality |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Codice comune | Integer | 1001 | 111107 | 4 | 6 | 45174.040561031616 | 32616.550968795535 | 40025 | N/A | 7914 |
-| Denominazione | Unicode | Abano Terme | Zungri | 2 | 34 |  |  |  | Zungri | 7908 |
-| Età | Integer | 0 | 999 | 1 | 3 | 59.30392156862911 | 97.90058875583402 | 50.5 | N/A | 102 |
-| Maschi celibi | Integer | 0 | 657437 | 1 | 6 | 33.77095442675566 | 1006.9727727317525 | 3 | 0 | 3240 |
-| Maschi coniugati | Integer | 0 | 595382 | 1 | 6 | 34.436627569905205 | 925.9212538764326 | 2 | 0 | 3280 |
-| Maschi divorziati | Integer | 0 | 39802 | 1 | 5 | 1.8825511503563923 | 62.32985002343896 | 0 | 0 | 668 |
-| Maschi vedovi | Integer | 0 | 34367 | 1 | 5 | 1.860064318878973 | 53.77542444503943 | 0 | 0 | 642 |
-| Maschi uniti civilmente | Integer | 0 | 1648 | 0 | 4 | 0.3779806618128552 | 10.428816258323753 | 0 |  | 80 |
-| Maschi già in unione civile (per scioglimento) | Integer | 0 | 12 | 0 | 2 | 0.003043260526214392 | 0.0909561975397487 | 0 |  | 9 |
-| Maschi già in unione civile (per decesso del partner) | Integer | 0 | 24 | 0 | 2 | 0.0037751839439115484 | 0.15223719532902208 | 0 |  | 8 |
-| Totale Maschi | Integer | 0 | 1328672 | 1 | 7 | 71.97494635963314 | 2041.7766432801977 | 10 | 0 | 4665 |
-| Femmine nubili | Integer | 0 | 619849 | 1 | 6 | 29.1584583289974 | 930.2729647386509 | 2 | 0 | 2966 |
-| Femmine coniugate | Integer | 0 | 622722 | 1 | 6 | 34.93128831011793 | 960.3575344588396 | 2 | 0 | 3282 |
-| Femmine divorziate | Integer | 0 | 73590 | 1 | 5 | 2.7011674520704756 | 109.60897785110757 | 0 | 0 | 819 |
-| Femmine vedove | Integer | 0 | 162700 | 1 | 6 | 8.991179691487366 | 256.8362857139779 | 0 | 0 | 1569 |
-| Femmine unite civilmente | Integer | 0 | 747 | 0 | 3 | 0.17369698370507336 | 4.320684602241422 | 0 |  | 46 |
-| Femmine già in unione civile (per scioglimento) | Integer | 0 | 12 | 0 | 2 | 0.0032743942370661314 | 0.08923783595966905 | 0 |  | 8 |
-| Femmine già in unione civile (per decesso del partner) | Integer | 0 | 9 | 0 | 1 | 0.0032358719519242057 | 0.08923924112796663 | 0 |  | 8 |
-| Totale Femmine | Integer | 0 | 1479621 | 1 | 7 | 75.79368406447678 | 2244.6609533014753 | 11 | 0 | 4748 |
+| field                                                  | type    | min         | max     | min_length | max_length | mean                  | stddev              | median | mode   | cardinality |
+| ------------------------------------------------------ | ------- | ----------- | ------- | ---------- | ---------- | --------------------- | ------------------- | ------ | ------ | ----------- |
+| Codice comune                                          | Integer | 1001        | 111107  | 4          | 6          | 45174.040561031616    | 32616.550968795535  | 40025  | N/A    | 7914        |
+| Denominazione                                          | Unicode | Abano Terme | Zungri  | 2          | 34         |                       |                     |        | Zungri | 7908        |
+| Età                                                    | Integer | 0           | 999     | 1          | 3          | 59.30392156862911     | 97.90058875583402   | 50.5   | N/A    | 102         |
+| Maschi celibi                                          | Integer | 0           | 657437  | 1          | 6          | 33.77095442675566     | 1006.9727727317525  | 3      | 0      | 3240        |
+| Maschi coniugati                                       | Integer | 0           | 595382  | 1          | 6          | 34.436627569905205    | 925.9212538764326   | 2      | 0      | 3280        |
+| Maschi divorziati                                      | Integer | 0           | 39802   | 1          | 5          | 1.8825511503563923    | 62.32985002343896   | 0      | 0      | 668         |
+| Maschi vedovi                                          | Integer | 0           | 34367   | 1          | 5          | 1.860064318878973     | 53.77542444503943   | 0      | 0      | 642         |
+| Maschi uniti civilmente                                | Integer | 0           | 1648    | 0          | 4          | 0.3779806618128552    | 10.428816258323753  | 0      |        | 80          |
+| Maschi già in unione civile (per scioglimento)         | Integer | 0           | 12      | 0          | 2          | 0.003043260526214392  | 0.0909561975397487  | 0      |        | 9           |
+| Maschi già in unione civile (per decesso del partner)  | Integer | 0           | 24      | 0          | 2          | 0.0037751839439115484 | 0.15223719532902208 | 0      |        | 8           |
+| Totale Maschi                                          | Integer | 0           | 1328672 | 1          | 7          | 71.97494635963314     | 2041.7766432801977  | 10     | 0      | 4665        |
+| Femmine nubili                                         | Integer | 0           | 619849  | 1          | 6          | 29.1584583289974      | 930.2729647386509   | 2      | 0      | 2966        |
+| Femmine coniugate                                      | Integer | 0           | 622722  | 1          | 6          | 34.93128831011793     | 960.3575344588396   | 2      | 0      | 3282        |
+| Femmine divorziate                                     | Integer | 0           | 73590   | 1          | 5          | 2.7011674520704756    | 109.60897785110757  | 0      | 0      | 819         |
+| Femmine vedove                                         | Integer | 0           | 162700  | 1          | 6          | 8.991179691487366     | 256.8362857139779   | 0      | 0      | 1569        |
+| Femmine unite civilmente                               | Integer | 0           | 747     | 0          | 3          | 0.17369698370507336   | 4.320684602241422   | 0      |        | 46          |
+| Femmine già in unione civile (per scioglimento)        | Integer | 0           | 12      | 0          | 2          | 0.0032743942370661314 | 0.08923783595966905 | 0      |        | 8           |
+| Femmine già in unione civile (per decesso del partner) | Integer | 0           | 9       | 0          | 1          | 0.0032358719519242057 | 0.08923924112796663 | 0      |        | 8           |
+| Totale Femmine                                         | Integer | 0           | 1479621 | 1          | 7          | 75.79368406447678     | 2244.6609533014753  | 11     | 0      | 4748        |
 
 Per poterlo utilizzare è necessario rimuovere la prima riga di intestazione. Nello script è stata rimossa con [`tail`](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/tail.html#top), con l'opzione `-n` e l'argomento `2`, per avere in output il file a partire dalla seconda riga:
 
@@ -155,20 +155,20 @@ Questo un estratto:
 
 E queste le informazioni di sintesi sullo schema:
 
-| field | type | min | max | min_length | max_length | mean | stddev | median | mode | cardinality |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| COD_RIP | Integer | 1 | 5 | 1 | 1 | 2.4862095141700404 | 1.4286548784684956 | 2 | 1 | 5 |
-| COD_REG | Integer | 1 | 20 | 1 | 2 | 8.659286437246942 | 6.388341980201931 | 7 | 3 | 20 |
-| COD_PROV | Integer | 1 | 111 | 1 | 3 | 45.130819838056745 | 32.64463443546327 | 40 | 1 | 107 |
-| COD_CM | Integer | 0 | 292 | 1 | 3 | 38.92054655870437 | 90.042657529667 | 0 | 0 | 16 |
-| COD_UTS | Integer | 2 | 292 | 1 | 3 | 77.22039473684187 | 79.31575427084252 | 57 | 201 | 108 |
-| PRO_COM | Integer | 1001 | 111107 | 4 | 6 | 45193.82059716597 | 32622.605152620454 | 40034.5 | N/A | 7904 |
-| PRO_COM_T | Unicode | 001001 | 111107 | 6 | 6 |  |  |  | N/A | 7904 |
-| COMUNE | Unicode | Abano Terme | Zungri | 2 | 34 |  |  |  | N/A | 7898 |
-| COMUNE_A | Unicode | Abtei | Števerjan | 0 | 36 |  |  |  |  | 125 |
-| CC_UTS | Integer | 0 | 1 | 1 | 1 | 0.013790485829959558 | 0.1166203598456684 | 0 | 0 | 2 |
-| SHAPE_AREA | Float | 103841.59 | 1286515935.04 | 9 | 13 | 38212174.82759485 | 50775638.830618076 | 22462066.48 | N/A | 7904 |
-| SHAPE_LEN | Float | 1327.5 | 279961.61 | 7 | 9 | 28724.054496457524 | 19071.825497349204 | 23815.9 | N/A | 7898 |
+| field      | type    | min         | max           | min_length | max_length | mean                 | stddev             | median      | mode | cardinality |
+| ---------- | ------- | ----------- | ------------- | ---------- | ---------- | -------------------- | ------------------ | ----------- | ---- | ----------- |
+| COD_RIP    | Integer | 1           | 5             | 1          | 1          | 2.4862095141700404   | 1.4286548784684956 | 2           | 1    | 5           |
+| COD_REG    | Integer | 1           | 20            | 1          | 2          | 8.659286437246942    | 6.388341980201931  | 7           | 3    | 20          |
+| COD_PROV   | Integer | 1           | 111           | 1          | 3          | 45.130819838056745   | 32.64463443546327  | 40          | 1    | 107         |
+| COD_CM     | Integer | 0           | 292           | 1          | 3          | 38.92054655870437    | 90.042657529667    | 0           | 0    | 16          |
+| COD_UTS    | Integer | 2           | 292           | 1          | 3          | 77.22039473684187    | 79.31575427084252  | 57          | 201  | 108         |
+| PRO_COM    | Integer | 1001        | 111107        | 4          | 6          | 45193.82059716597    | 32622.605152620454 | 40034.5     | N/A  | 7904        |
+| PRO_COM_T  | Unicode | 001001      | 111107        | 6          | 6          |                      |                    |             | N/A  | 7904        |
+| COMUNE     | Unicode | Abano Terme | Zungri        | 2          | 34         |                      |                    |             | N/A  | 7898        |
+| COMUNE_A   | Unicode | Abtei       | Števerjan     | 0          | 36         |                      |                    |             |      | 125         |
+| CC_UTS     | Integer | 0           | 1             | 1          | 1          | 0.013790485829959558 | 0.1166203598456684 | 0           | 0    | 2           |
+| SHAPE_AREA | Float   | 103841.59   | 1286515935.04 | 9          | 13         | 38212174.82759485    | 50775638.830618076 | 22462066.48 | N/A  | 7904        |
+| SHAPE_LEN  | Float   | 1327.5      | 279961.61     | 7          | 9          | 28724.054496457524   | 19071.825497349204 | 23815.9     | N/A  | 7898        |
 
 Come scritto nell'[**articolo che presenta il progetto**](https://medium.com/tantotanto/il-decreto-di-natale-in-chilometri-8af38744a7d5), dato un comune con non più di **5.000 abitanti**, e il suo confine, per calcolare l'area in cui da questo è possibile spostarsi (nei giorni 28, 29, 30 dicembre 2020 e 4 gennaio 2021), è necessario per ogni comune:
 
@@ -225,70 +225,131 @@ La pagina web per presentare le aree in cui - per ogni comune - è possibile spo
 
 Al cambio di `id`, che qui è il codice ISTAT a caratteri del comune di proprio interesse - viene aperta una mappa centrata sul *buffer* di quel comune, con evidenziate l'area in cui è possibile spostarsi e il limite comunale.
 
+Quella del comune viene restituita in risposta a un'interrogazione alle [API SQL di CARTO](https://carto.com/developers/sql-api/), mentre quella del buffer è una chiamata diretta al file `
+GeoJSON` che rappresenta il *buffer* di 30.000 metri del confine di un dato comune.<br>
+È quindi necessario generare circa **5.500 file**, perché tanti sono i comuni con abitanti `<=5.000`.
+
+Il comando essenziale "geografico" mancante è quello che sottrae all'aerea in cui ci si può spostare, quella occupata dai comuni capoluogo. Nell'immagine di sotto, ad esempio, quella di Teramo e Ascoli Piceno.
+
 ![](https://i.imgur.com/g5N62r4.png)
 
-Quindi indicato ad esempio l'identificativo `067042`, devono essere visualizzate due geometrie distinte.<br>
-Quella del comune viene restituita in risposta a un'interrogazione alle [API SQL di CARTO](https://carto.com/developers/sql-api/), mentre quella del buffer è una chiamata diretta al file `
-GeoJSON` del buffer di 30.000 metri del confine di un dato comune.<br>
-Era quindi necessario generare **5.496 file**, perché tanti sono i comuni con abitanti `<=5.000`.
+Per rimuovere queste aree, è stato utilizzato SpatiaLite e una sua funzione specializzata, [`ST_CUTTER`](https://www.gaia-gis.it/fossil/libspatialite/wiki?name=ST_Cutter) (attiva dalla versione `4.4` e **finanziata dalla Regione Toscana**). Questo per la sua semplicità di utilizzo e rapidità di esecuzione.
 
-Per farlo è stata creato un file TSV con la lista, con le colonne con il codice del comune e il codice regionale:
+Si inizia allora dall'**importare** i file Shapefile in un nuovo *database* in formato SpatiaLite. La struttura del comando è:
 
 ```bash
-ogr2ogr -f CSV /vsistdout/ ./comuni_30cappa_5mila.shp | \
-mlr --c2t clean-whitespace then cut -f PRO_COM_T,COD_REG | \
-tail -n +2 >./lista.tsv
+ogr2ogr -f SQLite -dsco SPATIALITE=YES ./db.sqlite ./input.shp -nln nomeTabellaOutput -lco SPATIAL_INDEX=YES -nlt PROMOTE_TO_MULTI
 ```
+
+Il *layer* dei buffer ha una certa complessità. È opportuno in questi casi imporre una **validazione geometrica** e conseguente **correzione**:
+
+```bash
+ogrinfo ./db.sqlite -sql 'UPDATE nomeTabella SET GEOMETRY = MakeValid(GEOMETRY) WHERE ST_IsValid(GEOMETRY) <> 1;'
+```
+
+Si tratta di una *query* `SQL` di aggiornamento, in cui viene sfruttata la funzione `MakeValid` alla colonna geometrica ([qui](http://www.gaia-gis.it/gaia-sins/spatialite-sql-5.0.0.html) l'elenco delle funzioni).<br>
+L'*utility* `ogrinfo` qui viene usata come intermediaria: non è necessario infatti usare un *client* nativo
+SQLite o SpatiaLite.
+
+Il passo successivo è quello di "**bucare**" i **poligoni** dei *buffer* con i poligoni dei limiti amministrativi dei capoluogo. Viene fatto a partire dalla funzione `ST_CUTTER` di SpatiaLite (versione >= 4.4).<br>
+Ha bisogno di due oggetti: quello di *input* e quello che farà da "lama" di taglio, ovvero i nostri poligoni di *buffer* e quelli dei limiti dei capoluogo.
+
+A partire ad esempio dai tre poligoni di *buffer* di sotto in grigio, il poligono del capoluogo in bianco sarà usato per ritagliare questi tre.
+
+![](risorse/st_cutter-01.png)
+
+Il risultato è quello che si vede nell'immagine seguente (in cui i poligoni sono stati volutamente spostati e ridimensionati):
+
+- ognuno dei poligoni di *input* viene "tagliato" dal poligono che fa da "lama";
+- ognuno dei poligoni di *input* viene, in questo caso, diviso in due parti.
+
+![](risorse/st_cutter-02.png)
+
+Dati due *layer* di un *database* SpatiaLite, la *query* per realizzare quanto descritto è
+
+```SQL
+SELECT ST_Cutter('input-db', 'input-layer', 'input-geometry-field', 'lama-db', 'lama-layer', 'lama-geometry-field', 'output-layer', 1, 1);
+```
+
+Gli argomenti principali della funzione sono il nome del *layer* di *output*, quello del db che contiene il *layer* di *input*, il nome del *layer* di *input* e il nome del campo geometrico del *layer* di *input*. Lo stesso per la "lama".<br>
+Se si importano nel db SpatiaLite i due *layer* e gli viene assegnato rispettivamente il nome di "input" e "lama", la *query* sarà:
+
+```sql
+SELECT ST_Cutter(NULL, 'input', NULL, NULL, 'lama', NULL, 'output', 1, 1);
+```
+
+**NOTA BENE**: se il database corrente è quello che contiene sia il *layer* di *input* che la "lama", il nome del db si può impostare a `NULL`. Se il campo geometrico dei due *layer* è uno, non è necessario specificarne il nome e si può impostare a `NULL`.
+
+Il *layer* di *output* avrà associata una tabella come quella sottostante. Questa è generata a partire dalle geometrie delle immagini soprastanti.
+
+| PK_UID | input_input_pk_uid | blade_lama_pk_uid | n_geom | res_prog | geometry |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 |  |
+| 2 | 1 |  | 1 | 2 |  |
+| 3 | 2 | 1 | 1 | 1 |  |
+| 4 | 2 |  | 1 | 2 |  |
+| 5 | 3 | 1 | 1 | 1 |  |
+| 6 | 3 |  | 1 | 2 |  |
 
 Alcune note:
 
-- viene usato `ogr2ogr` per trasformare lo Shapefile in `CSV` e passarlo allo *standard output*, tramite l'opzione `/vsistdout/`;
-- lo *standard output* viene passato a Miller per rimuovere eventuali spazi bianchi ridondanti, estrarre le sole colonne `PRO_COM_T` e `COD_REG` e convertire tutto in `TSV`;
-- viene rimossa la riga di intestazione tramite `tail`.
+- `PK_UID` è la colonna con gli ID (gli identificativi numerici distinti) dei 6 poligoni di *output*;
+- `input_input_pk_uid` è la colonna con gli ID dei 3 poligoni di *input*. È evidente che ognuno viene diviso in due parti;
+- `blade_lama_pk_uid` è la colonna con gli ID dei poligoni che fanno da lama. Qui è uno solo. **Contiene valori nulli per tutti gli oggetti che ricadono fuori la "lama"**.
 
-In output qualcosa come
+Quest'ultimo è un punto chiave: basterà rimuovere i poligoni con valori `NULL` per il campo `blade_lama_pk_uid` e si otterrà il *layer* dei poligoni di *buffer* "bucato", in corrispondenza dei poligoni dei comuni capoluogo (che hanno fatto da "lama").
 
-```
-011006  7
-043022  11
-064042  15
-075049  16
-026014  5
-```
-
-A partire dal file che contiene i *buffer* dei 5.496 comuni, viene estratto un file `GeoJSON` per ogni codice comunale distinto:
+Nello *script* il passo successivo è proprio questo. Da notare che i *layer* che fanno da *input* e da "lama" sono stati chiamati "a" e "b", mentre quello di *output* è stato chiamato "out".
 
 ```bash
-mapshaper ./input.shp -split PRO_COM_T -o format=geojson ./output_noreg/
+ogrinfo ./db.sqlite -sql 'create table buffer_clipped AS
+SELECT
+  PRO_COM_T,
+  COMUNE,
+  geometry
+FROM
+(SELECT
+  "input_a_ogc_fid",
+  "blade_b_ogc_fid",
+  a.pro_com_t PRO_COM_T,
+  a.comune COMUNE,
+  out."geometry"
+FROM
+  "out"
+  LEFT JOIN a ON out.input_a_ogc_fid = a.ogc_fid
+WHERE
+  "blade_b_ogc_fid" IS NULL);'
 ```
 
-A partire dal file di input, sfruttando il comando [`split`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-split) di Mapshaper, verranno creati in file `GeoJSON` nella cartella `output_noreg`.
-
-In ultimo è necessario rimuovere dai poligoni di *buffer* , ovvero da questi file generati, le aree che corrispondono ai limiti dei comuni capoluogo (verso cui non sarà possibile spostarsi).
-
-In termini di logica di *script* e di *performance*, sarebbe meglio farlo direttamente a partire dal singolo file con tutti i buffer dei comuni. <br>
-L'ideale sarebbe farlo in Mapshaper - per snellezza e rapidità del comando - ma sembra che ci sia un baco e quindi non è possibile farlo "in blocco".<br>
-Un'alternativa potrebbe essere utilizzare di nuovo `ogr2ogr`, con una query `sqlite`, ma non ha grandi *perfomance*.<br>
-O - sempre per stare con le *utility* a riga di comando - farlo con `spatialite`. Ma questo lo ha già fatto Salvatore e vi invito a guardare le sue [query](../QGIS/scriptSQL/script.sql).
-
-Qui è stato fatto in parallelo con `parallel` e `Mapshaper`, rimuovendo le aree dei comuni capoluogo da ogni `GeoJSON` con il *buffer* sul limite comunale .<br>
-La lista dei comuni creata sopra, viene usata come argomento di `parallel`.
+Una volta creato e esportato questo *layer*, vengono **uniti** nuovamente quei **poligoni** appartenenti allo **stesso** **comune**, eventualmente separati in precedenza.
 
 ```bash
-parallel --colsep "\t" -j100% 'mapshaper ./output_noreg/{1}.json \
--erase ./capoluoghi_4326.shp \
--o precision=0.000001 ./output_noreg/{1}.geojson' :::: ./lista.tsv
+mapshaper ./input.shp -dissolve PRO_COM_T copy-fields=COMUNE -o precision=0.000001 ./output.shp
 ```
 
-Alcune note:
+Viene usato il comando [`dissolve`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-dissolve) di Mapshaper, in cui è possibile impostare quale campo usare come criterio di "unione" (qui è `PRO_COM_T`) e quale/i campi compiare in *output* (qui è `COMUNE`).
 
-- si fa riferimento alle colonne del `TSV` di input, tramite numeri interi a partire da 1 e circondati da graffe. Quindi la prima colonna sarà `{1}`;
-- il comando [`erase`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-erase) di MapShaper è quello che si occupa del processo principale;
-- l'opzione di *output* `precision=0.000001` viene usata per impostare a 6 decimale la precisione delle coordinate dei file `GeoJSON` di *output* (lo prevedono le [specifiche del formato](https://tools.ietf.org/html/rfc7946)).
+Infine, solo ad uso delle mappa online che è stata prodotta, è stato **generato un file** `GEOJson` per **ognuno** dei **poligongi di** `buffer` creato.
 
+```bash
+mapshaper ./buffer.shp -split PRO_COM_T -o format=geojson ./output_folder/
+```
+
+Qui il comando è [`split`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-split) a cui si passa come argomento il nome di campo in cui cercare valori distinti, a partire dai quali creare file con quel nome. Qui circa 5.500 file, uno per ogni comune con un numero di abitanti minore o uguale a 5.000.
 
 ### Note conclusive
 
-Lo [script *bash*](dataETL.sh) non è perfettamente coincidente con quanto descritto in questo articolo.<br>Qui alcuni comandi sono stati leggermente modificati a vantaggio di una maggiore leggibilità.
+Lo [script *bash*](dataETL.sh) non è perfettamente coincidente con quanto descritto in questo articolo.<br>Qui alcuni comandi sono stati leggermente semplificati a vantaggio di una maggiore leggibilità.
 
-Si sarebbe potuta usare anche una sola di queste *utility* per fare tutto. Ma alcune sono più *easy* e rapidi in certi operazioni e questa era una buona occasione per "toccare" un po' 4 straordinari esempi di applicazione *open source* a riga di comando.
+Si sarebbe potuta usare anche **una sola di queste *utility*** per fare tutto (SQLite/SpatiaLite la candidata principe).<br>Ma alcune sono più *easy* e rapide in certe operazioni e questa era anche una buona occasione didattica per "toccare" un po' 4 straordinari esempi di applicazione *open source* a riga di comando.
+<br>Anche Mapshaper sarebbe stato adatto per processare la gran parte del flusso, ma sembra esserci un problema nella procedura di ritaglio di poligoni sovrapposti e con il comando [`erase`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-erase).
+
+L'occasione è stata ottima per scoprire ancora una volta come il **SQL geografico** e SpatiaLite siano degli strumenti di grande efficienza e comodità (grazie a [Sandro Furieri](https://groups.google.com/g/spatialite-users/search?q=author%3Asandro%20author%3Afurieri) e a tutti gli sviluppatori di SpatiaLite).
+
+Un **grazie** a **Maurizio** e **Salvatore**, per la disponibilità costante al confronto, per le note, i rilanci e per essere come sono 🤣
+
+
+
+
+
+
