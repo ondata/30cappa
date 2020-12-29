@@ -5,7 +5,7 @@
 -- in OUTPUT crea un vettore aree30cappa
 --
 -- crea tabella - buffer da 30 km su comuni da 5k
-SELECT DropGeoTable( "b30k_comuni5k");
+DROP TABLE IF EXISTS "b30k_comuni5k";
 CREATE TABLE "b30k_comuni5k"
       ("pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
        "pro_com_t" text);
