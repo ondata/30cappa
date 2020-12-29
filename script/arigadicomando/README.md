@@ -233,7 +233,7 @@ Il comando essenziale "geografico" mancante è quello che sottrae all'aerea in c
 
 ![](https://i.imgur.com/g5N62r4.png)
 
-Per rimuovere queste aree, è stato utilizzato SpatiaLite e una sua funzione specializzata, [`ST_CUTTER`](https://www.gaia-gis.it/fossil/libspatialite/wiki?name=ST_Cutter) (attiva dalla versione `4.4`). Questo per la sua semplicità di utilizzo e rapidità di esecuzione.
+Per rimuovere queste aree, è stato utilizzato SpatiaLite e una sua funzione specializzata, [`ST_CUTTER`](https://www.gaia-gis.it/fossil/libspatialite/wiki?name=ST_Cutter) (attiva dalla versione `4.4` e **finanziata dalla Regione Toscana**). Questo per la sua semplicità di utilizzo e rapidità di esecuzione.
 
 Si inizia allora dall'**importare** i file Shapefile in un nuovo *database* in formato SpatiaLite. La struttura del comando è:
 
@@ -251,8 +251,8 @@ Si tratta di una *query* `SQL` di aggiornamento, in cui viene sfruttata la funzi
 L'*utility* `ogrinfo` qui viene usata come intermediaria: non è necessario infatti usare un *client* nativo
 SQLite o SpatiaLite.
 
-Il passo successivo è quello di "bucare" i poligoni dei *buffer* con i limiti dei capoluogo. Viene fatto a partire dalla funzione `ST_CUTTER` di SpatiaLite (versione >= 4.4).<br>
-Ha bisogno di due oggetti: quello di *input* e quello che farà da "lama", ovvero i nostri poligoni di *buffer* e quelli capoluogo.
+Il passo successivo è quello di "**bucare**" i **poligoni** dei *buffer* con i poligoni dei limiti amministrativi dei capoluogo. Viene fatto a partire dalla funzione `ST_CUTTER` di SpatiaLite (versione >= 4.4).<br>
+Ha bisogno di due oggetti: quello di *input* e quello che farà da "lama" di taglio, ovvero i nostri poligoni di *buffer* e quelli dei limiti dei capoluogo.
 
 A partire ad esempio dai tre poligoni di *buffer* di sotto in grigio, il poligono del capoluogo in bianco sarà usato per ritagliare questi tre.
 
@@ -321,11 +321,35 @@ WHERE
   "blade_b_ogc_fid" IS NULL);'
 ```
 
+Una volta creato e esportato questo *layer*, vengono **uniti** nuovamente quei **poligoni** appartenenti allo **stesso** **comune**, eventualmente separati in precedenza.
+
+```bash
+mapshaper ./input.shp -dissolve PRO_COM_T copy-fields=COMUNE -o precision=0.000001 ./output.shp
+```
+
+Viene usato il comando [`dissolve`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-dissolve) di Mapshaper, in cui è possibile impostare quale campo usare come criterio di "unione" (qui è `PRO_COM_T`) e quale/i campi compiare in *output* (qui è `COMUNE`).
+
+Infine, solo ad uso delle mappa online che è stata prodotta, è stato **generato un file** `GEOJson` per **ognuno** dei **poligongi di** `buffer` creato.
+
+```bash
+mapshaper ./buffer.shp -split PRO_COM_T -o format=geojson ./output_folder/
+```
+
+Qui il comando è [`split`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-split) a cui si passa come argomento il nome di campo in cui cercare valori distinti, a partire dai quali creare file con quel nome. Qui circa 5.500 file, uno per ogni comune con un numero di abitanti minore o uguale a 5.000.
+
 ### Note conclusive
 
-Lo [script *bash*](dataETL.sh) non è perfettamente coincidente con quanto descritto in questo articolo.<br>Qui alcuni comandi sono stati leggermente modificati a vantaggio di una maggiore leggibilità.
+Lo [script *bash*](dataETL.sh) non è perfettamente coincidente con quanto descritto in questo articolo.<br>Qui alcuni comandi sono stati leggermente semplificati a vantaggio di una maggiore leggibilità.
 
-Si sarebbe potuta usare anche una sola di queste *utility* per fare tutto. Ma alcune sono più *easy* e rapide in certi operazioni e questa era una buona occasione per "toccare" un po' 4 straordinari esempi di applicazione *open source* a riga di comando.
+Si sarebbe potuta usare anche **una sola di queste *utility*** per fare tutto (SQLite/SpatiaLite la candidata principe).<br>Ma alcune sono più *easy* e rapide in certe operazioni e questa era anche una buona occasione didattica per "toccare" un po' 4 straordinari esempi di applicazione *open source* a riga di comando.
+<br>Anche Mapshaper sarebbe stato adatto per processare la gran parte del flusso, ma sembra esserci un problema nella procedura di ritaglio di poligoni sovrapposti e con il comando [`erase`](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-erase).
+
+L'occasione è stata ottima per scoprire ancora una volta come il **SQL geografico** e SpatiaLite siano degli strumenti di grande efficienza e comodità (grazie a [Sandro Furieri](https://groups.google.com/g/spatialite-users/search?q=author%3Asandro%20author%3Afurieri) e a tutti gli sviluppatori di SpatiaLite).
+
+Un **grazie** a **Maurizio** e **Salvatore**, per la disponibilità costante al confronto, per le note, i rilanci e per essere come sono 🤣
 
 
-- nota su baco mapshaper
+
+
+
+
