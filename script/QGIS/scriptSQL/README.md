@@ -15,7 +15,7 @@ Come ho risolto il #30cappa del decreto "di Natale".
   - [Creo Buffer di 30 km](#creo-buffer-di-30-km)
   - [Estraggo i soli capoluoghi di provincia](#estraggo-i-soli-capoluoghi-di-provincia)
   - [Unisco tutti i comuni](#unisco-tutti-i-comuni)
-  - [Suddivito lo stivale](#suddivito-lo-stivale)
+  - [Suddivido lo stivale](#suddivido-lo-stivale)
   - [Estraggo le parti elementari](#estraggo-le-parti-elementari)
   - [Taglio i buffer da 30 km](#taglio-i-buffer-da-30-km)
   - [Ricompongo i pezzi](#ricompongo-i-pezzi)
@@ -120,7 +120,7 @@ UPDATE "tmp_italia" SET geom =
 
 ↑[torna su](#il-decreto-di-natale-sugli-spostamenti-piccoli-comuni)↑
 
-## Suddivito lo stivale
+## Suddivido lo stivale
 la suddivisione evita lunghi tempi di analisi (vale per grandi poligoni); la funzione è presente da SpatiaLite 5, suddivide un poligono a partire dal numero di nodi indicati come argomento:
 - `ST_Subdivide(geom,2048)`: richiede il nome del campo geometrico e il numero di nodi, più grande è il numero meno suddivisioni farà;
 - in questo caso occorre recuperare la geometria tramite: `SELECT RecoverGeometryColumn('nomeTabella','nomeTabellaGeometria',EPSG,'tipoGeometria','dimensione');`, per maggiori info, vedi riferimenti a fine post;
