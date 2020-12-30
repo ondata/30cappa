@@ -17,7 +17,7 @@ sui comuni con popolazione <= 5.000
 - in questo script SQL utilizzerò la funzione `ST_Cutter()` che si basa, fortemente, sulle _chiavi primarie_ delle geo-tabelle, quindi è necessario crearle come fatto sotto, ovvero tramite definizione diretta dei campi;
 - uso sempre `DROP TABLE IF EXISTS "nomeTabella";` ad inizio processo, perché se la tabella che sto creando esistesse, verrebbe cancellata e non mi segnalerebbe errore (`IF EXISTS`);
 - uso sempre `CastToMultiPolygon(geometry)` sulla geometria per lavorare o forzare sempre il tipo di geometria come `MultiPolygon`;
-- va sempre aggiunto per geo-tabelle `SELECT AddGeometryColumn ('nomeTabella','nomeCampoGeom',EPSG,'tipoGeometria','dimensione');`
+- quando creo una nuova geo-tabella,va sempre aggiunto `SELECT AddGeometryColumn ('nomeTabella','nomeCampoGeom',EPSG,'tipoGeometria','dimensione');`
 
 ```sql
 -- crea tabella - buffer da 30 km su comuni da 5k
