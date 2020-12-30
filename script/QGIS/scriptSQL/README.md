@@ -3,18 +3,21 @@
 Come ho risolto il #30cappa del decreto "di Natale".
 
 ## Software usati
-Ho usato solo SpatiaLite 5.0 e le sue incredibile funzioni spaziali. Per la visualizzazione ho usato QGIS 3.16 Hannover
+**SpatiaLite 5.0** e le sue incredibile funzioni spaziali. Per la visualizzazione ho usato **QGIS 3.16 Hannover**
+
+## Osservazioni
+
+- in questo script SQL utilizzerò la funzione `ST_Cutter()` che si basa, fortemente, sulle _chiavi primarie_ delle geo-tabelle, quindi è necessario crearle come fatto sotto, ovvero tramite definizione diretta dei campi.
 
 ## Parto dai limiti amministrativi comunali
 
-shapefile ISTAT al 01/01/2020
+shapefile ISTAT al 01/01/2020 con aggiunto il campo abitanti (01/01/2020)
 
 <img src = "./imgs/img_01.png" width =600>
 
 ## Creo Buffer di 30 km
 sui comuni con popolazione <= 5.000
 
-- in questo script SQL utilizzerò la funzione `ST_Cutter()` che si basa, fortemente, sulle _chiavi primarie_ delle geo-tabelle, quindi è necessario crearle come fatto sotto, ovvero tramite definizione diretta dei campi;
 - uso sempre `DROP TABLE IF EXISTS "nomeTabella";` ad inizio processo, perché se la tabella che sto creando esistesse, verrebbe cancellata e non mi segnalerebbe errore (`IF EXISTS`);
 - uso sempre `CastToMultiPolygon(geometry)` sulla geometria per lavorare o forzare sempre il tipo di geometria come `MultiPolygon`;
 - quando creo una nuova geo-tabella,va sempre aggiunto `SELECT AddGeometryColumn ('nomeTabella','nomeCampoGeom',EPSG,'tipoGeometria','dimensione');`
