@@ -7,11 +7,10 @@
 -- crea tabella - buffer da 30 km su comuni da 5k
 DROP TABLE IF EXISTS "b30k_comuni5k";
 CREATE TABLE "b30k_comuni5k"
-      ("pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
-       "pro_com_t" text);
+      ("pk_uid" integer PRIMARY KEY autoincrement NOT NULL,"pro_com_t" text);
 -- aggiunge campo geom
 SELECT AddGeometryColumn ('b30k_comuni5k','geom',32632,'MULTIPOLYGON','XY');
---
+-- popola la tabella con abitanti minori di 5001
 INSERT INTO "b30k_comuni5k"
 (pk_uid, pro_com_t, geom)
 SELECT pk_uid, pro_com_t, CastToMultiPolygon(ST_Buffer (geom,30000)) AS geom
@@ -19,13 +18,10 @@ FROM (SELECT pk_uid,pro_com_t, geom
       FROM "Com01012020_g_WGS84"
       WHERE abitanti <=5000);
 --
-SELECT CreateSpatialIndex('b30k_comuni5k', 'geom');
---
 -- crea tabella - capoluoghi di provincia
 DROP TABLE IF EXISTS "capoluoghi_prov";
 CREATE TABLE "capoluoghi_prov" 
-      ("pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
-       "pro_com_t" text);
+      ("pk_uid" integer PRIMARY KEY autoincrement NOT NULL,"pro_com_t" text);
 -- aggiunge campo geom
 SELECT AddGeometryColumn ('capoluoghi_prov','geom',32632,'MULTIPOLYGON','XY');
 -- popola la tabella
@@ -46,23 +42,25 @@ SELECT AddGeometryColumn ('tmp_italia','geom',32632,'MULTIPOLYGON','XY');
 INSERT INTO "tmp_italia" VALUES (1,NULL);
 -- aggiorna tabella
 UPDATE "tmp_italia" SET geom = 
-(SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom FROM "Com01012020_g_WGS84") WHERE  pk_uid = 1;
+      (SELECT CastToMultiPolygon(ST_UNION(geom)) AS geom
+       FROM "Com01012020_g_WGS84") 
+       WHERE  pk_uid = 1;
 --
 -- suddivide l'intero poligono nazionale
-DROP TABLE IF EXISTS "italia_subd2048";
-CREATE TABLE "italia_subd2048" AS
+DROP TABLE IF EXISTS "italia_subd";
+CREATE TABLE "italia_subd" AS
 SELECT ST_Subdivide(geom,2048) AS geom FROM "tmp_italia";
-SELECT RecoverGeometryColumn('italia_subd2048','geom',32632,'MULTIPOLYGON','XY');
+SELECT RecoverGeometryColumn('italia_subd','geom',32632,'MULTIPOLYGON','XY');
 --
 -- estrae i poligoni elementari
-SELECT ElementaryGeometries( 'italia_subd2048',
+SELECT ElementaryGeometries( 'italia_subd',
                              'geom',
-                             'italia_subd2048_elem',
+                             'italia_subd_elem',
                              'pk_elem',
                              'out_multi_id', 1 ) as num;
 --
 -- taglia i buffer secondo il vettore dato
-SELECT ST_Cutter(NULL, 'b30k_comuni5k', NULL, NULL, 'italia_subd2048_elem', NULL, 'b30k_com5k_italy_subd_elem', 1, 1);
+SELECT ST_Cutter(NULL, 'b30k_comuni5k', NULL, NULL, 'italia_subd_elem', NULL, 'b30k_com5k_italy_subd_elem', 1, 1);
 --
 -- ricompone i pezzi - ricorda che pk_id si riferisce alla tabella comuni 'Com01012020_g_WGS84'
 DROP TABLE IF EXISTS "b30k_com5k_italy";
@@ -73,9 +71,9 @@ SELECT AddGeometryColumn ('b30k_com5k_italy','geom',32632,'MULTIPOLYGON','XY');
 INSERT INTO "b30k_com5k_italy" 
 (pk_uid,geom)
 SELECT k."input_b30k_comuni5k_pk_uid" AS pk_uid, k.geom
-FROM (SELECT "input_b30k_comuni5k_pk_uid", "blade_italia_subd2048_elem_pk_elem", CastToMultiPolygon(st_union("geom")) AS geom
+FROM (SELECT "input_b30k_comuni5k_pk_uid", "blade_italia_subd_elem_pk_elem", CastToMultiPolygon(st_union("geom")) AS geom
       FROM "b30k_com5k_italy_subd_elem"
-      WHERE "blade_italia_subd2048_elem_pk_elem" is NOT NULL
+      WHERE "blade_italia_subd_elem_pk_elem" is NOT NULL
       GROUP BY "input_b30k_comuni5k_pk_uid") k;
 SELECT RecoverGeometryColumn('b30k_com5k_italy','geom',32632,'MULTIPOLYGON','XY');
 --
@@ -108,8 +106,8 @@ SELECT RecoverGeometryColumn('aree30cappa','geom',32632,'MULTIPOLYGON','XY');
 DROP TABLE IF EXISTS "b30k_comuni5k";
 DROP TABLE IF EXISTS "capoluoghi_prov";
 DROP TABLE IF EXISTS "tmp_italia";
-DROP TABLE IF EXISTS "italia_subd2048";
-DROP TABLE IF EXISTS "italia_subd2048_elem";
+DROP TABLE IF EXISTS "italia_subd";
+DROP TABLE IF EXISTS "italia_subd_elem";
 DROP TABLE IF EXISTS "b30k_com5k_italy_subd_elem";
 DROP TABLE IF EXISTS "b30k_com5k_italy";
 DROP TABLE IF EXISTS "b30k_com5k_italy_subd_elem_capolp";
