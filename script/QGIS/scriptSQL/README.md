@@ -98,7 +98,7 @@ FROM (SELECT pk_uid,pro_com_t,geom
 ## Unisco tutti i comuni
 servirà successivamente per ritagliare i buffer con i limiti dell'italico stivale.
 
-Per creare questa tabella preserisco farlo come aggiornamento e quindi utilizzo `UPDATE`.
+Per creare questa tabella preferisco farlo come aggiornamento e quindi utilizzo `UPDATE`.
 
 ```sql
 -- crea tabella temporanea unendo tutti i comuni
