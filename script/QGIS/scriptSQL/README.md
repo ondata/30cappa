@@ -291,3 +291,4 @@ VACUUM;
 - **Funzioni SpatiaLite 5** : <https://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html>
 - **Popolazione ISTAT 2020** :  <http://demo.istat.it/pop2020/dati/comuni.zip>
 - **confini delle unità amministrative a fini statistici** : <https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/Limiti01012020_g.zip>
+- **QGIS** : <https://www.qgis.org/it/site/>
