@@ -9,5 +9,5 @@ dati/rawdata/*.zip
 *.qgs~
 
 dati/arigadicomando/test/*
-dati/arigadicomando/output_noreg/*.sqlite
+dati/arigadicomando/*.sqlite
 dati/arigadicomando/output_noreg/*.json
