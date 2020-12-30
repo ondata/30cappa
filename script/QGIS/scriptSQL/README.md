@@ -43,7 +43,7 @@ Come ho risolto il #30cappa del decreto "di Natale".
 ↑[torna su](#il-decreto-di-natale-sugli-spostamenti-piccoli-comuni)↑
 
 ## Limiti amministrativi comunali
-Shapefile ISTAT al 01/01/2020 con aggiunto il campo abitanti (01/01/2020), il processo è spiegato [nell post](https://medium.com/tantotanto/lelaborazione-dei-dati-per-la-mappa-del-decreto-di-natale-in-chilometri-9b95e4dbc975) di [Andrea Borruso](https://twitter.com/aborruso); non è un processo molto complesso, ma occorre una pulizia preventiva del dataset.
+Shapefile ISTAT al 01/01/2020 con aggiunto il campo abitanti (01/01/2020), il processo è spiegato [nel post](https://medium.com/tantotanto/lelaborazione-dei-dati-per-la-mappa-del-decreto-di-natale-in-chilometri-9b95e4dbc975) di [Andrea Borruso](https://twitter.com/aborruso); non è un processo molto complesso, ma occorre una pulizia preventiva del dataset.
 
 <img src = "./imgs/img_01.png" width =600>
 
